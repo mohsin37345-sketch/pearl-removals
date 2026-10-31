@@ -1,0 +1,31 @@
+{
+  "service": "man-and-van",
+  "location": "primrose-hill",
+  "status": "published",
+  "uniqueIntro": "Our Primrose Hill man and van service provides discreet, white-glove moving assistance for residents and creative professionals across NW1 and NW3. Perfect for boutique moves near Regent’s Park Road, stylish pastel townhouse conversions on Chalcot Square, and luxury single-item deliveries.",
+  "localAngle": "Primrose Hill features delicate pastel Regency architecture, tight street corners, and high resident parking demand. Our agile 3.5t Luton vans maneuver these narrow conservation roads easily, positioning directly outside your doorstep for rapid, courteous loading.",
+  "whatsIncluded": [
+    "Clean, well-maintained Luton van equipped with tail lift and interior tie rails",
+    "Professional art-trained mover to assist with loading and careful wrapping",
+    "Quilted furniture covers, protective corner bumpers, and wardrobe boxes",
+    "Full £50,000 Goods in Transit insurance protection as standard"
+  ],
+  "priceGuidance": "From £85/hour for white-glove man and van service. Discreet fixed price quotations available.",
+  "faqs": [
+    {
+      "question": "Do you offer unbranded vehicles for private moves in Primrose Hill?",
+      "answer": "Yes. We can deploy clean, unbranded removal vans upon request to ensure absolute privacy for high-profile clients.",
+      "display": true
+    },
+    {
+      "question": "Can you carry furniture down narrow spiral staircases in Regency cottages?",
+      "answer": "Yes. Our movers are trained in specialized maneuvering techniques for narrow period staircases and spiral steps.",
+      "display": true
+    },
+    {
+      "question": "Are packing materials available for purchase on the day?",
+      "answer": "Our vans carry emergency boxes, bubble wrap, packing tape, and sofa covers for immediate purchase if required.",
+      "display": true
+    }
+  ]
+}

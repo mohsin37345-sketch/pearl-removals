@@ -1,0 +1,133 @@
+---
+import ServiceLayout from 'theme/layouts/ServiceLayout.astro';
+
+const serviceData = {
+  title: 'Office & Commercial Removals',
+  slug: 'office-removals',
+  metaTitle: 'Office & Commercial Removals North West London | Business Movers',
+  metaDescription: 'Zero-downtime office removals in North West London. IT relocations, plastic crate hire, out-of-hours moving, and full RAMS compliance based in Cricklewood NW2.',
+  heroHeading: 'Precision Office & Commercial Relocations in North West London',
+  heroSubheading: 'Minimising business disruption with tailored out-of-hours moves, IT equipment handling, secure crate hire, and full commercial project management.',
+  icon: 'briefcase',
+  summary: 'Comprehensive business relocation service designed to maintain uninterrupted commercial operations and protect critical data assets.',
+  priceFrom: 450,
+  priceUnit: 'move',
+  priceNotes: 'Indicative guide for small studio or boutique office relocation. Comprehensive site survey and fixed project proposal provided.',
+  benefits: [
+    'Evening and weekend moving schedules to ensure zero operational downtime for your staff',
+    'Specialist anti-static computer crates, screen foam pouches, and server transport equipment',
+    'Standard commercial plastic lidded crate (LC3) hire delivered and collected from your premises',
+    'Comprehensive Health & Safety compliance: method statements, risk assessments (RAMS), and COSHH compliance',
+    'Dismantling and reassembly of modular office desks, bench desking systems, and conference tables',
+    'Fully vetted and trained personnel with full £5,000,000 commercial Public Liability insurance'
+  ],
+  whatsIncluded: [
+    'On-site commercial survey and dedicated Project Manager assigned to your relocation',
+    'Provision of numbered colour-coded labels for departmental and desk allocation',
+    'Delivery and collection of heavy-duty lockable plastic crates prior to and following the move',
+    'Floor and lift protection installed across both origin and destination commercial premises',
+    'Dismantling, safe transit, and reassembly of office furniture to your specified floor plans',
+    'Commercial Goods in Transit insurance cover up to £50,000 with options to extend'
+  ],
+  whatsNotIncluded: [
+    'Data disconnection or IT server configuration (network cabling and server rack re-patching)',
+    'Specialist hazardous chemical removal (laboratories, printing solvents, unapproved chemicals)',
+    'Building landlord dilapidation repairs, painting, or commercial carpet cleaning',
+    'Heavy industrial plant machinery exceeding 1,000kg single-unit weight without crane hire'
+  ],
+  process: [
+    {
+      step: 1,
+      title: 'Site Audit & Project Planning',
+      description: 'Our commercial move manager audits your workplace, inventories IT assets, establishes access schedules with building landlords, and drafts a comprehensive relocation programme.'
+    },
+    {
+      step: 2,
+      title: 'Crate Delivery & Staff Briefing',
+      description: 'We deliver numbered, stackable lidded crates with tamper-evident security seals ahead of moving day and provide simple packing guidelines for your employees.'
+    },
+    {
+      step: 3,
+      title: 'Out-of-Hours Execution',
+      description: 'Our team operates Friday evening through Sunday or overnight. We disconnect peripheral tech, pack hardware into anti-static protection, deconstruct desking, and load securely.'
+    },
+    {
+      step: 4,
+      title: 'Setup & Day-One Readiness',
+      description: 'At your new office, we position desking to CAD floor plans, place corresponding crates at each designated workstation, and ensure common areas are clear for Monday morning trading.'
+    }
+  ],
+  premiumAngle: 'For law firms, accountancy partnerships, medical clinics, and executive headquarters in Marylebone, Paddington Basin, and St John\'s Wood, we provide high-security sealed document transport, confidential shredding coordination, and bespoke white-glove executive suite handling.',
+  faqs: [
+    {
+      question: 'Can you carry out our office move outside normal business hours?',
+      answer: 'Yes. The vast majority of our commercial relocations take place on Friday evenings and across weekends. Our goal is ensuring your team logs off on Friday at your old office and walks into a fully operational workspace on Monday morning.',
+      display: true
+    },
+    {
+      question: 'Do you provide plastic crates for employees to pack their desk contents?',
+      answer: 'Yes. We supply standard LC3 commercial lidded plastic crates and IT computer crates. These are delivered to your office one to two weeks before the move and collected once your staff have unpacked.',
+      display: true
+    },
+    {
+      question: 'Can you provide Risk Assessments and Method Statements (RAMS) for our landlord?',
+      answer: 'Yes. Most commercial property managers require comprehensive Risk Assessments and Method Statements (RAMS), alongside proof of £5,000,000 Public Liability insurance, before allowing access to loading bays and service lifts. We supply all documentation in advance.',
+      display: true
+    },
+    {
+      question: 'How do you handle delicate IT equipment and computer monitors?',
+      answer: 'We supply padded monitor screen sleeves, bubble keyboard bags, and anti-static bubble wrap. Desktop towers, docking stations, and monitors are packed systematically into dedicated foam-lined computer crates to guarantee complete transit protection.',
+      display: true
+    },
+    {
+      question: 'What happens to unwanted office furniture or WEEE electrical equipment?',
+      answer: 'Through our licensed recycling partners, we can coordinate eco-friendly commercial clearance, donation of reusable desks to local charities, and certified WEEE recycling for obsolete computers.',
+      display: true
+    }
+  ]
+};
+---
+
+<ServiceLayout service={serviceData}>
+  <div class="prose dark:prose-invert max-w-none space-y-6">
+    <h2 class="text-2xl sm:text-3xl font-black text-navy dark:text-pearl tracking-tight">
+      Commercial Relocation Services Tailored for London Businesses
+    </h2>
+    <p>
+      An office relocation is far more than a physical moving task—it is a critical operational transition. Unplanned delays, damaged IT servers, or lost employee files can compromise client deadlines and generate substantial revenue loss.
+    </p>
+    <p>
+      At <strong>Pearl Removals</strong>, our commercial division specialises in structured, calm, and zero-downtime office removals. Based strategically in Cricklewood NW2, we serve businesses across North West and Central London—from creative studios in Camden Town and tech enterprises in Paddington Basin, to professional medical practices on Harley Street and corporate suites across Brent Cross.
+    </p>
+
+    <h3 class="text-xl font-bold text-navy dark:text-pearl pt-4">
+      Eliminating Business Disruption with Weekend & Night Schedules
+    </h3>
+    <p>
+      We recognise that halting client operations during normal working hours is not an option. Our commercial crews operate around the clock, providing scheduled relocations on Friday evenings, Saturdays, Sundays, and public bank holidays.
+    </p>
+    <p>
+      By structuring your move outside business hours, our teams load, transport, unpack, and arrange your office while your employees are resting. When your staff arrive at the new facility on Monday morning, their desking is assembled, their computer monitors and peripherals are positioned on their desks, and communal kitchens and meeting rooms are fully functional.
+    </p>
+
+    <h3 class="text-xl font-bold text-navy dark:text-pearl pt-4">
+      Specialist IT Handling & Secure Crate Hire
+    </h3>
+    <p>
+      Modern workplaces run on delicate digital infrastructure. Standard cardboard cartons are inadequate for high-density commercial relocations. We supply durable, tamper-evident polypropylene crates that can be locked with numbered security seals for confidential records and data-sensitive equipment.
+    </p>
+    <p>
+      Our crews utilize anti-static bubble wrap, padded monitor protectors, and specialized keyboard envelopes. Servers and networked hardware are handled in accordance with strict handling protocols, using air-suspension vehicles and heavy-duty ramps to ensure complete vibration dampening during transit.
+    </p>
+
+    <h3 class="text-xl font-bold text-navy dark:text-pearl pt-4">
+      Full Landlord & Estate Compliance: RAMS & Lift Protection
+    </h3>
+    <p>
+      Commercial office blocks throughout London enforce strict rules regarding shared service lifts, loading dock bays, and noise curfews. Access is routinely denied to removals firms lacking certified Health & Safety documentation.
+    </p>
+    <p>
+      Pearl Removals generates property-specific <strong>Risk Assessments and Method Statements (RAMS)</strong>, provides certificates of our £5,000,000 Public Liability Insurance, and submits driver details to security personnel in advance. We line service corridors with heavy-duty Correx sheeting and wrap lift cars in padded protective drapes, ensuring your move proceeds without friction or administrative hold-ups.
+    </p>
+  </div>
+</ServiceLayout>

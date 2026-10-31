@@ -1,0 +1,103 @@
+---
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import Hero from 'theme/components/Hero.astro';
+import TrustStrip from 'theme/components/TrustStrip.astro';
+import Breadcrumbs from 'theme/components/Breadcrumbs.astro';
+import HowItWorksComponent from 'theme/components/HowItWorks.astro';
+import CTABand from 'theme/components/CTABand.astro';
+import Icon from 'theme/components/Icon.astro';
+
+const breadcrumbs = [
+  { name: 'How It Works', url: '/how-it-works/' }
+];
+---
+
+<BaseLayout
+  title="How Removals Work | Pearl Removals North West London"
+  description="Step-by-step guide to our house removal process: free video surveys, packing assistance, completion day key waiting, and settling into your new London home."
+  canonicalUrl="https://www.pearlremovals.co.uk/how-it-works/"
+  breadcrumbs={breadcrumbs}
+>
+  <Hero
+    variant="simple"
+    title="How Pearl Removals Works"
+    subtitle="A calm, structured, and fully supported moving experience from your first estimate to the final box unpacked."
+    eyebrow="STEP-BY-STEP PROCESS"
+    badges={["Survey & Inventory", "Council Parking Guidance", "Completion Day Protocol"]}
+  />
+
+  <TrustStrip />
+
+  <Breadcrumbs items={breadcrumbs} />
+
+  <article class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+    
+    <HowItWorksComponent />
+
+    <!-- In-Depth Phases Breakdown -->
+    <div class="space-y-8">
+      
+      <!-- Phase 1 -->
+      <div class="glass-panel p-6 sm:p-8 rounded-3xl space-y-3">
+        <div class="flex items-center gap-2 text-royal font-bold text-xs uppercase tracking-widest">
+          <Icon name="receipt" class="w-4 h-4" />
+          <span>Stage 1: Pre-Move Planning & Survey</span>
+        </div>
+        <h3 class="text-xl font-bold text-navy dark:text-pearl">
+          Precise Volume Calculation via Free Video Survey
+        </h3>
+        <p class="text-sm text-surface-600 dark:text-surface-300 leading-relaxed">
+          Accurate estimates avoid moving-day chaos. We offer a convenient 15-minute WhatsApp video survey where you walk through your home, opening cupboards and showing large furniture items. This allows us to calculate the exact cubic footage, determine the required number of Luton vans and movers, and identify fragile goods requiring bespoke protection.
+        </p>
+      </div>
+
+      <!-- Phase 2 -->
+      <div class="glass-panel p-6 sm:p-8 rounded-3xl space-y-3">
+        <div class="flex items-center gap-2 text-royal font-bold text-xs uppercase tracking-widest">
+          <Icon name="truck" class="w-4 h-4" />
+          <span>Stage 2: London Parking Suspensions & Permits</span>
+        </div>
+        <h3 class="text-xl font-bold text-navy dark:text-pearl">
+          Navigating Controlled Parking Zones (CPZs)
+        </h3>
+        <p class="text-sm text-surface-600 dark:text-surface-300 leading-relaxed">
+          Parking in Camden, Brent, Barnet, or Westminster requires proactive management. Two weeks before your move, we check your street for parking bay restrictions, CPZ hours, and red routes. We provide you with the exact vehicle registration and dimensions to apply for a council parking bay suspension, preventing penalty charge notices and ensuring the van parks adjacent to your front entrance.
+        </p>
+      </div>
+
+      <!-- Phase 3 -->
+      <div class="glass-panel p-6 sm:p-8 rounded-3xl space-y-3">
+        <div class="flex items-center gap-2 text-royal font-bold text-xs uppercase tracking-widest">
+          <Icon name="box" class="w-4 h-4" />
+          <span>Stage 3: Packing & Loading Day</span>
+        </div>
+        <h3 class="text-xl font-bold text-navy dark:text-pearl">
+          Systematic Packing and Quilted Protection
+        </h3>
+        <p class="text-sm text-surface-600 dark:text-surface-300 leading-relaxed">
+          If you have booked our full or fragile packing service, our crew typically arrives the day before or early on move morning. Every box is labelled by room and contents. Large items—such as dining tables, wooden dressers, and sofas—are wrapped in thick padded transit blankets and secured with strapping inside our carpeted vans.
+        </p>
+      </div>
+
+      <!-- Phase 4 -->
+      <div class="glass-panel p-6 sm:p-8 rounded-3xl space-y-3">
+        <div class="flex items-center gap-2 text-royal font-bold text-xs uppercase tracking-widest">
+          <Icon name="key" class="w-4 h-4" />
+          <span>Stage 4: Completion & Key Exchange</span>
+        </div>
+        <h3 class="text-xl font-bold text-navy dark:text-pearl">
+          Handling Chain Delays With Equanimity
+        </h3>
+        <p class="text-sm text-surface-600 dark:text-surface-300 leading-relaxed">
+          In English property transactions, money transfers frequently clear between 12:00pm and 2:30pm. Our team remains calm and on-site. Once the estate agent hands you the keys, we immediately begin unloading, placing every item directly into the correct room in accordance with your floor plan.
+        </p>
+      </div>
+
+    </div>
+
+    <CTABand
+      title="Ready to Plan Your Moving Day?"
+      subtitle="Request a free quote or book your 15-minute video walk-through survey today."
+    />
+  </article>
+</BaseLayout>

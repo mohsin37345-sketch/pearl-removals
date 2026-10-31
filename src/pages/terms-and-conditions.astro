@@ -1,0 +1,60 @@
+---
+import LegalLayout from 'theme/layouts/LegalLayout.astro';
+import { siteConfig } from 'src/data/site';
+
+const headings = [
+  { depth: 2, slug: 'website-use', text: '1. Conditions of Website Use' },
+  { depth: 2, slug: 'intellectual-property', text: '2. Intellectual Property Rights' },
+  { depth: 2, slug: 'calculator-disclaimer', text: '3. Cost Estimator & Quote Accuracy' },
+  { depth: 2, slug: 'limitation-of-liability', text: '4. Limitation of Website Liability' },
+  { depth: 2, slug: 'external-links', text: '5. Third-Party Websites & Links' },
+  { depth: 2, slug: 'governing-law', text: '6. Governing Law & Jurisdiction' }
+];
+---
+
+<LegalLayout
+  title="Terms & Conditions"
+  description="Terms and conditions governing use of the Pearl Removals website, intellectual property, moving calculator estimates, and legal disclaimers."
+  lastUpdated="2026-06-01"
+  headings={headings}
+>
+  <p>
+    These Website Terms & Conditions govern your access to and use of <a href={siteConfig.siteUrl}>{siteConfig.siteUrl}</a> operated by <strong>{siteConfig.legalName}</strong> trading as <strong>{siteConfig.businessName}</strong> ("we", "us", "our"). By browsing this website, you agree to comply with these terms.
+  </p>
+
+  <h2 id="website-use">1. Conditions of Website Use</h2>
+  <p>
+    You agree to use our website only for lawful purposes related to researching, estimating, and booking residential removals, office relocations, packing, and storage services. You must not:
+  </p>
+  <ul>
+    <li>Knowingly introduce viruses, trojans, worms, or other technologically harmful material.</li>
+    <li>Attempt to gain unauthorised access to our web hosting servers, databases, or API handlers.</li>
+    <li>Use automated scrapers, bots, or data mining software without our express written permission.</li>
+    <li>Submit fraudulent, abusive, or automated spam enquiries through our quotation or contact forms.</li>
+  </ul>
+
+  <h2 id="intellectual-property">2. Intellectual Property Rights</h2>
+  <p>
+    All content, visual layouts, design tokens, brand marks, logos, editorial text, moving guides, and software code on this website are the intellectual property of {siteConfig.legalName} or its licensors. You may download or print extracts solely for personal, non-commercial use in planning your household move. No part of this site may be reproduced, mirrored, or republished without written consent.
+  </p>
+
+  <h2 id="calculator-disclaimer">3. Cost Estimator & Quote Accuracy</h2>
+  <p>
+    Our online Moving Cost Calculator and "from £X" price examples provide illustrative estimates based on standard residential property assumptions. They do not constitute a legally binding offer. A binding quotation is formed only when we complete an on-site or video survey, review full inventory access specifics, and issue a written formal quote that you accept under our Terms of Business.
+  </p>
+
+  <h2 id="limitation-of-liability">4. Limitation of Website Liability</h2>
+  <p>
+    While we make every reasonable effort to keep the information on this website accurate and up to date (including council parking and CPZ notes), we do not warrant that all content is free from minor typographical errors or that the site will be continuously available without interruption. Nothing in these terms excludes or limits our liability for death or personal injury caused by our negligence, or for fraudulent misrepresentation.
+  </p>
+
+  <h2 id="external-links">5. Third-Party Websites & Links</h2>
+  <p>
+    Our website may contain links to external websites (such as local London council parking portals or the Information Commissioner's Office). These links are provided for your convenience only. We have no control over the contents of third-party websites and accept no liability for their content or data privacy practices.
+  </p>
+
+  <h2 id="governing-law">6. Governing Law & Jurisdiction</h2>
+  <p>
+    These Terms & Conditions and any disputes arising out of or related to the use of this website shall be governed by and construed in accordance with the <strong>laws of England and Wales</strong>. The courts of England and Wales shall have exclusive jurisdiction.
+  </p>
+</LegalLayout>

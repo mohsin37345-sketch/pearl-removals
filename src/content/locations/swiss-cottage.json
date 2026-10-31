@@ -1,0 +1,79 @@
+{
+  "name": "Swiss Cottage",
+  "slug": "swiss-cottage",
+  "region": "north-west-london",
+  "phase": 1,
+  "premium": false,
+  "boroughs": [
+    "Camden"
+  ],
+  "postcodes": [
+    "NW3"
+  ],
+  "distanceMiles": 2.5,
+  "metaTitle": "House Removals Swiss Cottage NW3 | Pearl Removals",
+  "metaDescription": "Professional removals in Swiss Cottage NW3. Fully insured moving teams for Victorian mansion flats, modern towers & family homes. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers comprehensive, fully insured residential removals across Swiss Cottage and the surrounding NW3 district. Centred around the cultural landmark of the Swiss Cottage Community Centre and Hampstead Theatre, Swiss Cottage offers a dynamic mix of grand Victorian and Edwardian mansion apartments, wide residential crescents along Eton Avenue, and modern high-rise residential towers. Located just 2.5 miles from our Cricklewood dispatch centre, our removals teams provide dependable, damage-free, and punctual moving services tailored to both period homes and contemporary luxury apartments with complete care. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London.",
+  "localKnowledge": "Swiss Cottage is bisected by the major arterial corridor of Finchley Road, presenting busy commercial traffic conditions and Red Route loading restrictions. However, immediately behind the main avenue lie peaceful, wide residential streets such as Eton Avenue, Adamson Road, and Winchester Road. Our drivers know the exact rear service lanes, loading bays, and quiet side turnings to execute smooth loading without delays.",
+  "propertyTypes": "The architectural character of Swiss Cottage includes imposing red-brick Victorian mansion blocks, grand stucco-fronted family villas, mid-century architectural apartments, and modern luxury residential developments equipped with underground concierge parking and high-speed passenger lifts.",
+  "parkingAndAccess": "The London Borough of Camden strictly regulates Controlled Parking Zones (Zone CA-C and CA-F) across Swiss Cottage. On red routes along Finchley Road, loading is restricted to specific off-peak hours. We coordinate all necessary Camden parking bay suspensions and TfL dispensations in advance.",
+  "transportLinks": "Exceptional public transport hub featuring the Jubilee Line at Swiss Cottage station, Metropolitan Line at nearby Finchley Road, and comprehensive 24-hour bus routes into Central London.",
+  "travelInfo": "Direct vehicular access south into St John’s Wood, Marylebone, and the West End, with fast northern egress up Finchley Road towards the M1 and North Circular.",
+  "nearbyAreas": [
+    {
+      "name": "Hampstead",
+      "slug": "hampstead"
+    },
+    {
+      "name": "Belsize Park",
+      "slug": "belsize-park"
+    },
+    {
+      "name": "St Johns Wood",
+      "slug": "st-johns-wood"
+    },
+    {
+      "name": "West Hampstead",
+      "slug": "west-hampstead"
+    },
+    {
+      "name": "Primrose Hill",
+      "slug": "primrose-hill"
+    }
+  ],
+  "servicesOffered": [
+    "Mansion Flat Removals Swiss Cottage",
+    "House Removals NW3",
+    "Full Packing & Unpacking",
+    "Man and Van Swiss Cottage",
+    "Secure London Storage"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you manage moves for properties located directly on Finchley Road?",
+      "answer": "We coordinate loading during permitted TfL off-peak hours or arrange access via quiet rear access lanes and side streets with pre-booked council parking bays.",
+      "display": true
+    },
+    {
+      "question": "Do you provide lift protection in Swiss Cottage apartment buildings?",
+      "answer": "Yes. We install tailored protective wall pads in passenger and service lifts, and lay floor runners through communal foyers to prevent damage.",
+      "display": true
+    },
+    {
+      "question": "Which council oversees parking permits in Swiss Cottage?",
+      "answer": "Swiss Cottage is under the jurisdiction of the London Borough of Camden. We manage all parking bay suspension paperwork on your behalf.",
+      "display": true
+    },
+    {
+      "question": "Can you help dismantle and reassemble large Italian designer wardrobes?",
+      "answer": "Yes, our experienced furniture assembly technicians have complete toolkits for modular, sliding-door, and designer wardrobe systems.",
+      "display": true
+    }
+  ],
+  "testimonial": {
+    "name": "Eleanor M.",
+    "quote": "Moved into our new flat on Eton Avenue. The Pearl Removals team was incredibly efficient, navigated three flights of stairs effortlessly, and treated all our belongings with tremendous care.",
+    "rating": 5
+  },
+  "status": "published"
+}

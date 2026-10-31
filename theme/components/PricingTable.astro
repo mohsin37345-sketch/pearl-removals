@@ -1,0 +1,81 @@
+---
+import Icon from './Icon.astro';
+
+interface PricingTier {
+  size: string;
+  property: string;
+  priceFrom: number;
+  crew: string;
+  vehicle: string;
+  qualifyingConditions: string;
+}
+
+const tiers: PricingTier[] = [
+  {
+    size: "Studio / Single Item",
+    property: "Studio flat or single large furniture items",
+    priceFrom: 180,
+    crew: "1–2 Professional Movers",
+    vehicle: "Long Wheelbase Luton Van (with tail lift)",
+    qualifyingConditions: "Valid for ground floor or lift access within 5 miles of NW2, off-peak weekdays (Mon–Thu). Fixed quote confirmed after inventory."
+  },
+  {
+    size: "1 to 2 Bedroom Flat",
+    property: "Typical 1–2 bed conversion or apartment",
+    priceFrom: 350,
+    crew: "2 Professional Movers",
+    vehicle: "1x 3.5T Luton Box Van with full blanket kit",
+    qualifyingConditions: "Assumes standard access with lift or up to 1st floor stairs, within 8 miles of Cricklewood. Moving boxes & survey included."
+  },
+  {
+    size: "2 to 3 Bedroom House",
+    property: "Terraced or semi-detached family home",
+    priceFrom: 650,
+    crew: "2–3 Professional Movers",
+    vehicle: "1–2x 3.5T Luton Box Vans or 7.5T Truck",
+    qualifyingConditions: "Assumes standard driveway/kerbside parking without red route restrictions. Includes mattress & sofa protection."
+  },
+  {
+    size: "4+ Bedroom House",
+    property: "Large family residence or town house",
+    priceFrom: 1100,
+    crew: "3–4 Professional Movers",
+    vehicle: "Multiple Luton Vans or Large Removal Vehicle",
+    qualifyingConditions: "Subject to our free in-person or video home survey to verify access, volume (cu ft), and packing requirements."
+  }
+];
+---
+
+<div class="overflow-x-auto my-8">
+  <table class="w-full text-left text-sm border-collapse glass-panel overflow-hidden">
+    <thead>
+      <tr class="border-b border-surface-200 dark:border-white/10 bg-surface-100/60 dark:bg-white/5">
+        <th scope="col" class="py-4 px-4 sm:px-6 font-bold text-navy dark:text-pearl">Home Size & Move Type</th>
+        <th scope="col" class="py-4 px-4 sm:px-6 font-bold text-navy dark:text-pearl">Guideline Price</th>
+        <th scope="col" class="py-4 px-4 sm:px-6 font-bold text-navy dark:text-pearl">Crew & Vehicle</th>
+        <th scope="col" class="py-4 px-4 sm:px-6 font-bold text-navy dark:text-pearl">Qualifying Terms & Conditions</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-surface-200/60 dark:divide-white/5">
+      {tiers.map((tier) => (
+        <tr class="hover:bg-surface-50/50 dark:hover:bg-white/5 transition-colors">
+          <td class="py-4 px-4 sm:px-6 font-semibold text-navy dark:text-pearl align-top">
+            <div>{tier.size}</div>
+            <div class="text-xs text-surface-500 font-normal mt-0.5">{tier.property}</div>
+          </td>
+          <td class="py-4 px-4 sm:px-6 align-top whitespace-nowrap">
+            <span class="text-xs uppercase text-surface-500 block">From</span>
+            <span class="text-xl font-black text-royal dark:text-royal-light">£{tier.priceFrom}</span>
+          </td>
+          <td class="py-4 px-4 sm:px-6 text-xs text-surface-600 dark:text-surface-300 align-top">
+            <div class="font-medium text-navy dark:text-pearl">{tier.crew}</div>
+            <div class="mt-0.5">{tier.vehicle}</div>
+          </td>
+          <td class="py-4 px-4 sm:px-6 text-xs text-surface-500 dark:text-surface-400 leading-relaxed align-top">
+            {tier.qualifyingConditions}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>

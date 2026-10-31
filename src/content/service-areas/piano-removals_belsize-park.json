@@ -1,0 +1,32 @@
+{
+  "service": "piano-removals",
+  "location": "belsize-park",
+  "status": "published",
+  "uniqueIntro": "Pearl Removals offers dedicated piano removals in Belsize Park NW3. From upright studio pianos in Victorian conversion apartments to grand pianos in stucco villas along Belsize Park Gardens and England's Lane, we deliver exceptional manual handling, protective wrapping, and smooth transit.",
+  "localAngle": "Belsize Park’s architectural conversion flats frequently feature sweeping main staircases that narrow considerably on upper floors. Transporting a 220kg upright piano past original plaster cornices demands specialist piano dollies, quilted banister guards, and precise weight distribution to prevent structural stress.",
+  "whatsIncluded": [
+    "Certified piano handling porters with specialized lifting harness gear",
+    "Padded acoustic transit jackets and keyboard protective inserts",
+    "Specialist non-marking pneumatic tyre dollies for hardwood flooring",
+    "Hydraulic tail-lift vehicle with soft air suspension",
+    "Comprehensive goods-in-transit insurance"
+  ],
+  "priceGuidance": "Upright moves in Belsize Park start from £180. Additional staircase flight surcharges apply transparently.",
+  "faqs": [
+    {
+      "question": "How do you protect communal stairwells in Belsize Park villas?",
+      "answer": "We lay heavy neoprene floor runners and attach padded quilted jackets to banisters and door frames before rolling the piano on non-marking wheels.",
+      "display": true
+    },
+    {
+      "question": "Can you move a piano into a basement garden flat in Belsize Park?",
+      "answer": "Yes. We utilize specialized exterior ramp tracks and four-person carrying straps to navigate external lightwell steps safely.",
+      "display": true
+    },
+    {
+      "question": "How quickly can you arrange a piano move in NW3?",
+      "answer": "With our central dispatch depot in nearby Cricklewood, we can frequently accommodate piano relocations in Belsize Park within 48 to 72 hours.",
+      "display": true
+    }
+  ]
+}

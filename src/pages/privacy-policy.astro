@@ -1,0 +1,116 @@
+---
+import LegalLayout from 'theme/layouts/LegalLayout.astro';
+import { siteConfig } from 'src/data/site';
+
+const headings = [
+  { depth: 2, slug: 'data-controller', text: '1. Data Controller Identification' },
+  { depth: 2, slug: 'data-we-collect', text: '2. Information We Collect' },
+  { depth: 2, slug: 'lawful-basis', text: '3. Lawful Basis for Processing' },
+  { depth: 2, slug: 'data-retention', text: '4. How Long We Retain Your Data' },
+  { depth: 2, slug: 'third-party-sharing', text: '5. Data Processors & Sharing' },
+  { depth: 2, slug: 'international-transfers', text: '6. International Transfers' },
+  { depth: 2, slug: 'your-statutory-rights', text: '7. Your Statutory Rights Under UK GDPR' },
+  { depth: 2, slug: 'ico-complaints', text: '8. How to Complain to the ICO' }
+];
+---
+
+<LegalLayout
+  title="Privacy Policy"
+  description="Pearl Removals UK GDPR and Data Protection Act 2018 Privacy Policy explaining our data handling, retention, lawful bases, and your statutory rights."
+  lastUpdated="2026-06-01"
+  headings={headings}
+>
+  <p>
+    This Privacy Policy explains how <strong>{siteConfig.legalName}</strong> trading as <strong>{siteConfig.businessName}</strong> ("we", "us", or "our") collects, uses, protects, and handles personal data when you interact with our website (<a href={siteConfig.siteUrl}>{siteConfig.siteUrl}</a>), submit a removals quotation request, or engage our relocation and storage services. We comply strictly with the <strong>UK General Data Protection Regulation (UK GDPR)</strong> and the <strong>Data Protection Act 2018</strong>.
+  </p>
+
+  <h2 id="data-controller">1. Data Controller Identification</h2>
+  <p>
+    For the purposes of data protection legislation, the Data Controller responsible for your personal information is:
+  </p>
+  <ul>
+    <li><strong>Legal Entity:</strong> {siteConfig.legalName} (Company No. {siteConfig.companyNumber})</li>
+    <li><strong>Registered Address:</strong> {siteConfig.registeredAddress.formatted}</li>
+    <li><strong>Trading Depot Address:</strong> {siteConfig.tradingAddress.formatted}</li>
+    <li><strong>Designated Data Protection Contact:</strong> Privacy Lead / Data Controller</li>
+    <li><strong>Email:</strong> <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a></li>
+    <li><strong>Telephone:</strong> <a href={`tel:${siteConfig.phoneE164}`}>{siteConfig.phone}</a></li>
+  </ul>
+
+  <h2 id="data-we-collect">2. Information We Collect</h2>
+  <p>
+    When you request a quotation or engage us for removals, we collect only information necessary to deliver accurate pricing and logistical execution:
+  </p>
+  <ul>
+    <li><strong>Identity & Contact Data:</strong> Full name, telephone number, mobile number, and email address.</li>
+    <li><strong>Move Location Data:</strong> Origin address and postcode, destination address and postcode, floor levels, access obstacles (stairs, lift availability, walking carry distances, parking conditions, and red route status).</li>
+    <li><strong>Inventory & Volume Data:</strong> Itemised inventory of furniture, approximate room counts, cubic footage (volume), and notes regarding fragile, oversized, or high-value possessions (e.g. pianos, artwork, antiques).</li>
+    <li><strong>Scheduling Data:</strong> Preferred move dates, provisional exchange/completion dates, and flexibility windows.</li>
+    <li><strong>Technical & Consent Data:</strong> Timestamp of quote submission, IP address (for anti-spam validation), and consent records for enquiry processing or optional marketing.</li>
+  </ul>
+
+  <h2 id="lawful-basis">3. Lawful Basis for Processing</h2>
+  <p>
+    Under Article 6 of the UK GDPR, we rely on the following lawful bases:
+  </p>
+  <ul>
+    <li><strong>Performance of a Contract (Article 6(1)(b)):</strong> To prepare quotation estimates, conduct pre-move surveys, book moving crews and vehicles, coordinate parking suspensions, and execute the removals contract.</li>
+    <li><strong>Legal Obligation (Article 6(1)(c)):</strong> To maintain financial and VAT records required by HM Revenue & Customs (HMRC), and to satisfy requirements under the Consumer Rights Act 2015 and Goods in Transit insurance underwriters.</li>
+    <li><strong>Legitimate Interests (Article 6(1)(f)):</strong> To secure our web infrastructure against spam and malicious traffic, monitor vehicle tracking for logistics efficiency, and handle inquiries or dispute resolution.</li>
+    <li><strong>Explicit Consent (Article 6(1)(a)):</strong> For non-essential analytics cookies (governed by Google Consent Mode v2) and optional email marketing updates. Consent can be withdrawn at any time.</li>
+  </ul>
+
+  <h2 id="data-retention">4. How Long We Retain Your Data</h2>
+  <p>
+    We apply strict retention schedules and do not retain your data longer than necessary:
+  </p>
+  <ul>
+    <li><strong>Unconverted Enquiries & Quotes:</strong> Stored for <strong>24 months</strong> from the date of submission, allowing you to re-activate your quote if move dates are delayed by the property chain, after which records are permanently deleted or anonymised.</li>
+    <li><strong>Completed Removals & Invoices:</strong> Retained for <strong>6 years</strong> following the end of the financial year in which the job occurred, in compliance with UK tax law (HMRC) and insurance claim limitation statutes.</li>
+    <li><strong>Marketing Opt-Ins:</strong> Retained until you click "unsubscribe" or request deletion.</li>
+  </ul>
+
+  <h2 id="third-party-sharing">5. Data Processors & Sharing</h2>
+  <p>
+    We never sell, rent, or trade your personal data. We disclose information only to vetted third-party data processors acting strictly on our documented instructions under Article 28 data processing agreements:
+  </p>
+  <ul>
+    <li><strong>IT & Hosting Infrastructure:</strong> Vercel Inc. (hosting and edge routing).</li>
+    <li><strong>Form Processing:</strong> Web3Forms (secure transit of enquiry forms to our dispatch inbox).</li>
+    <li><strong>Communications:</strong> Google Workspace / Gmail (business email and calendar dispatch).</li>
+    <li><strong>Local Authorities:</strong> London Borough councils (Camden, Brent, Barnet, Westminster, Kensington & Chelsea, etc.) solely where you instruct us to coordinate a parking bay suspension.</li>
+    <li><strong>Insurance Underwriters & Loss Adjusters:</strong> Solely in the event of an insurance claim under our £50,000 Goods in Transit or £5,000,000 Public Liability policies.</li>
+  </ul>
+
+  <h2 id="international-transfers">6. International Transfers</h2>
+  <p>
+    Where our cloud software providers store data outside the UK or European Economic Area (such as US-based server infrastructure), transfers are protected by the UK International Data Transfer Addendum (IDTA) or standard contractual clauses (SCCs) ensuring an equivalent standard of protection to UK law.
+  </p>
+
+  <h2 id="your-statutory-rights">7. Your Statutory Rights Under UK GDPR</h2>
+  <p>
+    Under the Data Protection Act 2018 and UK GDPR, you have the following rights:
+  </p>
+  <ul>
+    <li><strong>Right of Access:</strong> Request a copy of the personal data we hold about you (Subject Access Request).</li>
+    <li><strong>Right to Rectification:</strong> Request correction of inaccurate or incomplete contact or address data.</li>
+    <li><strong>Right to Erasure ('Right to be Forgotten'):</strong> Request deletion of your personal data where there is no overriding legal basis or tax retention requirement.</li>
+    <li><strong>Right to Restriction of Processing:</strong> Request suspension of processing while an objection or rectification is verified.</li>
+    <li><strong>Right to Data Portability:</strong> Receive your data in a structured, commonly used, machine-readable format.</li>
+    <li><strong>Right to Object:</strong> Object to processing based on legitimate interests or direct marketing.</li>
+  </ul>
+  <p>
+    To exercise any of these rights, contact our Privacy Lead in writing at <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>. We respond within one calendar month without charge.
+  </p>
+
+  <h2 id="ico-complaints">8. How to Complain to the Information Commissioner's Office (ICO)</h2>
+  <p>
+    If you have any concern regarding our handling of your personal data, we invite you to contact us first so we can resolve the matter immediately. However, you retain the statutory right to lodge a formal complaint at any time with the UK supervisory authority:
+  </p>
+  <p>
+    <strong>Information Commissioner's Office (ICO)</strong><br />
+    Wycliffe House, Water Lane, Wilmslow, Cheshire SK9 5AF<br />
+    Helpline: 0303 123 1113<br />
+    Website: <a href="https://ico.org.uk" target="_blank" rel="noopener noreferrer">ico.org.uk</a>
+  </p>
+</LegalLayout>

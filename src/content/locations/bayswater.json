@@ -1,0 +1,70 @@
+{
+  "name": "Bayswater",
+  "slug": "bayswater",
+  "region": "west-london",
+  "phase": 2,
+  "premium": false,
+  "boroughs": [
+    "Westminster"
+  ],
+  "postcodes": [
+    "W2"
+  ],
+  "distanceMiles": 5,
+  "metaTitle": "House Removals Bayswater W2 | Pearl Removals",
+  "metaDescription": "Trusted removals in Bayswater W2. Flat and house moving, Westminster parking suspensions & piano transport from our local depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers comprehensive, dependable domestic removals across Bayswater and the W2 postcode area. Situated directly north of Hyde Park and Kensington Gardens, Bayswater features a magnificent mix of stucco-fronted garden terraces, grand Victorian squares, and modern conversion apartments. Whether you are relocating from a top-floor flat overlooking Hyde Park Square, moving your family into Lancaster Gate, or transitioning into a newly refurbished property near Queensway, our certified movers provide stress-free, fully insured relocations backed by deep London logistical expertise and friendly service. Our moving coordinators conduct thorough pre-move surveys, calculate exact vehicle payload requirements, and provide complete packing supplies to ensure that every stage of your move in Bayswater is handled with absolute punctuality, courteous communication, and total care.",
+  "localKnowledge": "Bayswater is a bustling, cosmopolitan residential neighbourhood where historic architectural splendour meets vibrant commercial activity. The ongoing multi-billion-pound regeneration of Queensway and the Whiteleys estate has introduced increased pedestrian activity and localized traffic management. Our moving supervisors understand the quietest staging times along residential roads like Porchester Square, Westbourne Terrace, and Inverness Terrace, ensuring smooth loading sequences.",
+  "propertyTypes": "The residential architecture of Bayswater is renowned for its grand Grade II listed stucco-fronted terraces, neoclassical garden squares, and converted lateral apartments with high ceilings. Internal layouts often feature multi-flight communal stairwells and narrow passenger lifts, requiring experienced manual handling and tailored protective padding.",
+  "parkingAndAccess": "Controlled parking is strictly enforced by Westminster City Council across Zone B. Curbside space is at a premium around garden squares. We handle all formal Westminster parking suspension applications in advance, setting up authorized signage to guarantee legal van standing directly outside your front entrance.",
+  "transportLinks": "Outstanding Underground connections via Bayswater (District & Circle lines), Queensway and Lancaster Gate (Central line), with Paddington station nearby for the Elizabeth line and mainline rail.",
+  "travelInfo": "Rapid transit via Bayswater Road and the A40 Westway corridor connects our removal fleet directly with our Cricklewood dispatch headquarters in under 20 minutes.",
+  "nearbyAreas": [
+    {
+      "name": "Paddington",
+      "slug": "paddington"
+    },
+    {
+      "name": "Notting Hill",
+      "slug": "notting-hill"
+    },
+    {
+      "name": "Holland Park",
+      "slug": "holland-park"
+    },
+    {
+      "name": "Marylebone & Regent's Park",
+      "slug": "marylebone-and-regents-park"
+    }
+  ],
+  "servicesOffered": [
+    "Flat Removals Bayswater W2",
+    "House Removals Lancaster Gate",
+    "Packing Services Bayswater",
+    "Man and Van W2",
+    "Secure Container Storage"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you handle moves into high-floor mansion flats in Bayswater?",
+      "answer": "We coordinate with resident porters, pre-book service lifts, install padded lift wall protectors, and bring specialized furniture dollies for long corridors.",
+      "display": true
+    },
+    {
+      "question": "Which council manages parking bay suspensions in Bayswater?",
+      "answer": "Westminster City Council oversees parking in W2. We manage the entire suspension process on your behalf, reserving legal curbside loading space outside your entrance.",
+      "display": true
+    },
+    {
+      "question": "Do you provide packing boxes before moving day in W2?",
+      "answer": "Yes. We deliver heavy-duty double-walled cardboard cartons, bubble wrap, tape, and hanging wardrobe boxes directly to your home in advance.",
+      "display": true
+    },
+    {
+      "question": "Can you move large sofas up narrow Victorian staircases in Bayswater?",
+      "answer": "Yes. Our trained porters are experts in navigating period stairwells and landings, dismantling furniture where necessary to ensure safe, scrape-free transport.",
+      "display": true
+    }
+  ],
+  "status": "published"
+}

@@ -1,0 +1,53 @@
+---
+interface Props {
+  class?: string;
+  width?: number;
+  height?: number;
+}
+
+const { class: className = "h-8 w-auto text-royal/60 dark:text-royal-light/50", width = 160, height = 32 } = Astro.props;
+---
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 240 40"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class={className}
+  aria-hidden="true"
+>
+  <!-- London Eye Wheel & Spoke -->
+  <circle cx="28" cy="22" r="14" stroke-dasharray="1 1" />
+  <circle cx="28" cy="22" r="3" fill="currentColor" fill-opacity="0.2" />
+  <path d="M28 22 L22 36 M28 22 L34 36 M22 36 L34 36" />
+  
+  <!-- Big Ben / Elizabeth Tower -->
+  <path d="M52 36 V12 H56 V8 L58 4 L60 8 V12 H64 V36" />
+  <circle cx="58" cy="16" r="2" />
+  
+  <!-- Low Victorian Streetscape -->
+  <path d="M64 36 V26 H72 V36 M72 36 V24 L76 21 L80 24 V36 M80 36 V27 H88 V36" />
+  
+  <!-- St Paul's Dome -->
+  <path d="M96 36 V22 H98 C98 16 102 12 106 12 C110 12 114 16 114 22 H116 V36" />
+  <path d="M106 12 V8 M104 8 H108" />
+  
+  <!-- The Gherkin -->
+  <path d="M128 36 C124 28 124 16 132 8 C140 16 140 28 136 36 Z" stroke-dasharray="3 1" />
+  
+  <!-- The Shard -->
+  <path d="M148 36 L158 4 L168 36 Z" />
+  <path d="M154 20 L162 20 M151 28 L165 28" stroke-opacity="0.5" />
+  
+  <!-- Tower Bridge -->
+  <path d="M180 36 V16 H186 V36 M198 36 V16 H204 V36" />
+  <path d="M186 22 H198 M186 28 H198" />
+  <path d="M174 36 Q180 20 186 20 M198 20 Q204 20 210 36" stroke-dasharray="2 1" />
+  <path d="M183 16 L183 12 L186 16 M201 16 L201 12 L204 16" />
+  
+  <!-- Ground Baseline -->
+  <line x1="10" y1="36" x2="230" y2="36" stroke-opacity="0.4" />
+</svg>

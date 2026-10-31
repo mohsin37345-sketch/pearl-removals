@@ -1,0 +1,70 @@
+{
+  "name": "Acton",
+  "slug": "acton",
+  "region": "west-london",
+  "phase": 2,
+  "premium": false,
+  "boroughs": [
+    "Ealing"
+  ],
+  "postcodes": [
+    "W3"
+  ],
+  "distanceMiles": 5.5,
+  "metaTitle": "House Removals Acton W3 | Pearl Removals",
+  "metaDescription": "Reliable removals in Acton W3. Professional house & flat moving, packing services & Ealing council parking management. Call 020 3151 8452 for a free quote.",
+  "intro": "Pearl Removals provides reliable, cost-effective, and fully insured removals throughout Acton and the wider W3 postcode district. From Victorian and Edwardian terraced family homes around Acton Central and the Poet’s Corner conservation area to modern apartment schemes near North Acton and Acton Main Line, our local moving teams provide smooth domestic transitions tailored to growing families, professionals, and downsizers alike. Operating from our nearby dispatch depot in NW2, our removal vans reach Acton quickly via the North Circular and Western Avenue, ensuring punctual arrivals, careful furniture protection, and transparent pricing. Our moving coordinators conduct thorough pre-move surveys, calculate exact vehicle payload requirements, and provide complete packing supplies to ensure that every stage of your move in Acton is handled with absolute punctuality, courteous communication, and total care.",
+  "localKnowledge": "Acton is a rapidly growing West London hub characterized by diverse housing stock and excellent transit connectivity. The arrival of the Elizabeth line at Acton Main Line has spurred significant residential development alongside established family neighbourhoods. Navigating Acton requires familiarity with Ealing Council Controlled Parking Zones, narrow Victorian avenues in Poet’s Corner like Shakespeare Road and Goldsmith Road, and vehicle clearance requirements around school zones.",
+  "propertyTypes": "Housing in Acton spans solid red-brick Victorian terraces, bay-fronted 1930s semi-detached homes with private driveways, converted split-level maisonettes, and contemporary high-rise residential towers with secure concierge lobbies.",
+  "parkingAndAccess": "The London Borough of Ealing manages controlled parking across residential streets in W3. Many Victorian roads feature heavy on-street resident parking. We manage official Ealing Council parking bay suspensions well ahead of your moving date to ensure our Luton vans park legally right outside your property gate.",
+  "transportLinks": "Unmatched connectivity across five railway stations: Acton Main Line (Elizabeth line), Acton Central (Overground), Acton Town (Piccadilly & District lines), North Acton and East Acton (Central line).",
+  "travelInfo": "Direct vehicular access via the A40 Western Avenue and A406 North Circular allows our removal vans to reach Acton properties in just 15 to 20 minutes from our Cricklewood yard.",
+  "nearbyAreas": [
+    {
+      "name": "Holland Park",
+      "slug": "holland-park"
+    },
+    {
+      "name": "Notting Hill",
+      "slug": "notting-hill"
+    },
+    {
+      "name": "Wembley",
+      "slug": "wembley"
+    },
+    {
+      "name": "Harlesden & Willesden",
+      "slug": "harlesden-and-willesden"
+    }
+  ],
+  "servicesOffered": [
+    "House Removals Acton",
+    "Apartment Removals W3",
+    "Man and Van Acton Town",
+    "Full Packing Services Ealing",
+    "Short-Term Container Storage"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you manage Ealing Council parking suspensions in Acton?",
+      "answer": "Yes. We handle the complete parking suspension application with the London Borough of Ealing, securing legal loading bays outside your home.",
+      "display": true
+    },
+    {
+      "question": "Can you move heavy household appliances and garden furniture in Acton?",
+      "answer": "Yes. Our moving teams arrive equipped with heavy-duty appliance sack trucks, ramps, and protective transit blankets for all bulky household goods.",
+      "display": true
+    },
+    {
+      "question": "Do you offer packing services for family homes in Poet’s Corner?",
+      "answer": "Yes. Our team can pack your entire home the day before moving day using heavy-duty cartons, bubble wrap, and acid-free tissue paper for total peace of mind.",
+      "display": true
+    },
+    {
+      "question": "How quickly can your team reach Acton from your depot?",
+      "answer": "Our central transport yard in Cricklewood NW2 is just 5.5 miles away, allowing our vehicles to reach Acton within 15 to 20 minutes via the A406.",
+      "display": true
+    }
+  ],
+  "status": "published"
+}

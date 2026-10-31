@@ -1,0 +1,81 @@
+{
+  "name": "Hampstead Garden Suburb",
+  "slug": "hampstead-garden-suburb",
+  "region": "north-west-london",
+  "phase": 1,
+  "premium": true,
+  "boroughs": [
+    "Barnet"
+  ],
+  "postcodes": [
+    "NW11",
+    "N2"
+  ],
+  "distanceMiles": 3,
+  "metaTitle": "House Removals Hampstead Garden Suburb NW11 | Pearl Removals",
+  "metaDescription": "White-glove house removals in Hampstead Garden Suburb NW11 & N2. Specialist moving teams for Arts & Crafts homes, gated estates & fine art. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers distinguished, white-glove residential removals throughout the architectural masterpiece of Hampstead Garden Suburb, serving NW11 and N2. Founded by Henrietta Barnett and designed by pioneering architects Sir Raymond Unwin and Sir Edwin Lutyens, the Suburb is celebrated for its lush greenery, Arts & Crafts cottages, grand neo-Georgian residences along Central Square, and world-renowned billionaire estates along The Bishops Avenue and Winnington Road. We provide bespoke, discreet, and masterfully executed removals that preserve the architectural integrity of every heritage home. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London.",
+  "localKnowledge": "Hampstead Garden Suburb operates under the strict architectural oversight of the Hampstead Garden Suburb Trust. Roads are intentionally designed without front walls or boundary fences, featuring expansive open lawns, hedge borders, and tranquil cul-de-sacs (closes). Our drivers take extreme care to avoid driving onto turf verges or damaging historic hedge lines, positioning vehicles with precision.",
+  "propertyTypes": "The Suburb features extraordinary architectural consistency: picturesque Arts & Crafts terraced cottages, sprawling neo-Georgian detached villas with carriage sweeps, Lutyens-designed residences, and multi-million-pound modern mansions along The Bishops Avenue with private gated grounds and indoor swimming complexes.",
+  "parkingAndAccess": "The London Borough of Barnet and the Suburb Trust enforce strict environmental and parking controls. While larger homes feature private gravel driveways, narrower closes require careful vehicle positioning to preserve clear emergency access. We supply protective rubber boarding to protect private driveways and lawns.",
+  "transportLinks": "Convenient access to Golders Green and East Finchley Northern Line tube stations, providing fast commutes into the City and West End.",
+  "travelInfo": "Adjacent to the A1 Falloden Way and North End Road, providing direct connections into Central London and rapid outbound access toward the M1 and A406.",
+  "nearbyAreas": [
+    {
+      "name": "Golders Green",
+      "slug": "golders-green"
+    },
+    {
+      "name": "Finchley",
+      "slug": "finchley"
+    },
+    {
+      "name": "Hampstead",
+      "slug": "hampstead"
+    },
+    {
+      "name": "Mill Hill",
+      "slug": "mill-hill"
+    },
+    {
+      "name": "Highgate",
+      "slug": "highgate"
+    }
+  ],
+  "servicesOffered": [
+    "Heritage Estate Removals HGS",
+    "Arts & Crafts House Moves NW11",
+    "The Bishops Avenue Relocations",
+    "Fine Art & Antique Crating",
+    "High-Security Storage"
+  ],
+  "premiumAngle": "Our Hampstead Garden Suburb white-glove service includes dedicated senior move directors, bespoke timber crating for original artwork and sculptures, drive-protecting floor boards, unbranded vehicle options, and comprehensive declared-value insurance.",
+  "localFaqs": [
+    {
+      "question": "Do you have experience moving large properties on The Bishops Avenue and Winnington Road?",
+      "answer": "Yes. We routinely handle multi-vehicle executive estate moves involving substantial square footage, private security coordination, and high-value asset handling.",
+      "display": true
+    },
+    {
+      "question": "How do you protect sensitive lawns and gravel drives in Hampstead Garden Suburb?",
+      "answer": "We lay heavy-duty rubberized ground mats and plywood runner boards over gravel carriage sweeps and lawn borders to prevent vehicle ruts or tire marks.",
+      "display": true
+    },
+    {
+      "question": "Can you transport grand pianos and delicate antique furniture?",
+      "answer": "Yes. Our specialized heavy-item division uses tailored piano shoes, padded transit jackets, and hoist equipment for grand pianos and delicate antique joinery.",
+      "display": true
+    },
+    {
+      "question": "Do you offer unbranded vehicles for discreet moves in NW11?",
+      "answer": "Yes. For high-profile residents and private families, we deploy unmarked, clean vehicles and operate under strict non-disclosure agreements.",
+      "display": true
+    }
+  ],
+  "testimonial": {
+    "name": "Mr. & Mrs. Sterling",
+    "quote": "Moving from our home in Central Square was handled with extraordinary finesse. Pearl Removals understood the Suburb Trust guidelines, protected our floors, and moved our art collection without a single issue.",
+    "rating": 5
+  },
+  "status": "published"
+}

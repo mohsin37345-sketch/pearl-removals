@@ -1,0 +1,31 @@
+{
+  "service": "man-and-van",
+  "location": "hampstead-garden-suburb",
+  "status": "published",
+  "uniqueIntro": "Our Hampstead Garden Suburb man and van service provides refined, courteous moving assistance across NW11 and N2. Tailored for Arts & Crafts cottage moves, delicate antique deliveries, and small family relocations around Central Square, we deliver white-glove respect for historic homes with complete care.",
+  "localAngle": "Hampstead Garden Suburb features unique architectural restrictions overseen by the Suburb Trust. Roads have no front boundary walls and feature open turf verges. Our drivers take extreme care to position vehicles without mounting grass verges or disturbing historic hedge lines.",
+  "whatsIncluded": [
+    "Clean, carpeted 3.5t Luton removal vehicle with hydraulic tail lift",
+    "Seasoned furniture handler experienced with antique and designer furnishings",
+    "Quilted furniture jackets, strap webbings, and door protection pads",
+    "Full £50,000 Goods in Transit insurance protection as standard"
+  ],
+  "priceGuidance": "Premium hourly rates from £75/hour (2-hour minimum). Fixed quotations available for specific items.",
+  "faqs": [
+    {
+      "question": "Can your vans park safely in narrow cul-de-sacs in the Suburb?",
+      "answer": "Yes. Our compact Luton vans are selected specifically to negotiate narrow closes without blocking access or touching grass verges.",
+      "display": true
+    },
+    {
+      "question": "Do you provide protective floor runners for wooden cottage floors?",
+      "answer": "Always. We lay self-adhesive floor protection over carpets and timber floors before moving any furniture in.",
+      "display": true
+    },
+    {
+      "question": "Can you transport delicate grandfather clocks and antique dressers?",
+      "answer": "Yes. Our technicians remove pendulum weights and wrap delicate clock cases in padded transit blankets for safe transport.",
+      "display": true
+    }
+  ]
+}

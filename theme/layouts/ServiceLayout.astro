@@ -1,0 +1,229 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Hero from 'theme/components/Hero.astro';
+import TrustStrip from 'theme/components/TrustStrip.astro';
+import Breadcrumbs from 'theme/components/Breadcrumbs.astro';
+import HowItWorks from 'theme/components/HowItWorks.astro';
+import FAQ from 'theme/components/FAQ.astro';
+import CTABand from 'theme/components/CTABand.astro';
+import QuoteFormSection from 'theme/components/QuoteFormSection.astro';
+import PremiumServicesCallout from 'theme/components/PremiumServicesCallout.astro';
+import RelatedLinks from 'theme/components/RelatedLinks.astro';
+import Icon from 'theme/components/Icon.astro';
+
+interface Props {
+  service: {
+    title: string;
+    slug: string;
+    metaTitle: string;
+    metaDescription: string;
+    heroHeading: string;
+    heroSubheading: string;
+    icon: string;
+    summary: string;
+    benefits?: string[];
+    process?: Array<{ step: number; title: string; description: string }>;
+    whatsIncluded?: string[];
+    whatsNotIncluded?: string[];
+    priceFrom?: number;
+    priceUnit?: string;
+    priceNotes?: string;
+    faqs?: Array<{ question: string; answer: string; display?: boolean }>;
+    relatedServices?: string[];
+    premiumAngle?: string;
+  };
+}
+
+const { service } = Astro.props;
+
+const breadcrumbs = [
+  { name: 'Services', url: '/removals/' },
+  { name: service.title, url: `/removals/${service.slug}/` }
+];
+
+const topAreaLinks = [
+  { title: 'Removals Cricklewood NW2', url: '/areas/cricklewood/' },
+  { title: 'Removals Hampstead NW3', url: '/areas/hampstead/', badge: '★' },
+  { title: 'Removals Kilburn NW6', url: '/areas/kilburn/' },
+  { title: 'Removals Hendon NW4', url: '/areas/hendon/' },
+  { title: 'Removals Mill Hill NW7', url: '/areas/mill-hill/', badge: '★' },
+  { title: 'Removals St John\'s Wood NW8', url: '/areas/st-johns-wood/', badge: '★' },
+  { title: 'Removals Maida Vale W9', url: '/areas/maida-vale/', badge: '★' },
+  { title: 'Removals West Hampstead NW6', url: '/areas/west-hampstead/' }
+];
+---
+
+<BaseLayout
+  title={service.metaTitle}
+  description={service.metaDescription}
+  canonicalUrl={`https://www.pearlremovals.co.uk/removals/${service.slug}/`}
+  schemaType="service"
+  serviceData={service}
+  breadcrumbs={breadcrumbs}
+  faqs={service.faqs || []}
+>
+  <!-- Hero Section -->
+  <Hero
+    variant="service"
+    title={service.heroHeading}
+    subtitle={service.heroSubheading}
+    eyebrow="PEARL REMOVALS • CORE SERVICE"
+    priceFrom={service.priceFrom}
+    priceUnit={service.priceUnit}
+  />
+
+  <TrustStrip />
+
+  <Breadcrumbs items={breadcrumbs} />
+
+  <!-- Main Content Structure -->
+  <article class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
+    
+    <!-- Introduction & Benefits -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="lg:col-span-8 space-y-6 text-sm sm:text-base leading-relaxed text-surface-700 dark:text-surface-300">
+        <slot />
+
+        {service.benefits && service.benefits.length > 0 && (
+          <div class="glass-panel p-6 sm:p-8 rounded-3xl mt-8">
+            <h3 class="text-lg font-bold text-navy dark:text-pearl mb-4">
+              Key Benefits of Choosing Pearl Removals for {service.title}
+            </h3>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {service.benefits.map((b) => (
+                <li class="flex items-start gap-2.5 text-xs sm:text-sm">
+                  <Icon name="check" class="w-4 h-4 text-emerald-600 dark:text-emerald-400 mt-0.5 flex-shrink-0" />
+                  <span>{b}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+
+      <!-- Sidebar Quick Info -->
+      <aside class="lg:col-span-4 space-y-6">
+        <div class="glass-panel p-6 rounded-3xl sticky top-28 border border-white/60 dark:border-white/10">
+          <h3 class="text-sm font-bold uppercase tracking-wider text-navy dark:text-pearl mb-3">
+            Service Highlights
+          </h3>
+
+          <div class="space-y-3 text-xs">
+            <div class="flex items-center gap-2 text-surface-600 dark:text-surface-300">
+              <Icon name="shield-check" class="w-4 h-4 text-royal" />
+              <span>£50,000 Goods in Transit Insurance</span>
+            </div>
+            <div class="flex items-center gap-2 text-surface-600 dark:text-surface-300">
+              <Icon name="award" class="w-4 h-4 text-royal" />
+              <span>£5,000,000 Public Liability</span>
+            </div>
+            <div class="flex items-center gap-2 text-surface-600 dark:text-surface-300">
+              <Icon name="map-pin" class="w-4 h-4 text-royal" />
+              <span>Cricklewood NW2 Operations Base</span>
+            </div>
+            <div class="flex items-center gap-2 text-surface-600 dark:text-surface-300">
+              <Icon name="clock" class="w-4 h-4 text-royal" />
+              <span>7 Days a Week Availability</span>
+            </div>
+          </div>
+
+          {service.priceNotes && (
+            <div class="mt-4 p-3 rounded-xl bg-surface-100 dark:bg-white/5 text-[11px] text-surface-500 leading-normal">
+              <strong>Pricing note:</strong> {service.priceNotes}
+            </div>
+          )}
+
+          <div class="mt-6">
+            <a
+              href="/get-a-quote/"
+              class="w-full py-3 px-4 rounded-full bg-royal text-white text-center font-bold text-xs block hover:bg-royal-hover transition-colors shadow-md shadow-royal/20"
+            >
+              Request Free Survey →
+            </a>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- What's Included / Not Included Comparison -->
+    {(service.whatsIncluded?.length || service.whatsNotIncluded?.length) && (
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-10">
+        <!-- What's Included -->
+        <div class="glass-panel p-6 sm:p-8 rounded-3xl border-l-4 border-emerald-500">
+          <h3 class="text-base font-bold text-navy dark:text-pearl mb-4 flex items-center gap-2">
+            <span class="w-6 h-6 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-600 flex items-center justify-center text-xs">✓</span>
+            <span>What's Included as Standard</span>
+          </h3>
+          <ul class="space-y-2 text-xs sm:text-sm text-surface-600 dark:text-surface-300">
+            {service.whatsIncluded?.map((item) => (
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-500 font-bold">•</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <!-- What's Not Included (Transparent Exclusions) -->
+        <div class="glass-panel p-6 sm:p-8 rounded-3xl border-l-4 border-surface-400">
+          <h3 class="text-base font-bold text-navy dark:text-pearl mb-4 flex items-center gap-2">
+            <span class="w-6 h-6 rounded-full bg-surface-200 dark:bg-white/10 text-surface-600 flex items-center justify-center text-xs">✕</span>
+            <span>Excluded or Available as Add-On</span>
+          </h3>
+          <ul class="space-y-2 text-xs sm:text-sm text-surface-600 dark:text-surface-300">
+            {service.whatsNotIncluded?.map((item) => (
+              <li class="flex items-start gap-2">
+                <span class="text-surface-400">•</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    )}
+
+    <!-- Process Steps -->
+    {service.process && service.process.length > 0 && (
+      <HowItWorks
+        title={`Our ${service.title} Process`}
+        subtitle="Meticulous planning and execution from your initial consultation to final delivery."
+        steps={service.process}
+      />
+    )}
+
+    <!-- Premium Services Callout -->
+    {service.premiumAngle ? (
+      <div class="glass-panel p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-royal/5 via-transparent to-royal/5 border border-royal/20">
+        <h3 class="text-base font-bold text-navy dark:text-pearl mb-2">
+          White-Glove & Specialist Care Available
+        </h3>
+        <p class="text-xs sm:text-sm text-surface-600 dark:text-surface-300 leading-relaxed">
+          {service.premiumAngle}
+        </p>
+      </div>
+    ) : (
+      <PremiumServicesCallout />
+    )}
+
+    <!-- Top Areas for this Service -->
+    <RelatedLinks
+      heading={`Popular Areas We Provide ${service.title}`}
+      links={topAreaLinks}
+    />
+
+    <!-- FAQs -->
+    {service.faqs && service.faqs.length > 0 && (
+      <FAQ items={service.faqs} title={`${service.title} FAQs`} />
+    )}
+
+    <!-- CTA Band -->
+    <CTABand
+      title={`Book Your ${service.title} in North West London`}
+      subtitle="Speak with our Cricklewood dispatch team or schedule a free video walk-through survey today."
+    />
+
+    <!-- Inline Form -->
+    <QuoteFormSection title={`Get an Instant ${service.title} Quote`} />
+
+  </article>
+</BaseLayout>

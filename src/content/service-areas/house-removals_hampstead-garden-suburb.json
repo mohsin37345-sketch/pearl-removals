@@ -1,0 +1,31 @@
+{
+  "service": "house-removals",
+  "location": "hampstead-garden-suburb",
+  "status": "published",
+  "uniqueIntro": "Pearl Removals delivers premier, white-glove house removals for Arts & Crafts cottages, grand neo-Georgian family residences, and landmark mansions across Hampstead Garden Suburb NW11 and N2. Serving iconic roads like Central Square, Willifield Way, and The Bishops Avenue, we combine master craftsmanship with attentive care.",
+  "localAngle": "Properties in the Suburb are subject to strict Trust regulations and require delicate handling of original joinery, timber beam ceilings, and open turf frontages. We lay specialized driveway runner boards and coordinate parking with Barnet Council to protect the idyllic environment.",
+  "whatsIncluded": [
+    "Dedicated move coordinator and detailed pre-move inventory survey",
+    "Custom timber crating for delicate artwork, ceramics, and antique mirrors",
+    "Protective driveway boards, turf mats, and interior banister wrapping",
+    "Full packing, fragile wrapping, and complete wardrobe hanging services"
+  ],
+  "priceGuidance": "Bespoke fixed-price quotations tailored to period cottages and substantial neo-Georgian residences.",
+  "faqs": [
+    {
+      "question": "Do you have experience moving large mansions on The Bishops Avenue?",
+      "answer": "Yes. We manage multi-vehicle relocations on The Bishops Avenue, coordinating with private security teams and estate managers.",
+      "display": true
+    },
+    {
+      "question": "How do you safeguard original Arts & Crafts wood joinery during moves?",
+      "answer": "We pad all door frames with custom quilted covers and wrap stair banisters securely to eliminate any risk of impact.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange Barnet Council parking suspensions in NW11?",
+      "answer": "Yes. We handle all necessary parking bay suspension applications directly with the London Borough of Barnet.",
+      "display": true
+    }
+  ]
+}

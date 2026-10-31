@@ -1,0 +1,79 @@
+---
+import Icon from './Icon.astro';
+
+interface Props {
+  title: string;
+  url?: string;
+}
+
+const { title, url = Astro.url.href } = Astro.props;
+const encodedUrl = encodeURIComponent(url);
+const encodedTitle = encodeURIComponent(title);
+---
+
+<div class="glass-pill p-3 rounded-2xl flex flex-wrap items-center gap-2 my-6">
+  <span class="text-xs font-bold text-surface-500 uppercase tracking-wider px-2">
+    Share:
+  </span>
+
+  <!-- WhatsApp -->
+  <a
+    href={`https://wa.me/?text=${encodedTitle}%20${encodedUrl}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Share on WhatsApp"
+    class="px-3 py-1 rounded-xl text-xs font-semibold bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300 hover:bg-emerald-100 transition-colors"
+  >
+    WhatsApp
+  </a>
+
+  <!-- X / Twitter -->
+  <a
+    href={`https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Share on X"
+    class="px-3 py-1 rounded-xl text-xs font-semibold bg-surface-100 dark:bg-white/10 text-navy dark:text-pearl hover:bg-surface-200 transition-colors"
+  >
+    𝕏 Post
+  </a>
+
+  <!-- Facebook -->
+  <a
+    href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Share on Facebook"
+    class="px-3 py-1 rounded-xl text-xs font-semibold bg-blue-50 text-blue-700 dark:bg-blue-950/40 dark:text-blue-300 hover:bg-blue-100 transition-colors"
+  >
+    Facebook
+  </a>
+
+  <!-- Email -->
+  <a
+    href={`mailto:?subject=${encodedTitle}&body=Check%20this%20out:%20${encodedUrl}`}
+    aria-label="Share via Email"
+    class="px-3 py-1 rounded-xl text-xs font-semibold bg-surface-100 dark:bg-white/10 text-navy dark:text-pearl hover:bg-surface-200 transition-colors"
+  >
+    Email
+  </a>
+
+  <!-- Copy Link -->
+  <button
+    type="button"
+    id="copy-share-btn"
+    class="px-3 py-1 rounded-xl text-xs font-semibold bg-surface-100 dark:bg-white/10 text-navy dark:text-pearl hover:bg-surface-200 transition-colors ml-auto"
+  >
+    Copy Link
+  </button>
+</div>
+
+<script is:inline>
+  document.getElementById('copy-share-btn')?.addEventListener('click', async function() {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      this.innerText = 'Copied!';
+      setTimeout(() => { this.innerText = 'Copy Link'; }, 2000);
+    } catch (_) {}
+  });
+</script>

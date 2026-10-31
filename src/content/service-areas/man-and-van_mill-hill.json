@@ -1,0 +1,31 @@
+{
+  "service": "man-and-van",
+  "location": "mill-hill",
+  "status": "published",
+  "uniqueIntro": "Our Mill Hill man and van service delivers prompt, reliable moving assistance across NW7. Ideal for modern apartment moves in Millbrook Park, cottage relocations in Mill Hill Village, student moves near local colleges, and single bulky furniture transport, we provide exceptional value and friendly local care.",
+  "localAngle": "Located only four miles north of our Cricklewood depot, we reach Mill Hill properties quickly via the A41 and A1. We navigate winding country-style lanes along The Ridgeway and Highwood Hill as easily as modern residential boulevards near Mill Hill Broadway.",
+  "whatsIncluded": [
+    "Spacious 3.5-tonne Luton van with tail lift and protective blankets",
+    "Professional mover-loader to assist with carrying and vehicle loading",
+    "Trolleys, ratchet straps, and mattress bags for safe transport",
+    "Goods in Transit insurance covering up to £50,000 as standard"
+  ],
+  "priceGuidance": "Transparent hourly rates from £65/hour (2-hour minimum). Fixed quotes available upon request.",
+  "faqs": [
+    {
+      "question": "How quickly can a man and van arrive in Mill Hill?",
+      "answer": "Our Cricklewood base is just four miles away, allowing us to arrive at Mill Hill addresses in approximately 12 to 15 minutes.",
+      "display": true
+    },
+    {
+      "question": "Can you move outdoor garden furniture and barbecues in Mill Hill?",
+      "answer": "Yes. We regularly transport large outdoor patio suites, garden planters, and gas barbecues.",
+      "display": true
+    },
+    {
+      "question": "Do you service new apartments in Millbrook Park Mill Hill East?",
+      "answer": "Yes, we regularly handle moves into Millbrook Park, coordinating lift access and parking with site concierges.",
+      "display": true
+    }
+  ]
+}

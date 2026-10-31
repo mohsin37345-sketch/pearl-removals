@@ -1,0 +1,83 @@
+---
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import Breadcrumbs from 'theme/components/Breadcrumbs.astro';
+import Icon from 'theme/components/Icon.astro';
+import { siteConfig } from 'src/data/site';
+
+const breadcrumbs = [
+  { name: 'Thank You', url: '/thank-you/' }
+];
+---
+
+<BaseLayout
+  title="Thank You | Pearl Removals"
+  description="Thank you for contacting Pearl Removals. Our team has received your enquiry and is reviewing your move details."
+  canonicalUrl="https://www.pearlremovals.co.uk/thank-you/"
+  noindex={true}
+  breadcrumbs={breadcrumbs}
+>
+  <Breadcrumbs items={breadcrumbs} />
+
+  <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+    <div class="glass-panel p-8 sm:p-12 rounded-3xl border border-emerald-500/30 shadow-2xl space-y-6">
+      
+      <!-- Success Icon -->
+      <div class="w-16 h-16 rounded-full bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mx-auto shadow-md">
+        <Icon name="check" class="w-8 h-8 font-black" />
+      </div>
+
+      <div class="space-y-2">
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-600 dark:text-emerald-400">
+          Enquiry Received Successfully
+        </span>
+        <h1 class="text-3xl sm:text-4xl font-black text-navy dark:text-pearl tracking-tight">
+          Thank You for Reaching Out
+        </h1>
+        <p class="text-sm sm:text-base text-surface-600 dark:text-surface-300 max-w-lg mx-auto leading-relaxed">
+          Your quotation request has been delivered directly to our dispatch desk in Cricklewood NW2.
+        </p>
+      </div>
+
+      <!-- What Happens Next Protocol -->
+      <div class="text-left bg-surface-50 dark:bg-white/5 p-6 rounded-2xl space-y-3 text-xs sm:text-sm">
+        <h2 class="font-bold text-navy dark:text-pearl">What Happens Next:</h2>
+        <ul class="space-y-2 text-surface-600 dark:text-surface-300">
+          <li class="flex items-start gap-2">
+            <Icon name="check" class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" />
+            <span><strong>Desktop Review:</strong> We examine your route, postcodes, and property volume.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <Icon name="check" class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" />
+            <span><strong>Written Estimate:</strong> A member of our team will contact you within 2 business hours with an initial estimate or survey invitation.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <Icon name="check" class="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" />
+            <span><strong>Zero Pressure:</strong> All surveys and estimates are completely free with no obligation to book.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Immediate Assistance -->
+      <div class="pt-4 border-t border-surface-200 dark:border-white/10 flex flex-col sm:flex-row items-center justify-center gap-4 text-xs">
+        <span class="text-surface-500">Need immediate assistance or urgent move today?</span>
+        <a
+          href={`tel:${siteConfig.phoneE164}`}
+          class="font-bold text-royal hover:underline flex items-center gap-1"
+        >
+          <Icon name="phone" class="w-3.5 h-3.5" />
+          Call {siteConfig.phone}
+        </a>
+      </div>
+
+      <div class="pt-2">
+        <a
+          href="/"
+          class="inline-block px-6 py-2.5 rounded-full bg-royal text-white text-xs font-bold hover:bg-royal-hover transition-colors"
+        >
+          Return to Homepage
+        </a>
+      </div>
+
+    </div>
+  </article>
+</BaseLayout>

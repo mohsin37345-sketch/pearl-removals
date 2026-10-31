@@ -1,0 +1,75 @@
+{
+  "name": "Notting Hill",
+  "slug": "notting-hill",
+  "region": "west-london",
+  "phase": 2,
+  "premium": true,
+  "boroughs": [
+    "Kensington & Chelsea"
+  ],
+  "postcodes": [
+    "W11"
+  ],
+  "distanceMiles": 5,
+  "metaTitle": "House Removals Notting Hill W11 | Pearl Removals",
+  "metaDescription": "Discreet, premier removals in Notting Hill W11. White-glove home moving, fine art crating & RBKC parking management. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers distinguished, fully insured removals throughout Notting Hill and the W11 postcode district. From celebrated pastel-coloured Victorian terraces along Portobello Road and Hillgate Village to grand stucco villas facing private communal gardens in Ladbroke Square and Pembridge Square, our experienced moving crews manage every relocation with flawless professionalism, utmost discretion, and methodical logistical execution. Based just across the borough border at our Cricklewood dispatch depot, our vehicles reach Notting Hill swiftly via the A40 Westway and Ladbroke Grove corridors, providing punctual arrivals, tailored packing, and total property protection. Our moving coordinators conduct thorough pre-move surveys, calculate exact vehicle payload requirements, and provide complete packing supplies to ensure that every stage of your move in Notting Hill is handled with absolute punctuality, courteous communication, and total care.",
+  "localKnowledge": "Notting Hill is defined by its vibrant cultural rhythm and prestigious architectural heritage. Moving here requires intricate familiarity with the Royal Borough of Kensington and Chelsea (RBKC) street regulations. Market days on Portobello Road introduce substantial pedestrian footfall and road closures, necessitating careful route staging along side turnings like Westbourne Grove and Elgin Crescent. Many properties back directly onto private communal garden enclosures where vehicle access is restricted and garden gates must remain locked, requiring careful item routing through front entrances.",
+  "propertyTypes": "The architectural landscape of Notting Hill includes magnificent four to five-storey stucco-fronted townhouses, elegant raised-ground conversions, charming mews cottages along former stable lanes, and lateral modern penthouse apartments. Properties frequently feature delicate wrought-iron balconies, narrow original basement stairs, and polished hardwood parquet requiring protective non-slip floor runners.",
+  "parkingAndAccess": "RBKC operates rigorous Controlled Parking Zone (CPZ) enforcement throughout W11. Parking a removal van outside townhouses or communal garden squares requires pre-arranged parking bay suspensions through the council highways department. We calculate vehicle footprint dimensions and secure all required permits, placing warning signs well in advance to ensure legal kerbside standing.",
+  "transportLinks": "Excellent transport links via Notting Hill Gate (Central, District, and Circle lines), Ladbroke Grove and Westbourne Park (Hammersmith & City, Circle lines), alongside major east-west bus routes.",
+  "travelInfo": "Direct vehicular access via the A40 Westway connects Notting Hill directly to our NW2 transport depot in under 20 minutes, enabling rapid equipment dispatch.",
+  "nearbyAreas": [
+    {
+      "name": "Holland Park",
+      "slug": "holland-park"
+    },
+    {
+      "name": "Bayswater",
+      "slug": "bayswater"
+    },
+    {
+      "name": "Maida Vale",
+      "slug": "maida-vale"
+    },
+    {
+      "name": "Paddington",
+      "slug": "paddington"
+    },
+    {
+      "name": "Kensal Green & North Kensington",
+      "slug": "kensal-green-and-north-kensington"
+    }
+  ],
+  "servicesOffered": [
+    "House Removals Notting Hill",
+    "Flat Removals W11",
+    "Fine Art Removals Notting Hill",
+    "Piano Moving W11",
+    "Packing Services Notting Hill"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you coordinate moves on Portobello Road market days?",
+      "answer": "We schedule loading or unloading during early morning permitted access hours or position our vehicles along designated commercial bays on connecting side streets.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange RBKC parking suspensions in Notting Hill?",
+      "answer": "Yes. We handle the entire application process directly with the Royal Borough of Kensington & Chelsea, ensuring official bay reservation signage is posted on time.",
+      "display": true
+    },
+    {
+      "question": "Can you handle delicate antiques and high-value artwork in W11?",
+      "answer": "Yes. Our specialist fine art team utilizes custom timber crates, acid-free wrapping, and temperature-regulated transit vehicles for paintings and French-polished furniture.",
+      "display": true
+    },
+    {
+      "question": "How do you protect period staircases and walls in Notting Hill townhouses?",
+      "answer": "Our porters fit padded banister covers, corner guards, and breathable floor mats across all communal stairwells and hallways before moving any furniture.",
+      "display": true
+    }
+  ],
+  "premiumAngle": "Notting Hill’s distinguished townhouses, private communal squares, and high-value antique furnishings require white-glove moving standards. We offer dedicated crating, comprehensive fine art transit insurance, and discreet, uniformed personnel.",
+  "status": "published"
+}

@@ -1,0 +1,81 @@
+{
+  "name": "Queen's Park",
+  "slug": "queens-park",
+  "region": "north-west-london",
+  "phase": 1,
+  "premium": false,
+  "boroughs": [
+    "Brent",
+    "Westminster"
+  ],
+  "postcodes": [
+    "NW6",
+    "W10"
+  ],
+  "distanceMiles": 2.5,
+  "metaTitle": "House Removals Queen's Park NW6 | Pearl Removals",
+  "metaDescription": "Trusted removals in Queen's Park NW6 & W10. Professional moving teams for Victorian family homes near Salusbury Road. Call 020 3151 8452 for a quote.",
+  "intro": "Pearl Removals delivers reliable, comprehensive residential removals across Queen’s Park, covering NW6 and W10. Centred around the thirty-acre Victorian public park and the bustling independent cafes of Salusbury Road, Queen’s Park is one of North West London’s most vibrant family communities. Situated just 2.5 miles south of our Cricklewood depot, our local moving crews possess extensive experience navigating Queen’s Park’s tree-lined avenues, Queen Anne terraced homes, and period conversions. We provide dependable, damage-free moving services with complete peace of mind and transparent fixed pricing. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London.",
+  "localKnowledge": "Queen’s Park is divided between the London Borough of Brent to the north and the City of Westminster to the south. Streets surrounding the park, such as Chevening Road, Milverton Road, and Harvist Road, feature high residential parking demand, especially near local schools and weekend farmer’s markets. Our drivers know how to schedule loading times to avoid school-run bottlenecks and ensure efficient loading.",
+  "propertyTypes": "The housing landscape of Queen’s Park is dominated by handsome late-Victorian and Edwardian terraced family homes, featuring distinctive Dutch gables, deep red-brick facades, and stained glass transoms. Many have been beautifully extended into loft spaces and kitchen basements, alongside stylish period conversion apartments.",
+  "parkingAndAccess": "Parking is strictly enforced by Brent (Zone QP) and Westminster (Zone B). Streets directly facing the park have limited resident bays. We submit formal parking bay suspension applications well in advance, reserving curbside space directly outside your front garden gate.",
+  "transportLinks": "Excellent transit connections via Queen’s Park station offering both Bakerloo Line tube and London Overground services into Euston and the West End.",
+  "travelInfo": "Quick southward access towards Notting Hill and Ladbroke Grove via Chamberlayne Road and Kilburn Lane, with direct northern routes towards Cricklewood.",
+  "nearbyAreas": [
+    {
+      "name": "Kensal Rise",
+      "slug": "kensal-rise"
+    },
+    {
+      "name": "Kilburn",
+      "slug": "kilburn"
+    },
+    {
+      "name": "Brondesbury",
+      "slug": "brondesbury"
+    },
+    {
+      "name": "Maida Vale",
+      "slug": "maida-vale"
+    },
+    {
+      "name": "Cricklewood",
+      "slug": "cricklewood"
+    }
+  ],
+  "servicesOffered": [
+    "Family House Removals Queen's Park",
+    "Flat Removals NW6",
+    "Full Packing & Materials",
+    "Man and Van Salusbury Road",
+    "Secure Furniture Storage"
+  ],
+  "localFaqs": [
+    {
+      "question": "Which council handles parking suspensions in Queen's Park?",
+      "answer": "Depending on your street, parking is managed by either Brent or Westminster Council. We identify your exact boundary and handle the application.",
+      "display": true
+    },
+    {
+      "question": "Can you move heavy garden furniture and outdoor play equipment?",
+      "answer": "Yes. Many Queen’s Park homes have long rear gardens. We dismantle and transport trampolines, wooden climbing frames, and stone garden sets.",
+      "display": true
+    },
+    {
+      "question": "How do you protect delicate timber floors during moving day?",
+      "answer": "We lay heavy-duty self-adhesive floor protection over hardwood floors and carpets before carrying any furniture or boxes into your home.",
+      "display": true
+    },
+    {
+      "question": "Do you offer packing services the day before moving?",
+      "answer": "Yes, our packing teams can arrive the day before your completion date to pack all kitchenware, books, and wardrobe items safely.",
+      "display": true
+    }
+  ],
+  "testimonial": {
+    "name": "Tom & Jessica H.",
+    "quote": "Moved our family home on Chevening Road. The Pearl Removals team was fantastic with our kids around, packed our entire house in record time, and didn't leave a single mark on the walls.",
+    "rating": 5
+  },
+  "status": "published"
+}

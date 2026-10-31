@@ -1,0 +1,79 @@
+{
+  "name": "Neasden",
+  "slug": "neasden",
+  "region": "north-west-london",
+  "phase": 1,
+  "premium": false,
+  "boroughs": [
+    "Brent"
+  ],
+  "postcodes": [
+    "NW10"
+  ],
+  "distanceMiles": 1.5,
+  "metaTitle": "House Removals Neasden NW10 | Pearl Removals",
+  "metaDescription": "Reliable removals in Neasden NW10 near Welsh Harp & BAPS Shri Swaminarayan Mandir. Fully insured moving teams for houses & flats. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides dependable, cost-effective, and fully insured removals across Neasden and the wider NW10 district. Located just 1.5 miles west of our Cricklewood dispatch headquarters, our local crews have comprehensive experience across every residential corner of Neasden, from the quiet leafy avenues bordering the Welsh Harp reservoir to family properties near the landmark BAPS Shri Swaminarayan Mandir and Dollis Hill borders. Whether you are moving from a 1930s semi-detached house, an Edwardian terraced home, or a modern apartment block, we provide punctual, courteous, and damage-free moving services tailored to your budget and timetable. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London.",
+  "localKnowledge": "Neasden is centrally located around the junction of the A406 North Circular Road and Neasden Lane. The area combines quiet residential pockets with major commercial and cultural landmarks, including the world-renowned Neasden Temple. Our drivers know how to avoid North Circular peak congestion by utilizing local residential cut-throughs, ensuring your move runs smoothly and on schedule.",
+  "propertyTypes": "Neasden’s housing stock features solid 1930s suburban semi-detached and terraced homes with private driveways and rear gardens, alongside 1920s maisonettes, converted flats, and modern purpose-built residential developments near the reservoir.",
+  "parkingAndAccess": "The London Borough of Brent oversees parking enforcement in Neasden. Many residential roads feature off-street parking driveways, while permit zones operate around Neasden Jubilee Line station. Where curbside parking is needed, we arrange official parking bay suspensions with Brent Council.",
+  "transportLinks": "Convenient Jubilee Line tube services from Neasden station reach Baker Street and the West End in under 18 minutes, with extensive local bus connections.",
+  "travelInfo": "Immediate connectivity to the A406 North Circular Road provides rapid direct routes across North and West London, with quick access to the M1 and A40.",
+  "nearbyAreas": [
+    {
+      "name": "Cricklewood",
+      "slug": "cricklewood"
+    },
+    {
+      "name": "Dollis Hill",
+      "slug": "dollis-hill"
+    },
+    {
+      "name": "Wembley Park",
+      "slug": "wembley-park"
+    },
+    {
+      "name": "Harlesden & Willesden",
+      "slug": "harlesden-and-willesden"
+    },
+    {
+      "name": "Brent Cross",
+      "slug": "brent-cross"
+    }
+  ],
+  "servicesOffered": [
+    "House Removals Neasden",
+    "Man and Van NW10",
+    "Packing Services Neasden",
+    "Flat Removals Brent",
+    "Secure Containerised Storage"
+  ],
+  "localFaqs": [
+    {
+      "question": "How quickly can your team reach Neasden for a move?",
+      "answer": "Our central depot on Cricklewood Broadway is barely 1.5 miles away, meaning our vehicles reach Neasden properties in under 8 minutes.",
+      "display": true
+    },
+    {
+      "question": "Do you offer packing services for Neasden family homes?",
+      "answer": "Yes! We offer full and part-packing services, supplying all double-walled boxes, bubble wrap, tape, and protective furniture blankets.",
+      "display": true
+    },
+    {
+      "question": "Can you move heavy American-style fridge-freezers and appliances?",
+      "answer": "Yes. Our removal crews use heavy-duty appliance dollies, stair climbers, and padded transit covers to move large refrigeration units safely.",
+      "display": true
+    },
+    {
+      "question": "Are weekend and bank holiday moves available in Neasden?",
+      "answer": "Yes, we operate seven days a week with zero weekend surcharges, providing flexible booking slots to suit your schedule.",
+      "display": true
+    }
+  ],
+  "testimonial": {
+    "name": "Mr. & Mrs. Patel",
+    "quote": "Moved our family from Neasden to a larger house in Wembley. The Pearl Removals team was exceptionally polite, hardworking, and took great care of all our furniture.",
+    "rating": 5
+  },
+  "status": "published"
+}

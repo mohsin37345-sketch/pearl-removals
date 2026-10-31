@@ -1,0 +1,141 @@
+---
+import ServiceLayout from 'theme/layouts/ServiceLayout.astro';
+
+const serviceData = {
+  title: 'Storage Solutions',
+  slug: 'storage',
+  metaTitle: 'Secure Storage North West London | Container & Self Storage Movers',
+  metaDescription: 'Secure, climate-controlled container storage in North West London. Door-to-door collection, CCTV monitoring, and flexible weekly terms based in Cricklewood NW2.',
+  heroHeading: 'Safe, Clean & Secure Storage Solutions in North West London',
+  heroSubheading: 'Flexible short-term and long-term containerised storage with door-to-door collection. The ideal solution when navigating property chain gaps, building renovations, or decluttering.',
+  icon: 'archive',
+  summary: 'Purpose-built containerised and self-storage facilities offering total protection for your furniture and household goods.',
+  priceFrom: 25,
+  priceUnit: 'week',
+  priceNotes: 'Indicative guide based on a standard 35 sq ft (250 cu ft) secure wooden storage vault. Collection and insurance quoted transparently.',
+  benefits: [
+    'Direct door-to-door collection: we load straight into storage containers at your address to minimise handling',
+    'Modern, clean, purpose-built storage warehouse with 24/7 internal and perimeter CCTV security',
+    'Fully climate-controlled and ventilated atmosphere preventing moisture, mildew, and temperature swings',
+    'Comprehensive itemised inventory receipt provided to you as soon as containers are sealed',
+    'Flexible weekly contracts with zero long-term tie-ins—retrieve your items whenever you are ready',
+    'Full £50,000 Goods in Transit insurance cover during collection, transfer, and storage'
+  ],
+  whatsIncluded: [
+    'Clean, treated 250 cu ft wooden storage vaults designed specifically for furniture breathing',
+    'Collection from your home by our professional Cricklewood removals crew',
+    'Protective wrapping of all furniture in heavy-duty transit pads before sealing into vaults',
+    'Formal written inventory and security seal serial numbers issued upon loading',
+    'Secure storage in our alarmed, monitored North West London facility',
+    'Direct redelivery to your destination property whenever you are ready to complete'
+  ],
+  whatsNotIncluded: [
+    'Storage of prohibited items: perishable food, plants, combustible gases, or firearms',
+    'Storage of live plants or open containers containing liquids or paint',
+    'Daily walk-in self-access without 48 hours prior notice to our warehouse manager',
+    'Council parking suspensions required outside your property on collection or redelivery day'
+  ],
+  process: [
+    {
+      step: 1,
+      title: 'Volume Calculation & Quotation',
+      description: 'We assess the volume of items you need stored (in cubic feet or rooms) and calculate the optimal number of 250 cu ft storage vaults required.'
+    },
+    {
+      step: 2,
+      title: 'Collection & Container Loading',
+      description: 'Our vehicle arrives at your residence with storage containers on board. We wrap your furniture in breathable blankets and pack the vaults directly outside your door.'
+    },
+    {
+      step: 3,
+      title: 'Inventory & Vault Sealing',
+      description: 'Once loaded, each container is secured with numbered, tamper-evident security seals. An itemised copy of the inventory is signed and handed to you.'
+    },
+    {
+      step: 4,
+      title: 'Safe Warehouse Storage & Redelivery',
+      description: 'Containers are placed inside our alarmed warehouse using forklifts. When your new property is ready, we load the same vaults and deliver directly to your new home.'
+    }
+  ],
+  premiumAngle: 'For clients undertaking multi-month architectural renovations in Hampstead, St John\'s Wood, or Maida Vale, we offer climate-monitored private vaults, specialized antique blanket wrapping, and staged phased redeliveries matching your interior designer’s installation timetable.',
+  faqs: [
+    {
+      question: 'How does containerised storage differ from conventional self-storage units?',
+      answer: 'With traditional self-storage, you must hire a van, drive to an industrial estate, and handle your furniture twice: off the van, down corridors, and into a unit. With our containerised storage, our team loads your belongings directly into storage vaults at your front door, seals them, and delivers them into our warehouse. Your items are handled only once, drastically reducing risk of damage and saving you hours of labour.',
+      display: true
+    },
+    {
+      question: 'How secure is your North West London storage facility?',
+      answer: 'Our facility features 24-hour monitored digital CCTV, perimeter security fencing, fire detection systems, climate moderation, and biometric access controls. Only authorised warehouse personnel are permitted within the storage zones.',
+      display: true
+    },
+    {
+      question: 'Can I access my belongings while they are in storage?',
+      answer: 'Yes. While containerised storage is designed primarily for static storage between moves, you can inspect or retrieve specific items by providing our warehouse manager with 48 hours advance notice to bring your container to an inspection bay.',
+      display: true
+    },
+    {
+      question: 'Is there a minimum storage period?',
+      answer: 'Our minimum storage term is just one week. Whether you require temporary storage for a few days while waiting for solicitor funds to clear, or need several months while undergoing major home renovations, we offer complete flexibility.',
+      display: true
+    },
+    {
+      question: 'Are my goods insured while stored in the warehouse?',
+      answer: 'Yes. We offer comprehensive bespoke storage insurance cover tailored to the full declared replacement value of your inventory, providing total protection against fire, water ingress, and theft.',
+      display: true
+    }
+  ]
+};
+---
+
+<ServiceLayout service={serviceData}>
+  <div class="prose dark:prose-invert max-w-none space-y-6">
+    <h2 class="text-2xl sm:text-3xl font-black text-navy dark:text-pearl tracking-tight">
+      Seamless Storage Solutions Designed for London Home Moves
+    </h2>
+    <p>
+      In the fast-moving London property market, synchronising the exact sale date of your former property with the completion date of your new home is rarely straightforward. Property chain breakages, mortgage approval delays, lease overlaps, and home renovation schedules frequently necessitate a dependable, clean holding solution for household possessions.
+    </p>
+    <p>
+      At <strong>Pearl Removals</strong>, our containerised storage service provides North West London residents with a stress-free bridge between homes. Based from Cricklewood NW2, we handle the entire collection, secure warehousing, and redelivery process, ensuring your furniture remains pristine and protected until you are ready for delivery.
+    </p>
+
+    <h3 class="text-xl font-bold text-navy dark:text-pearl pt-4">
+      Why Containerised Storage Is Superior for Residential Relocations
+    </h3>
+    <p>
+      Many people automatically think of self-storage when facing a moving delay. However, self-storage requires immense physical labour: loading a van, driving through London traffic, parking in tight loading bays, navigating endless corridors with heavy trolleys, and stacking units yourself.
+    </p>
+    <p>
+      Our containerised removals system eliminates double-handling entirely:
+    </p>
+    <ul>
+      <li><strong>Direct Home Loading:</strong> Our specially adapted removal lorries transport clean, wooden storage vaults (each holding 250 cubic feet) directly to your driveway or kerbside outside your property.</li>
+      <li><strong>Professional Stacking:</strong> Our trained movers pack your items into the wooden vaults with precision, placing heavy items at the base and cushioning delicate surfaces with breathable blankets.</li>
+      <li><strong>Single Handling = Zero Scuffs:</strong> Once filled, the container doors are locked and sealed with numbered security ties in your presence. The vaults are never opened until they arrive at your new destination home.</li>
+      <li><strong>Forklift Transfer:</strong> At our Cricklewood depot, forklifts lift the vaults directly into our temperature-moderated warehouse, eliminating corridor carrying and double handling.</li>
+    </ul>
+
+    <h3 class="text-xl font-bold text-navy dark:text-pearl pt-4">
+      Ideal for Home Staging, Downsizing & Architectural Renovations
+    </h3>
+    <p>
+      Beyond property chain gaps, our secure storage service provides invaluable flexibility in numerous scenarios:
+    </p>
+    <ol>
+      <li><strong>Home Staging & De-Cluttering:</strong> Estate agents in premium areas like Hampstead, Belsize Park, and West Hampstead routinely advise de-cluttering prior to listing. Storing non-essential furniture and excess cartons creates an open, aspirational atmosphere that maximises selling price.</li>
+      <li><strong>Major Property Renovations:</strong> Plaster dust, paint fumes, and builders’ tools can ruin fine upholstery and wooden finishes. Storing furniture during loft conversions, basement excavations, or kitchen extensions ensures your investments remain spotless.</li>
+      <li><strong>Downsizing Transitions:</strong> When moving from a large family residence into a luxury apartment, deciding what to keep, gift to family, or sell takes time. Our short-term storage gives you the breathing room to make considered decisions.</li>
+    </ol>
+
+    <h3 class="text-xl font-bold text-navy dark:text-pearl pt-4">
+      Total Climate Control & Comprehensive Inventory Oversight
+    </h3>
+    <p>
+      Our purpose-built storage facility is engineered for the long-term preservation of fine timber, fabrics, and electronics. Natural ventilation combined with ambient climate management prevents condensation, dampness, and fabric mildew.
+    </p>
+    <p>
+      Upon collection, you receive an itemised storage manifest detailing every container number and its corresponding security seal ID. When you receive the keys to your new home, simply notify our dispatch team, and we will schedule your prompt redelivery, carrying each item into its designated room and removing all protective blankets.
+    </p>
+  </div>
+</ServiceLayout>

@@ -1,0 +1,147 @@
+---
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import Hero from 'theme/components/Hero.astro';
+import Breadcrumbs from 'theme/components/Breadcrumbs.astro';
+import { getPublishedRegions, getPublishedServiceAreas } from 'theme/utils/published';
+import { servicesRegistry } from 'src/data/services';
+import Icon from 'theme/components/Icon.astro';
+
+const publishedRegions = await getPublishedRegions();
+const publishedServiceAreas = await getPublishedServiceAreas();
+const enabledServices = servicesRegistry.filter((s) => s.enabled);
+
+const staticPages = [
+  { title: 'Home', url: '/' },
+  { title: 'About Us', url: '/about-us/' },
+  { title: 'Contact Us', url: '/contact-us/' },
+  { title: 'How It Works', url: '/how-it-works/' },
+  { title: 'Pricing Guide', url: '/prices/' },
+  { title: 'Customer Reviews', url: '/reviews/' },
+  { title: 'Frequently Asked Questions', url: '/faqs/' },
+  { title: 'Get a Free Quote', url: '/get-a-quote/' },
+  { title: 'Moving Cost Calculator', url: '/moving-cost-calculator/' },
+  { title: 'Coverage Hub (Areas)', url: '/areas/' },
+  { title: 'All Services Hub', url: '/removals/' },
+  { title: 'Moving Advice Blog', url: '/blog/' },
+  { title: 'Privacy Policy', url: '/privacy-policy/' },
+  { title: 'Terms & Conditions', url: '/terms-and-conditions/' },
+  { title: 'Cookie Policy', url: '/cookie-policy/' },
+  { title: 'Terms of Business (Contract)', url: '/terms-of-business/' },
+  { title: 'Complaints Procedure', url: '/complaints-procedure/' }
+];
+
+const breadcrumbs = [
+  { name: 'HTML Sitemap', url: '/sitemap/' }
+];
+---
+
+<BaseLayout
+  title="HTML Sitemap | Pearl Removals North West London"
+  description="Comprehensive sitemap of all pages, services, coverage areas, pricing guides, and legal documentation on Pearl Removals."
+  canonicalUrl="https://www.pearlremovals.co.uk/sitemap/"
+  breadcrumbs={breadcrumbs}
+>
+  <Hero
+    variant="simple"
+    title="HTML Sitemap"
+    subtitle="Quick reference overview of all live pages, removal services, coverage districts, and resources on Pearl Removals."
+    eyebrow="INDEX & DIRECTORY"
+  />
+
+  <Breadcrumbs items={breadcrumbs} />
+
+  <article class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+    
+    <!-- 1. Core Pages -->
+    <div class="glass-panel p-6 sm:p-8 rounded-3xl">
+      <h2 class="text-xl font-bold text-navy dark:text-pearl mb-4 flex items-center gap-2">
+        <Icon name="home" class="w-5 h-5 text-royal" />
+        <span>Core Website Pages</span>
+      </h2>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 text-xs sm:text-sm">
+        {staticPages.map((page) => (
+          <li>
+            <a href={page.url} class="text-surface-700 dark:text-surface-300 hover:text-royal transition-colors">
+              {page.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <!-- 2. Services Pages -->
+    <div class="glass-panel p-6 sm:p-8 rounded-3xl">
+      <h2 class="text-xl font-bold text-navy dark:text-pearl mb-4 flex items-center gap-2">
+        <Icon name="truck" class="w-5 h-5 text-royal" />
+        <span>Removal Services</span>
+      </h2>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 text-xs sm:text-sm">
+        {enabledServices.map((service) => (
+          <li>
+            <a href={`/removals/${service.slug}/`} class="text-surface-700 dark:text-surface-300 hover:text-royal transition-colors font-medium">
+              {service.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <!-- 3. Regional Hubs & Published Areas -->
+    <div class="glass-panel p-6 sm:p-8 rounded-3xl">
+      <h2 class="text-xl font-bold text-navy dark:text-pearl mb-4 flex items-center gap-2">
+        <Icon name="map-pin" class="w-5 h-5 text-royal" />
+        <span>Coverage Areas & Neighbourhoods</span>
+      </h2>
+
+      {publishedRegions.length > 0 ? (
+        <div class="space-y-6">
+          {publishedRegions.map((region) => (
+            <div>
+              <h3 class="text-sm font-bold uppercase tracking-wider text-royal mb-2">
+                <a href={`/areas/${region.slug}/`} class="hover:underline">
+                  {region.name} Hub
+                </a>
+              </h3>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-xs">
+                {region.areas.map((area) => (
+                  <li>
+                    <a href={`/areas/${area.slug}/`} class="text-surface-700 dark:text-surface-300 hover:text-royal transition-colors">
+                      {area.name} ({area.postcodes.join(', ')})
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div class="text-xs text-surface-500">
+          <p>Local area landing pages for Phase 1 launch are currently staged. Serving our primary base: Cricklewood NW2 and all North West London postcodes.</p>
+          <a href="/areas/" class="text-royal font-bold hover:underline block mt-2">
+            View All Coverage Areas →
+          </a>
+        </div>
+      )}
+    </div>
+
+    <!-- 4. Service x Area Combinations -->
+    {publishedServiceAreas.length > 0 && (
+      <div class="glass-panel p-6 sm:p-8 rounded-3xl">
+        <h2 class="text-xl font-bold text-navy dark:text-pearl mb-4 flex items-center gap-2">
+          <Icon name="award" class="w-5 h-5 text-royal" />
+          <span>Local Service x Location Guides</span>
+        </h2>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-xs">
+          {publishedServiceAreas.map((sa) => (
+            <li>
+              <a href={sa.url} class="text-surface-700 dark:text-surface-300 hover:text-royal transition-colors">
+                {sa.serviceTitle} in {sa.areaTitle}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+
+  </article>
+</BaseLayout>

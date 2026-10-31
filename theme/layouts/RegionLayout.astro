@@ -1,0 +1,93 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Hero from 'theme/components/Hero.astro';
+import TrustStrip from 'theme/components/TrustStrip.astro';
+import Breadcrumbs from 'theme/components/Breadcrumbs.astro';
+import LocationCard from 'theme/components/LocationCard.astro';
+import FAQ from 'theme/components/FAQ.astro';
+import CTABand from 'theme/components/CTABand.astro';
+import QuoteFormSection from 'theme/components/QuoteFormSection.astro';
+
+interface Props {
+  region: {
+    name: string;
+    slug: string;
+    intro: string;
+    metaTitle: string;
+    metaDescription: string;
+    areas: any[];
+    faqs?: Array<{ question: string; answer: string; display?: boolean }>;
+  };
+}
+
+const { region } = Astro.props;
+
+const breadcrumbs = [
+  { name: 'Areas', url: '/areas/' },
+  { name: region.name, url: `/areas/${region.slug}/` }
+];
+---
+
+<BaseLayout
+  title={region.metaTitle}
+  description={region.metaDescription}
+  canonicalUrl={`https://www.pearlremovals.co.uk/areas/${region.slug}/`}
+  schemaType="region"
+  breadcrumbs={breadcrumbs}
+  faqs={region.faqs || []}
+>
+  <Hero
+    variant="region"
+    title={`Removals in ${region.name}`}
+    highlightText={region.name}
+    subtitle={region.intro}
+    eyebrow="REGIONAL REMOVALS HUB • PEARL REMOVALS"
+  />
+
+  <TrustStrip />
+
+  <Breadcrumbs items={breadcrumbs} />
+
+  <article class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
+    <!-- Main Editorial / Body Content -->
+    <div class="glass-panel p-6 sm:p-10 rounded-3xl space-y-6 text-sm sm:text-base leading-relaxed text-surface-700 dark:text-surface-300">
+      <slot />
+    </div>
+
+    <!-- Published Main Areas in this Region -->
+    <div>
+      <div class="mb-6">
+        <span class="text-xs font-bold uppercase tracking-widest text-royal block mb-1">Coverage Directory</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-navy dark:text-pearl tracking-tight">
+          Towns & Districts in {region.name}
+        </h2>
+        <p class="text-xs sm:text-sm text-surface-600 dark:text-surface-400 mt-1">
+          Explore local moving guides, packing suspension advice, and rates for each area.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {region.areas.map((area) => (
+          <LocationCard
+            name={area.name}
+            slug={area.slug}
+            postcodes={area.postcodes}
+            boroughs={area.boroughs}
+            distanceMiles={area.distanceMiles}
+            premium={area.premium}
+            microCount={area.micros?.length || 0}
+          />
+        ))}
+      </div>
+    </div>
+
+    <!-- Regional FAQs -->
+    {region.faqs && region.faqs.length > 0 && (
+      <FAQ items={region.faqs} title={`Removals in ${region.name} FAQs`} />
+    )}
+
+    <CTABand areaName={region.name} />
+
+    <QuoteFormSection title={`Get a Moving Quote for ${region.name}`} />
+  </article>
+</BaseLayout>

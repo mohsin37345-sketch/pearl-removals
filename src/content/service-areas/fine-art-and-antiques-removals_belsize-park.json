@@ -1,0 +1,32 @@
+{
+  "service": "fine-art-and-antiques-removals",
+  "location": "belsize-park",
+  "status": "published",
+  "uniqueIntro": "Pearl Removals delivers white-glove fine art and antique moving services across Belsize Park. Serving private collectors, interior architects, and antique owners throughout NW3, we manage the packing and transportation of fragile sculptures, ornate gilt mirrors, and delicate antique furniture with flawless care.",
+  "localAngle": "Properties in Belsize Village and Haverstock Hill frequently showcase period Victorian furniture and contemporary gallery artwork. Our technicians build tailored timber packing cases, utilize acid-free barrier films, and apply corner protectors to shield French-polished mahogany and delicate marquetry from humidity and abrasion.",
+  "whatsIncluded": [
+    "Custom-built timber crates tailored for oversized canvases and mirrors",
+    "Multi-layer conservation wrapping with glassine, bubble wrap, and corrugated outer guards",
+    "Padded transit vehicles with secure horizontal tie-off points",
+    "Full transit insurance cover tailored to high-value collections",
+    "Careful white-glove room placement and uncrating"
+  ],
+  "priceGuidance": "Single item crating and transit from £120. Multi-room antique collections quoted individually.",
+  "faqs": [
+    {
+      "question": "How do you transport delicate gilded mirrors in Belsize Park conversions?",
+      "answer": "We construct rigid timber frames lined with foam padding, ensuring zero flex or pressure on delicate antique glass and carved plaster frames.",
+      "display": true
+    },
+    {
+      "question": "Do you move contemporary bronze and marble sculptures?",
+      "answer": "Yes. Heavy sculptures are secured to custom timber pallets, cushioned with dense closed-cell polyethylene foam, and moved using hydraulic lifters.",
+      "display": true
+    },
+    {
+      "question": "Can your team unpack and position artwork in my new home?",
+      "answer": "Yes. Our white-glove service includes opening crates on-site, removing all packing materials, and placing your pieces in your designated rooms.",
+      "display": true
+    }
+  ]
+}

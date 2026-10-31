@@ -1,0 +1,81 @@
+---
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import Hero from 'theme/components/Hero.astro';
+import TrustStrip from 'theme/components/TrustStrip.astro';
+import Breadcrumbs from 'theme/components/Breadcrumbs.astro';
+import Testimonials from 'theme/components/Testimonials.astro';
+import CTABand from 'theme/components/CTABand.astro';
+import Icon from 'theme/components/Icon.astro';
+import { siteConfig } from 'src/data/site';
+import { getCollection } from 'astro:content';
+
+let verifiedReviews: any[] = [];
+try {
+  verifiedReviews = await getCollection('testimonials', ({ data }) => data.verified === true);
+} catch {
+  verifiedReviews = [];
+}
+
+const breadcrumbs = [
+  { name: 'Reviews', url: '/reviews/' }
+];
+---
+
+<BaseLayout
+  title="Customer Reviews & Testimonials | Pearl Removals London"
+  description="Read verified homeowner feedback for Pearl Removals. Honest reviews from residential moves across Cricklewood, Hampstead, Kilburn, Hendon, and North West London."
+  canonicalUrl="https://www.pearlremovals.co.uk/reviews/"
+  breadcrumbs={breadcrumbs}
+  verifiedReviews={verifiedReviews}
+>
+  <Hero
+    variant="simple"
+    title="Customer Reviews & Experiences"
+    subtitle="Verified feedback from homeowners and tenants who have moved with Pearl Removals across North West London."
+    eyebrow="GENUINE CUSTOMER FEEDBACK"
+    badges={["Verified Moves", "North West London", "Zero Invented Reviews"]}
+  />
+
+  <TrustStrip />
+
+  <Breadcrumbs items={breadcrumbs} />
+
+  <article class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+    
+    {verifiedReviews.length > 0 ? (
+      <Testimonials reviews={verifiedReviews} title="Verified Customer Feedback" />
+    ) : (
+      <div class="glass-panel p-8 sm:p-12 rounded-3xl text-center max-w-2xl mx-auto space-y-4">
+        <div class="w-14 h-14 rounded-full bg-royal/10 text-royal flex items-center justify-center mx-auto">
+          <Icon name="award" class="w-7 h-7" />
+        </div>
+        
+        <h2 class="text-2xl font-bold text-navy dark:text-pearl tracking-tight">
+          Customer Testimonials Being Compiled
+        </h2>
+
+        <p class="text-sm text-surface-600 dark:text-surface-300 leading-relaxed max-w-lg mx-auto">
+          We operate a strict policy against manufactured or unverified reviews. As part of our verified customer review intake process, client testimonials for recent North West London moves are currently being collected and verified.
+        </p>
+
+        <p class="text-xs text-surface-500 pt-2">
+          Want reference checks or to speak directly with our team about previous moves in your street? Call our dispatch desk on <strong class="text-navy dark:text-pearl">{siteConfig.phone}</strong>.
+        </p>
+
+        <div class="pt-4 flex justify-center">
+          <a
+            href="/get-a-quote/"
+            class="px-6 py-3 rounded-full bg-royal text-white font-bold text-xs sm:text-sm hover:bg-royal-hover transition-colors shadow-md shadow-royal/20"
+          >
+            Request a Free Moving Quote &rarr;
+          </a>
+        </div>
+      </div>
+    )}
+
+    <CTABand
+      title="Experience Our Standard Firsthand"
+      subtitle="Book your move with Pearl Removals for attentive, reliable moving service across London."
+    />
+  </article>
+</BaseLayout>

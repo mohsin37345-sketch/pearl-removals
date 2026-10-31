@@ -1,0 +1,62 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import Hero from 'theme/components/Hero.astro';
+import TrustStrip from 'theme/components/TrustStrip.astro';
+import Breadcrumbs from 'theme/components/Breadcrumbs.astro';
+import BlogGrid from 'theme/components/BlogGrid.astro';
+import CTABand from 'theme/components/CTABand.astro';
+import { slugify } from 'theme/utils/slugify';
+
+export async function getStaticPaths() {
+  let posts: any[] = [];
+  try {
+    posts = await getCollection('blog');
+  } catch {
+    posts = [];
+  }
+
+  const published = posts.filter((p) => !p.data.draft);
+  const categories = Array.from(new Set(published.map((p) => p.data.category).filter(Boolean)));
+
+  return categories.map((category) => {
+    const categorySlug = slugify(category);
+    const categoryPosts = published.filter((p) => p.data.category === category);
+    return {
+      params: { category: categorySlug },
+      props: { category, posts: categoryPosts }
+    };
+  });
+}
+
+const { category, posts } = Astro.props;
+
+const breadcrumbs = [
+  { name: 'Blog', url: '/blog/' },
+  { name: category, url: `/blog/category/${slugify(category)}/` }
+];
+---
+
+<BaseLayout
+  title={`${category} Articles & Moving Advice | Pearl Removals`}
+  description={`Read our latest expert articles and guidance categorised under ${category} from Pearl Removals.`}
+  canonicalUrl={`https://www.pearlremovals.co.uk/blog/category/${slugify(category)}/`}
+  breadcrumbs={breadcrumbs}
+>
+  <Hero
+    variant="blog"
+    title={`${category} Moving Guides`}
+    subtitle={`Expert advice and tips covering ${category.toLowerCase()} for homeowners, tenants, and businesses across London.`}
+    eyebrow="CATEGORY ARCHIVE"
+  />
+
+  <TrustStrip />
+
+  <Breadcrumbs items={breadcrumbs} />
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <BlogGrid posts={posts} />
+  </section>
+
+  <CTABand />
+</BaseLayout>

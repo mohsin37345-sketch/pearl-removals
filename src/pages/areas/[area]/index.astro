@@ -1,0 +1,46 @@
+---
+import AreaLayout from 'theme/layouts/AreaLayout.astro';
+import { getPublishedAreas } from 'theme/utils/published';
+
+export async function getStaticPaths() {
+  const publishedAreas = await getPublishedAreas();
+  return publishedAreas.map((area) => ({
+    params: { area: area.slug },
+    props: { area }
+  }));
+}
+
+const { area } = Astro.props;
+const data = area.content?.data || {};
+---
+
+<AreaLayout area={{
+  name: area.name,
+  slug: area.slug,
+  region: area.region,
+  regionName: area.regionName,
+  phase: area.phase,
+  premium: area.premium,
+  boroughs: area.boroughs,
+  postcodes: area.postcodes,
+  distanceMiles: area.distanceMiles,
+  metaTitle: data.metaTitle || `House Removals in ${area.name} | Pearl Removals`,
+  metaDescription: data.metaDescription || `Professional removals in ${area.name} (${area.postcodes.join(', ')}). Local moving teams, packing, and secure storage based in Cricklewood NW2.`,
+  intro: data.intro || `Trusted residential and commercial removals in ${area.name}.`,
+  localKnowledge: data.localKnowledge || '',
+  propertyTypes: data.propertyTypes || '',
+  parkingAndAccess: data.parkingAndAccess || '',
+  transportLinks: data.transportLinks,
+  travelInfo: data.travelInfo,
+  nearbyAreas: data.nearbyAreas || [],
+  servicesOffered: data.servicesOffered || [],
+  localFaqs: data.localFaqs || [],
+  testimonial: data.testimonial,
+  micros: area.micros
+}}>
+  {area.content && typeof area.content.render === 'function' && (
+    <article class="prose dark:prose-invert max-w-none">
+      {/* Dynamic content rendering will mount here */}
+    </article>
+  )}
+</AreaLayout>

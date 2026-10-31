@@ -1,0 +1,177 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Hero from 'theme/components/Hero.astro';
+import Breadcrumbs from 'theme/components/Breadcrumbs.astro';
+import PremiumServicesCallout from 'theme/components/PremiumServicesCallout.astro';
+import FAQ from 'theme/components/FAQ.astro';
+import CTABand from 'theme/components/CTABand.astro';
+import QuoteFormSection from 'theme/components/QuoteFormSection.astro';
+import RelatedLinks from 'theme/components/RelatedLinks.astro';
+import Icon from 'theme/components/Icon.astro';
+
+interface Props {
+  micro: {
+    name: string;
+    slug: string;
+    parent: string;
+    parentName?: string;
+    region?: string;
+    regionName?: string;
+    premium: boolean;
+    postcodes?: string[];
+    metaTitle: string;
+    metaDescription: string;
+    intro: string;
+    whatMovingHereInvolves: string;
+    landmarks?: string[];
+    nearbyMicroAreas?: string[];
+    localFaqs?: Array<{ question: string; answer: string; display?: boolean }>;
+    siblingMicros?: Array<{ name: string; slug: string }>;
+  };
+}
+
+const { micro } = Astro.props;
+
+const parentSlug = micro.parent;
+const parentName = micro.parentName || micro.parent.replace(/-/g, ' ');
+
+const breadcrumbs = [
+  { name: 'Areas', url: '/areas/' },
+  { name: micro.regionName || 'North West London', url: `/areas/${micro.region || 'north-west-london'}/` },
+  { name: parentName, url: `/areas/${parentSlug}/` },
+  { name: micro.name, url: `/areas/${parentSlug}/${micro.slug}/` }
+];
+
+const siblingLinks = (micro.siblingMicros || []).map((m) => ({
+  title: `${m.name} Removals`,
+  url: `/areas/${parentSlug}/${m.slug}/`
+}));
+
+const serviceLinks = [
+  { title: `House Removals in ${micro.name}`, url: `/removals/house-removals/` },
+  { title: `Man and Van in ${micro.name}`, url: `/removals/man-and-van/` },
+  { title: `Flat Removals in ${micro.name}`, url: `/removals/flat-removals/` },
+  { title: `Full Removals in ${parentName}`, url: `/areas/${parentSlug}/` }
+];
+---
+
+<BaseLayout
+  title={micro.metaTitle}
+  description={micro.metaDescription}
+  canonicalUrl={`https://www.pearlremovals.co.uk/areas/${parentSlug}/${micro.slug}/`}
+  schemaType="micro"
+  breadcrumbs={breadcrumbs}
+  faqs={micro.localFaqs || []}
+>
+  <Hero
+    variant="micro"
+    title={`Removals in ${micro.name}, ${parentName}`}
+    highlightText={micro.name}
+    subtitle={`Specialist local removals, packing and transport for homes and apartments in ${micro.name}.`}
+    eyebrow={`LOCAL MICRO AREA • PART OF ${parentName.toUpperCase()}`}
+    badges={micro.postcodes || []}
+  />
+
+  <Breadcrumbs items={breadcrumbs} />
+
+  <article class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="lg:col-span-8 space-y-6 text-sm sm:text-base leading-relaxed text-surface-700 dark:text-surface-300">
+        
+        <!-- Intro -->
+        <div class="glass-panel p-6 sm:p-8 rounded-3xl">
+          <h2 class="text-xl sm:text-2xl font-black text-navy dark:text-pearl mb-3">
+            Moving to or from {micro.name}
+          </h2>
+          <p class="leading-relaxed">
+            {micro.intro}
+          </p>
+        </div>
+
+        <!-- What Moving Here Involves -->
+        <div class="space-y-4">
+          <h3 class="text-lg font-bold text-navy dark:text-pearl flex items-center gap-2">
+            <Icon name="home" class="w-5 h-5 text-royal" />
+            <span>What Moving in {micro.name} Involves</span>
+          </h3>
+          <p class="leading-relaxed">
+            {micro.whatMovingHereInvolves}
+          </p>
+        </div>
+
+        <!-- Local Landmarks -->
+        {micro.landmarks && micro.landmarks.length > 0 && (
+          <div class="glass-pill p-4 rounded-2xl">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-surface-500 mb-2">Notable Local Streets & Landmarks:</h4>
+            <div class="flex flex-wrap gap-2">
+              {micro.landmarks.map((l) => (
+                <span class="px-2.5 py-1 rounded-full text-xs bg-white/60 dark:bg-white/10 text-navy dark:text-pearl">
+                  {l}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <slot />
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="lg:col-span-4 space-y-6">
+        <div class="glass-panel p-6 rounded-3xl sticky top-28 border border-white/60 dark:border-white/10 space-y-4">
+          <h3 class="text-sm font-bold uppercase tracking-wider text-navy dark:text-pearl">
+            Parent Area Hub
+          </h3>
+          <p class="text-xs text-surface-500">
+            {micro.name} is situated within our core {parentName} service territory.
+          </p>
+          <a
+            href={`/areas/${parentSlug}/`}
+            class="w-full py-2.5 px-4 rounded-xl glass-pill text-xs font-bold text-royal block text-center hover:bg-royal hover:text-white transition-colors"
+          >
+            ← View Main {parentName} Page
+          </a>
+
+          <div class="pt-2">
+            <a
+              href="/get-a-quote/"
+              class="w-full py-3 px-4 rounded-full bg-royal text-white text-center font-bold text-xs block hover:bg-royal-hover transition-colors shadow-md shadow-royal/20"
+            >
+              Get a Quote for {micro.name} →
+            </a>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Premium callout if premium -->
+    {micro.premium && (
+      <PremiumServicesCallout areaName={micro.name} />
+    )}
+
+    <!-- Sibling Micro Areas -->
+    {siblingLinks.length > 0 && (
+      <RelatedLinks
+        heading={`Other Neighbourhoods in ${parentName}`}
+        links={siblingLinks}
+      />
+    )}
+
+    <RelatedLinks
+      heading={`Removal Services Available in ${micro.name}`}
+      links={serviceLinks}
+    />
+
+    <!-- Local FAQs -->
+    {micro.localFaqs && micro.localFaqs.length > 0 && (
+      <FAQ items={micro.localFaqs} title={`Removals in ${micro.name} FAQs`} />
+    )}
+
+    <CTABand areaName={`${micro.name}, ${parentName}`} />
+
+    <QuoteFormSection
+      title={`Request a Quote for ${micro.name}`}
+      defaultFromPostcode={micro.postcodes?.[0] || 'NW2'}
+    />
+  </article>
+</BaseLayout>

@@ -1,0 +1,46 @@
+---
+import MicroAreaLayout from 'theme/layouts/MicroAreaLayout.astro';
+import { getPublishedMicroAreas } from 'theme/utils/published';
+import { areasRegistry } from 'src/data/areas';
+
+export async function getStaticPaths() {
+  const publishedMicros = await getPublishedMicroAreas();
+  return publishedMicros.map((micro) => ({
+    params: { area: micro.parentSlug, micro: micro.slug },
+    props: { micro }
+  }));
+}
+
+const { micro } = Astro.props;
+const data = micro.content?.data || {};
+
+const parentDef = areasRegistry.find((a) => a.slug === micro.parentSlug);
+const siblingMicros = (parentDef?.micros || [])
+  .filter((m) => m.slug !== micro.slug)
+  .slice(0, 6);
+---
+
+<MicroAreaLayout micro={{
+  name: micro.name,
+  slug: micro.slug,
+  parent: micro.parentSlug,
+  parentName: parentDef?.name,
+  region: parentDef?.region,
+  regionName: parentDef?.regionName,
+  premium: micro.premium,
+  postcodes: data.postcodes || parentDef?.postcodes || [],
+  metaTitle: data.metaTitle || `Removals in ${micro.name}, ${parentDef?.name || 'London'} | Pearl Removals`,
+  metaDescription: data.metaDescription || `Reliable, fully insured moving services in ${micro.name}. Local moving teams with parking and access expertise.`,
+  intro: data.intro || `Expert removals and packing services tailored to ${micro.name} properties.`,
+  whatMovingHereInvolves: data.whatMovingHereInvolves || '',
+  landmarks: data.landmarks || [],
+  nearbyMicroAreas: data.nearbyMicroAreas || [],
+  localFaqs: data.localFaqs || [],
+  siblingMicros: siblingMicros
+}}>
+  {micro.content && typeof micro.content.render === 'function' && (
+    <article class="prose dark:prose-invert max-w-none">
+      {/* Dynamic content rendering will mount here */}
+    </article>
+  )}
+</MicroAreaLayout>

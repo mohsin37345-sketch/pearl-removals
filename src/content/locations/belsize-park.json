@@ -1,0 +1,80 @@
+{
+  "name": "Belsize Park",
+  "slug": "belsize-park",
+  "region": "north-west-london",
+  "phase": 1,
+  "premium": true,
+  "boroughs": [
+    "Camden"
+  ],
+  "postcodes": [
+    "NW3"
+  ],
+  "distanceMiles": 3,
+  "metaTitle": "House Removals Belsize Park NW3 | Pearl Removals",
+  "metaDescription": "White-glove removals in Belsize Park NW3. Specialist moving teams for grand stucco villas, mansion blocks & England’s Lane flats. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers premier, white-glove residential removals throughout the picturesque and highly sought-after district of Belsize Park, serving NW3. Celebrated for its sweeping tree-lined avenues, palatial white-stucco Victorian villas, vibrant village cafes on England’s Lane, and refined residential ambiance, Belsize Park demands an exacting standard of moving expertise. We cater to discerning homeowners, professionals, and design studios, providing tailored moving services complete with fine-art crating, bespoke wardrobe packing, and courteous white-glove handling that preserves every detail of your valuable possessions. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London.",
+  "localKnowledge": "Belsize Park is characterized by wide residential avenues like Belsize Park Gardens, Lancaster Drive, and Glenilla Road, interspersed with bustling village pockets around Belsize Village and Haverstock Hill. Our team understands the nuances of managing moves along these tree-lined streets, coordinating with communal garden committees and scheduling loading during optimal hours.",
+  "propertyTypes": "The architectural landscape of Belsize Park features palatial white-stucco semi-detached and detached Victorian villas, grand red-brick mansion flats, elegant converted garden maisonettes, and discreet mews cottages. Properties frequently showcase double-height ceilings, fragile ceiling roses, and expansive timber floorboards.",
+  "parkingAndAccess": "The London Borough of Camden enforces Controlled Parking Zones (Zone CA-B and CA-F) across Belsize Park. Curbside space is highly valued, and parking outside grand villa entrances requires advance bay suspensions. We handle all Camden Council suspension applications to reserve dedicated parking bays directly outside your front portico.",
+  "transportLinks": "Convenient Northern Line tube services from Belsize Park station on Haverstock Hill, with swift access to Chalk Farm, Camden Town, and the West End.",
+  "travelInfo": "Direct road routes down Haverstock Hill towards Chalk Farm and Central London, with easy western links along Belsize Lane towards Swiss Cottage and the A41.",
+  "nearbyAreas": [
+    {
+      "name": "Hampstead",
+      "slug": "hampstead"
+    },
+    {
+      "name": "Primrose Hill",
+      "slug": "primrose-hill"
+    },
+    {
+      "name": "Swiss Cottage",
+      "slug": "swiss-cottage"
+    },
+    {
+      "name": "West Hampstead",
+      "slug": "west-hampstead"
+    },
+    {
+      "name": "St Johns Wood",
+      "slug": "st-johns-wood"
+    }
+  ],
+  "servicesOffered": [
+    "White-Glove Villa Removals Belsize Park",
+    "Mansion Flat Moves NW3",
+    "Fine Art Packing & Crating",
+    "Hanging Wardrobe Packing",
+    "Secure Storage Solutions"
+  ],
+  "premiumAngle": "Our Belsize Park premium service includes dedicated move coordinators, bespoke timber crating for fragile oil paintings and chandeliers, cotton-glove handling, and protective banister padding tailored to grand period villas.",
+  "localFaqs": [
+    {
+      "question": "How do you protect grand white-stucco entrances and porticos in Belsize Park?",
+      "answer": "We pad all door jambs with custom quilted guards, install threshold ramp protectors, and lay heavy neoprene runners across original stone steps.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange Camden Council parking bay suspensions in NW3?",
+      "answer": "Yes. Camden Council requires 14 working days notice for parking suspensions. We handle all application forms and fee administration directly.",
+      "display": true
+    },
+    {
+      "question": "Can you handle moves in narrow Belsize Village mews lanes?",
+      "answer": "Yes. For tight mews turnings off Belsize Lane, we deploy our compact 3.5-tonne Luton vans with tail lifts to avoid blocking narrow residential roads.",
+      "display": true
+    },
+    {
+      "question": "What packing materials do you supply for designer clothing and shoes?",
+      "answer": "We supply specialized wardrobe cartons with steel hanging rails and acid-free tissue paper for delicate silks, designer footwear, and evening wear.",
+      "display": true
+    }
+  ],
+  "testimonial": {
+    "name": "Dr. Katherine B.",
+    "quote": "Moved from a top-floor flat on Belsize Park Gardens. The Pearl Removals team was polite, immaculate in their handling of my art, and finished the move ahead of schedule.",
+    "rating": 5
+  },
+  "status": "published"
+}

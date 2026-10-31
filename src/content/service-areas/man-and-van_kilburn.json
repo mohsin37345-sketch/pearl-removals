@@ -1,0 +1,31 @@
+{
+  "service": "man-and-van",
+  "location": "kilburn",
+  "status": "published",
+  "uniqueIntro": "Our Kilburn man and van service is the premier choice for fast, flexible relocations throughout NW6. Situated just down the road from Cricklewood, we provide responsive small-move assistance for flatshares, 1-bed Victorian conversion apartments, and high-value single deliveries along Kilburn High Road and side avenues.",
+  "localAngle": "Kilburn High Road is a designated Red Route with strict daytime loading controls. Our movers know how to utilize rear service mews, side turnings off Cavendish Road, and evening loading windows to carry out moves legally and swiftly without incurring TfL traffic fines.",
+  "whatsIncluded": [
+    "Punctual arrival with equipped Luton removal van and experienced driver-loader",
+    "Heavy-duty quilted furniture blankets, webbing straps, and piano dollies",
+    "Careful handling of electronic entertainment gear, computers, and boxed smalls",
+    "Full transit insurance protection for all declared personal belongings"
+  ],
+  "priceGuidance": "From £65/hour (minimum 2 hours) for 1 mover or £85/hour for 2 movers. Competitive fixed quotes on request.",
+  "faqs": [
+    {
+      "question": "Can you park on Kilburn High Road for a quick move?",
+      "answer": "We schedule loading during approved TfL loading window hours or utilize quiet rear mews and side streets, applying for dispensations where required.",
+      "display": true
+    },
+    {
+      "question": "Can you help move my double bed and mattress down three flights of stairs?",
+      "answer": "Yes. Our crew members are trained in manual handling for narrow period staircases and will navigate tight landing turns safely.",
+      "display": true
+    },
+    {
+      "question": "Do you offer same-day man and van bookings in Kilburn?",
+      "answer": "Subject to vehicle availability, we frequently accommodate same-day emergency and short-notice bookings in NW6.",
+      "display": true
+    }
+  ]
+}

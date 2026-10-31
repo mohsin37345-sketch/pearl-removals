@@ -1,0 +1,44 @@
+{
+  "name": "Kenton",
+  "slug": "kenton",
+  "parent": "harrow",
+  "premium": false,
+  "status": "published",
+  "postcodes": [
+    "HA1",
+    "HA2",
+    "HA3"
+  ],
+  "metaTitle": "Removals in Kenton, Harrow | Pearl Removals",
+  "metaDescription": "Professional removals in Kenton, Harrow (HA1, HA2, HA3). House & flat moves, packing & storage from our local NW2 depot. Call 020 3151 8452.",
+  "intro": "Executing a swift, efficient property transition in Kenton, Harrow (HA1, HA2, HA3) demands the localized resources of a nearby operator. A vibrant residential community under Harrow, this district showcases spacious room layouts and private rear gardens. Our modern removal fleet is specifically configured for London residential streets, offering easy loading and secure transport in Kenton. Our friendly staff arrive in clean uniform and maintain an orderly, calm working atmosphere throughout Kenton. We provide wardrobe cartons allowing your hanging clothes to be transferred smoothly without creasing in Kenton. Whether you are moving one street over or across London, our NW2 depot provides the perfect springboard for Kenton.",
+  "whatMovingHereInvolves": "Our removal specialists in Kenton utilize specialized ramp systems to transfer heavy goods smoothly from kerb to vehicle in Harrow. Upper-floor duplexes in Kenton present challenging spiral flights, where modular furniture disassembly ensures safe, scrape-free transport. Our office coordinates directly with Harrow parking services to secure exemptions on single yellow lines and permit bays in Kenton. Our disciplined approach guarantees that communal areas are left completely clean and tidy following loading in Kenton. We handle heavy home gym equipment, outdoor planters, and large appliances with specialized lifting gear in Kenton. Our removal supervisors conduct an initial walk-through to plan optimal carrying paths through your Kenton residence.",
+  "landmarks": [
+    "Kenton Centre",
+    "Harrow High Street",
+    "Local Green Spaces"
+  ],
+  "nearbyMicroAreas": [
+    "harrow-on-the-hill",
+    "harrow-town-centre",
+    "west-harrow",
+    "harrow-weald"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you arrange parking suspensions for removals in Kenton?",
+      "answer": "We submit official parking bay suspension requests directly to the council authorities in Harrow on your behalf, reserving legal curbside loading space directly outside your property well in advance of moving day.",
+      "display": true
+    },
+    {
+      "question": "Can your team move large furniture up narrow stairwells in Kenton?",
+      "answer": "Yes. Our trained moving porters specialize in navigating period staircases, narrow conversions, and tight corners across Kenton, using protective quilted covers and partial disassembly where needed.",
+      "display": true
+    },
+    {
+      "question": "How quickly can Pearl Removals reach Kenton from your depot?",
+      "answer": "Our main operating base on Cricklewood Broadway NW2 is situated within easy reach of Kenton, allowing our removal vans to arrive punctually and provide responsive local moving support.",
+      "display": true
+    }
+  ]
+}

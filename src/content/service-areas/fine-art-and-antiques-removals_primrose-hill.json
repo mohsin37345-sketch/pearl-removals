@@ -1,0 +1,32 @@
+{
+  "service": "fine-art-and-antiques-removals",
+  "location": "primrose-hill",
+  "status": "published",
+  "uniqueIntro": "Our Primrose Hill fine art and antiques removal service offers discreet, museum-grade logistics for discerning collectors, artists, and galleries in NW1 and NW3. We handle delicate paintings, sculptural installations, and heirloom antiques with absolute reverence and technical skill.",
+  "localAngle": "Primrose Hill is home to celebrated creative studios, contemporary collectors, and historic Victorian interiors along Gloucester Avenue and Chalcot Crescent. Our specialists build custom flight cases and timber crates on demand, using non-abrasive materials and anti-static wrapping for delicate multimedia and oil works.",
+  "whatsIncluded": [
+    "Bespoke timber museum crates tailored to canvas and sculpture profiles",
+    "Archival glassine paper, bubble protection, and corner protectors",
+    "Discreet, liveried removal vehicles with climate-conscious transit ties",
+    "Comprehensive high-value transit insurance coverage",
+    "Precision uncrating and room positioning on delivery"
+  ],
+  "priceGuidance": "Fine art transport from £130 for individual cased pieces. Comprehensive gallery or home collections quoted following consultation.",
+  "faqs": [
+    {
+      "question": "How do you transport delicate ceramic and glass art in Primrose Hill?",
+      "answer": "Each glass or ceramic item is individually wrapped in acid-free tissue, enveloped in bubble wrap, and suspended within custom-cut foam cell inserts.",
+      "display": true
+    },
+    {
+      "question": "Can you move large modern canvases that cannot bend or roll?",
+      "answer": "Yes. We construct bespoke timber framework crates that keep large canvases rigid, vertical, and completely isolated from pressure during transit.",
+      "display": true
+    },
+    {
+      "question": "Do you operate with confidentiality agreements for high-profile clients in NW1?",
+      "answer": "Always. We regularly work under non-disclosure agreements with artists, media figures, and collectors, ensuring total discretion.",
+      "display": true
+    }
+  ]
+}

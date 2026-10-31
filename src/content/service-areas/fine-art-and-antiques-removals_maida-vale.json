@@ -1,0 +1,32 @@
+{
+  "service": "fine-art-and-antiques-removals",
+  "location": "maida-vale",
+  "status": "published",
+  "uniqueIntro": "Pearl Removals delivers white-glove fine art and antique moving services across Maida Vale W9 and Little Venice. Serving private collectors and interior designers, we provide custom timber crating, conservation wrapping, and secure vehicle transport for delicate artwork, mirrors, and antiques.",
+  "localAngle": "Properties in Little Venice and Maida Vale frequently feature high-ceilinged lateral apartments adorned with large oil paintings, antique French furniture, and ornate mirrors. Our technicians build custom timber cases and use acid-free glassine wrapping to isolate delicate surfaces from atmospheric moisture and transit friction.",
+  "whatsIncluded": [
+    "Custom-built timber crates tailored for oversized canvases and mirrors",
+    "Multi-layer conservation wrapping with glassine, bubble wrap, and corrugated outer guards",
+    "Padded transit vehicles with secure horizontal tie-off points",
+    "Full transit insurance cover tailored to high-value collections",
+    "Careful white-glove room placement and uncrating"
+  ],
+  "priceGuidance": "Fine art transport from £120 for single cased pieces. Multi-piece antique collections quoted following consultation.",
+  "faqs": [
+    {
+      "question": "How do you handle moves into high-floor mansion apartments in Maida Vale?",
+      "answer": "We coordinate with resident porters, pre-book service lifts, install padded lift wall protectors, and bring specialized furniture dollies for long corridors.",
+      "display": true
+    },
+    {
+      "question": "Can you pack antique French-polished credenzas and dining tables?",
+      "answer": "Yes. We wrap polished timber in breathable cotton blankets and protective corrugated board, avoiding tapes that could mark delicate wax finishes.",
+      "display": true
+    },
+    {
+      "question": "Do you provide insurance coverage for valuable private art collections in W9?",
+      "answer": "Yes. Comprehensive goods-in-transit insurance is included as standard, with higher declared valuation cover available on request.",
+      "display": true
+    }
+  ]
+}

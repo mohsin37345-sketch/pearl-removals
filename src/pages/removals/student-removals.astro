@@ -1,0 +1,127 @@
+---
+import ServiceLayout from 'theme/layouts/ServiceLayout.astro';
+
+const serviceData = {
+  title: 'Student Removals',
+  slug: 'student-removals',
+  metaTitle: 'Student Removals London | Pearl Removals',
+  metaDescription: 'Affordable, reliable student removals across London. Moving to Middlesex University Hendon, UCL, Kings, LSE, halls of residence & private student lets.',
+  heroHeading: 'Fast, Affordable Student Removals in London',
+  heroSubheading: 'Budget-friendly, dependable removals for university students across London. Ideal for halls of residence, shared houses, studio flats, and summer holiday storage.',
+  icon: 'book-open',
+  summary: 'Cost-effective moving service tailored for university students moving into halls, shared student houses, or between academic terms across London.',
+  priceFrom: 65,
+  priceUnit: 'hour',
+  priceNotes: 'Transparent hourly rates with a 2-hour minimum booking. Student discount options available with valid university student ID card.',
+  benefits: [
+    'Affordable hourly pricing with zero hidden surcharges or surprise weekend booking fees',
+    'Perfect for moves to Middlesex University (Hendon), UCL, King\'s College, LSE, Imperial, and Westminster',
+    'Collection and delivery directly to student hall loading bays, porter desks, and shared flat stairwells',
+    'Safe transport for high-value student essentials: laptops, PC rigs, monitors, textbooks, and musical instruments',
+    'Summer term luggage and carton storage options with convenient door-to-door return delivery in autumn',
+    'Clean, modern Luton vans equipped with transit blankets and trollies for effortless student packing'
+  ],
+  whatsIncluded: [
+    'Clean, spacious removal van and experienced driver to assist with loading and vehicle packing',
+    'Protective furniture blankets and heavy-duty straps securing computer equipment and luggage',
+    'Transport of packed storage cartons, suitcases, desk chairs, monitors, and bicycle frames',
+    'Direct door-to-door transport from your former address directly into your new accommodation room',
+    'Goods in Transit insurance covering your possessions throughout the move',
+    'Flexible collection windows scheduled around university term dates and exam schedules'
+  ],
+  whatsNotIncluded: [
+    'Packaging boxes and bubble wrap (can be ordered separately at discounted student rates)',
+    'Room cleaning services or rubbish disposal from vacated shared student houses',
+    'Disconnection or rewiring of electronic appliances'
+  ],
+  process: [
+    {
+      step: 1,
+      title: 'Quick Online Booking & Timing Confirmation',
+      description: 'Choose your preferred date and time slot, declare your luggage and furniture volume, and confirm student discount eligibility.'
+    },
+    {
+      step: 2,
+      title: 'Punctual Collection at Halls or Flat',
+      description: 'Our van arrives at your agreed time. We assist with loading your boxes, tech gear, luggage, and furniture efficiently into our carpeted van.'
+    },
+    {
+      step: 3,
+      title: 'Safe Transit Across London',
+      description: 'We navigate London\'s roads and congestion zones smoothly, ensuring your delicate monitors, books, and clothing are cushioned and secure.'
+    },
+    {
+      step: 4,
+      title: 'Direct Drop-Off to Your New Door',
+      description: 'We unload your items right into your student room, flat hallway, or designated storage bay, leaving you ready to settle in for term.'
+    }
+  ],
+  premiumAngle: 'For international postgraduates and students moving into high-end student developments across central and North West London, our full-service option includes pre-arrival packing, furniture assembly, and summer climate-controlled storage.',
+  faqs: [
+    {
+      question: 'Do you offer a student discount on London removals?',
+      answer: 'Yes! We provide dedicated student pricing with a valid student ID card or university enrolment letter. Contact our team to apply your discount code when booking your move.',
+      display: true
+    },
+    {
+      question: 'Can you collect my belongings from university halls with restricted access or security gates?',
+      answer: 'Yes. We frequently service halls across North West London and Central London—including Middlesex University halls in Hendon and Colindale, as well as Bloomsbury residences. We coordinate vehicle access with campus security and student wardens.',
+      display: true
+    },
+    {
+      question: 'Do you provide temporary storage over the summer holidays between term leases?',
+      answer: 'Yes. We offer secure, dry container storage throughout July, August, and September. We collect your belongings from your current student room and deliver them back to your new flat in September when lectures resume.',
+      display: true
+    },
+    {
+      question: 'Can I ride as a passenger in the removal van to my new student house?',
+      answer: 'Subject to cab space and prior agreement, one passenger is welcome to travel in the front passenger seat alongside our driver at no additional cost.',
+      display: true
+    }
+  ]
+};
+---
+
+<ServiceLayout service={serviceData}>
+  <div class="prose dark:prose-invert max-w-none space-y-6">
+    <h2 class="text-2xl sm:text-3xl font-black text-navy dark:text-pearl tracking-tight">
+      Reliable, Affordable University Removals Across North West London
+    </h2>
+    <p>
+      Starting a new academic year or changing student accommodation in London should be an exciting time, but dragging heavy suitcases, monitors, desk chairs, and mountains of textbooks across the London Underground or calling multiple expensive ride-shares is exhausting and stressful.
+    </p>
+    <p>
+      At <strong>Pearl Removals</strong>, our base in Cricklewood NW2 places us within minutes of major educational centres—including Middlesex University in Hendon, student developments in Colindale, and swift access down to UCL, King's College London, LSE, and Westminster University campuses in Central London. We offer friendly, affordable student moving packages designed to fit a student budget.
+    </p>
+
+    <h3 class="text-xl font-bold text-navy dark:text-pearl pt-4">
+      Halls of Residence Access & Gatehouse Protocol
+    </h3>
+    <p>
+      University student residences often have strict drop-off protocols, barrier access gates, designated loading bays, and 30-minute unloading limits during peak move-in weekends in September.
+    </p>
+    <p>
+      Our experienced London drivers know how to liaise with reception desk wardens and security staff. We arrange loading permits, park safely in designated delivery bays without blocking pedestrian walkways, and use wheeled equipment to transport all your cartons and luggage swiftly up lifts or stairwells directly to your door.
+    </p>
+
+    <h3 class="text-xl font-bold text-navy dark:text-pearl pt-4">
+      Protection for High-End Electronics & Gaming Rigs
+    </h3>
+    <p>
+      Modern university students travel with significant investments in digital equipment: curved monitors, high-performance desktop towers, audio gear, and tablets. These items cannot be loosely thrown into the boot of a minicab.
+    </p>
+    <p>
+      Our vans come prepared with shock-absorbent transit blankets, anti-static packing materials, and soft tie webbings. We secure electronic gear firmly off the floor against padded van bulkheads, ensuring zero transit vibration or screen damage.
+    </p>
+
+    <h3 class="text-xl font-bold text-navy dark:text-pearl pt-4">
+      Summer Term Storage Between Contracts
+    </h3>
+    <p>
+      Many student tenancies expire at the end of June, while new tenancy agreements in shared houses do not start until mid-September. Storing your belongings or paying rent on an empty flat over the summer is an unnecessary expense.
+    </p>
+    <p>
+      Pearl Removals provides flexible summer storage solutions. Our team collects your packed cartons and suitcases from your halls in June, stores them in our clean, secure, climate-monitored facility in Cricklewood, and returns them to your new London address on moving weekend in autumn.
+    </p>
+  </div>
+</ServiceLayout>

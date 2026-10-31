@@ -1,0 +1,50 @@
+---
+import RegionLayout from 'theme/layouts/RegionLayout.astro';
+import { getPublishedRegions } from 'theme/utils/published';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const publishedRegions = await getPublishedRegions();
+  return publishedRegions.map((region) => ({
+    params: { region: region.slug },
+    props: { region }
+  }));
+}
+
+const { region } = Astro.props;
+
+let regionContent: any = null;
+try {
+  const regionsCol = await getCollection('regions');
+  regionContent = regionsCol.find((r) => r.data.slug === region.slug);
+} catch {
+  regionContent = null;
+}
+
+const data = regionContent?.data;
+---
+
+<RegionLayout region={{
+  name: region.name,
+  slug: region.slug,
+  intro: data?.intro || region.intro,
+  metaTitle: `Removals in ${region.name} | Pearl Removals`,
+  metaDescription: `Professional, fully insured removals across ${region.name}. Local moving teams, packing, and storage based in Cricklewood NW2.`,
+  areas: region.areas,
+  faqs: data?.faqs || []
+}}>
+  <div class="prose dark:prose-invert max-w-none space-y-4">
+    {data?.body ? (
+      <div class="space-y-4" set:html={data.body} />
+    ) : (
+      <>
+        <h2 class="text-xl font-bold text-navy dark:text-pearl">
+          Specialist Moving Services Throughout {region.name}
+        </h2>
+        <p>
+          Pearl Removals operates comprehensive residential and commercial moving services across all key districts in {region.name}. From historic period conversions and mansion flats to spacious detached family residences, our Cricklewood dispatch base guarantees rapid response times and local logistical proficiency.
+        </p>
+      </>
+    )}
+  </div>
+</RegionLayout>

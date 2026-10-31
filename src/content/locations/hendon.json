@@ -1,0 +1,80 @@
+{
+  "name": "Hendon",
+  "slug": "hendon",
+  "region": "north-west-london",
+  "phase": 1,
+  "premium": false,
+  "boroughs": [
+    "Barnet"
+  ],
+  "postcodes": [
+    "NW4",
+    "NW9"
+  ],
+  "distanceMiles": 2,
+  "metaTitle": "House Removals Hendon NW4 | Pearl Removals",
+  "metaDescription": "Trusted house removals in Hendon NW4 & NW9. Professional moving crews for family homes, student moves & flats near Brent Street & Hendon Central. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides reliable, comprehensive removals throughout Hendon, covering NW4 and NW9. Situated just two miles north of our Cricklewood depot, our moving crews are deeply familiar with Hendon’s expansive suburban avenues, quiet residential crescents, and vibrant commercial centres around Brent Street and Hendon Central. From substantial 1930s detached and semi-detached family residences around Sunny Hill Park to modern lakeside apartment developments in West Hendon and student residences near Middlesex University, we deliver exceptional moving care tailored to your exact requirements with complete professionalism and transparent fixed pricing. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London.",
+  "localKnowledge": "Hendon boasts a rich residential history, from the historic hilltop village around St Mary’s Church and the ancient Church End through to the bustling commuter hub at Hendon Central and the major waterside regeneration along the Welsh Harp reservoir in West Hendon. Our crews know how to navigate the busy A41 Watford Way corridor, the tight turnings around Brent Street’s independent shops, and the student accommodation zones along The Burroughs.",
+  "propertyTypes": "Hendon offers a diverse cross-section of housing stock. It is famed for its generous 1930s inter-war family homes featuring spacious driveways and large gardens, alongside bay-windowed 1920s semi-detached properties, mid-century purpose-built blocks, and high-density modern developments such as Hendon Waterside overlooking the reservoir.",
+  "parkingAndAccess": "The London Borough of Barnet operates Controlled Parking Zones around Hendon Central station and Brent Street. However, many residential homes benefit from private off-street driveways. For properties without driveways, we arrange Barnet council parking bay suspensions to ensure our removal vehicles park directly outside your front entrance.",
+  "transportLinks": "Superb transport connections via the Northern Line tube at Hendon Central, Thameslink services from Hendon station, and comprehensive bus routes linking to Brent Cross and Mill Hill.",
+  "travelInfo": "Direct frontage along the A41 Watford Way and immediate connectivity to the A406 North Circular and M1 motorway (Junction 2), allowing fast transit across London and nationwide.",
+  "nearbyAreas": [
+    {
+      "name": "Cricklewood",
+      "slug": "cricklewood"
+    },
+    {
+      "name": "Mill Hill",
+      "slug": "mill-hill"
+    },
+    {
+      "name": "Golders Green",
+      "slug": "golders-green"
+    },
+    {
+      "name": "Brent Cross",
+      "slug": "brent-cross"
+    },
+    {
+      "name": "Colindale and Kingsbury",
+      "slug": "colindale-and-kingsbury"
+    }
+  ],
+  "servicesOffered": [
+    "House Removals Hendon",
+    "Student Removals Middlesex University",
+    "Flat Removals West Hendon",
+    "Packing & Storage NW4",
+    "Man and Van Hendon"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you help students moving to or from Middlesex University Hendon?",
+      "answer": "Yes! We offer dedicated, affordable student moving packages for students relocating to halls of residence or private shared lets around The Burroughs and Hendon Central.",
+      "display": true
+    },
+    {
+      "question": "Can you handle moves in the new Hendon Waterside apartment towers?",
+      "answer": "Yes, we regularly move residents into Hendon Waterside, coordinating loading bay bookings, lift pads, and security access with on-site building concierges.",
+      "display": true
+    },
+    {
+      "question": "Do most Hendon properties have off-street parking for removal vans?",
+      "answer": "Many semi-detached and detached homes in Hendon feature private front driveways. If your driveway is shared or narrow, our crews use ramp boards to protect paving.",
+      "display": true
+    },
+    {
+      "question": "How far in advance should I book my Hendon move?",
+      "answer": "We suggest contacting us 2 to 3 weeks prior to completion to ensure your preferred vehicle size is reserved and any Barnet council bay suspensions are secured.",
+      "display": true
+    }
+  ],
+  "testimonial": {
+    "name": "Jonathan B.",
+    "quote": "Moved our 4-bed family home near Sunny Hill Park. The team arrived on the dot at 7:30 AM, wrapped every mattress and sofa in heavy covers, and worked tirelessly all day. Exceptional service.",
+    "rating": 5
+  },
+  "status": "published"
+}

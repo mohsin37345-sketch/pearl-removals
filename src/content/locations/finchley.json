@@ -1,0 +1,84 @@
+{
+  "name": "Finchley",
+  "slug": "finchley",
+  "region": "north-west-london",
+  "phase": 1,
+  "premium": false,
+  "boroughs": [
+    "Barnet"
+  ],
+  "postcodes": [
+    "N3",
+    "N2"
+  ],
+  "distanceMiles": 3.5,
+  "metaTitle": "House Removals Finchley N3 & N2 | Pearl Removals",
+  "metaDescription": "Trusted house removals in Finchley Central, East Finchley & Church End. Fully insured moving teams for family homes & flats. Call 020 3151 8452 for a free quote.",
+  "intro": "Pearl Removals delivers dependable, comprehensive, and fully insured removals across Finchley, covering Finchley Central (N3), East Finchley (N2), Church End, and North Finchley. Situated just 3.5 miles north of our Cricklewood dispatch base, our moving teams possess deep familiarity with Finchley’s attractive suburban avenues, handsome Victorian and Edwardian family residences, and modern apartment developments near the tube. Whether you are upsizing to a spacious semi-detached home near Victoria Park, relocating from a conversion flat on Ballards Lane, or settling into a detached property in Woodside Park, we provide punctual, courteous, and damage-free moving care. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London.",
+  "localKnowledge": "Finchley is a thriving, green suburban district centred around the historic Regent’s Park Road, Ballards Lane, and High Road commercial centres. The area is flanked by open green spaces such as Victoria Park and Finchley Golf Club. Our drivers know how to navigate the network of residential streets between East End Road, Hendon Lane, and Ballards Lane, timing moves to avoid school-run and commuter traffic.",
+  "propertyTypes": "The residential architecture of Finchley features an appealing mix of substantial Edwardian semi-detached houses, bay-fronted 1930s family homes with private garages and driveways, Victorian cottage terraces, and contemporary purpose-built apartment blocks near the underground stations.",
+  "parkingAndAccess": "The London Borough of Barnet enforces Controlled Parking Zones around Finchley Central, East Finchley, and West Finchley stations. Most suburban residential avenues feature off-street private driveways. Where street parking is required, we manage Barnet Council parking bay suspensions.",
+  "transportLinks": "Superb transport connections via the Northern Line tube across three local stations (Finchley Central, East Finchley, and West Finchley), alongside extensive bus routes into Central London.",
+  "travelInfo": "Direct vehicular access onto the A406 North Circular Road and A1 Barnet Way, allowing rapid transit into Central London or outbound towards Hertfordshire and the M25.",
+  "nearbyAreas": [
+    {
+      "name": "Totteridge & Whetstone",
+      "slug": "totteridge-and-whetstone"
+    },
+    {
+      "name": "Highgate",
+      "slug": "highgate"
+    },
+    {
+      "name": "Muswell Hill",
+      "slug": "muswell-hill"
+    },
+    {
+      "name": "Mill Hill",
+      "slug": "mill-hill"
+    },
+    {
+      "name": "Hampstead Garden Suburb",
+      "slug": "hampstead-garden-suburb"
+    },
+    {
+      "name": "Golders Green",
+      "slug": "golders-green"
+    }
+  ],
+  "servicesOffered": [
+    "House Removals Finchley Central",
+    "East Finchley Flat Moves",
+    "Family House Moves N3",
+    "Full Packing & Boxes Supply",
+    "Secure Container Storage"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you arrange Barnet parking suspensions in Finchley?",
+      "answer": "Yes. We apply directly to the London Borough of Barnet for parking bay suspensions outside properties with permit-restricted curbs.",
+      "display": true
+    },
+    {
+      "question": "Can you handle large family home moves with outdoor garden furniture?",
+      "answer": "Yes. We regularly move large 4- to 5-bedroom homes in Finchley, including trampolines, garden shed contents, outdoor dining sets, and barbecues.",
+      "display": true
+    },
+    {
+      "question": "How close is Pearl Removals to Finchley?",
+      "answer": "Our central depot on Cricklewood Broadway is just 3.5 miles away, allowing our vehicles to reach Finchley homes in under 12 minutes.",
+      "display": true
+    },
+    {
+      "question": "Do you offer wardrobe boxes for clothing?",
+      "answer": "Yes, we supply heavy-duty hanging wardrobe cartons with steel rails so clothes transfer directly from your wardrobe without creasing.",
+      "display": true
+    }
+  ],
+  "testimonial": {
+    "name": "Andrew & Claire P.",
+    "quote": "Moved our family home from East Finchley to a larger property near Victoria Park. The Pearl Removals crew was hardworking, polite, and took tremendous care with all our belongings.",
+    "rating": 5
+  },
+  "status": "published"
+}

@@ -1,0 +1,80 @@
+{
+  "name": "Willesden Green",
+  "slug": "willesden-green",
+  "region": "north-west-london",
+  "phase": 1,
+  "premium": false,
+  "boroughs": [
+    "Brent"
+  ],
+  "postcodes": [
+    "NW10",
+    "NW2"
+  ],
+  "distanceMiles": 1,
+  "metaTitle": "House Removals Willesden Green NW10 | Pearl Removals",
+  "metaDescription": "Trusted removals in Willesden Green NW10 & NW2. Professional moving teams for period terraces, conversion flats & packing. Call 020 3151 8452 for a quote.",
+  "intro": "Pearl Removals delivers comprehensive, fully insured removals throughout Willesden Green, covering NW10 and NW2. Situated just one mile southwest of our Cricklewood dispatch base, our removals crews have intimate knowledge of Willesden Green’s tree-lined avenues, Edwardian terraced properties, and vibrant community around Walm Lane and High Road. Whether you are moving from a conversion flat near Willesden Green Jubilee Line station, relocating an expanding family into a spacious semi-detached home off Chapter Road, or moving into a newly built modern apartment, we ensure your relocation is handled with utmost punctuality, courteous care, and transparent pricing. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London.",
+  "localKnowledge": "Willesden Green is an energetic neighbourhood with a lively high street along Walm Lane and Willesden High Road. Traffic around the station can be brisk during morning and evening rush hours. Our drivers know how to navigate the network of residential streets between Walm Lane, Anson Road, and Chapter Road, ensuring our vehicles park safely and legally without blocking bus routes or delivery bays.",
+  "propertyTypes": "The residential landscape of Willesden Green is defined by handsome red-brick Edwardian and late-Victorian terraced family houses, featuring deep bay windows and decorative brick lintels. Many have been converted into generous two- and three-bedroom garden flats, alongside modern apartment blocks and converted former municipal buildings.",
+  "parkingAndAccess": "The London Borough of Brent enforces Controlled Parking Zone regulations (Zone WG) across Willesden Green. Street parking is in high demand, particularly within walking distance of the tube station. We arrange official parking bay suspensions with Brent Council well in advance, reserving curbside space right at your doorstep.",
+  "transportLinks": "Fast and direct Jubilee Line tube services from Willesden Green station reach Baker Street in 13 minutes and London Bridge in 22 minutes.",
+  "travelInfo": "Straightforward road access east towards the A5 and north towards the A406 North Circular at Staples Corner, enabling rapid transit across London.",
+  "nearbyAreas": [
+    {
+      "name": "Cricklewood",
+      "slug": "cricklewood"
+    },
+    {
+      "name": "Dollis Hill",
+      "slug": "dollis-hill"
+    },
+    {
+      "name": "Brondesbury",
+      "slug": "brondesbury"
+    },
+    {
+      "name": "Kensal Rise",
+      "slug": "kensal-rise"
+    },
+    {
+      "name": "Queens Park",
+      "slug": "queens-park"
+    }
+  ],
+  "servicesOffered": [
+    "House Removals Willesden Green",
+    "Flat Removals NW10",
+    "Man and Van Walm Lane",
+    "Packing Services NW10",
+    "Short & Long Term Storage"
+  ],
+  "localFaqs": [
+    {
+      "question": "How far in advance should I book parking suspensions in Willesden Green?",
+      "answer": "Brent Council requires at least 10 working days notice for residential parking bay suspensions. We handle all paperwork directly with the council on your behalf.",
+      "display": true
+    },
+    {
+      "question": "Can you help with dismantling and reassembling flat-pack furniture?",
+      "answer": "Yes. Our team carries full toolkits and can dismantle and reassemble modular wardrobes, beds, and dining tables, cataloguing all screws and bolts.",
+      "display": true
+    },
+    {
+      "question": "Do you offer small moves and student relocations in NW10?",
+      "answer": "Yes, our flexible Man and Van service is ideal for one-bedroom flat moves, student relocations, and single bulky furniture items.",
+      "display": true
+    },
+    {
+      "question": "Are my goods insured while in transit through Willesden Green?",
+      "answer": "Every move includes £50,000 Goods in Transit insurance and £5,000,000 Public Liability cover as standard.",
+      "display": true
+    }
+  ],
+  "testimonial": {
+    "name": "Hannah & Mark T.",
+    "quote": "Moved from Walm Lane to a house near Roundwood Park. Pearl Removals made what felt like an impossible packing job feel completely calm and organised. Highly recommended.",
+    "rating": 5
+  },
+  "status": "published"
+}

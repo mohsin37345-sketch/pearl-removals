@@ -1,0 +1,31 @@
+{
+  "service": "man-and-van",
+  "location": "cricklewood",
+  "status": "published",
+  "uniqueIntro": "Operating directly from our depot on Cricklewood Broadway, our professional man and van service provides prompt, reliable moving assistance across all of NW2. Ideal for studio apartments, compact 1-bedroom flat moves, student relocations, and single valuable furniture items, we offer hourly and fixed-rate options with zero delays.",
+  "localAngle": "Because we are stationed directly in Cricklewood, we can often dispatch a Luton vehicle within 30 minutes. We know every cut-through between the Broadway, Cricklewood Lane, and the Mapesbury borders, navigating local parking and red route loading windows with effortless ease.",
+  "whatsIncluded": [
+    "Modern, carpeted 3.5-tonne Luton van with tail lift and protective blankets",
+    "One or two uniformed, experienced professional movers to assist with loading",
+    "Furniture ties, mattress protection bags, and heavy-duty stair trollies",
+    "Goods in Transit insurance covering up to £50,000 as standard"
+  ],
+  "priceGuidance": "Starting from £65 per hour for 1 mover and Luton van, minimum 2 hours. Fixed quotes available.",
+  "faqs": [
+    {
+      "question": "How quickly can a man and van arrive in Cricklewood?",
+      "answer": "Our central depot is right on Cricklewood Broadway, so we can frequently arrive at your NW2 address within 20 to 30 minutes.",
+      "display": true
+    },
+    {
+      "question": "Do you help carry furniture up stairs in conversion flats?",
+      "answer": "Yes. Our experienced movers handle all the heavy lifting, navigating tight stairwells and landings with complete care.",
+      "display": true
+    },
+    {
+      "question": "Is fuel and mileage included in the hourly rate?",
+      "answer": "Yes, all local London mileage and vehicle fuel are included in our transparent hourly rates.",
+      "display": true
+    }
+  ]
+}

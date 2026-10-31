@@ -1,0 +1,52 @@
+---
+import BlogCard from './BlogCard.astro';
+import Icon from './Icon.astro';
+
+interface BlogPost {
+  title: string;
+  slug: string;
+  description: string;
+  date: Date | string;
+  category: string;
+  readTime?: string;
+}
+
+interface Props {
+  posts?: BlogPost[];
+}
+
+const { posts = [] } = Astro.props;
+---
+
+{posts && posts.length > 0 ? (
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {posts.map((post) => (
+      <BlogCard
+        title={post.title}
+        slug={post.slug}
+        description={post.description}
+        date={post.date}
+        category={post.category}
+        readTime={post.readTime}
+      />
+    ))}
+  </div>
+) : (
+  <div class="glass-panel p-8 sm:p-12 text-center rounded-3xl max-w-xl mx-auto my-12 border border-white/60 dark:border-white/10">
+    <div class="w-14 h-14 rounded-full bg-royal/10 text-royal flex items-center justify-center mx-auto mb-4">
+      <Icon name="archive" class="w-7 h-7" />
+    </div>
+    <h3 class="text-xl font-bold text-navy dark:text-pearl mb-2">
+      Moving Guides Coming Soon
+    </h3>
+    <p class="text-sm text-surface-600 dark:text-surface-400 mb-6 leading-relaxed">
+      Our team is currently preparing expert North West London moving guides, packing checklists, and council parking advice.
+    </p>
+    <a
+      href="/get-a-quote/"
+      class="inline-flex px-6 py-3 rounded-full bg-royal text-white font-bold text-sm hover:bg-royal-hover transition-colors"
+    >
+      Request a Moving Quote &rarr;
+    </a>
+  </div>
+)}

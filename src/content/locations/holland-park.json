@@ -1,0 +1,72 @@
+{
+  "name": "Holland Park",
+  "slug": "holland-park",
+  "region": "west-london",
+  "phase": 2,
+  "premium": true,
+  "boroughs": [
+    "Kensington & Chelsea"
+  ],
+  "postcodes": [
+    "W11",
+    "W14"
+  ],
+  "distanceMiles": 5.5,
+  "metaTitle": "House Removals Holland Park W11 W14 | Pearl Removals",
+  "metaDescription": "White-glove removals in Holland Park W11 & W14. Stately villa moving, piano transport & fine art crating with full RBKC coordination. Call 020 3151 8452.",
+  "intro": "Holland Park represents one of London’s most prestigious residential enclaves, celebrated for grand Italianate and Victorian villas, wide tree-lined avenues, and tranquil private carriage sweeps. Pearl Removals provides an immaculate, white-glove moving service tailored specifically to the refined requirements of Holland Park residents across W11 and W14. Whether managing an extensive whole-house relocation along Addison Road, moving a collection of contemporary sculpture on Holland Villas Road, or settling into a lateral conversion on Holland Park Avenue, our dedicated crews deliver discretion, punctuality, and flawless execution. Our moving coordinators conduct thorough pre-move surveys, calculate exact vehicle payload requirements, and provide complete packing supplies to ensure that every stage of your move in Holland Park is handled with absolute punctuality, courteous communication, and total care.",
+  "localKnowledge": "Bordering the lush 54 acres of Holland Park itself, this exclusive district is characterized by substantial detached and semi-detached villas set behind private forecourts and security gates. Moving in Holland Park demands meticulous planning: coordinating vehicle access along wide avenues with mature horse chestnut trees, managing RBKC parking bay suspensions, and communicating with private estate security teams. Our crews are trained in handling multi-vehicle convoys to ensure expansive six-bedroom estates are packed and transported smoothly.",
+  "propertyTypes": "Properties in Holland Park encompass palatial Victorian stucco mansions, architect-designed detached residences, and exclusive gated developments. Interiors feature soaring ceiling heights, grand stone entrance halls, antique parquetry, and valuable architectural finishes that demand comprehensive floor and door-jamb protection.",
+  "parkingAndAccess": "While many larger residences feature private gravel carriage drives, heavy removal vehicles must be positioned carefully to avoid damaging decorative paving or low-hanging branches. When kerbside loading is required, we coordinate directly with the Royal Borough of Kensington and Chelsea to suspend resident parking bays along the street frontage.",
+  "transportLinks": "Served by Holland Park Underground station on the Central line and Kensington (Olympia) on the Overground and District line, providing rapid access into central London.",
+  "travelInfo": "Convenient vehicular links via Holland Park Avenue connecting directly to the A402, A406, and Westway corridor for smooth transit to our Cricklewood fleet yard.",
+  "nearbyAreas": [
+    {
+      "name": "Notting Hill",
+      "slug": "notting-hill"
+    },
+    {
+      "name": "Bayswater",
+      "slug": "bayswater"
+    },
+    {
+      "name": "Acton",
+      "slug": "acton"
+    },
+    {
+      "name": "Kensal Green & North Kensington",
+      "slug": "kensal-green-and-north-kensington"
+    }
+  ],
+  "servicesOffered": [
+    "Luxury House Removals Holland Park",
+    "Fine Art Crating W14",
+    "Grand Piano Transport W11",
+    "Full Packing Services Holland Park",
+    "Discreet Private Relocations"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you provide private non-disclosure agreements (NDAs) for Holland Park clients?",
+      "answer": "Yes. We routinely sign confidentiality agreements with high-profile homeowners, family offices, and estate trustees, ensuring complete privacy throughout the move.",
+      "display": true
+    },
+    {
+      "question": "Can your team move grand pianos and large sculptures in Holland Park?",
+      "answer": "Yes. We deploy specialist piano skids, hydraulic tail lifts, and heavy-duty crane hoisting equipment where large instruments or sculptures cannot navigate internal stairs.",
+      "display": true
+    },
+    {
+      "question": "How do you protect gravel driveways and paved forecourts in Holland Park?",
+      "answer": "We lay heavy-duty ground protection mats to prevent tyre scuffing, oil drips, or stone disruption across private carriage sweeps.",
+      "display": true
+    },
+    {
+      "question": "How many removal vans do you deploy for large residences in W14?",
+      "answer": "For large four to six-bedroom properties, we provide synchronized multi-van fleets with dedicated four to six-person crews to complete the move efficiently in one day.",
+      "display": true
+    }
+  ],
+  "premiumAngle": "Holland Park demands the highest echelon of residential removal standards. From bespoke timber export crating for irreplaceable art to white-glove unpacking and furniture placement, our service is tailored for high-net-worth properties.",
+  "status": "published"
+}

@@ -1,0 +1,132 @@
+---
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import Hero from 'theme/components/Hero.astro';
+import TrustStrip from 'theme/components/TrustStrip.astro';
+import Breadcrumbs from 'theme/components/Breadcrumbs.astro';
+import PricingTable from 'theme/components/PricingTable.astro';
+import ComparisonTable from 'theme/components/ComparisonTable.astro';
+import CTABand from 'theme/components/CTABand.astro';
+import Icon from 'theme/components/Icon.astro';
+
+const breadcrumbs = [
+  { name: 'Pricing', url: '/prices/' }
+];
+---
+
+<BaseLayout
+  title="Removal Costs & Pricing Guide | Pearl Removals London"
+  description="Transparent removals pricing for North West London. Rate bands for flats, houses, man and van, and packing services with clear qualifying conditions. No hidden fees."
+  canonicalUrl="https://www.pearlremovals.co.uk/prices/"
+  breadcrumbs={breadcrumbs}
+>
+  <Hero
+    variant="simple"
+    title="House Removals Pricing Guide"
+    subtitle="Transparent, upfront rate bands with clearly stated conditions. We believe you should know what your move costs before booking."
+    eyebrow="CLEAR & HONEST PRICING"
+    badges={["Fixed Written Quotes", "No Hidden Key-Wait Surcharges", "All Insurance Included"]}
+  />
+
+  <TrustStrip />
+
+  <Breadcrumbs items={breadcrumbs} />
+
+  <article class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+    
+    <div>
+      <h2 class="text-2xl sm:text-3xl font-black text-navy dark:text-pearl tracking-tight mb-2">
+        Guideline Removal Rates in North West London
+      </h2>
+      <p class="text-sm text-surface-600 dark:text-surface-400 mb-6">
+        Below are our standard starting prices by property size. Each price includes our fully equipped Luton vans, professional movers, padded transit blankets, and £50k Goods in Transit insurance.
+      </p>
+
+      <PricingTable />
+    </div>
+
+    <!-- Pricing Factors Explanation -->
+    <div class="glass-panel p-6 sm:p-10 rounded-3xl space-y-6">
+      <h3 class="text-xl sm:text-2xl font-bold text-navy dark:text-pearl">
+        What Key Factors Determine Your Removal Quote?
+      </h3>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-xs sm:text-sm text-surface-700 dark:text-surface-300">
+        <div class="space-y-1">
+          <strong class="font-bold text-navy dark:text-pearl flex items-center gap-1.5">
+            <Icon name="box" class="w-4 h-4 text-royal" />
+            1. Total Volume of Belongings (Cubic Feet)
+          </strong>
+          <p class="text-surface-600 dark:text-surface-400 leading-relaxed">
+            The overall volume of goods dictates whether your move requires one 3.5T Luton van, multiple vans, or a larger vehicle, along with the size of the moving crew.
+          </p>
+        </div>
+
+        <div class="space-y-1">
+          <strong class="font-bold text-navy dark:text-pearl flex items-center gap-1.5">
+            <Icon name="building" class="w-4 h-4 text-royal" />
+            2. Property Access & Floor Levels
+          </strong>
+          <p class="text-surface-600 dark:text-surface-400 leading-relaxed">
+            Ground floor homes and properties with spacious lifts are faster to load than 3rd floor walk-ups in converted Victorian villas without a lift.
+          </p>
+        </div>
+
+        <div class="space-y-1">
+          <strong class="font-bold text-navy dark:text-pearl flex items-center gap-1.5">
+            <Icon name="truck" class="w-4 h-4 text-royal" />
+            3. Parking Restrictions & Carry Distance
+          </strong>
+          <p class="text-surface-600 dark:text-surface-400 leading-relaxed">
+            Parking directly outside your front door on a private drive is straightforward. Controlled parking zones requiring council suspensions or long carrying walks take longer.
+          </p>
+        </div>
+
+        <div class="space-y-1">
+          <strong class="font-bold text-navy dark:text-pearl flex items-center gap-1.5">
+            <Icon name="award" class="w-4 h-4 text-royal" />
+            4. Packing & Specialist Items
+          </strong>
+          <p class="text-surface-600 dark:text-surface-400 leading-relaxed">
+            Opting for our full packing service, furniture dismantling and reassembly, or transporting upright/grand pianos will be clearly itemised on your quote.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Moving Cost Calculator CTA -->
+    <div class="glass-pill p-6 sm:p-8 rounded-3xl flex flex-col sm:flex-row items-center justify-between gap-6 border border-royal/30">
+      <div class="space-y-1 text-center sm:text-left">
+        <h3 class="text-lg font-bold text-navy dark:text-pearl">
+          Want a Custom Estimate in 60 Seconds?
+        </h3>
+        <p class="text-xs sm:text-sm text-surface-600 dark:text-surface-400">
+          Try our interactive moving cost calculator to see real-time volume calculations and distance bands.
+        </p>
+      </div>
+      <a
+        href="/moving-cost-calculator/"
+        class="px-6 py-3 rounded-full bg-royal hover:bg-royal-hover text-white font-bold text-xs sm:text-sm whitespace-nowrap shadow-md shadow-royal/20 transition-all"
+      >
+        Try Cost Calculator →
+      </a>
+    </div>
+
+    <!-- Comparison Table -->
+    <div>
+      <div class="mb-4">
+        <h3 class="text-xl font-bold text-navy dark:text-pearl">
+          Fixed Written Quotes vs Casual Hourly Rates
+        </h3>
+        <p class="text-xs sm:text-sm text-surface-500 mt-1">
+          Why fixed price quotes protect your budget from unpredictable London traffic delays.
+        </p>
+      </div>
+      <ComparisonTable />
+    </div>
+
+    <CTABand
+      title="Lock In Your Fixed-Price Removal Quote"
+      subtitle="Contact our Cricklewood office today or request your free video walk-through survey."
+    />
+  </article>
+</BaseLayout>

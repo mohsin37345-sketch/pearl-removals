@@ -1,0 +1,65 @@
+---
+import { servicesRegistry } from 'src/data/services';
+import ServiceCard from './ServiceCard.astro';
+
+interface Props {
+  showSpecialistRow?: boolean;
+}
+
+const { showSpecialistRow = true } = Astro.props;
+
+const coreServices = servicesRegistry.filter((s) => s.tier === 'core');
+const specialistServices = servicesRegistry.filter((s) => s.tier === 'specialist');
+---
+
+<section class="py-12 lg:py-16" aria-labelledby="services-heading">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-10">
+      <div class="text-xs font-bold uppercase tracking-widest text-royal mb-2">Comprehensive Moving Solutions</div>
+      <h2 id="services-heading" class="text-3xl sm:text-4xl font-black text-navy dark:text-pearl tracking-tight">
+        Our Removal Services
+      </h2>
+      <p class="text-sm sm:text-base text-surface-600 dark:text-surface-400 mt-2">
+        Expertly equipped for London properties — from Victorian mansion flats and terraced cottages to large detached homes.
+      </p>
+    </div>
+
+    <!-- 6 Core Services Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+      {coreServices.map((service) => (
+        <ServiceCard
+          title={service.title}
+          slug={service.slug}
+          summary={service.summary}
+          icon={service.icon}
+          priceFrom={service.priceFrom}
+          priceUnit={service.priceUnit}
+        />
+      ))}
+    </div>
+
+    <!-- Specialist Services Row -->
+    {showSpecialistRow && (
+      <div>
+        <div class="flex items-center gap-4 mb-6">
+          <h3 class="text-sm font-bold uppercase tracking-wider text-surface-500 dark:text-surface-400 whitespace-nowrap">
+            Specialist Services
+          </h3>
+          <div class="h-px bg-surface-200 dark:bg-white/10 w-full"></div>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
+          {specialistServices.map((service) => (
+            <ServiceCard
+              title={service.title}
+              slug={service.slug}
+              summary={service.summary}
+              icon={service.icon}
+              isSpecialist={true}
+            />
+          ))}
+        </div>
+      </div>
+    )}
+  </div>
+</section>

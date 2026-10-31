@@ -1,0 +1,42 @@
+---
+import ServiceAreaLayout from 'theme/layouts/ServiceAreaLayout.astro';
+import { getPublishedServiceAreas } from 'theme/utils/published';
+import { areasRegistry } from 'src/data/areas';
+
+export async function getStaticPaths() {
+  const publishedServiceAreas = await getPublishedServiceAreas();
+  return publishedServiceAreas.map((sa) => ({
+    params: { service: sa.serviceSlug, area: sa.areaSlug },
+    props: { sa }
+  }));
+}
+
+const { sa } = Astro.props;
+const data = sa.content?.data || {};
+
+const currentAreaDef = areasRegistry.find((a) => a.slug === sa.areaSlug);
+const neighbouringAreas = areasRegistry
+  .filter((a) => a.region === currentAreaDef?.region && a.slug !== sa.areaSlug)
+  .slice(0, 3)
+  .map((a) => ({ name: a.name, slug: a.slug }));
+---
+
+<ServiceAreaLayout serviceArea={{
+  serviceSlug: sa.serviceSlug,
+  serviceTitle: sa.serviceTitle,
+  areaSlug: sa.areaSlug,
+  areaTitle: sa.areaTitle,
+  uniqueIntro: data.uniqueIntro || `Tailored ${sa.serviceTitle.toLowerCase()} services across ${sa.areaTitle} and surrounding neighbourhoods.`,
+  localAngle: data.localAngle || `Operating with intimate knowledge of ${sa.areaTitle} parking controls and property layouts.`,
+  whatsIncluded: data.whatsIncluded,
+  priceGuidance: data.priceGuidance,
+  caseStudy: data.caseStudy,
+  faqs: data.faqs || [],
+  neighbouringAreas: neighbouringAreas
+}}>
+  {sa.content && typeof sa.content.render === 'function' && (
+    <article class="prose dark:prose-invert max-w-none">
+      {/* Dynamic content rendering will mount here */}
+    </article>
+  )}
+</ServiceAreaLayout>

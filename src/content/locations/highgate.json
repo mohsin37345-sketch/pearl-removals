@@ -1,0 +1,72 @@
+{
+  "name": "Highgate",
+  "slug": "highgate",
+  "region": "north-london",
+  "phase": 2,
+  "premium": true,
+  "boroughs": [
+    "Haringey",
+    "Camden"
+  ],
+  "postcodes": [
+    "N6"
+  ],
+  "distanceMiles": 4,
+  "metaTitle": "House Removals Highgate N6 | Pearl Removals",
+  "metaDescription": "White-glove removals in Highgate Village N6. Period home moving, fine art crating & piano transport with Haringey & Camden parking. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides distinguished, white-glove residential removals throughout Highgate Village and the historic N6 postcode area. Perched high above London with panoramic views, Highgate is celebrated for its rich literary heritage, Grade II listed Georgian townhouses, exclusive private closes, and verdant proximity to Hampstead Heath and Waterlow Park. Whether relocating a substantial period home along The Grove, moving into the historic Holly Lodge Estate, or settling into a luxury apartment on Highgate West Hill, our dedicated moving specialists deliver meticulous packing, discreet handling, and flawless on-site logistics. Our moving coordinators conduct thorough pre-move surveys, calculate exact vehicle payload requirements, and provide complete packing supplies to ensure that every stage of your move in Highgate is handled with absolute punctuality, courteous communication, and total care.",
+  "localKnowledge": "Highgate occupies a unique hilltop position bridging both Haringey and Camden councils. Moving in Highgate Village involves navigating steep inclines, narrow carriage roads, and strict conservation restrictions. Roads like Southwood Lane, Pond Square, and Swains Lane require precise vehicle positioning to prevent obstructing traffic. Our drivers deploy agile 3.5-tonne Luton vans equipped with hydraulic tail lifts, perfectly proportioned for historic village lanes.",
+  "propertyTypes": "Highgate showcases magnificent Georgian red-brick townhouses, Arts & Crafts detached houses, prestigious Tudor-revival residences in the Holly Lodge Estate, and mid-century architectural masterpieces like Berthold Lubetkin’s Highpoint apartments.",
+  "parkingAndAccess": "Parking rules are divided between Haringey and Camden councils depending on which side of Highgate Hill your home sits. We verify your exact council boundary and arrange all necessary parking bay suspensions and yellow line dispensations well in advance of moving day.",
+  "transportLinks": "Served by Highgate and Archway stations on the High Barnet branch of the Northern line, providing fast commuter access to the West End and City.",
+  "travelInfo": "Rapid transit via Highgate Hill, Archway Road (A1), and Hampstead Lane connects Highgate directly to our Cricklewood dispatch headquarters in approximately 15 minutes.",
+  "nearbyAreas": [
+    {
+      "name": "Hampstead",
+      "slug": "hampstead"
+    },
+    {
+      "name": "Muswell Hill",
+      "slug": "muswell-hill"
+    },
+    {
+      "name": "Finchley",
+      "slug": "finchley"
+    },
+    {
+      "name": "Kentish Town",
+      "slug": "kentish-town"
+    }
+  ],
+  "servicesOffered": [
+    "Luxury Removals Highgate",
+    "Fine Art Transport N6",
+    "Piano Removals Highgate Village",
+    "Full Packing Services N6",
+    "Discreet Home Moves"
+  ],
+  "localFaqs": [
+    {
+      "question": "Which council handles parking suspensions in Highgate?",
+      "answer": "Highgate is split between Haringey and Camden councils. We identify your address’s exact jurisdiction and manage the full suspension filing on your behalf.",
+      "display": true
+    },
+    {
+      "question": "Can you navigate the steep hills and narrow lanes in Highgate Village?",
+      "answer": "Yes. Our modern 3.5-tonne Luton vans are chosen specifically for steep gradients and narrow historic streets like Pond Square and The Grove.",
+      "display": true
+    },
+    {
+      "question": "Do you have experience moving properties in the Highpoint apartments?",
+      "answer": "Yes. We are familiar with the architectural heritage of Highpoint, coordinating with building management to protect original lifts and communal spaces.",
+      "display": true
+    },
+    {
+      "question": "Can your team transport grand and upright pianos in N6?",
+      "answer": "Yes. We deploy specialized piano skids, stair climbers, and padded transit covers to safely move pianos through historic Highgate residences.",
+      "display": true
+    }
+  ],
+  "premiumAngle": "Highgate’s hilltop Georgian houses, private estates, and valuable antique collections require white-glove moving standards. We offer dedicated crating, comprehensive fine art transit insurance, and discreet, uniformed personnel.",
+  "status": "published"
+}

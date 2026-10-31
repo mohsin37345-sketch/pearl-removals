@@ -1,0 +1,79 @@
+{
+  "name": "Kensal Rise",
+  "slug": "kensal-rise",
+  "region": "north-west-london",
+  "phase": 1,
+  "premium": false,
+  "boroughs": [
+    "Brent"
+  ],
+  "postcodes": [
+    "NW10"
+  ],
+  "distanceMiles": 2.5,
+  "metaTitle": "House Removals Kensal Rise NW10 | Pearl Removals",
+  "metaDescription": "Expert house removals in Kensal Rise NW10. Professional moving crews for Victorian terraces near Chamberlayne Road. Call 020 3151 8452 for a free quote.",
+  "intro": "Pearl Removals provides reliable, comprehensive removals throughout Kensal Rise and the wider NW10 district. Centred around the lively independent boutiques and restaurants of Chamberlayne Road, Kensal Rise has evolved into one of West London’s most sought-after residential enclaves. Located only 2.5 miles from our Cricklewood depot, our removal teams have extensive experience working in Kensal Rise’s Victorian terraced houses, loft conversions, and split-level flats. We provide punctual, careful, and fully insured moving services tailored to modern homeowners and busy professionals alike. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London.",
+  "localKnowledge": "Chamberlayne Road is the bustling commercial backbone of Kensal Rise, featuring steady bus traffic and vibrant outdoor dining. Surrounding residential streets like College Road, Mortimer Road, and Keslake Road are densely parked with resident vehicles. Our team knows the optimal hours to load, avoiding school-run congestion and market delivery hours to ensure smooth and swift moves.",
+  "propertyTypes": "The residential architecture of Kensal Rise consists predominantly of characterful late-Victorian and Edwardian bay-fronted terraced houses. Many have been extended with contemporary rear glass kitchen extensions and dormer loft conversions, alongside attractive two-storey maisonettes and upper-floor conversion flats.",
+  "parkingAndAccess": "The London Borough of Brent operates Controlled Parking Zones (Zone KR) across Kensal Rise. Narrow street widths mean curbside parking must be carefully reserved to allow normal traffic flow. We manage all Brent Council parking bay suspension applications on your behalf.",
+  "transportLinks": "Convenient London Overground services from Kensal Rise station connect directly to Richmond, Clapham Junction, and Stratford, with nearby Bakerloo line services at Kensal Green.",
+  "travelInfo": "Direct road routes south along Chamberlayne Road towards Ladbroke Grove and Notting Hill, and north along Harvist Road towards Willesden and the A406.",
+  "nearbyAreas": [
+    {
+      "name": "Queens Park",
+      "slug": "queens-park"
+    },
+    {
+      "name": "Kensal Green and North Kensington",
+      "slug": "kensal-green-and-north-kensington"
+    },
+    {
+      "name": "Willesden Green",
+      "slug": "willesden-green"
+    },
+    {
+      "name": "Harlesden & Willesden",
+      "slug": "harlesden-and-willesden"
+    },
+    {
+      "name": "Cricklewood",
+      "slug": "cricklewood"
+    }
+  ],
+  "servicesOffered": [
+    "Victorian Terrace Removals Kensal Rise",
+    "Flat Removals NW10",
+    "Packing & Box Supplies",
+    "Man and Van Chamberlayne Road",
+    "Secure Storage Facilities"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you navigate narrow Victorian staircases in Kensal Rise terraced homes?",
+      "answer": "Our teams are experts at maneuvering bulky furniture up narrow period stairs. When necessary, we dismantle bed frames and modular sofas to ensure safe clearance.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange Brent parking suspensions in Kensal Rise?",
+      "answer": "Yes. We apply directly to Brent Council for parking bay suspensions, ensuring our vehicle has an official reserved bay outside your property.",
+      "display": true
+    },
+    {
+      "question": "Can you move heavy loft conversion furniture down multiple floors?",
+      "answer": "Yes. Our movers use padded banister covers and specialized lifting harnesses to bring heavy loft furniture down narrow stairwells safely.",
+      "display": true
+    },
+    {
+      "question": "Are moving boxes and bubble wrap provided before moving day?",
+      "answer": "Yes, we deliver all requested double-walled boxes, bubble wrap, tape, and wardrobe cartons directly to your door in advance.",
+      "display": true
+    }
+  ],
+  "testimonial": {
+    "name": "Liam & Chloe S.",
+    "quote": "Moved from College Road into our newly extended terrace. Pearl Removals arrived right on time, worked with incredible energy, and were careful with every single item.",
+    "rating": 5
+  },
+  "status": "published"
+}

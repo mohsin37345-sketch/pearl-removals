@@ -1,0 +1,70 @@
+{
+  "name": "Kentish Town",
+  "slug": "kentish-town",
+  "region": "central-london",
+  "phase": 2,
+  "premium": false,
+  "boroughs": [
+    "Camden"
+  ],
+  "postcodes": [
+    "NW5"
+  ],
+  "distanceMiles": 4,
+  "metaTitle": "House Removals Kentish Town NW5 | Pearl Removals",
+  "metaDescription": "Trusted removals in Kentish Town NW5 & Dartmouth Park. Professional home moving, packing & Camden parking management. Call 020 3151 8452 for a free quote.",
+  "intro": "Pearl Removals delivers punctual, dependable, and fully insured removal services across Kentish Town, Dartmouth Park, and the NW5 postcode area. Known for its independent high street, welcoming community atmosphere, and attractive Victorian and Edwardian architecture, Kentish Town is a highly sought-after neighbourhood for young professionals and growing families. Whether you are moving into a handsome bay-fronted terrace in Dartmouth Park, relocating from a conversion apartment along Kentish Town Road, or moving near Gospel Oak and the Heath borders, our experienced crews provide attentive, damage-free moving services with complete peace of mind. Our moving coordinators conduct thorough pre-move surveys, calculate exact vehicle payload requirements, and provide complete packing supplies to ensure that every stage of your move in Kentish Town is handled with absolute punctuality, courteous communication, and total care.",
+  "localKnowledge": "Kentish Town borders Hampstead Heath to the north and Camden Town to the south. The area features charming residential streets like Lady Margaret Road, Bartholomew Road, and Kelly Street with its iconic pastel-coloured cottages. Moving here requires understanding Camden Council Controlled Parking Zones, navigating narrow one-way streets, and scheduling vehicle loading outside school run hours near local primary academies.",
+  "propertyTypes": "The residential architecture of NW5 features tall four-storey Victorian houses, flat conversions with communal entryways, double-fronted Edwardian villas in Dartmouth Park, and modern development schemes near the railway stations.",
+  "parkingAndAccess": "The London Borough of Camden enforces parking zones throughout Kentish Town. Kerbside resident bays fill quickly during the day. We coordinate directly with Camden Council to secure official parking bay suspensions, reserving dedicated loading footage directly outside your front gate.",
+  "transportLinks": "Excellent connections via Kentish Town station (Northern line & Thameslink), Kentish Town West and Gospel Oak (Overground), providing direct links to the City and St Pancras.",
+  "travelInfo": "Direct vehicular access via Prince of Wales Road and Gordon House Road connects Kentish Town to our Cricklewood fleet base in under 15 minutes.",
+  "nearbyAreas": [
+    {
+      "name": "Hampstead",
+      "slug": "hampstead"
+    },
+    {
+      "name": "Belsize Park",
+      "slug": "belsize-park"
+    },
+    {
+      "name": "Camden Town",
+      "slug": "camden-town"
+    },
+    {
+      "name": "Highgate",
+      "slug": "highgate"
+    }
+  ],
+  "servicesOffered": [
+    "House Removals Kentish Town",
+    "Dartmouth Park Removals NW5",
+    "Packing Services NW5",
+    "Man and Van Kentish Town",
+    "Secure Storage Solutions"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you cover the Dartmouth Park conservation area?",
+      "answer": "Yes. We regularly handle moves in Dartmouth Park, providing specialized packing and careful handling for period Victorian and Edwardian family residences.",
+      "display": true
+    },
+    {
+      "question": "How do you handle narrow doorways and staircases in Kentish Town?",
+      "answer": "Our porters bring full toolkits to disassemble bed frames and dining tables, protecting doorways with quilted padding to prevent any scuffs or damage.",
+      "display": true
+    },
+    {
+      "question": "Can you arrange parking suspensions with Camden Council?",
+      "answer": "Yes. We handle all paperwork and statutory fees with Camden Council to reserve legal curbside parking outside your home.",
+      "display": true
+    },
+    {
+      "question": "Do you offer partial or full packing services in NW5?",
+      "answer": "Yes. We can pack your entire home, or provide fragile-only packing for delicate china, glassware, and mirrors using heavy-duty double-walled boxes.",
+      "display": true
+    }
+  ],
+  "status": "published"
+}

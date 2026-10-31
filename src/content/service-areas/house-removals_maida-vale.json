@@ -1,0 +1,31 @@
+{
+  "service": "house-removals",
+  "location": "maida-vale",
+  "status": "published",
+  "uniqueIntro": "Pearl Removals delivers distinguished, white-glove residential removals for palatial mansion apartments, canal-side stucco villas, and mews homes across Maida Vale and Little Venice W9. We specialize in mansion block logistics, fine-art crating, antique handling, and attentive move management.",
+  "localAngle": "Moving in Maida Vale requires seamless coordination with head porters, booking service elevators, installing communal corridor protection, and securing Westminster Council parking bay suspensions along wide boulevards like Lauderdale Road and Randolph Avenue.",
+  "whatsIncluded": [
+    "Dedicated move director managing every detail from survey to final placement",
+    "Tailored lift wall padding and communal floor protection for mansion blocks",
+    "Bespoke crating for original paintings, chandeliers, and marble fireplaces",
+    "Full packing, hanging wardrobe service, and careful furniture reassembly"
+  ],
+  "priceGuidance": "Bespoke fixed quotations for mansion flats and period villas following a video or in-person survey.",
+  "faqs": [
+    {
+      "question": "How do you protect heritage marble entrance halls in Maida Vale?",
+      "answer": "We lay heavy-duty protective runners across communal entrance halls and wrap passenger lift interiors in quilted blankets.",
+      "display": true
+    },
+    {
+      "question": "How far in advance must Westminster parking suspensions be booked in W9?",
+      "answer": "Westminster City Council requires at least 10 working days notice for residential bay suspensions. We manage the entire paperwork process.",
+      "display": true
+    },
+    {
+      "question": "Can you transport valuable acoustic grand pianos in Maida Vale?",
+      "answer": "Yes. Our specialist piano division uses custom piano shoes, padded covers, and stair dollies to move grand and upright pianos safely.",
+      "display": true
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+---
+import { siteConfig } from 'src/data/site';
+
+interface Props {
+  class?: string;
+}
+
+const { class: className = "" } = Astro.props;
+const hasAccreditations = siteConfig.accreditations && siteConfig.accreditations.length > 0;
+---
+
+{hasAccreditations && (
+  <div class={`flex flex-wrap items-center justify-center gap-6 my-6 ${className}`}>
+    {siteConfig.accreditations.map((acc) => (
+      <div class="glass-pill px-4 py-2 rounded-xl flex items-center gap-2 text-xs font-bold text-navy dark:text-pearl">
+        {acc.logoUrl && <img src={acc.logoUrl} alt={acc.name} class="h-6 w-auto" loading="lazy" />}
+        <span>{acc.name}</span>
+      </div>
+    ))}
+  </div>
+)}

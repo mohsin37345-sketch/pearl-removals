@@ -1,0 +1,72 @@
+{
+  "name": "Harrow",
+  "slug": "harrow",
+  "region": "outer-north-west-london",
+  "phase": 2,
+  "premium": false,
+  "boroughs": [
+    "Harrow"
+  ],
+  "postcodes": [
+    "HA1",
+    "HA2",
+    "HA3"
+  ],
+  "distanceMiles": 6,
+  "metaTitle": "House Removals Harrow HA1 HA2 HA3 | Pearl Removals",
+  "metaDescription": "Professional removals in Harrow HA1 HA2 HA3 & Harrow on the Hill. Reliable house moving, packing & Harrow council parking management. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers dependable, professional, and fully insured removal services across Harrow and the HA1, HA2, and HA3 postcode areas. From the historic Georgian and Victorian village setting of Harrow on the Hill to the thriving commercial hub of Harrow town centre, leafy suburban avenues in West Harrow, and spacious 1930s homes across Kenton and Harrow Weald, our skilled moving teams handle every relocation with expert care, punctuality, and transparent fixed pricing. Stationed close by in NW2, our removal fleet reaches Harrow quickly, providing flexible booking slots and complete packing support. Our moving coordinators conduct thorough pre-move surveys, calculate exact vehicle payload requirements, and provide complete packing supplies to ensure that every stage of your move in Harrow is handled with absolute punctuality, courteous communication, and total care.",
+  "localKnowledge": "Harrow is an expansive borough characterized by diverse residential neighbourhoods. Moving around Harrow on the Hill requires specialized knowledge of narrow historic roads, steep gradients like High Street and West Street, and tight turning circles near historic school buildings. In suburban areas such as West Harrow and Kenton, quiet residential avenues offer easier vehicle access but feature local Harrow Council Controlled Parking Zones.",
+  "propertyTypes": "Housing in Harrow spans historic Grade II listed Georgian cottages on the Hill, substantial 1930s semi-detached and detached homes with private gardens, converted Victorian maisonettes, and contemporary town-centre apartment complexes with lift access.",
+  "parkingAndAccess": "The London Borough of Harrow enforces Controlled Parking Zones across central and station areas. We arrange official Harrow Council parking bay suspensions in advance, ensuring legal kerbside standing outside your property without risk of penalty charges.",
+  "transportLinks": "Exceptional transit options via Harrow-on-the-Hill (Metropolitan line & Chiltern Railways), Harrow & Wealdstone (Bakerloo line, London Overground, West Coast Mainline), and West Harrow station.",
+  "travelInfo": "Direct vehicular access via the A404 Watford Road and A406 North Circular connects Harrow properties to our Cricklewood dispatch base in approximately 20 minutes.",
+  "nearbyAreas": [
+    {
+      "name": "Stanmore",
+      "slug": "stanmore"
+    },
+    {
+      "name": "Wembley",
+      "slug": "wembley"
+    },
+    {
+      "name": "Wembley Park",
+      "slug": "wembley-park"
+    },
+    {
+      "name": "Colindale & Kingsbury",
+      "slug": "colindale-and-kingsbury"
+    }
+  ],
+  "servicesOffered": [
+    "House Removals Harrow",
+    "Harrow on the Hill Removals",
+    "Flat Removals HA1",
+    "Full Packing Services Harrow",
+    "Secure Container Storage"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you manage Harrow Council parking suspensions?",
+      "answer": "Yes. We handle the complete parking suspension application directly with Harrow Council, ensuring dedicated loading bays are reserved outside your property.",
+      "display": true
+    },
+    {
+      "question": "Can you navigate the steep, narrow streets of Harrow on the Hill?",
+      "answer": "Yes. We deploy compact 3.5-tonne Luton vans that maneuver easily through historic lanes and tight corners without causing obstruction.",
+      "display": true
+    },
+    {
+      "question": "Do you provide packing materials for moves in Harrow?",
+      "answer": "Yes. We deliver heavy-duty double-walled cardboard boxes, bubble wrap, tape, and wardrobe boxes directly to your home before moving day.",
+      "display": true
+    },
+    {
+      "question": "How quickly can your team reach Harrow from your depot?",
+      "answer": "Our Cricklewood base is approximately 6 miles away, allowing our vehicles to reach Harrow within 20 minutes via the A404.",
+      "display": true
+    }
+  ],
+  "status": "published"
+}

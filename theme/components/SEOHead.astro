@@ -1,0 +1,87 @@
+---
+import { siteConfig } from 'src/data/site';
+import verificationData from 'src/data/verification.json';
+import { absoluteUrl } from 'theme/utils/absoluteUrl';
+
+interface Props {
+  title: string;
+  description: string;
+  canonicalUrl?: string;
+  noindex?: boolean;
+  ogType?: 'website' | 'article';
+  ogImage?: string;
+  ogImageAlt?: string;
+  publishedTime?: string;
+  modifiedTime?: string;
+}
+
+const {
+  title,
+  description,
+  canonicalUrl,
+  noindex = false,
+  ogType = 'website',
+  ogImage = '/images/og-pearl-removals.jpg',
+  ogImageAlt = 'Pearl Removals - Premium House Removals North West London',
+  publishedTime,
+  modifiedTime
+} = Astro.props;
+
+// Determine clean canonical URL
+const currentPath = Astro.url.pathname;
+const resolvedCanonical = canonicalUrl || absoluteUrl(currentPath);
+const resolvedOgImage = ogImage.startsWith('http') ? ogImage : absoluteUrl(ogImage);
+
+// Robots directive
+const robotsContent = noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
+---
+
+<!-- Primary Meta Tags -->
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+<link rel="canonical" href={resolvedCanonical} />
+<meta name="robots" content={robotsContent} />
+<meta name="googlebot" content={robotsContent} />
+
+<!-- Viewport & Formatting -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+
+<!-- Theme Colors -->
+<meta name="theme-color" content="#F8F7F4" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0B1528" media="(prefers-color-scheme: dark)" />
+
+<!-- Favicons & Manifest -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+
+<!-- Verification Tags (conditional) -->
+{verificationData.google && <meta name="google-site-verification" content={verificationData.google} />}
+{verificationData.bing && <meta name="msvalidate.01" content={verificationData.bing} />}
+{verificationData.yandex && <meta name="yandex-verification" content={verificationData.yandex} />}
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content={ogType} />
+<meta property="og:url" content={resolvedCanonical} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:site_name" content={siteConfig.businessName} />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:image" content={resolvedOgImage} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content={ogImageAlt} />
+{publishedTime && <meta property="article:published_time" content={publishedTime} />}
+{modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content={resolvedCanonical} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={resolvedOgImage} />
+<meta name="twitter:image:alt" content={ogImageAlt} />

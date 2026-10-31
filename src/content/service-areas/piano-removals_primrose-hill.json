@@ -1,0 +1,32 @@
+{
+  "service": "piano-removals",
+  "location": "primrose-hill",
+  "status": "published",
+  "uniqueIntro": "Pearl Removals provides bespoke piano removals in Primrose Hill NW1 and NW3. Catering to professional musicians, creative homeowners, and period property residents around Regent's Park Road and Chalcot Square, our skilled team ensures damage-free transport for uprights and grand pianos.",
+  "localAngle": "The picturesque, pastel-painted townhouses of Primrose Hill often feature narrow entrance hallways and elevated porticos. Maneuvering an upright piano or disassembling a baby grand requires specialized piano shoes, locking caster cups, and skilled team communication to negotiate tight interior angles.",
+  "whatsIncluded": [
+    "Two to four-person piano transit team trained in acoustic instruments",
+    "Padded protective piano jackets and pedal protection blocks",
+    "Custom piano skid boards and non-marking rubber dollies",
+    "Low-vibration vehicle transit with hydraulic tail lift",
+    "Full transit insurance cover"
+  ],
+  "priceGuidance": "Standard upright piano moves in Primrose Hill from £190. Grand piano moves quoted upon survey.",
+  "faqs": [
+    {
+      "question": "How do you move a baby grand piano through narrow doorways in Primrose Hill?",
+      "answer": "We systematically remove the lyre and legs, secure the piano body onto a padded skid board on its flat side, and maneuver it horizontally through doorways.",
+      "display": true
+    },
+    {
+      "question": "Do you handle Camden parking suspensions along Regent’s Park Road?",
+      "answer": "Yes. We apply for official parking bay suspensions with Camden Council to reserve dedicated kerbside loading space outside your townhouse.",
+      "display": true
+    },
+    {
+      "question": "Can you move upright pianos up external portico steps in Chalcot Square?",
+      "answer": "Yes. Our crews deploy heavy-duty ramp boards and mechanical stair hoists to ascend historic entrance steps without surface wear.",
+      "display": true
+    }
+  ]
+}

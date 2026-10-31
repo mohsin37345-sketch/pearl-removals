@@ -1,0 +1,41 @@
+{
+  "name": "Dartmouth Park",
+  "slug": "dartmouth-park",
+  "parent": "kentish-town",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "NW5"
+  ],
+  "metaTitle": "Removals in Dartmouth Park, Kentish Town | Pearl Removals",
+  "metaDescription": "Professional removals in Dartmouth Park, Kentish Town (NW5). House & flat moves, packing & storage from our local NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides reliable, fully insured moving services designed specifically for properties in Dartmouth Park, Kentish Town (NW5). Under the civic administration of Camden, the neighbourhood features quiet cul-de-sacs alongside bustling community hubs. Our modern removal fleet is specifically configured for London residential streets, offering easy loading and secure transport in Dartmouth Park. All vehicles carry transit ties, quilted sofa jackets, and specialized moving barrows designed for Dartmouth Park homes. Our friendly staff arrive in clean uniform and maintain an orderly, calm working atmosphere throughout Dartmouth Park. We provide wardrobe cartons allowing your hanging clothes to be transferred smoothly without creasing in Dartmouth Park.",
+  "whatMovingHereInvolves": "Handling property transitions in Dartmouth Park necessitates clear communication with building managers and road users across Kentish Town. Historic residences across Dartmouth Park boast high ceilings and tall sash windows, requiring specialist hoisting methods for oversized sofas and bookcases. Council suspension notices arranged through Camden keep your street frontage clear of parked cars on moving day in Dartmouth Park. We ensure that all high-value items, mirrors, and televisions are bubble-wrapped and strapped securely in Dartmouth Park. Our trained movers handle awkward corners and narrow doorways with expert technique and zero wall contact in Dartmouth Park.",
+  "landmarks": [
+    "Dartmouth Park Centre",
+    "Kentish Town High Street",
+    "Local Green Spaces"
+  ],
+  "nearbyMicroAreas": [
+    "kentish-town-road",
+    "tufnell-park",
+    "gospel-oak"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you arrange parking suspensions for removals in Dartmouth Park?",
+      "answer": "We submit official parking bay suspension requests directly to the council authorities in Camden on your behalf, reserving legal curbside loading space directly outside your property well in advance of moving day.",
+      "display": true
+    },
+    {
+      "question": "Can your team move large furniture up narrow stairwells in Dartmouth Park?",
+      "answer": "Yes. Our trained moving porters specialize in navigating period staircases, narrow conversions, and tight corners across Dartmouth Park, using protective quilted covers and partial disassembly where needed.",
+      "display": true
+    },
+    {
+      "question": "How quickly can Pearl Removals reach Dartmouth Park from your depot?",
+      "answer": "Our main operating base on Cricklewood Broadway NW2 is situated within easy reach of Dartmouth Park, allowing our removal vans to arrive punctually and provide responsive local moving support.",
+      "display": true
+    }
+  ]
+}

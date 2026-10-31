@@ -1,0 +1,41 @@
+---
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import Hero from 'theme/components/Hero.astro';
+import TrustStrip from 'theme/components/TrustStrip.astro';
+import Breadcrumbs from 'theme/components/Breadcrumbs.astro';
+import QuoteFormFull from 'theme/components/QuoteFormFull.astro';
+
+// Extract query parameters if redirected from an inline form or area page
+const fromPostcode = Astro.url.searchParams.get('from_postcode') || '';
+const moveType = Astro.url.searchParams.get('move_type') || 'house';
+
+const breadcrumbs = [
+  { name: 'Get a Quote', url: '/get-a-quote/' }
+];
+---
+
+<BaseLayout
+  title="Get a Free Moving Quote | Pearl Removals London"
+  description="Request a free, no-obligation moving quote from Pearl Removals. Transparent fixed prices for house removals, flat moves, and man & van in North West London."
+  canonicalUrl="https://www.pearlremovals.co.uk/get-a-quote/"
+  breadcrumbs={breadcrumbs}
+>
+  <Hero
+    variant="simple"
+    title="Request Your Free Moving Quote"
+    subtitle="Tell us a few details about your move and we'll prepare an accurate, transparent fixed quotation with no hidden fees."
+    eyebrow="QUICK & SIMPLE ESTIMATE"
+    badges={["No Obligation", "Fixed Prices", "Free Video Surveys"]}
+  />
+
+  <TrustStrip />
+
+  <Breadcrumbs items={breadcrumbs} />
+
+  <article class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+    <QuoteFormFull
+      initialFromPostcode={fromPostcode}
+      initialMoveType={moveType}
+    />
+  </article>
+</BaseLayout>

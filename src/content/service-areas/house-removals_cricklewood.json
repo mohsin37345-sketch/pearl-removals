@@ -1,0 +1,31 @@
+{
+  "service": "house-removals",
+  "location": "cricklewood",
+  "status": "published",
+  "uniqueIntro": "Pearl Removals delivers comprehensive, fully insured house removals for families and homeowners in Cricklewood NW2. From double-fronted Edwardian houses near Gladstone Park to multi-level period terraces off Richborough Road, our home-based team provides complete packing, loading, and transport with unmatched local pride.",
+  "localAngle": "Moving house in Cricklewood involves coordinating across Brent, Barnet, and Camden boundaries depending on which side of the Broadway you live. Our office team handles the specific council bay suspension applications and parking dispensations so moving day runs without parking headaches.",
+  "whatsIncluded": [
+    "Full pre-move survey and guaranteed fixed-price written quotation",
+    "Dedicated removal vehicles (Luton and 7.5t) with multi-man uniformed crew",
+    "Floor runners, door jamb covers, and padded sofa and mattress protection",
+    "Disassembly and reassembly of master beds, dining tables, and large furniture"
+  ],
+  "priceGuidance": "Full house moves start from £350 for local 1-2 bed houses, with fixed quotes following a free survey.",
+  "faqs": [
+    {
+      "question": "Can you arrange parking suspensions for Cricklewood moves?",
+      "answer": "Yes. We verify your council jurisdiction (Brent, Barnet, or Camden) and submit official parking suspension requests directly.",
+      "display": true
+    },
+    {
+      "question": "Do you offer packing services the day before moving in Cricklewood?",
+      "answer": "Yes. Our packing team can arrive the day prior with double-walled boxes, bubble wrap, and wardrobe cartons to pack your entire house.",
+      "display": true
+    },
+    {
+      "question": "What happens if key handover is delayed on completion day?",
+      "answer": "Our crew remains patiently on-site with your belongings safely locked inside our vans. We offer fair, transparent waiting policies.",
+      "display": true
+    }
+  ]
+}

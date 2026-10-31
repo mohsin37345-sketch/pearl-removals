@@ -1,0 +1,128 @@
+---
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import Hero from 'theme/components/Hero.astro';
+import Breadcrumbs from 'theme/components/Breadcrumbs.astro';
+import ContactForm from 'theme/components/ContactForm.astro';
+import Icon from 'theme/components/Icon.astro';
+import { siteConfig } from 'src/data/site';
+
+const breadcrumbs = [
+  { name: 'Contact Us', url: '/contact-us/' }
+];
+
+const waUrl = `https://wa.me/${siteConfig.whatsAppE164.replace(/\+/g, '')}?text=${encodeURIComponent("Hello Pearl Removals, I'd like to ask a question about moving.")}`;
+---
+
+<BaseLayout
+  title="Contact Us | Pearl Removals North West London"
+  description="Contact Pearl Removals in Cricklewood, London NW2. Call 020 3151 8452, message us on WhatsApp, or send an enquiry for quick advice and free move surveys."
+  canonicalUrl="https://www.pearlremovals.co.uk/contact-us/"
+  schemaType="contact"
+  breadcrumbs={breadcrumbs}
+>
+  <Hero
+    variant="simple"
+    title="Contact Pearl Removals"
+    subtitle="Speak directly with our Cricklewood dispatch office for move advice, parking queries, or free surveys."
+    eyebrow="GET IN TOUCH • 7 DAYS A WEEK"
+    badges={["Cricklewood NW2 Base", "Phone: " + siteConfig.phone, "Hours: 07:00–20:00"]}
+  />
+
+  <Breadcrumbs items={breadcrumbs} />
+
+  <article class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+      
+      <!-- Contact Details & Direct Channels (5 cols) -->
+      <div class="lg:col-span-5 space-y-6">
+        <div class="glass-panel p-6 sm:p-8 rounded-3xl space-y-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-royal block mb-1">Direct Lines</span>
+            <h2 class="text-xl sm:text-2xl font-black text-navy dark:text-pearl tracking-tight">
+              Our Dispatch Office
+            </h2>
+          </div>
+
+          <div class="space-y-4">
+            <!-- Telephone -->
+            <a
+              href={`tel:${siteConfig.phoneE164}`}
+              class="flex items-start gap-3 p-3 rounded-2xl glass-pill hover:border-royal transition-all group"
+            >
+              <div class="w-10 h-10 rounded-xl bg-royal/10 text-royal flex items-center justify-center flex-shrink-0 group-hover:bg-royal group-hover:text-white transition-colors">
+                <Icon name="phone" class="w-5 h-5" />
+              </div>
+              <div>
+                <span class="text-xs text-surface-500 block">Telephone Hotline</span>
+                <span class="font-extrabold text-base text-navy dark:text-pearl group-hover:text-royal transition-colors">
+                  {siteConfig.phone}
+                </span>
+                <span class="text-[11px] text-surface-400 block">Mon–Sun 07:00–20:00</span>
+              </div>
+            </a>
+
+            <!-- WhatsApp -->
+            <a
+              href={waUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-start gap-3 p-3 rounded-2xl glass-pill hover:border-emerald-500 transition-all group"
+            >
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                <Icon name="mail" class="w-5 h-5" />
+              </div>
+              <div>
+                <span class="text-xs text-surface-500 block">WhatsApp Direct</span>
+                <span class="font-extrabold text-base text-emerald-700 dark:text-emerald-400">
+                  Message on WhatsApp
+                </span>
+                <span class="text-[11px] text-surface-400 block">Send photos of items & rooms</span>
+              </div>
+            </a>
+
+            <!-- Email -->
+            <a
+              href={`mailto:${siteConfig.email}`}
+              class="flex items-start gap-3 p-3 rounded-2xl glass-pill hover:border-royal transition-all group"
+            >
+              <div class="w-10 h-10 rounded-xl bg-royal/10 text-royal flex items-center justify-center flex-shrink-0 group-hover:bg-royal group-hover:text-white transition-colors">
+                <Icon name="mail" class="w-5 h-5" />
+              </div>
+              <div>
+                <span class="text-xs text-surface-500 block">Email Desk</span>
+                <span class="font-bold text-sm text-navy dark:text-pearl group-hover:text-royal transition-colors">
+                  {siteConfig.email}
+                </span>
+                <span class="text-[11px] text-surface-400 block">Fast responses within 2 hours</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Address -->
+          <div class="pt-4 border-t border-surface-200 dark:border-white/10 text-xs text-surface-600 dark:text-surface-400 space-y-1">
+            <h3 class="font-bold text-navy dark:text-pearl mb-1">Trading & Depot Address</h3>
+            <address class="not-italic leading-relaxed">
+              {siteConfig.tradingAddress.formatted}
+            </address>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form Component (7 cols) -->
+      <div class="lg:col-span-7">
+        <div class="text-left mb-6">
+          <span class="text-xs font-bold uppercase tracking-widest text-royal block mb-1">Send an Enquiry</span>
+          <h2 class="text-2xl sm:text-3xl font-black text-navy dark:text-pearl tracking-tight">
+            How Can We Help You?
+          </h2>
+          <p class="text-xs sm:text-sm text-surface-600 dark:text-surface-400 mt-1">
+            Fill in the details below and a senior team member will reply promptly.
+          </p>
+        </div>
+
+        <ContactForm />
+      </div>
+
+    </div>
+  </article>
+</BaseLayout>

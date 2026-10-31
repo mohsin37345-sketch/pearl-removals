@@ -1,0 +1,44 @@
+{
+  "name": "Harley Street",
+  "slug": "harley-street",
+  "parent": "marylebone-and-regents-park",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "W1",
+    "NW1"
+  ],
+  "metaTitle": "Removals in Harley Street, Marylebone & Regent's Park | Pear",
+  "metaDescription": "Professional removals in Harley Street, Marylebone & Regent's Park (W1, NW1). House & flat moves, packing & storage from our local NW2 depot. Call 020 3151 8452",
+  "intro": "Our experienced moving teams deliver tailored, damage-free relocations to households throughout Harley Street, Marylebone & Regent's Park (W1, NW1). Within Westminster, the area is characterized by spacious living rooms, wide staircases, and mature garden plots. Every move in Harley Street is backed by clear communication, transparent pricing with no hidden charges, and diligent on-site management. We provide wardrobe cartons allowing your hanging clothes to be transferred smoothly without creasing in Harley Street. Whether you are moving one street over or across London, our NW2 depot provides the perfect springboard for Harley Street. We offer tailored moving packages that fit your exact schedule and volume requirements in Harley Street.",
+  "whatMovingHereInvolves": "Our removals operations in Harley Street account for local width restrictions, traffic calming measures, and pedestrian footpaths in Marylebone & Regent's Park. Homes throughout Harley Street feature delicate hardwood floors and polished parquet, which we cover with non-slip neoprene runners before transit begins. Our administrative team handles all permit liaison with Westminster, arranging dedicated parking bay closures along your street in Harley Street. Our disciplined approach guarantees that communal areas are left completely clean and tidy following loading in Harley Street. We handle heavy home gym equipment, outdoor planters, and large appliances with specialized lifting gear in Harley Street.",
+  "landmarks": [
+    "Harley Street Centre",
+    "Marylebone & Regent's Park High Street",
+    "Local Green Spaces"
+  ],
+  "nearbyMicroAreas": [
+    "marylebone-village",
+    "marylebone-high-street",
+    "dorset-square",
+    "regents-park",
+    "baker-street"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you arrange parking suspensions for removals in Harley Street?",
+      "answer": "We submit official parking bay suspension requests directly to the council authorities in Westminster on your behalf, reserving legal curbside loading space directly outside your property well in advance of moving day.",
+      "display": true
+    },
+    {
+      "question": "Can your team move large furniture up narrow stairwells in Harley Street?",
+      "answer": "Yes. Our trained moving porters specialize in navigating period staircases, narrow conversions, and tight corners across Harley Street, using protective quilted covers and partial disassembly where needed.",
+      "display": true
+    },
+    {
+      "question": "How quickly can Pearl Removals reach Harley Street from your depot?",
+      "answer": "Our main operating base on Cricklewood Broadway NW2 is situated within easy reach of Harley Street, allowing our removal vans to arrive punctually and provide responsive local moving support.",
+      "display": true
+    }
+  ]
+}

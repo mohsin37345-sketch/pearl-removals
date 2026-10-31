@@ -1,0 +1,32 @@
+{
+  "service": "fine-art-and-antiques-removals",
+  "location": "st-johns-wood",
+  "status": "published",
+  "uniqueIntro": "Pearl Removals provides premier fine art and antiques removals across St John's Wood NW8. Serving art collectors, private estates, and luxury homeowners, we deliver bespoke crating, climate-conscious vehicle transport, and white-glove placement for high-value artwork and antiques.",
+  "localAngle": "Properties in St John’s Wood contain some of London’s finest private art and antique furniture collections. Moving priceless oil paintings, marble busts, and gilded mirrors requires museum-grade procedures. We build custom ISPM-15 export wooden crates, using high-density foam padding to absorb all transit vibration.",
+  "whatsIncluded": [
+    "Tailor-made timber export crates built for paintings and sculptures",
+    "Archival-grade packing with glassine paper, foam corners, and cushioning",
+    "Discreet, liveried transport vehicles with padded interior battening",
+    "High-value Goods in Transit insurance up to declared collection worth",
+    "Unpacking, uncrating, and positioning in your new residence"
+  ],
+  "priceGuidance": "Individual cased artwork from £140. Full private art collections quoted following visual survey.",
+  "faqs": [
+    {
+      "question": "Can you transport large marble sculptures in St John's Wood?",
+      "answer": "Yes. We build custom-reinforced timber pallets, using crane hoists or hydraulic lifting barrows to maneuver heavy marble pieces safely.",
+      "display": true
+    },
+    {
+      "question": "How do you safeguard antique French-polished sideboards and armoires?",
+      "answer": "We wrap polished timber in breathable cotton pads and quilted blankets, avoiding adhesive tapes that could degrade historical finishes.",
+      "display": true
+    },
+    {
+      "question": "Do your teams operate with non-disclosure agreements in NW8?",
+      "answer": "Yes. We regularly sign confidentiality agreements with estate managers and collectors to guarantee complete privacy.",
+      "display": true
+    }
+  ]
+}

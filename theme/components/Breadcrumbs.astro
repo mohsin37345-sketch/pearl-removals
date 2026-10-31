@@ -1,0 +1,46 @@
+---
+import Icon from './Icon.astro';
+
+interface BreadcrumbItem {
+  name: string;
+  url: string;
+}
+
+interface Props {
+  items: BreadcrumbItem[];
+  class?: string;
+}
+
+const { items, class: className = "" } = Astro.props;
+---
+
+{items && items.length > 0 && (
+  <nav aria-label="Breadcrumb" class={`py-3 px-4 max-w-7xl mx-auto w-full text-xs text-surface-500 dark:text-surface-400 ${className}`}>
+    <ol class="flex flex-wrap items-center gap-1.5 list-none p-0 m-0">
+      <li>
+        <a href="/" class="hover:text-royal transition-colors flex items-center gap-1">
+          <Icon name="home" class="w-3.5 h-3.5" />
+          <span>Home</span>
+        </a>
+      </li>
+
+      {items.map((item, idx) => {
+        const isLast = idx === items.length - 1;
+        return (
+          <li class="flex items-center gap-1.5">
+            <Icon name="chevron-right" class="w-3 h-3 text-surface-400" />
+            {isLast ? (
+              <span class="font-semibold text-navy dark:text-pearl" aria-current="page">
+                {item.name}
+              </span>
+            ) : (
+              <a href={item.url} class="hover:text-royal transition-colors">
+                {item.name}
+              </a>
+            )}
+          </li>
+        );
+      })}
+    </ol>
+  </nav>
+)}

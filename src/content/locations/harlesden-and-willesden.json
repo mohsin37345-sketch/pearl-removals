@@ -1,0 +1,79 @@
+{
+  "name": "Harlesden & Willesden",
+  "slug": "harlesden-and-willesden",
+  "region": "north-west-london",
+  "phase": 1,
+  "premium": false,
+  "boroughs": [
+    "Brent"
+  ],
+  "postcodes": [
+    "NW10"
+  ],
+  "distanceMiles": 2.5,
+  "metaTitle": "House Removals Harlesden & Willesden NW10 | Pearl Removals",
+  "metaDescription": "Trusted removals in Harlesden & Willesden NW10. Professional moving teams for Victorian family homes, flats & packing. Call 020 3151 8452 for a free quote.",
+  "intro": "Pearl Removals delivers comprehensive, affordable, and fully insured removals across Harlesden and Willesden, covering the entire NW10 district. Situated just 2.5 miles southwest of our Cricklewood dispatch base, our experienced moving crews have deep familiarity with every avenue and crescent around Roundwood Park, Craven Park, and Willesden Junction. From spacious Victorian and Edwardian family homes to modern flat conversions and commercial premises, we provide reliable, punctual, and damage-free moving services with complete transparency and friendly, professional customer care. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London.",
+  "localKnowledge": "Harlesden and Willesden feature vibrant commercial high streets connected by the historic Jubilee Clock roundabout and Craven Park. Traffic around Willesden Junction and the A404 Harrow Road corridor can be brisk. Our local drivers understand the network of residential streets, avoiding main thoroughfare bottlenecks and ensuring smooth loading on quiet side avenues.",
+  "propertyTypes": "The area features substantial architectural diversity: solid double-bayed late-Victorian and Edwardian terraced family homes, spacious 1930s maisonettes with private gardens, converted flats, and modern purpose-built apartment developments near public transport hubs.",
+  "parkingAndAccess": "The London Borough of Brent enforces Controlled Parking Zones across Harlesden (Zone H) and Willesden (Zone W). Streets surrounding Roundwood Park have permit bays that require advance suspension. We manage all Brent Council parking applications to reserve dedicated parking bays outside your property.",
+  "transportLinks": "Major transit connectivity via Willesden Junction station (Bakerloo Line tube and London Overground) and multiple high-frequency bus routes connecting to Central and West London.",
+  "travelInfo": "Direct access to the A404 Harrow Road leading straight into Central London, with rapid western links to the A406 North Circular and A40 Western Avenue.",
+  "nearbyAreas": [
+    {
+      "name": "Kensal Rise",
+      "slug": "kensal-rise"
+    },
+    {
+      "name": "Willesden Green",
+      "slug": "willesden-green"
+    },
+    {
+      "name": "Neasden",
+      "slug": "neasden"
+    },
+    {
+      "name": "Kensal Green and North Kensington",
+      "slug": "kensal-green-and-north-kensington"
+    },
+    {
+      "name": "Cricklewood",
+      "slug": "cricklewood"
+    }
+  ],
+  "servicesOffered": [
+    "House Removals Harlesden",
+    "Flat Removals Willesden",
+    "Man and Van NW10",
+    "Packing & Box Supplies",
+    "Secure Container Storage"
+  ],
+  "localFaqs": [
+    {
+      "question": "How quickly can your team reach Harlesden and Willesden?",
+      "answer": "Our central depot on Cricklewood Broadway is just 2.5 miles away, meaning our vehicles reach NW10 addresses in approximately 10 minutes.",
+      "display": true
+    },
+    {
+      "question": "Do you offer furniture dismantling and reassembly in NW10?",
+      "answer": "Yes! Our moving crews arrive equipped with full toolsets to dismantle wardrobes, beds, and tables, cataloguing all fixings safely.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange Brent Council parking suspensions for my move?",
+      "answer": "Yes. We handle all documentation and fee coordination with Brent Council to ensure legal loading bays are reserved outside your home.",
+      "display": true
+    },
+    {
+      "question": "Can you move large fridge-freezers and washing machines?",
+      "answer": "Yes. We use heavy-duty appliance dollies, protective quilted covers, and safety transit straps to transport domestic appliances safely.",
+      "display": true
+    }
+  ],
+  "testimonial": {
+    "name": "Grace M.",
+    "quote": "Moved from a three-bedroom terrace near Roundwood Park. The Pearl Removals team was courteous, swift, and handled all our heavy furniture with total care. Wonderful service.",
+    "rating": 5
+  },
+  "status": "published"
+}

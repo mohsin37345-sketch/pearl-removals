@@ -1,0 +1,31 @@
+{
+  "service": "house-removals",
+  "location": "mill-hill",
+  "status": "published",
+  "uniqueIntro": "Pearl Removals delivers comprehensive, fully insured house removals for large detached family estates, village houses, and executive residences across Mill Hill NW7. From sprawling gated properties on The Ridgeway to modern family townhouses in Mill Hill East, our experienced moving crews provide structured, stress-free relocations.",
+  "localAngle": "Mill Hill combines expansive suburban family homes with narrow, tree-lined village lanes around The Ridgeway and Highwood Hill. We deploy vehicles suited to tight access gates while providing multi-vehicle fleets for 5,000+ sq ft executive estates requiring substantial loading capacity.",
+  "whatsIncluded": [
+    "Full in-person or video pre-move survey with guaranteed fixed quotation",
+    "Multi-vehicle fleet options (7.5t and Luton) with dedicated moving teams",
+    "Protective floor coverings for hardwood and carpeted hallways and stairs",
+    "Disassembly and reassembly of all beds, wardrobes, and dining tables"
+  ],
+  "priceGuidance": "Full house moves start from £450 for compact homes; bespoke comprehensive quotations for large family estates.",
+  "faqs": [
+    {
+      "question": "Do you have experience moving 5- to 6-bedroom homes on The Ridgeway?",
+      "answer": "Yes. We routinely manage multi-day, multi-vehicle estate relocations for large homes in Mill Hill Village and Totteridge.",
+      "display": true
+    },
+    {
+      "question": "How do you protect gravel driveways and lawn borders during moves?",
+      "answer": "We lay heavy rubberised protection mats and wood runners over sensitive gravel driveways to prevent wheel ruts.",
+      "display": true
+    },
+    {
+      "question": "Do you offer a complete packing service before moving day in NW7?",
+      "answer": "Yes. Our team can pack your entire home the day prior, packing fragile china, books, clothing, and kitchen items meticulously.",
+      "display": true
+    }
+  ]
+}

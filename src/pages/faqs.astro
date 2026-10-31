@@ -1,0 +1,46 @@
+---
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import Hero from 'theme/components/Hero.astro';
+import TrustStrip from 'theme/components/TrustStrip.astro';
+import Breadcrumbs from 'theme/components/Breadcrumbs.astro';
+import FAQ from 'theme/components/FAQ.astro';
+import CTABand from 'theme/components/CTABand.astro';
+import QuoteFormSection from 'theme/components/QuoteFormSection.astro';
+import globalFaqs from 'src/data/faqs.json';
+
+const breadcrumbs = [
+  { name: 'FAQs', url: '/faqs/' }
+];
+---
+
+<BaseLayout
+  title="Removals FAQs | Pearl Removals North West London"
+  description="Got questions about moving home in North West London? Read our removals FAQs covering prices, packing, council parking suspensions, insurance, and completion day."
+  canonicalUrl="https://www.pearlremovals.co.uk/faqs/"
+  schemaType="page"
+  breadcrumbs={breadcrumbs}
+  faqs={globalFaqs}
+>
+  <Hero
+    variant="simple"
+    title="Frequently Asked Questions"
+    subtitle="Clear, direct answers to common questions about house removals, London parking permits, quotes, and insurance."
+    eyebrow="HELP & ANSWERS"
+    badges={["Pricing & Surveys", "Parking Suspensions", "Insurance Cover"]}
+  />
+
+  <TrustStrip />
+
+  <Breadcrumbs items={breadcrumbs} />
+
+  <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+    <FAQ items={globalFaqs} title="General Moving & Booking Questions" />
+
+    <CTABand
+      title="Still Have a Specific Question?"
+      subtitle="Our Cricklewood team is here to assist with any unusual access conditions or questions."
+    />
+
+    <QuoteFormSection title="Ready to Get Your Free Quote?" />
+  </article>
+</BaseLayout>

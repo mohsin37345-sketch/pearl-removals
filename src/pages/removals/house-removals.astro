@@ -1,0 +1,134 @@
+---
+import ServiceLayout from 'theme/layouts/ServiceLayout.astro';
+
+const serviceData = {
+  title: 'House Removals',
+  slug: 'house-removals',
+  metaTitle: 'House Removals North West London | Pearl Removals',
+  metaDescription: 'Expert house removals in North West London. Fully insured moves, careful packing, and experienced crews based in Cricklewood NW2. Call 020 8452 7788.',
+  heroHeading: 'Stress-Free House Removals in North West London',
+  heroSubheading: 'From classic Victorian and Edwardian family residences to modern architectural homes, Pearl Removals provides seamless, punctual, and fully insured house moving services across London and nationwide.',
+  icon: 'home',
+  summary: 'Flagship residential moving service tailored for townhouses, detached properties, and family homes of all sizes.',
+  priceFrom: 350,
+  priceUnit: 'move',
+  priceNotes: 'Indicative guide based on a local 1-to-2 bedroom property off-peak. Fixed written quotes provided following a free survey.',
+  benefits: [
+    'Fully insured with £50,000 Goods in Transit and £5,000,000 Public Liability cover as standard',
+    'Experienced, uniform-clad moving crews employed directly and trained in delicate handling',
+    'Dedicated modern Luton and 7.5-tonne removal vehicles with tail lifts and protective equipment',
+    'Full packing, partial packing, and bespoke export wrapping available on demand',
+    'CPZ parking suspensions and council permit logistics arranged with local authorities',
+    'Flexible completion-day timing coordination with estate agents and solicitors'
+  ],
+  whatsIncluded: [
+    'Pre-move survey (in-person or high-definition video consultation) with detailed volume assessment',
+    'Dedicated vehicle and uniformed moving crew equipped with heavy-duty furniture blankets and transit ties',
+    'Floor protection runners, door jamb protectors, and banister covers laid before loading commences',
+    'Careful loading, secure transport, and unloading into designated rooms of your new property',
+    'Basic disassembly and reassembly of standard beds and dining tables',
+    '£50,000 Goods in Transit insurance protection as standard'
+  ],
+  whatsNotIncluded: [
+    'Packing boxes and wrapping materials (unless our packing service is selected)',
+    'Council parking suspension fees or bay reservation charges (charged at local authority cost)',
+    'Plumbing or hard-wiring disconnection of washing machines, cookers, or chandeliers',
+    'Transport of prohibited hazardous substances, bottled gas, paint, or live animals',
+    'Attic emptying if the space is unboarded, lacks fixed ladders, or presents safety risks'
+  ],
+  process: [
+    {
+      step: 1,
+      title: 'Free Detailed Survey & Fixed Quotation',
+      description: 'We assess your property inventory, access angles, parking requirements, and any fragile heirlooms via a video or in-person walk-through, producing an itemised, fixed-price quote.'
+    },
+    {
+      step: 2,
+      title: 'Packing & Preparation (Optional Day Prior)',
+      description: 'If you opt for our packing service, our crew arrives the day before your move with heavy-duty double-walled cartons, wardrobe boxes, and acid-free wrapping paper to pack your home methodically.'
+    },
+    {
+      step: 3,
+      title: 'Moving Day Loading & Transit',
+      description: 'Our team lays floor runners, wraps your furniture in padded transit blankets, and securely ties items into our carpeted removal vehicles. We navigate London roads smoothly with GPS tracking.'
+    },
+    {
+      step: 4,
+      title: 'Unloading & Settling Into Your New Home',
+      description: 'Upon key release, we carry every box and furniture piece directly into your nominated rooms, reassemble declared items, and remove any discarded packaging before leaving you to enjoy your home.'
+    }
+  ],
+  premiumAngle: 'For high-value residences in Hampstead, Belsize Park, St John\'s Wood, and Highgate, our White-Glove House Removals option includes dedicated fine-art crating, antique padding, hanging wardrobe cartons, and a dedicated move coordinator to liaise with concierge teams and manage key handovers seamlessly.',
+  faqs: [
+    {
+      question: 'How far in advance should I book my house move in North West London?',
+      answer: 'We recommend booking as soon as exchange of contracts is imminent—typically 2 to 4 weeks prior to completion. This guarantees vehicle availability and allows adequate time (usually 10 to 14 working days) to arrange council parking suspensions with boroughs like Camden, Barnet, or Westminster.',
+      display: true
+    },
+    {
+      question: 'What happens if key release is delayed on completion day?',
+      answer: 'Key delays are a common reality in UK property chains. Our crews remain on-site with your belongings safely secured inside our vehicles. We offer transparent, fair waiting-time policies so you are never left stranded while funds clear through the banking system.',
+      display: true
+    },
+    {
+      question: 'Do you arrange parking suspensions for removal vans outside my house?',
+      answer: 'Yes. Most streets in North West London operate within Controlled Parking Zones (CPZs) or Red Routes. We calculate the exact curb space required for our vehicles and submit suspension applications directly to your local council, ensuring an authorized bay is reserved on moving morning.',
+      display: true
+    },
+    {
+      question: 'How do you protect mattresses, sofas, and delicate flooring?',
+      answer: 'We wrap all mattresses and upholstered sofas in heavy-duty waterproof polythene covers before taking them through doorways. In addition, we install self-adhesive hard-surface runners and padded banister guards across all hallways and stairs.',
+      display: true
+    },
+    {
+      question: 'Are there any hidden charges on moving day?',
+      answer: 'Never. Our quotations are completely transparent and fixed. All vehicle fuel, mileage within London, crew labour, standard insurance, and equipment are included in your quote. Any third-party council permit fees are invoiced at direct council cost without mark-up.',
+      display: true
+    }
+  ]
+};
+---
+
+<ServiceLayout service={serviceData}>
+  <div class="prose dark:prose-invert max-w-none space-y-6">
+    <h2 class="text-2xl sm:text-3xl font-black text-navy dark:text-pearl tracking-tight">
+      Professional Residential Moving Services Backed by Cricklewood Expertise
+    </h2>
+    <p>
+      Moving house is consistently ranked as one of life’s most demanding milestones. Between property exchange deadlines, solicitor updates, mortgage completions, and changing utility providers, the physical process of packing and transporting your cherished belongings requires a removals company you can depend on completely.
+    </p>
+    <p>
+      At <strong>Pearl Removals</strong>, our operations are rooted in Cricklewood, North West London. We understand the unique architectural and logistical characteristics of London homes. Whether you are transitioning from a red-brick Edwardian semi-detached in Mill Hill, moving into an elegant Georgian townhouse in Hampstead Village, or relocating to an extended family residence in Hendon, our team brings seasoned expertise, specialised vehicles, and genuine care to every assignment.
+    </p>
+
+    <h3 class="text-xl font-bold text-navy dark:text-pearl pt-4">
+      Mastering London Property Logistics: Parking, CPZs & Narrow Streets
+    </h3>
+    <p>
+      One of the largest obstacles to a smooth London house move is vehicle access and parking enforcement. The London Boroughs of Camden, Barnet, Brent, Westminster, and Haringey enforce strict Controlled Parking Zones (CPZs), tight residential bays, and red route restrictions along major arteries such as the A5 Edgware Road, Finchley Road, and Cricklewood Broadway.
+    </p>
+    <p>
+      Attempting to move without official bay suspensions frequently leads to hefty Penalty Charge Notices (PCNs) or, worse, vehicles being forced to park hundreds of metres away, drastically increasing loading times. Our dedicated move coordinators manage this entire administration for you. We calculate vehicle dimensions, map the exact bay coordinates outside your current and destination homes, and submit formal suspension requests within each council’s required advance notification window.
+    </p>
+
+    <h3 class="text-xl font-bold text-navy dark:text-pearl pt-4">
+      Comprehensive Property Protection & Careful Handling
+    </h3>
+    <p>
+      We recognise that your home and possessions are irreplaceable. Prior to carrying a single carton, our team lays down heavy-duty neoprene floor runners across hardwood, tile, and carpeted walkways to prevent scuffs and mud on damp London days. Padded quilted covers are wrapped around banisters, front door jambs, and staircase turns.
+    </p>
+    <p>
+      Every piece of furniture—from oak dining tables to contemporary glass sideboards—is wrapped in multi-layered furniture blankets and strapped firmly against the internal tracking rails of our vehicles. Sofas, armchairs, and mattresses are enclosed in heavy-gauge protective polythene bags to safeguard delicate upholstery against atmospheric dust and inclement weather.
+    </p>
+
+    <h3 class="text-xl font-bold text-navy dark:text-pearl pt-4">
+      Completion Day Timing & The Chain Reality
+    </h3>
+    <p>
+      In the UK property market, completion day often hinges on funds transferring between lenders, solicitors, and clearing banks around midday. It is common for buyers to experience a window of anticipation between vacating their former property at 12:00 PM and receiving the keys to their new home at 2:30 PM.
+    </p>
+    <p>
+      Pearl Removals plans for this eventuality. Our crews are trained to complete vehicle loading comfortably before midday, allowing you to carry out a final meter reading and handover inspection with peace of mind. While keys are processed, your loaded van remains securely locked and manned. When keys are released, our team unpacks with maximum efficiency so you can sleep in your new home that very evening.
+    </p>
+  </div>
+</ServiceLayout>

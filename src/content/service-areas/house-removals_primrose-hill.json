@@ -1,0 +1,31 @@
+{
+  "service": "house-removals",
+  "location": "primrose-hill",
+  "status": "published",
+  "uniqueIntro": "Pearl Removals delivers elite, white-glove house removals for grand Regency townhouses, pastel stucco terraces, and luxury residences throughout Primrose Hill NW1. We cater to discerning homeowners, authors, and industry leaders, providing impeccable project management, bespoke art crating, and complete peace of mind.",
+  "localAngle": "Moving a multi-floor townhouse in Primrose Hill involves navigating narrow historic streets like Chalcot Crescent and Gloucester Avenue under Camden Zone CA-F parking controls. We manage all council parking bay suspensions and police dispensations, ensuring dedicated curbside access outside your front portico.",
+  "whatsIncluded": [
+    "Comprehensive move management with dedicated senior supervisor on-site",
+    "Bespoke crating for high-value artwork, marble sculpture, and antique glassware",
+    "Heavy neoprene floor runners and padded banister wraps over all four floors",
+    "Full white-glove packing, unpacking, and room-by-room staging service"
+  ],
+  "priceGuidance": "Bespoke fixed pricing tailored to multi-floor townhouses following an in-person or video consultation.",
+  "faqs": [
+    {
+      "question": "How do you manage moves over 4 or 5 storeys in Primrose Hill townhouses?",
+      "answer": "We deploy an experienced 4- to 6-man team, stationing movers on intermediate landings to pass items efficiently without wall contact.",
+      "display": true
+    },
+    {
+      "question": "How far in advance must Camden parking suspensions be booked in NW1?",
+      "answer": "Camden Council requires a minimum of 14 working days notice. We manage the entire application timeline for you.",
+      "display": true
+    },
+    {
+      "question": "Do you sign non-disclosure agreements for private clients?",
+      "answer": "Yes. We regularly execute confidentiality agreements and operate with strict discretion for public and private figures.",
+      "display": true
+    }
+  ]
+}

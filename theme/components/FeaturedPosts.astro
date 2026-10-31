@@ -1,0 +1,70 @@
+---
+import { siteConfig } from 'src/data/site';
+import Icon from './Icon.astro';
+import BlogCard from './BlogCard.astro';
+
+interface Props {
+  posts?: any[];
+}
+
+const { posts = [] } = Astro.props;
+---
+
+<section class="py-12 lg:py-16" aria-labelledby="featured-posts-heading">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-widest text-royal block mb-1">Knowledge & Moving Tips</span>
+        <h2 id="featured-posts-heading" class="text-3xl sm:text-4xl font-black text-navy dark:text-pearl tracking-tight">
+          North West London Moving Advice
+        </h2>
+      </div>
+
+      <a href="/blog/" class="text-xs font-bold text-royal hover:underline inline-flex items-center gap-1">
+        <span>View all articles</span>
+        <Icon name="arrow-right" class="w-3.5 h-3.5" />
+      </a>
+    </div>
+
+    {posts && posts.length > 0 ? (
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {posts.slice(0, 3).map((post) => (
+          <BlogCard
+            title={post.data.title}
+            slug={post.data.slug || post.id}
+            description={post.data.description}
+            date={post.data.date}
+            category={post.data.category}
+            readTime={post.data.readTime}
+          />
+        ))}
+      </div>
+    ) : (
+      <div class="glass-panel p-8 sm:p-12 rounded-3xl border border-white/60 dark:border-white/10 text-center max-w-2xl mx-auto">
+        <div class="w-12 h-12 rounded-2xl bg-royal/10 text-royal flex items-center justify-center mx-auto mb-4">
+          <Icon name="book-open" class="w-6 h-6" />
+        </div>
+        <h3 class="text-lg font-bold text-navy dark:text-pearl mb-2">
+          Expert Guides in Preparation
+        </h3>
+        <p class="text-sm text-surface-600 dark:text-surface-400 mb-6 leading-relaxed">
+          Our moving guides are on the way. In the meantime, call us on <strong class="text-navy dark:text-pearl">{siteConfig.phone}</strong> for straight-talking advice, or request an instant quotation.
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-3">
+          <a
+            href="/get-a-quote/"
+            class="px-6 py-2.5 rounded-full bg-royal text-white text-xs font-bold hover:bg-royal-hover transition-colors"
+          >
+            Get a Free Quote &rarr;
+          </a>
+          <a
+            href={`tel:${siteConfig.phoneE164}`}
+            class="px-5 py-2.5 rounded-full glass-pill text-xs font-bold text-navy dark:text-pearl hover:bg-white/80 transition-colors"
+          >
+            Call {siteConfig.phone}
+          </a>
+        </div>
+      </div>
+    )}
+  </div>
+</section>

@@ -1,0 +1,80 @@
+{
+  "name": "Kilburn",
+  "slug": "kilburn",
+  "region": "north-west-london",
+  "phase": 1,
+  "premium": false,
+  "boroughs": [
+    "Brent",
+    "Camden"
+  ],
+  "postcodes": [
+    "NW6"
+  ],
+  "distanceMiles": 1.5,
+  "metaTitle": "House Removals Kilburn NW6 | Pearl Removals",
+  "metaDescription": "Expert house removals & man and van in Kilburn NW6. Experienced moving teams for Victorian flat conversions, terraces & parking permits. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers trusted, fully insured removals across Kilburn and the wider NW6 postcode district. Situated barely 1.5 miles south of our Cricklewood depot, our moving crews possess intimate knowledge of Kilburn’s bustling street layout, Victorian flat conversions, and complex parking rules. Whether you are relocating from an upper-floor period flat along Cavendish Road, moving out of a handsome terraced house near Kilburn Grange Park, or settling into a newly refurbished apartment off Willesden Lane, our skilled movers provide dependable, damage-free moving services with complete peace of mind and meticulous attention to period property preservation. We protect every threshold and ensure your relocation proceeds without hitch. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London.",
+  "localKnowledge": "Kilburn is bisected by the historic A5 Roman road (Kilburn High Road), creating a distinct jurisdictional split between the London Borough of Brent to the west and the London Borough of Camden to the east. The High Road is a designated Transport for London (TfL) Red Route subject to severe daytime loading restrictions. Our crews know the quietest rear mews, secondary access lanes, and optimal loading hours to ensure smooth loading without delaying arterial traffic.",
+  "propertyTypes": "The residential landscape of Kilburn features extensive rows of tall three-storey Victorian bay-fronted terraces, Edwardian semi-detached residences, and notable red-brick mansion apartments. The vast majority of larger homes have been divided into characterful conversion flats featuring high ceilings, timber floorboards, and narrow entrance corridors that demand careful furniture maneuvering.",
+  "parkingAndAccess": "Parking is tightly controlled by both Camden (Zone CA-U) and Brent (Zone KB). Side roads around Kilburn High Road are heavily parked with resident permit bays. We submit official parking bay suspension requests at least 10 working days prior to moving day, ensuring dedicated curbside parking outside your front steps and preventing costly council fines.",
+  "transportLinks": "Outstanding public transit connectivity via the Jubilee Line at Kilburn tube station, London Overground at Brondesbury and Kilburn High Road, and the Bakerloo line at nearby Kilburn Park.",
+  "travelInfo": "Kilburn High Road provides a direct southern route straight toward Maida Vale and Central London, with rapid western connections onto the A404 Harrow Road.",
+  "nearbyAreas": [
+    {
+      "name": "Cricklewood",
+      "slug": "cricklewood"
+    },
+    {
+      "name": "West Hampstead",
+      "slug": "west-hampstead"
+    },
+    {
+      "name": "Brondesbury",
+      "slug": "brondesbury"
+    },
+    {
+      "name": "Queens Park",
+      "slug": "queens-park"
+    },
+    {
+      "name": "Maida Vale",
+      "slug": "maida-vale"
+    }
+  ],
+  "servicesOffered": [
+    "House Removals Kilburn",
+    "Flat Removals NW6",
+    "Man and Van Kilburn",
+    "Packing & Boxes NW6",
+    "Furniture Dismantling & Assembly"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you handle moves on Kilburn High Road with Red Route restrictions?",
+      "answer": "We schedule loading during approved TfL loading window hours or arrange access through rear mews and quiet side streets, applying for dispensations where required.",
+      "display": true
+    },
+    {
+      "question": "Can you move large sofas up narrow Victorian flat staircases in Kilburn?",
+      "answer": "Yes. Our movers are experts at navigating tight 90-degree landing turns. If a piece cannot clear the stairs, our carpentry team can dismantle sofa arms or modular frames safely.",
+      "display": true
+    },
+    {
+      "question": "Which council handles parking on my street in Kilburn?",
+      "answer": "Properties east of Kilburn High Road are in Camden, while properties west are in Brent. We identify your council boundary and manage the exact parking application.",
+      "display": true
+    },
+    {
+      "question": "Do you offer an evening or weekend removal service in NW6?",
+      "answer": "Yes, we operate seven days a week, offering weekend and evening loading slots to fit your completion timetable and work schedule.",
+      "display": true
+    }
+  ],
+  "testimonial": {
+    "name": "Elena T.",
+    "quote": "Moved from a second-floor flat on Buckley Road. The Pearl Removals team dismantled my large wardrobe, carried everything down narrow stairs without touching the walls, and were incredibly polite.",
+    "rating": 5
+  },
+  "status": "published"
+}

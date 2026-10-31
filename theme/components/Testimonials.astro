@@ -1,0 +1,58 @@
+---
+import Icon from './Icon.astro';
+
+interface Review {
+  name: string;
+  area: string;
+  service?: string;
+  rating: number;
+  body: string;
+  date?: Date | string;
+  verified?: boolean;
+}
+
+interface Props {
+  reviews?: Review[];
+  title?: string;
+}
+
+const { reviews = [], title = "What Our Customers Say" } = Astro.props;
+
+// Filter for only genuine verified reviews
+const verifiedList = reviews.filter((r) => r.verified === true);
+---
+
+{verifiedList.length > 0 && (
+  <section class="py-12 lg:py-16" aria-labelledby="testimonials-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs font-bold uppercase tracking-widest text-royal mb-2 block">Verified Feedback</span>
+        <h2 id="testimonials-heading" class="text-3xl sm:text-4xl font-black text-navy dark:text-pearl tracking-tight">
+          {title}
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {verifiedList.map((rev) => (
+          <div class="glass-panel p-6 rounded-3xl flex flex-col justify-between hover:-translate-y-1 transition-transform">
+            <div>
+              <div class="flex text-gold mb-3">
+                {[...Array(rev.rating || 5)].map(() => (
+                  <Icon name="star" class="w-4 h-4" />
+                ))}
+              </div>
+              <blockquote class="text-sm text-surface-600 dark:text-surface-300 leading-relaxed italic mb-4">
+                "{rev.body}"
+              </blockquote>
+            </div>
+
+            <div class="pt-4 border-t border-surface-200/60 dark:border-white/10 flex items-center justify-between text-xs">
+              <span class="font-bold text-navy dark:text-pearl">{rev.name}</span>
+              <span class="text-surface-500">{rev.area}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+)}

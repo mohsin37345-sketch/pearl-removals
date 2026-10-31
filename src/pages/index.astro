@@ -1,0 +1,129 @@
+---
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import Hero from 'theme/components/Hero.astro';
+import TrustStrip from 'theme/components/TrustStrip.astro';
+import QuoteFormInline from 'theme/components/QuoteFormInline.astro';
+import ServiceGrid from 'theme/components/ServiceGrid.astro';
+import StatsPanel from 'theme/components/StatsPanel.astro';
+import HowItWorks from 'theme/components/HowItWorks.astro';
+import AreaCoverageMap from 'theme/components/AreaCoverageMap.astro';
+import PricingTable from 'theme/components/PricingTable.astro';
+import ComparisonTable from 'theme/components/ComparisonTable.astro';
+import Testimonials from 'theme/components/Testimonials.astro';
+import FAQ from 'theme/components/FAQ.astro';
+import FeaturedPosts from 'theme/components/FeaturedPosts.astro';
+import QuoteFormSection from 'theme/components/QuoteFormSection.astro';
+import CTABand from 'theme/components/CTABand.astro';
+import globalFaqs from 'src/data/faqs.json';
+import { getCollection } from 'astro:content';
+
+let posts: any[] = [];
+try {
+  posts = await getCollection('blog', ({ data }) => !data.draft);
+} catch {
+  posts = [];
+}
+
+let verifiedReviews: any[] = [];
+try {
+  verifiedReviews = await getCollection('testimonials', ({ data }) => data.verified === true);
+} catch {
+  verifiedReviews = [];
+}
+---
+
+<BaseLayout
+  title="House Removals North West London | Pearl Removals"
+  description="Premium house removals in North West London based in Cricklewood NW2. Fully insured, transparent fixed pricing, packing services and free surveys. Call 020 3151 8452."
+  canonicalUrl="https://www.pearlremovals.co.uk/"
+  schemaType="home"
+  faqs={globalFaqs}
+  verifiedReviews={verifiedReviews}
+>
+  <!-- 1. Hero Section -->
+  <Hero
+    variant="home"
+    hasVerifiedReviews={verifiedReviews.length > 0}
+  />
+
+  <!-- 2. Trust Strip -->
+  <TrustStrip variant="full" />
+
+  <!-- 3. Intro Paragraph & Quick Quote Tool -->
+  <section class="py-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="glass-panel p-6 sm:p-10 rounded-3xl mb-8 flex flex-col lg:flex-row items-center justify-between gap-8">
+      <div class="max-w-2xl space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-royal block">
+          Welcome to Pearl Removals
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-black text-navy dark:text-pearl tracking-tight">
+          North West London's Dedicated Moving Specialists
+        </h2>
+        <p class="text-sm sm:text-base text-surface-600 dark:text-surface-300 leading-relaxed">
+          Operating directly from our transport hub in <strong>Cricklewood, London NW2</strong>, Pearl Removals delivers white-glove house relocations, flat moves, and commercial transport across Camden, Brent, Barnet, Westminster, and the wider capital. Every move is handled by our polite, experienced crew with dedicated Luton box vans and £50,000 Goods in Transit insurance.
+        </p>
+      </div>
+
+      <!-- 4. Quick Quote Inline Tool -->
+      <div class="w-full lg:w-auto flex-shrink-0">
+        <QuoteFormInline buttonText="Quick Quote" defaultPostcode="NW2" />
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Services Grid -->
+  <ServiceGrid showSpecialistRow={true} />
+
+  <!-- 6. Why Choose Pearl Removals (Stats or Trust Promises) -->
+  <StatsPanel />
+
+  <!-- 7. How It Works -->
+  <HowItWorks />
+
+  <!-- 8. Areas We Cover -->
+  <AreaCoverageMap />
+
+  <!-- 9. Pricing & Comparison Table Section -->
+  <section class="py-12 lg:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-labelledby="pricing-preview-heading">
+    <div class="text-center max-w-2xl mx-auto mb-10">
+      <span class="text-xs font-bold uppercase tracking-widest text-royal mb-2 block">Honest, Clear Rates</span>
+      <h2 id="pricing-preview-heading" class="text-3xl sm:text-4xl font-black text-navy dark:text-pearl tracking-tight">
+        Transparent Pricing With No Hidden Fees
+      </h2>
+      <p class="text-sm sm:text-base text-surface-600 dark:text-surface-400 mt-2">
+        Every quote from Pearl Removals is fully itemised in writing before moving day.
+      </p>
+    </div>
+
+    <!-- Rate Bands Table with Adjacent Conditions -->
+    <PricingTable />
+
+    <!-- Competitor Comparison Table -->
+    <div class="mt-12">
+      <div class="text-center max-w-xl mx-auto mb-6">
+        <h3 class="text-xl font-bold text-navy dark:text-pearl">
+          How Pearl Removals Compares
+        </h3>
+        <p class="text-xs sm:text-sm text-surface-500 mt-1">
+          Why homeowners across North West London trust our professional team over casual van drivers.
+        </p>
+      </div>
+      <ComparisonTable />
+    </div>
+  </section>
+
+  <!-- 10. Reviews (Self-hiding when verified reviews are empty) -->
+  <Testimonials reviews={verifiedReviews} />
+
+  <!-- 11. FAQ Accordion -->
+  <FAQ items={globalFaqs} />
+
+  <!-- 12. Featured Blog Posts (With designed fallback card) -->
+  <FeaturedPosts posts={posts} />
+
+  <!-- 13. Homepage Glass Quote Form Section -->
+  <QuoteFormSection />
+
+  <!-- 14. CTA Band -->
+  <CTABand />
+</BaseLayout>

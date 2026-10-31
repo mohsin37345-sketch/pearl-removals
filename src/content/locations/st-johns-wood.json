@@ -1,0 +1,80 @@
+{
+  "name": "St John's Wood",
+  "slug": "st-johns-wood",
+  "region": "north-west-london",
+  "phase": 1,
+  "premium": true,
+  "boroughs": [
+    "Westminster"
+  ],
+  "postcodes": [
+    "NW8"
+  ],
+  "distanceMiles": 3,
+  "metaTitle": "House Removals St John's Wood NW8 | Pearl Removals",
+  "metaDescription": "Elite house removals in St John's Wood NW8. White-glove moving teams for grand detached villas, mansion blocks & Avenue Road estates. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers world-class, white-glove residential removals throughout the prestigious district of St John's Wood, serving NW8. Renowned globally for its palatial detached villas along Avenue Road and Hamilton Terrace, the historic Lord’s Cricket Ground, and the iconic Abbey Road Studios, St John’s Wood is one of the capital's premier residential enclaves. We provide discreet, masterfully orchestrated removal services tailored to high-net-worth individuals, diplomats, and private collectors, combining bespoke fine-art protection, antique handling, and attentive white-glove care that guarantees absolute privacy and flawlessness. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London.",
+  "localKnowledge": "St John's Wood features wide, dignified avenues alongside private gated drives and exclusive private roads. The area requires exceptional discretion and security protocol adherence, particularly near foreign embassies and high-profile residences. Our senior crews are well accustomed to estate gate clearance, private road coordination, and liaising politely with on-site security personnel.",
+  "propertyTypes": "The architectural portfolio of St John's Wood is distinguished by grand neoclassical and Italianate detached villas, expansive Grade II listed stucco townhouses with sweeping carriage drives, and luxury portered mansion developments along Prince Albert Road overlooking Regent’s Park.",
+  "parkingAndAccess": "The City of Westminster enforces strict Controlled Parking Zone (Zone C) regulations throughout NW8. Residential bays are closely monitored, and parking outside substantial estates requires advance Westminster bay suspensions or private carriage drive permissions. We coordinate all necessary permits directly with Westminster Council.",
+  "transportLinks": "Jubilee Line tube services from St John's Wood station reach Bond Street in just five minutes and Westminster in eight minutes.",
+  "travelInfo": "Direct southern access down Wellington Road and Park Road into Marylebone, Mayfair, and the West End, with swift northern routes via Finchley Road toward the M1.",
+  "nearbyAreas": [
+    {
+      "name": "Marylebone & Regent's Park",
+      "slug": "marylebone-and-regents-park"
+    },
+    {
+      "name": "Camden Town",
+      "slug": "camden-town"
+    },
+    {
+      "name": "Maida Vale",
+      "slug": "maida-vale"
+    },
+    {
+      "name": "Primrose Hill",
+      "slug": "primrose-hill"
+    },
+    {
+      "name": "Swiss Cottage",
+      "slug": "swiss-cottage"
+    }
+  ],
+  "servicesOffered": [
+    "White-Glove Estate Removals St John's Wood",
+    "Mansion Block Moves NW8",
+    "Fine Art & Antique Crating",
+    "Discreet Diplomatic Relocations",
+    "High-Security Storage"
+  ],
+  "premiumAngle": "Our St John's Wood VIP package features dedicated senior move directors, bespoke wooden crating for museum-grade artwork, cotton-glove handling for porcelain and chandeliers, unbranded vehicles upon request, and comprehensive insurance cover up to declared asset valuations.",
+  "localFaqs": [
+    {
+      "question": "Do you offer unbranded vehicles for private moves in St John's Wood?",
+      "answer": "Yes. We routinely provide discreet, unmarked vehicles and operate under strict non-disclosure agreements for high-profile clients.",
+      "display": true
+    },
+    {
+      "question": "How do you coordinate with concierge teams in luxury NW8 mansion blocks?",
+      "answer": "We liaise directly with building management in advance, confirm elevator dimensions, install protective wall padding, and adhere to approved moving hours.",
+      "display": true
+    },
+    {
+      "question": "Can you transport valuable wine cellars and temperature-sensitive art?",
+      "answer": "Yes. We provide temperature-conscious transport and padded cell-divided cartons for rare vintage wine collections and delicate original artwork.",
+      "display": true
+    },
+    {
+      "question": "How far in advance must Westminster parking suspensions be arranged in NW8?",
+      "answer": "Westminster City Council requires at least 10 working days notice for residential bay suspensions. We manage the entire application and fee process for you.",
+      "display": true
+    }
+  ],
+  "testimonial": {
+    "name": "Ambassador H. & Family",
+    "quote": "The Pearl Removals team managed our relocation on Hamilton Terrace with impeccable professionalism, discretion, and care. Our antiques and fine art arrived in flawless condition.",
+    "rating": 5
+  },
+  "status": "published"
+}

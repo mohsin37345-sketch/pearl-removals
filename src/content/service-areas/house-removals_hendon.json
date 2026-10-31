@@ -1,0 +1,31 @@
+{
+  "service": "house-removals",
+  "location": "hendon",
+  "status": "published",
+  "uniqueIntro": "Pearl Removals delivers comprehensive residential house removals across Hendon NW4 and NW9. Serving the substantial 1930s detached residences around Sunny Hill Park, suburban semi-detached homes near Brent Street, and modern multi-storey houses, our moving crews ensure an impeccably organized moving day for your entire household.",
+  "localAngle": "Many Hendon properties feature spacious front driveways and wide suburban gardens. Our drivers are skilled at positioning 7.5-tonne vehicles without damaging decorative block paving, while coordinating Barnet CPZ parking permits for properties in denser central streets.",
+  "whatsIncluded": [
+    "Detailed pre-move volume assessment and fixed written quote",
+    "Uniformed professional crew with dedicated removal fleet",
+    "Heavy-duty sofa covers, mattress bags, and banister padding",
+    "Full transit insurance coverage up to £50,000 as standard"
+  ],
+  "priceGuidance": "Typical 3-4 bedroom family home moves in Hendon range from £550-£950 depending on packing and volume.",
+  "faqs": [
+    {
+      "question": "How do you protect block-paved and gravel driveways in Hendon?",
+      "answer": "We lay heavy rubberised protection mats and timber runner boards to protect decorative driveway stones and prevent vehicle stains.",
+      "display": true
+    },
+    {
+      "question": "Do you offer a complete packing and unpacking service in NW4?",
+      "answer": "Yes. Our team can pack your entire home the day before and unpack kitchen and living essentials on moving day.",
+      "display": true
+    },
+    {
+      "question": "Can you move heavy outdoor trampolines and garden furniture?",
+      "answer": "Yes. We dismantle garden climbing frames, trampolines, and heavy patio furniture for safe transport.",
+      "display": true
+    }
+  ]
+}

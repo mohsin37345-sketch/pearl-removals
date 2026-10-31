@@ -1,0 +1,28 @@
+{
+  "slug": "west-london",
+  "name": "West London",
+  "intro": "Pearl Removals provides distinguished, white-glove residential removals throughout prime West London, covering Notting Hill, Holland Park, Bayswater, Acton, Maida Vale, and Paddington. Our team understands the refined demands of stucco-fronted villas, historic mansion blocks, and bustling market streets, ensuring courteous, impeccably organised moving services from start to finish.",
+  "body": "\n      <h2>Premier Residential Relocations in West London</h2>\n      <p>West London combines cosmopolitan elegance with architectural grandeur. From the colorful Victorian terraces of Notting Hill and the stately stucco villas of Holland Park to the sweeping red-brick mansion blocks of Maida Vale, the garden squares of Bayswater, and the vibrant residential roads of Acton, moving here requires an elevated standard of care, discretion, and logistical planning.</p>\n      \n      <p>Operating from our nearby NW2 dispatch base, <strong>Pearl Removals</strong> serves West London with swift responsiveness. Our proximity via Kilburn High Road, Harrow Road, and the Westway (A40) allows us to position removal crews effortlessly for early morning departures and tight completion schedules.</p>\n\n      <h3>Mansion Block & Period Villa Expertise: Lifts, Porters & Service Access</h3>\n      <p>A substantial portion of properties in Maida Vale, Paddington, Bayswater, and Holland Park are situated within classic pre-war mansion blocks or exclusive communal garden estates. These buildings maintain strict managing agent rules regarding moving hours, passenger lift protection, service lift bookings, and communal carpet coverings.</p>\n\n      <p>Our move managers liaise directly with building concierges, communal garden committees, and head porters well before moving day. We supply protective lift blankets, lay heavy-duty floor protection through communal marble entrance halls, and schedule loading during permitted hours to prevent disturbance to neighbouring residents.</p>\n\n      <h3>Controlled Parking Across Westminster, RBKC & Ealing</h3>\n      <p>The Royal Borough of Kensington & Chelsea, Westminster City Council, and the London Borough of Ealing operate strict controlled parking enforcement zones. Parking outside properties along Portobello Road, Addison Road, Elgin Avenue, or Sussex Gardens requires advance bay suspensions or specific commercial loading dispensations.</p>\n\n      <p>We manage all permit paperwork directly with local councils, reserving curb space directly adjacent to your entrance steps. This prevents lengthy carries down long flights of stone stairs and ensures your belongings are transferred swiftly and safely into our carpeted vehicles.</p>\n    ",
+  "faqs": [
+    {
+      "question": "Do you arrange lift protection and concierge clearance for West London mansion blocks?",
+      "answer": "Yes. We communicate with your building management in advance, confirm approved moving hours, and install custom-fitted protective padding inside lifts and along communal entranceways.",
+      "display": true
+    },
+    {
+      "question": "How do you handle moves into modern Paddington Basin apartments?",
+      "answer": "Paddington Basin developments frequently feature underground basement loading bays with strict vehicle height restrictions. We deploy low-profile vehicles and wheeled trolleys tailored to subterranean access gates.",
+      "display": true
+    },
+    {
+      "question": "Are Kensington & Chelsea and Westminster parking suspensions handled on my behalf?",
+      "answer": "Yes. We apply for official bay suspensions and loading dispensations with RBKC and Westminster councils, ensuring legal curb space is reserved outside your property.",
+      "display": true
+    },
+    {
+      "question": "What measures do you take to protect high-value antique furniture in Notting Hill and Holland Park?",
+      "answer": "We provide bespoke timber crating, acid-free glassine wrapping, and quilted transit blankets for French-polished antiques, fine art, and delicate architectural mirrors.",
+      "display": true
+    }
+  ]
+}

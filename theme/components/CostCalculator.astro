@@ -1,0 +1,243 @@
+---
+import Icon from './Icon.astro';
+---
+
+<div class="glass-panel p-6 sm:p-10 lg:p-12 rounded-3xl shadow-2xl border border-white/80 dark:border-white/10 max-w-4xl mx-auto" id="calculator-island">
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+    
+    <!-- Left Column: Inputs & Sliders (7 cols) -->
+    <div class="lg:col-span-7 space-y-6">
+      
+      <!-- 1. Property Size & Volume -->
+      <div>
+        <label for="calc-size" class="block text-xs font-bold uppercase tracking-wider text-navy dark:text-pearl mb-2">
+          1. Property Size
+        </label>
+        <select
+          id="calc-size"
+          class="w-full px-4 py-3 rounded-2xl bg-white/70 dark:bg-navy border border-surface-200 dark:border-white/10 text-sm font-semibold text-navy dark:text-pearl focus:ring-2 focus:ring-royal"
+        >
+          <option value="studio" data-volume="250" data-base="180">Studio / 1-Room Flat (~250 cu ft)</option>
+          <option value="1bed" data-volume="450" data-base="280">1 Bedroom Flat (~450 cu ft)</option>
+          <option value="2bed" data-volume="750" data-base="450" selected>2 Bedroom Flat / House (~750 cu ft)</option>
+          <option value="3bed" data-volume="1100" data-base="720">3 Bedroom House (~1,100 cu ft)</option>
+          <option value="4bed" data-volume="1600" data-base="1050">4 Bedroom House (~1,600 cu ft)</option>
+          <option value="5bed" data-volume="2200" data-base="1500">5+ Bedroom Residence (~2,200+ cu ft)</option>
+        </select>
+      </div>
+
+      <!-- 2. Distance From Cricklewood Base -->
+      <div>
+        <div class="flex items-center justify-between mb-2">
+          <label for="calc-distance" class="text-xs font-bold uppercase tracking-wider text-navy dark:text-pearl">
+            2. Approximate Distance: <span id="dist-label" class="text-royal font-extrabold">5 miles</span>
+          </label>
+          <span class="text-xs text-surface-500">From Cricklewood NW2</span>
+        </div>
+        <input
+          type="range"
+          id="calc-distance"
+          min="1"
+          max="50"
+          value="5"
+          class="w-full h-2 bg-surface-200 dark:bg-white/10 rounded-lg appearance-none cursor-pointer accent-royal"
+        />
+        <div class="flex justify-between text-[11px] text-surface-400 mt-1">
+          <span>Local (1 mi)</span>
+          <span>15 mi</span>
+          <span>30 mi</span>
+          <span>Regional (50 mi)</span>
+        </div>
+      </div>
+
+      <!-- 3. Access & Parking Factors -->
+      <div>
+        <label class="block text-xs font-bold uppercase tracking-wider text-navy dark:text-pearl mb-2">
+          3. Access & Parking Conditions
+        </label>
+        <div class="space-y-2.5">
+          <label class="flex items-center gap-3 p-3 rounded-xl glass-pill cursor-pointer hover:border-royal transition-colors">
+            <input type="checkbox" id="calc-stairs" class="text-royal rounded focus:ring-royal" />
+            <span class="text-xs font-medium text-navy dark:text-pearl">Stairs without lift (2nd floor or above) (+£60)</span>
+          </label>
+
+          <label class="flex items-center gap-3 p-3 rounded-xl glass-pill cursor-pointer hover:border-royal transition-colors">
+            <input type="checkbox" id="calc-cpz" class="text-royal rounded focus:ring-royal" />
+            <span class="text-xs font-medium text-navy dark:text-pearl">CPZ parking suspension / dispensation needed (+£45)</span>
+          </label>
+
+          <label class="flex items-center gap-3 p-3 rounded-xl glass-pill cursor-pointer hover:border-royal transition-colors">
+            <input type="checkbox" id="calc-long-walk" class="text-royal rounded focus:ring-royal" />
+            <span class="text-xs font-medium text-navy dark:text-pearl">Long carry distance from front door to van parking (+£40)</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- 4. Optional Extra Services -->
+      <div>
+        <label class="block text-xs font-bold uppercase tracking-wider text-navy dark:text-pearl mb-2">
+          4. Professional Extras
+        </label>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+          <label class="flex items-center gap-2.5 p-3 rounded-xl glass-pill cursor-pointer hover:border-royal transition-colors">
+            <input type="checkbox" id="calc-full-pack" class="text-royal rounded focus:ring-royal" />
+            <span class="text-xs font-medium text-navy dark:text-pearl">Full Packing (+£180)</span>
+          </label>
+
+          <label class="flex items-center gap-2.5 p-3 rounded-xl glass-pill cursor-pointer hover:border-royal transition-colors">
+            <input type="checkbox" id="calc-dismantle" class="text-royal rounded focus:ring-royal" />
+            <span class="text-xs font-medium text-navy dark:text-pearl">Dismantle / Reassemble (+£75)</span>
+          </label>
+
+          <label class="flex items-center gap-2.5 p-3 rounded-xl glass-pill cursor-pointer hover:border-royal transition-colors">
+            <input type="checkbox" id="calc-piano" class="text-royal rounded focus:ring-royal" />
+            <span class="text-xs font-medium text-navy dark:text-pearl">Piano Relocation (+£150)</span>
+          </label>
+
+          <label class="flex items-center gap-2.5 p-3 rounded-xl glass-pill cursor-pointer hover:border-royal transition-colors">
+            <input type="checkbox" id="calc-storage" class="text-royal rounded focus:ring-royal" />
+            <span class="text-xs font-medium text-navy dark:text-pearl">Storage (1 Month) (+£120)</span>
+          </label>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right Column: Live Dynamic Estimate Card (5 cols) -->
+    <div class="lg:col-span-5 sticky top-28">
+      <div class="glass-panel p-6 sm:p-8 rounded-3xl bg-navy text-pearl relative overflow-hidden shadow-2xl border border-white/10">
+        
+        <div class="text-xs font-bold uppercase tracking-widest text-royal-light mb-1">
+          Estimated Range
+        </div>
+        <h3 class="text-lg font-black text-white mb-4">
+          Guide Moving Cost
+        </h3>
+
+        <!-- Big Range Display -->
+        <div class="py-4 border-y border-white/10 my-4 text-center">
+          <div class="text-3xl sm:text-4xl font-black text-white tracking-tight" id="calc-result-range">
+            £495 – £595
+          </div>
+          <div class="text-xs text-pearl/70 mt-1" id="calc-crew-suggestion">
+            Estimated ~750 cu ft • 2 Movers • 1 Luton Van
+          </div>
+        </div>
+
+        <!-- Breakdown List -->
+        <ul class="space-y-2 text-xs text-pearl/80 mb-6">
+          <li class="flex justify-between">
+            <span>Base Move Volume:</span>
+            <span class="font-bold text-white" id="bd-volume">~750 cu ft</span>
+          </li>
+          <li class="flex justify-between">
+            <span>Distance Surcharge:</span>
+            <span class="font-bold text-white" id="bd-distance">£25</span>
+          </li>
+          <li class="flex justify-between">
+            <span>Access Factors:</span>
+            <span class="font-bold text-white" id="bd-access">£0</span>
+          </li>
+          <li class="flex justify-between">
+            <span>Selected Extras:</span>
+            <span class="font-bold text-white" id="bd-extras">£0</span>
+          </li>
+        </ul>
+
+        <!-- Mandatory Prominent Disclaimer per Spec -->
+        <div class="p-3 rounded-xl bg-white/5 border border-white/10 text-[11px] text-pearl/70 leading-relaxed mb-6">
+          <strong class="text-white">Please note:</strong> This is an algorithmic guideline range based on typical property volume. A firm, binding quotation requires our free 15-minute video or in-person home survey.
+        </div>
+
+        <!-- Pre-fill Quote CTA -->
+        <a
+          href="/get-a-quote/"
+          id="calc-cta-btn"
+          class="block w-full py-3.5 px-4 rounded-full bg-royal hover:bg-royal-hover text-white text-center font-bold text-sm tracking-wide shadow-lg shadow-royal/30 active:scale-[0.98] transition-all"
+        >
+          Book Free Survey & Lock Price →
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script is:inline>
+  // Debounced Cost Estimator Island
+  (function() {
+    const sizeSelect = document.getElementById('calc-size');
+    const distSlider = document.getElementById('calc-distance');
+    const distLabel = document.getElementById('dist-label');
+    const stairsCheck = document.getElementById('calc-stairs');
+    const cpzCheck = document.getElementById('calc-cpz');
+    const walkCheck = document.getElementById('calc-long-walk');
+    const packCheck = document.getElementById('calc-full-pack');
+    const dismantleCheck = document.getElementById('calc-dismantle');
+    const pianoCheck = document.getElementById('calc-piano');
+    const storageCheck = document.getElementById('calc-storage');
+
+    const resultRange = document.getElementById('calc-result-range');
+    const crewSuggestion = document.getElementById('calc-crew-suggestion');
+    const bdVolume = document.getElementById('bd-volume');
+    const bdDistance = document.getElementById('bd-distance');
+    const bdAccess = document.getElementById('bd-access');
+    const bdExtras = document.getElementById('bd-extras');
+
+    function calculate() {
+      if (!sizeSelect || !distSlider) return;
+
+      const opt = sizeSelect.selectedOptions[0];
+      const base = parseInt(opt.getAttribute('data-base') || '450', 10);
+      const volume = opt.getAttribute('data-volume') || '750';
+      const distance = parseInt(distSlider.value, 10);
+
+      if (distLabel) distLabel.textContent = `${distance} ${distance === 1 ? 'mile' : 'miles'}`;
+
+      // Distance factor
+      let distCost = 0;
+      if (distance > 3) {
+        distCost = Math.round((distance - 3) * 3.5);
+      }
+
+      // Access factors
+      let accessCost = 0;
+      if (stairsCheck?.checked) accessCost += 60;
+      if (cpzCheck?.checked) accessCost += 45;
+      if (walkCheck?.checked) accessCost += 40;
+
+      // Extras
+      let extrasCost = 0;
+      if (packCheck?.checked) extrasCost += 180;
+      if (dismantleCheck?.checked) extrasCost += 75;
+      if (pianoCheck?.checked) extrasCost += 150;
+      if (storageCheck?.checked) extrasCost += 120;
+
+      const totalMid = base + distCost + accessCost + extrasCost;
+      const low = Math.round(totalMid * 0.92);
+      const high = Math.round(totalMid * 1.12);
+
+      if (resultRange) resultRange.textContent = `£${low} – £${high}`;
+      if (bdVolume) bdVolume.textContent = `~${volume} cu ft`;
+      if (bdDistance) bdDistance.textContent = `£${distCost}`;
+      if (bdAccess) bdAccess.textContent = `£${accessCost}`;
+      if (bdExtras) bdExtras.textContent = `£${extrasCost}`;
+
+      let crew = '2 Movers • 1 Luton Van';
+      if (parseInt(volume, 10) >= 1500) {
+        crew = '3–4 Movers • 2 Luton Vans / 7.5T';
+      } else if (parseInt(volume, 10) >= 1000) {
+        crew = '3 Movers • Large Luton Van';
+      }
+      if (crewSuggestion) crewSuggestion.textContent = `Estimated ~${volume} cu ft • ${crew}`;
+    }
+
+    [sizeSelect, distSlider, stairsCheck, cpzCheck, walkCheck, packCheck, dismantleCheck, pianoCheck, storageCheck].forEach(el => {
+      el?.addEventListener('input', calculate);
+      el?.addEventListener('change', calculate);
+    });
+
+    calculate();
+  })();
+</script>

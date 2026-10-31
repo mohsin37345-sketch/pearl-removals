@@ -1,0 +1,32 @@
+{
+  "service": "piano-removals",
+  "location": "hampstead",
+  "status": "published",
+  "uniqueIntro": "Pearl Removals delivers master-level piano removals throughout Hampstead NW3. Specialising in acoustic preservation and precision manual handling, our team safely transports upright, baby grand, and concert grand pianos through historic Georgian and Victorian homes across Hampstead Village and the Heath borders.",
+  "localAngle": "Hampstead’s historic topography presents formidable obstacles for heavy instrument moves—from the steep cobblestone gradient of Holly Hill to multi-storey staircases in Grade II listed townhouses. We deploy custom timber piano skids, heavy-duty stair climbing crawlers, and padded transit jackets to eliminate vibration and avoid wall contact.",
+  "whatsIncluded": [
+    "Specialist two-to-four person trained piano moving crew",
+    "High-tensile timber piano skid board with non-marking wheels",
+    "Heavy-duty quilted piano covers, keyboard locks, and pedal wraps",
+    "Hydraulic tail-lift vehicle equipped with interior load-lock strapping",
+    "Full £50,000 Goods in Transit insurance cover as standard"
+  ],
+  "priceGuidance": "Upright piano transport in Hampstead starts from £180. Grand pianos and complex staircase flights quoted individually after survey.",
+  "faqs": [
+    {
+      "question": "Can you move a baby grand piano up steep exterior steps in Hampstead?",
+      "answer": "Yes. Our crews use modular aluminium ramp systems and high-capacity winches to navigate elevated stone entrances without risking damage to historic stonework.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange Camden parking suspensions for piano moves in NW3?",
+      "answer": "Yes. We apply for dedicated loading bay suspensions through Camden Council to ensure our tail-lift vehicle parks directly outside your entrance.",
+      "display": true
+    },
+    {
+      "question": "Will my piano need tuning after the move?",
+      "answer": "While our specialized equipment cushions the acoustic soundboard against transit vibrations, changes in room temperature and humidity mean we recommend re-tuning after two weeks.",
+      "display": true
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "name": "Edgware & Burnt Oak",
+  "slug": "edgware-and-burnt-oak",
+  "region": "outer-north-west-london",
+  "phase": 2,
+  "premium": false,
+  "boroughs": [
+    "Barnet",
+    "Harrow"
+  ],
+  "postcodes": [
+    "HA8"
+  ],
+  "distanceMiles": 4.5,
+  "metaTitle": "House Removals Edgware HA8 | Pearl Removals",
+  "metaDescription": "Reliable removals in Edgware & Burnt Oak HA8. House moving, flat moves, packing services & Barnet/Harrow council parking. Call 020 3151 8452 for a quote.",
+  "intro": "Pearl Removals delivers dependable, efficient, and fully insured removal services across Edgware, Burnt Oak, and the HA8 postcode district. Bridging the boroughs of Barnet and Harrow, Edgware is a thriving suburban centre popular with families and commuters, featuring an extensive mix of 1930s semi-detached homes, characterful cottages in Canons Park, and modern apartment developments near Edgware station. Whether you are moving from a family home near Broadwalk Shopping Centre, relocating out of Burnt Oak, or transitioning into an executive property in Canons Park, our experienced removal team guarantees punctuality, expert furniture protection, and transparent pricing. Our moving coordinators conduct thorough pre-move surveys, calculate exact vehicle payload requirements, and provide complete packing supplies to ensure that every stage of your move in Edgware & Burnt Oak is handled with absolute punctuality, courteous communication, and total care.",
+  "localKnowledge": "Edgware is positioned along the historic A5 corridor (Watling Street), connecting directly south to our Cricklewood headquarters. The area features a mix of quiet residential crescents, bustling shopping thoroughfares, and tree-lined avenues bordering Canons Park. Moving in HA8 requires understanding local parking regulations that alternate between Barnet and Harrow councils, as well as navigating morning traffic flows along Station Road and Deansbrook Road.",
+  "propertyTypes": "The housing stock includes solid 1930s bay-fronted semi-detached houses with private driveways, inter-war terraces, modern low-rise purpose-built flats, and substantial detached homes in the private avenues of Canons Park.",
+  "parkingAndAccess": "Parking is managed by Barnet Council to the east of the A5 and Harrow Council to the west. While many semi-detached homes offer off-street driveway parking, residential roads near tube stations feature strict CPZ restrictions. We handle all council parking suspension paperwork to ensure seamless loading on moving day.",
+  "transportLinks": "Exceptional transit via the Northern line terminus at Edgware station, Queensbury (Jubilee line), Burnt Oak station, and extensive local bus interchanges.",
+  "travelInfo": "Straightforward transit down the A5 Edgware Road connects HA8 directly to our Cricklewood fleet yard in just 12 to 15 minutes, enabling agile response times.",
+  "nearbyAreas": [
+    {
+      "name": "Mill Hill",
+      "slug": "mill-hill"
+    },
+    {
+      "name": "Stanmore",
+      "slug": "stanmore"
+    },
+    {
+      "name": "Colindale & Kingsbury",
+      "slug": "colindale-and-kingsbury"
+    },
+    {
+      "name": "Hendon",
+      "slug": "hendon"
+    }
+  ],
+  "servicesOffered": [
+    "House Removals Edgware",
+    "Canons Park Removals HA8",
+    "Flat Removals Burnt Oak",
+    "Full Packing Services HA8",
+    "Secure Storage Units"
+  ],
+  "localFaqs": [
+    {
+      "question": "Which council handles parking permits in Edgware?",
+      "answer": "Edgware is split between Barnet and Harrow councils. We check your exact address and submit all required parking suspension paperwork to the correct local authority.",
+      "display": true
+    },
+    {
+      "question": "Do you cover moves in the private avenues of Canons Park?",
+      "answer": "Yes. We regularly handle moves in Canons Park, providing careful handling for large detached family homes and period properties.",
+      "display": true
+    },
+    {
+      "question": "Can you provide packing boxes and materials in Edgware?",
+      "answer": "Yes. We deliver heavy-duty double-walled cardboard boxes, bubble wrap, tape, and hanging wardrobe boxes directly to your home before moving day.",
+      "display": true
+    },
+    {
+      "question": "How quickly can your removal vans reach Edgware from Cricklewood?",
+      "answer": "Our central depot is just 4.5 miles south down the A5, meaning our vehicles reach Edgware properties in under 15 minutes.",
+      "display": true
+    }
+  ],
+  "status": "published"
+}

@@ -1,0 +1,115 @@
+---
+import 'src/styles/global.css';
+import ConsentInit from 'theme/components/ConsentInit.astro';
+import SEOHead from 'theme/components/SEOHead.astro';
+import SchemaOrg from 'theme/components/SchemaOrg.astro';
+import Header from 'theme/components/Header.astro';
+import Footer from 'theme/components/Footer.astro';
+import StickyMobileBar from 'theme/components/StickyMobileBar.astro';
+import LazyScripts from 'theme/components/LazyScripts.astro';
+import { getPublishedAreas } from 'theme/utils/published';
+
+interface Props {
+  title: string;
+  description: string;
+  canonicalUrl?: string;
+  noindex?: boolean;
+  schemaType?: 'home' | 'service' | 'area' | 'micro' | 'region' | 'service-area' | 'about' | 'contact' | 'blog' | 'post' | 'page';
+  breadcrumbs?: Array<{ name: string; url: string }>;
+  faqs?: Array<{ question: string; answer: string; display?: boolean }>;
+  serviceData?: any;
+  areaData?: any;
+  verifiedReviews?: any[];
+  ogType?: 'website' | 'article';
+  ogImage?: string;
+  ogImageAlt?: string;
+  publishedTime?: string;
+  modifiedTime?: string;
+}
+
+const {
+  title,
+  description,
+  canonicalUrl,
+  noindex = false,
+  schemaType = 'page',
+  breadcrumbs = [],
+  faqs = [],
+  serviceData,
+  areaData,
+  verifiedReviews = [],
+  ogType = 'website',
+  ogImage,
+  ogImageAlt,
+  publishedTime,
+  modifiedTime
+} = Astro.props;
+
+const publishedAreas = await getPublishedAreas();
+---
+
+<!DOCTYPE html>
+<html lang="en-GB" dir="ltr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <!-- 1. Consent Mode v2 & Theme Anti-Flash must be first -->
+    <ConsentInit />
+
+    <!-- 2. Meta, Canonical, Robots, Open Graph -->
+    <SEOHead
+      title={title}
+      description={description}
+      canonicalUrl={canonicalUrl}
+      noindex={noindex}
+      ogType={ogType}
+      ogImage={ogImage}
+      ogImageAlt={ogImageAlt}
+      publishedTime={publishedTime}
+      modifiedTime={modifiedTime}
+    />
+
+    <!-- 3. Centralised Schema Graph -->
+    <SchemaOrg
+      type={schemaType}
+      title={title}
+      description={description}
+      breadcrumbs={breadcrumbs}
+      faqs={faqs}
+      serviceData={serviceData}
+      areaData={areaData}
+      publishedAreas={publishedAreas}
+      verifiedReviews={verifiedReviews}
+    />
+  </head>
+
+  <body class="bg-pearl dark:bg-navy-dark text-navy dark:text-pearl min-h-screen flex flex-col antialiased selection:bg-royal/20 selection:text-royal">
+    <!-- Accessible Skip to Content Link (WCAG 2.2 AA) -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-[100] px-4 py-2 bg-royal text-white rounded-full font-bold shadow-xl focus:outline-none focus:ring-2 focus:ring-white"
+    >
+      Skip to main content
+    </a>
+
+    <!-- Sticky Floating Glass Header -->
+    <Header />
+
+    <!-- Main Content Landmark -->
+    <main id="main-content" class="flex-grow focus:outline-none">
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    <Footer />
+
+    <!-- Sticky Mobile Action Bar -->
+    <StickyMobileBar 
+      areaName={areaData?.name} 
+      serviceTitle={serviceData?.title} 
+    />
+
+    <!-- Interaction-Gated Third-Party Scripts -->
+    <LazyScripts />
+  </body>
+</html>

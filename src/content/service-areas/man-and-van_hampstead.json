@@ -1,0 +1,31 @@
+{
+  "service": "man-and-van",
+  "location": "hampstead",
+  "status": "published",
+  "uniqueIntro": "Our Hampstead man and van service provides discreet, white-glove transport for discerning NW3 residents. Tailored for antique acquisitions, designer apartment relocations, and boutique gallery transport throughout Hampstead Village and the Heath borders, we deliver refined moving care with flawless precision.",
+  "localAngle": "Hampstead’s steep, winding lanes like Holly Hill and Flask Walk are unsuited to oversized lorries. Our premium man and van option utilizes agile, low-profile Luton vans that negotiate tight historic mews and steep gradients without obstructing pedestrian walkways or heritage stonework.",
+  "whatsIncluded": [
+    "Agile 3.5t Luton vehicle with padded interior and hydraulic tail lift",
+    "Seasoned art and furniture handler trained in delicate handling",
+    "Cotton fleece blankets, non-marking dollies, and glassine protective wrap",
+    "Full £50,000 Goods in Transit insurance protection as standard"
+  ],
+  "priceGuidance": "Premium hourly rate from £85/hour (2-hour minimum) or tailored fixed project quote for high-value items.",
+  "faqs": [
+    {
+      "question": "Can your vans navigate narrow lanes in Hampstead Village?",
+      "answer": "Yes. Our 3.5t Luton vans are chosen specifically for their agility in narrow historic conservation streets like Flask Walk and Church Row.",
+      "display": true
+    },
+    {
+      "question": "Do you transport valuable original paintings and bronzes?",
+      "answer": "Yes. Our art handlers use archival wrapping, foam padding, and vertical load strapping to protect valuable artwork in transit.",
+      "display": true
+    },
+    {
+      "question": "Is an unbranded vehicle available for privacy in Hampstead?",
+      "answer": "Yes. We can provide clean, unbranded vehicles upon request for high-profile clients requiring complete discretion.",
+      "display": true
+    }
+  ]
+}

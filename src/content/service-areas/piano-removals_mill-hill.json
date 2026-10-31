@@ -1,0 +1,32 @@
+{
+  "service": "piano-removals",
+  "location": "mill-hill",
+  "status": "published",
+  "uniqueIntro": "Pearl Removals offers dedicated piano moving services throughout Mill Hill NW7. From upright pianos in family homes across Millbrook Park and Mill Hill Broadway to grand pianos in substantial estates along The Ridgeway, we provide expert instrument transit backed by specialized equipment.",
+  "localAngle": "Mill Hill’s spacious detached residences and semi-rural properties often feature multi-level layouts, landscaped garden steps, and long driveways. Our crews utilize heavy-duty all-terrain pneumatic dollies and padded skid boards, ensuring safe transit from your music room into our carpeted removal vehicles.",
+  "whatsIncluded": [
+    "Two to four-person piano crew trained in manual handling of heavy instruments",
+    "Quilted acoustic piano covers, lid strap locks, and pedal protectors",
+    "Heavy-duty piano skid board and non-marking floor protection mats",
+    "Air-ride removal vehicle equipped with hydraulic tail lift",
+    "Comprehensive Goods in Transit insurance"
+  ],
+  "priceGuidance": "Upright piano transport in Mill Hill from £180. Grand pianos quoted based on instrument dimensions.",
+  "faqs": [
+    {
+      "question": "Can you move a piano across garden pathways or long driveways in Mill Hill?",
+      "answer": "Yes. We bring specialized heavy-duty pneumatic barrows that glide smoothly across gravel paths and paving without vibration.",
+      "display": true
+    },
+    {
+      "question": "Do you move pianos in newly developed homes in Millbrook Park?",
+      "answer": "Yes. We regularly handle moves in Millbrook Park, taking care to protect newly laid flooring and modern doorways.",
+      "display": true
+    },
+    {
+      "question": "How quickly can your team reach Mill Hill from your depot?",
+      "answer": "Our Cricklewood transport hub is just 4 miles south, allowing our vehicles to reach Mill Hill in approximately 12 to 15 minutes.",
+      "display": true
+    }
+  ]
+}

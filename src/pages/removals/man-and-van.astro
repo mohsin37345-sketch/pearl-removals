@@ -1,0 +1,135 @@
+---
+import ServiceLayout from 'theme/layouts/ServiceLayout.astro';
+
+const serviceData = {
+  title: 'Man and Van',
+  slug: 'man-and-van',
+  metaTitle: 'Man and Van North West London | Professional & Insured Mover',
+  metaDescription: 'Professional, fully insured man and van service in North West London. Clean Luton vans, tail lifts, and experienced movers based in Cricklewood NW2. Rates from £65/hr.',
+  heroHeading: 'Professional & Insured Man and Van in North West London',
+  heroSubheading: 'Reliable, courteous, and fully insured small-move transport. From studio apartments and student relocations to single designer furniture collections, get professional moving standards at flexible hourly rates.',
+  icon: 'truck',
+  summary: 'Agile moving and transport service ideal for smaller flats, student moves, and individual high-value items.',
+  priceFrom: 65,
+  priceUnit: 'hour',
+  priceNotes: 'Minimum 2-hour booking. Includes clean Luton van with tail lift and professional uniformed mover. Additional porters available.',
+  benefits: [
+    'Fully insured with £50,000 Goods in Transit cover—never risk your possessions with uninsured casual drivers',
+    'Modern, clean, ULEZ-compliant 3.5-tonne Luton vans equipped with 500kg hydraulic tail lifts',
+    'Experienced, directly employed movers who pack, strap, and handle your goods with care',
+    'Full equipment on every van: 30+ furniture blankets, webbing ties, sack barrows, and piano dollies',
+    'Transparent hourly billing with zero hidden fuel charges within our North West London operating zone',
+    'Same-day and short-notice bookings available 7 days a week subject to vehicle availability'
+  ],
+  whatsIncluded: [
+    'Clean Luton van with dedicated driver-mover assisting with loading and unloading',
+    'Use of internal van equipment: transit blankets, heavy-duty ratchet straps, and wheeled dollies',
+    'Direct door-to-door transit between properties with GPS routing avoiding heavy traffic',
+    'Transport of packed boxes, luggage, dissembled furniture, and domestic appliances',
+    '£50,000 Goods in Transit insurance protection as standard on every booking'
+  ],
+  whatsNotIncluded: [
+    'Packing materials or packing labour (unless pre-booked as an optional service)',
+    'Council parking tickets or suspension fees where legal parking is unavailable outside premises',
+    'Toll fees or central London Congestion Charge (charged at direct cost if entering the zone)',
+    'Disposal of domestic waste or unagreed builder rubble'
+  ],
+  process: [
+    {
+      step: 1,
+      title: 'Quick Online or Phone Quote',
+      description: 'Tell us your collection and delivery postcodes, inventory volume, and floor access levels. We confirm vehicle size, recommended crew count, and clear hourly pricing.'
+    },
+    {
+      step: 2,
+      title: 'Punctual Arrival & Vehicle Setup',
+      description: 'Your van arrives on schedule at your Cricklewood, Kilburn, Hampstead, or Hendon address. Our driver-mover reviews the items and plans safe weight distribution.'
+    },
+    {
+      step: 3,
+      title: 'Careful Loading & Blanket Protection',
+      description: 'We carry items carefully from your room, wrap furniture in padded blankets, and strap everything securely to the vehicle’s interior timber rails.'
+    },
+    {
+      step: 4,
+      title: 'Transit & Delivery to Room of Choice',
+      description: 'We drive directly to your destination, lower the hydraulic tail lift, and carry every box and furniture piece directly into your designated rooms.'
+    }
+  ],
+  premiumAngle: 'Unlike generic gig-economy apps and anonymous classified ads, Pearl Removals operates as a vetted, accountable removals company. For valuable designer furniture, audio equipment, or bespoke pieces, our man and van service offers white-glove security, verifiable insurance, and spotless Luton vehicles.',
+  faqs: [
+    {
+      question: 'How does your Man and Van service differ from casual online drivers?',
+      answer: 'Casual gig couriers frequently lack Goods in Transit insurance, lack basic equipment like tail lifts or blankets, and often expect customers to do all the heavy lifting alone. Pearl Removals provides professional, uniformed movers, £50,000 genuine GIT insurance, and clean, fully equipped vehicles with hydraulic tail lifts.',
+      display: true
+    },
+    {
+      question: 'Is there a minimum booking duration?',
+      answer: 'Yes, our standard booking has a 2-hour minimum duration. After the initial 2 hours, time is billed in transparent 30-minute increments so you only pay for the exact time your move requires.',
+      display: true
+    },
+    {
+      question: 'Can I book a 2-man or 3-man crew with the van?',
+      answer: 'Yes. For properties with steep stairways, heavy American refrigerators, solid oak wardrobes, or multi-flight climbs, we strongly recommend booking a 2-person or 3-person crew so you do not have to lift a single item.',
+      display: true
+    },
+    {
+      question: 'Are your vehicles ULEZ compliant and able to enter Central London?',
+      answer: 'Yes. Our entire fleet is fully compliant with the Ultra Low Emission Zone (ULEZ) standards. If your route passes through or terminates in the Congestion Charge zone, this is simply charged at the standard daily Transport for London rate with zero mark-up.',
+      display: true
+    },
+    {
+      question: 'How do we handle parking if I live on a red route or permit-only street?',
+      answer: 'We coordinate parking details in advance. If you are on a restricted street (e.g. Kilburn High Road or Camden CPZ), we advise on loading time windows or help you arrange a council loading dispensation.',
+      display: true
+    }
+  ]
+};
+---
+
+<ServiceLayout service={serviceData}>
+  <div class="prose dark:prose-invert max-w-none space-y-6">
+    <h2 class="text-2xl sm:text-3xl font-black text-navy dark:text-pearl tracking-tight">
+      The Premium Alternative to Unregulated London Man and Van Services
+    </h2>
+    <p>
+      The term "Man and Van" in London is unfortunately synonymous with uncertainty: unvetted drivers arriving late in dirty transit vans, unexpected cash surcharges upon arrival, and zero insurance when an expensive television or mirror is broken.
+    </p>
+    <p>
+      <strong>Pearl Removals</strong> was built to redefine this sector. Operating from our Cricklewood NW2 depot, our professional Man and Van service combines the speed and cost-effectiveness of hourly van hire with the gold-standard care, equipment, and accountability of a premier removals firm.
+    </p>
+
+    <h3 class="text-xl font-bold text-navy dark:text-pearl pt-4">
+      Who Our Man and Van Service Is Designed For
+    </h3>
+    <p>
+      Our agile service is the ideal choice for a variety of London moving scenarios:
+    </p>
+    <ul>
+      <li><strong>Studio & 1-Bedroom Apartment Moves:</strong> When your inventory does not require a full 7.5-tonne lorry, our 3.5-tonne Luton van provides ample cubic capacity at an economical hourly rate.</li>
+      <li><strong>Student Moves:</strong> Transporting study desks, trunks, clothes, and technology to and from student halls or shared houses across Middlesex University Hendon, UCL, Kings College, and Imperial campuses.</li>
+      <li><strong>Online Marketplace & Auction Collections:</strong> Transporting vintage sideboards, designer sofas, or rare paintings purchased from antique markets in Church Street Marylebone, Portobello Road, or private online sellers.</li>
+      <li><strong>Internal Room Swaps & Storage Runs:</strong> Moving personal possessions into our secure North West London container storage facility or between family homes.</li>
+    </ul>
+
+    <h3 class="text-xl font-bold text-navy dark:text-pearl pt-4">
+      High-Specification Fleet & Professional Handling Tools
+    </h3>
+    <p>
+      Every vehicle dispatched under the Pearl Removals banner is a modern, high-roof Luton van equipped with a 500kg hydraulic tail lift. This allows heavy items—such as upright pianos, solid marble tables, and washing machines—to be raised gently to deck level without dangerous manual drops.
+    </p>
+    <p>
+      Inside, our vehicles are lined with clean timber battens and carpeted floorings. Every vehicle carries over 30 quilted furniture pads, commercial ratchet webbing, four-wheel piano dollys, and sack barrows. Your belongings are systematically anchored against interior rails to guarantee zero shifting during transit across London’s speed cushions and roundabouts.
+    </p>
+
+    <h3 class="text-xl font-bold text-navy dark:text-pearl pt-4">
+      Genuine Insurance & Complete Financial Peace of Mind
+    </h3>
+    <p>
+      Never assume a casual courier carries Goods in Transit insurance. Standard commercial courier insurance only covers low-value parcels; it excludes household furniture and personal effects unless an expensive bespoke policy is in place.
+    </p>
+    <p>
+      Every Pearl Removals man and van booking comes with legitimate, verifiable £50,000 Goods in Transit insurance and £5,000,000 Public Liability insurance. We treat a single armchair move with the exact same professional diligence and respect as an entire four-bedroom country estate.
+    </p>
+  </div>
+</ServiceLayout>

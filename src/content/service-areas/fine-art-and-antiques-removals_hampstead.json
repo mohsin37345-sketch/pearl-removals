@@ -1,0 +1,32 @@
+{
+  "service": "fine-art-and-antiques-removals",
+  "location": "hampstead",
+  "status": "published",
+  "uniqueIntro": "Our Hampstead fine art and antiques removals service provides museum-grade handling for private collectors, antique dealers, and gallery owners across NW3. We provide bespoke timber crating, acid-free glassine wrapping, and climate-conscious transit for oil paintings, delicate porcelain, and French-polished furniture.",
+  "localAngle": "Hampstead houses remarkable private art collections and historic heirlooms. Moving valuable works through narrow period corridors requires surgical precision. Our art technicians construct bespoke wooden crates tailored to exact canvas dimensions, utilizing shock-absorbing corner foam to isolate delicate gilded frames from transit shocks.",
+  "whatsIncluded": [
+    "Bespoke ISPM-15 export-standard timber museum crates built to order",
+    "Conservation-grade packing with acid-free glassine paper and bubble blankets",
+    "Discreet, liveried vehicles with air-ride suspension and tie-rails",
+    "Enhanced Goods in Transit cover up to full declared valuation",
+    "Uncrating and precise placement in your new Hampstead residence"
+  ],
+  "priceGuidance": "Fine art transport from £120 for single cased items. Bespoke timber crating and multi-piece private collections quoted following visual survey.",
+  "faqs": [
+    {
+      "question": "How do you protect antique oil paintings from temperature fluctuation?",
+      "answer": "We wrap paintings in moisture-barrier Tyvek and acid-free tissue inside custom timber cases, shielding the canvas from thermal shock during transit.",
+      "display": true
+    },
+    {
+      "question": "Can you handle delicate porcelain and chandelier dismantling?",
+      "answer": "Yes. Our fine art technicians dismantle chandeliers component by component, wrapping each crystal droplet individually in tissue and cell-divided cartons.",
+      "display": true
+    },
+    {
+      "question": "Do you provide insurance valuations for rare artwork?",
+      "answer": "We require declared inventory valuations and provide comprehensive fine art transit insurance up to £250,000+ under dedicated specialist policies.",
+      "display": true
+    }
+  ]
+}

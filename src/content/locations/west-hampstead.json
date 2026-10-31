@@ -1,0 +1,79 @@
+{
+  "name": "West Hampstead",
+  "slug": "west-hampstead",
+  "region": "north-west-london",
+  "phase": 1,
+  "premium": false,
+  "boroughs": [
+    "Camden"
+  ],
+  "postcodes": [
+    "NW6"
+  ],
+  "distanceMiles": 1.5,
+  "metaTitle": "House Removals West Hampstead NW6 | Pearl Removals",
+  "metaDescription": "Premier removals in West Hampstead NW6. Specialist moving teams for red-brick mansion blocks, Victorian conversions & West End Lane flats. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides distinguished, fully insured removals across West Hampstead and the surrounding NW6 area. Located only 1.5 miles east of our Cricklewood depot, our team is deeply attuned to the refined character and bustling village vibe of West End Lane, Mill Lane, and Fortune Green. From red-brick Victorian mansion flats and characterful split-level conversions along Broadhurst Gardens to substantial semi-detached family homes in South Hampstead, we deliver an exceptionally polished, stress-free moving service tailored to the architectural nuances and parking rules of this desirable Camden neighbourhood. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London.",
+  "localKnowledge": "West Hampstead is famous for its unique trio of train stations along West End Lane: Jubilee Line tube, London Overground, and Thameslink mainline. The area’s bustling cafe culture and narrow Victorian roads mean traffic is steady throughout the day. Our drivers know how to access properties via quieter residential turnings like Sumatra Road, Iverson Road, and Solent Road, orchestrating smooth loading without causing congestion.",
+  "propertyTypes": "West Hampstead features an enviable array of architectural properties, led by impressive Victorian red-brick mansion blocks with communal courtyard gardens, elegant bay-fronted terraced houses, and multi-floor period conversions. South Hampstead offers wider tree-lined avenues with grand stucco-accented semi-detached and detached homes.",
+  "parkingAndAccess": "The London Borough of Camden enforces Controlled Parking Zone (Zone CA-J and CA-B) across West Hampstead. Narrow streets and high car ownership mean parking bay suspensions are essential. We manage all Camden Council suspension applications in advance, securing exclusive curbside space outside your building.",
+  "transportLinks": "Unrivalled public transport connections with three stations on West End Lane connecting directly to the West End, City, Gatwick, and Luton airports.",
+  "travelInfo": "Direct northern road routes up Fortune Green Road towards the Finchley Road (A41) and south down West End Lane towards Kilburn and Central London.",
+  "nearbyAreas": [
+    {
+      "name": "Kilburn",
+      "slug": "kilburn"
+    },
+    {
+      "name": "Hampstead",
+      "slug": "hampstead"
+    },
+    {
+      "name": "Belsize Park",
+      "slug": "belsize-park"
+    },
+    {
+      "name": "Swiss Cottage",
+      "slug": "swiss-cottage"
+    },
+    {
+      "name": "Cricklewood",
+      "slug": "cricklewood"
+    }
+  ],
+  "servicesOffered": [
+    "Mansion Flat Removals West Hampstead",
+    "House Removals NW6",
+    "Full Packing & Fragile Wrapping",
+    "Padded Lift Protection",
+    "Secure Local Storage"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you provide lift and carpet protection in West Hampstead mansion blocks?",
+      "answer": "Yes. We install custom padded covers in communal passenger lifts and lay protective runners down entrance corridors to protect original tiled and carpeted foyers.",
+      "display": true
+    },
+    {
+      "question": "Can you move heavy pianos into upper-floor flats in West Hampstead?",
+      "answer": "Yes. Our specialist piano team uses custom piano shoes and hoisting equipment to move upright and baby grand pianos safely into period properties.",
+      "display": true
+    },
+    {
+      "question": "How much notice is needed for a Camden parking suspension in NW6?",
+      "answer": "Camden Council requires a minimum of 14 working days notice for parking suspensions. We submit and monitor all paperwork for you.",
+      "display": true
+    },
+    {
+      "question": "Do you offer an evening packing service before moving day?",
+      "answer": "Yes, our packing teams can arrive the day prior to pack your kitchen glassware, library, and wardrobes, leaving only immediate essentials for moving morning.",
+      "display": true
+    }
+  ],
+  "testimonial": {
+    "name": "Sophie L.",
+    "quote": "Moved between two mansion flats on Broadhurst Gardens. The crew was exceptionally careful with our antique dining table and managed the tight stairwell turns with total grace.",
+    "rating": 5
+  },
+  "status": "published"
+}

@@ -1,0 +1,50 @@
+---
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import Hero from 'theme/components/Hero.astro';
+import TrustStrip from 'theme/components/TrustStrip.astro';
+import Breadcrumbs from 'theme/components/Breadcrumbs.astro';
+import CostCalculator from 'theme/components/CostCalculator.astro';
+import CTABand from 'theme/components/CTABand.astro';
+
+const breadcrumbs = [
+  { name: 'Cost Calculator', url: '/moving-cost-calculator/' }
+];
+---
+
+<BaseLayout
+  title="Moving Cost Calculator London | Pearl Removals"
+  description="Calculate your estimated house removal costs in North West London with our free moving calculator. Estimate volume (cu ft), distance from NW2, and access factors."
+  canonicalUrl="https://www.pearlremovals.co.uk/moving-cost-calculator/"
+  breadcrumbs={breadcrumbs}
+>
+  <Hero
+    variant="simple"
+    title="North West London Moving Cost Calculator"
+    subtitle="Estimate your removal costs in seconds based on property volume, distance from our Cricklewood NW2 base, and access requirements."
+    eyebrow="INSTANT ESTIMATOR"
+    badges={["Real-Time Volume Logic", "Transparent Calculation", "Free Pre-Move Surveys"]}
+  />
+
+  <TrustStrip />
+
+  <Breadcrumbs items={breadcrumbs} />
+
+  <article class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+    <div class="text-center max-w-2xl mx-auto mb-4">
+      <h2 class="text-2xl sm:text-3xl font-black text-navy dark:text-pearl tracking-tight">
+        Estimate Your Moving Investment
+      </h2>
+      <p class="text-xs sm:text-sm text-surface-600 dark:text-surface-400 mt-2 leading-relaxed">
+        Adjust property size, distance, and optional services to calculate a realistic price range.
+      </p>
+    </div>
+
+    <!-- Client-Side Calculator Island -->
+    <CostCalculator />
+
+    <CTABand
+      title="Ready for a Verified Written Quote?"
+      subtitle="Lock in your date and fixed price with a free 15-minute video walk-through survey."
+    />
+  </article>
+</BaseLayout>

@@ -1,0 +1,32 @@
+{
+  "service": "fine-art-and-antiques-removals",
+  "location": "hampstead-garden-suburb",
+  "status": "published",
+  "uniqueIntro": "Pearl Removals delivers white-glove fine art and antiques removals across Hampstead Garden Suburb NW11. We provide museum-grade packing, bespoke timber casing, and secure vehicle transport for delicate artwork, heirloom furniture, and historic porcelain collections.",
+  "localAngle": "Arts and Crafts residences in the Suburb contain delicate handcrafted woodwork, leaded glass casements, and valuable antique collections. Our art handlers use bespoke timber crates and non-adhesive protective blankets, ensuring zero contact with historic wall finishes and period door frames.",
+  "whatsIncluded": [
+    "Custom wooden crates built to exact dimensions for canvases and mirrors",
+    "Conservation-grade wrapping with acid-free tissue and shock-absorbing foam",
+    "Discreet, liveried vehicles equipped with internal padded battening",
+    "Comprehensive high-value transit insurance coverage",
+    "Precision uncrating and room-by-room positioning"
+  ],
+  "priceGuidance": "Fine art transport from £130 for individual cased pieces. Multi-room antique collections quoted individually.",
+  "faqs": [
+    {
+      "question": "How do you protect leaded glass windows and timber frames in Arts & Crafts homes?",
+      "answer": "Our porters fit padded corner guards on all door jambs and navigate furniture using two-person precision carrying techniques.",
+      "display": true
+    },
+    {
+      "question": "Can you transport delicate antique chandeliers and crystal wall sconces?",
+      "answer": "Yes. We disassemble fragile components, wrap each crystal element in tissue paper, and pack them into custom foam-lined cells.",
+      "display": true
+    },
+    {
+      "question": "Do you provide confidentiality agreements for private residences in NW11?",
+      "answer": "Yes. We routinely work under non-disclosure agreements with Suburb homeowners to guarantee absolute privacy.",
+      "display": true
+    }
+  ]
+}

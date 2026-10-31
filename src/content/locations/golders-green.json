@@ -1,0 +1,79 @@
+{
+  "name": "Golders Green",
+  "slug": "golders-green",
+  "region": "north-west-london",
+  "phase": 1,
+  "premium": false,
+  "boroughs": [
+    "Barnet"
+  ],
+  "postcodes": [
+    "NW11"
+  ],
+  "distanceMiles": 1.5,
+  "metaTitle": "House Removals Golders Green NW11 | Pearl Removals",
+  "metaDescription": "Trusted house removals in Golders Green NW11 & Temple Fortune. Professional moving crews for family homes, driveways & packing. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers comprehensive, fully insured house removals throughout Golders Green and Temple Fortune, covering the NW11 postcode. Situated barely 1.5 miles northeast of our Cricklewood operations base, our removals teams are a familiar and trusted presence along Golders Green Road, Finchley Road, and the leafy residential avenues adjoining Golders Hill Park. Whether you are moving from a generous 1920s detached family home, an Edwardian semi-detached property, or a modern apartment near the station, we deliver dependable, courteous, and impeccably organized moving services with transparent fixed pricing and complete peace of mind. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London.",
+  "localKnowledge": "Golders Green combines bustling commercial high streets with tranquil, tree-lined residential avenues. The commercial centre around Golders Green station and along Golders Green Road features heavy pedestrian and bus traffic. Our drivers understand the local traffic rhythms, including school-run times and Friday afternoon Shabbat travel, ensuring moves are scheduled to avoid traffic delays.",
+  "propertyTypes": "The residential architecture of Golders Green is characterized by substantial 1920s and 1930s semi-detached and detached homes featuring expansive multi-car driveways and deep rear gardens. In Temple Fortune and around Finchley Road, there are elegant red-brick Edwardian conversion flats and attractive neo-Georgian mansion terraces.",
+  "parkingAndAccess": "The London Borough of Barnet enforces Controlled Parking Zones near the station and high street, while many suburban residential avenues have open or partial parking restrictions. Most houses benefit from private off-street front driveways. Where street parking is required, we manage Barnet Council parking bay suspensions.",
+  "transportLinks": "Major transport hub featuring Golders Green Northern Line tube station and an extensive bus station connecting to Central London and Hertfordshire.",
+  "travelInfo": "Immediate access to the A41 Finchley Road and North End Road towards Hampstead, with the A406 North Circular accessible within three minutes via Golders Green Road.",
+  "nearbyAreas": [
+    {
+      "name": "Hampstead Garden Suburb",
+      "slug": "hampstead-garden-suburb"
+    },
+    {
+      "name": "Hampstead",
+      "slug": "hampstead"
+    },
+    {
+      "name": "Hendon",
+      "slug": "hendon"
+    },
+    {
+      "name": "Childs Hill",
+      "slug": "childs-hill"
+    },
+    {
+      "name": "Brent Cross",
+      "slug": "brent-cross"
+    }
+  ],
+  "servicesOffered": [
+    "Family House Removals Golders Green",
+    "Temple Fortune Flat Moves",
+    "Full Packing & Fragile Unpack",
+    "Man and Van NW11",
+    "Container Storage Solutions"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you accommodate Friday and Sunday moves in Golders Green?",
+      "answer": "Yes! We operate seven days a week and frequently coordinate early Friday moves or Sunday relocations to fit our clients' community schedules.",
+      "display": true
+    },
+    {
+      "question": "Can you handle large multi-bedroom family home moves in NW11?",
+      "answer": "Yes. We routinely deploy multiple 7.5-tonne and Luton vehicles with dedicated four- to six-man crews to complete large family home moves in a single day.",
+      "display": true
+    },
+    {
+      "question": "Do you supply kosher-sensitive packing materials?",
+      "answer": "Yes, we supply brand new, clean, unprinted double-walled cartons and clean paper rolls directly from our factory suppliers.",
+      "display": true
+    },
+    {
+      "question": "How close is Pearl Removals to Golders Green?",
+      "answer": "Our central depot is located on Cricklewood Broadway NW2, less than two miles away, allowing us to arrive at NW11 homes within 8 to 10 minutes.",
+      "display": true
+    }
+  ],
+  "testimonial": {
+    "name": "The Weisz Family",
+    "quote": "Pearl Removals moved our six-bedroom home near Golders Hill Park. Their team was polite, arrived early, packed our delicate china meticulously, and reassembled all the children's beds perfectly.",
+    "rating": 5
+  },
+  "status": "published"
+}

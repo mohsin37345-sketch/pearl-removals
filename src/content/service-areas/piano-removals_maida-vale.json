@@ -1,0 +1,32 @@
+{
+  "service": "piano-removals",
+  "location": "maida-vale",
+  "status": "published",
+  "uniqueIntro": "Pearl Removals offers specialist piano removals throughout Maida Vale W9 and Little Venice. From upright acoustic pianos in Victorian red-brick mansion blocks along Elgin Avenue to grand pianos in stucco canal-side villas, our trained moving specialists guarantee flawless instrument transport.",
+  "localAngle": "Maida Vale is famous for its pre-war mansion blocks, where moving a piano requires liaising with head porters, pre-booking passenger or service lifts, and fitting padded elevator wall liners. We deploy specialized piano dollies and timber skid boards to glide instruments quietly across communal marble halls.",
+  "whatsIncluded": [
+    "Specialist piano moving porters trained in acoustic instrument physics",
+    "Quilted transit covers, keybed locks, and pedal protective pads",
+    "Timber piano skid board and non-marking rubber dollies",
+    "Hydraulic tail lift vehicle with interior load-lock straps",
+    "Full £50,000 Goods in Transit insurance protection"
+  ],
+  "priceGuidance": "Upright piano transport in Maida Vale from £180. Additional staircase flight surcharges apply transparently.",
+  "faqs": [
+    {
+      "question": "Can an upright piano fit into a Maida Vale mansion block lift?",
+      "answer": "We measure lift dimensions in advance. If the elevator is too compact, our specialist team uses stair-climbing gear to navigate the wide communal staircase.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange Westminster parking suspensions outside mansion blocks?",
+      "answer": "Yes. We apply for official bay suspensions with Westminster City Council, reserving legal kerbside loading space outside your entrance.",
+      "display": true
+    },
+    {
+      "question": "How do you protect communal marble floors and carpets?",
+      "answer": "We lay heavy non-slip floor runners along communal hallways before wheeling the piano on soft polyurethane rollers.",
+      "display": true
+    }
+  ]
+}

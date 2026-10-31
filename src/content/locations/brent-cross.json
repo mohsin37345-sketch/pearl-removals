@@ -1,0 +1,80 @@
+{
+  "name": "Brent Cross",
+  "slug": "brent-cross",
+  "region": "north-west-london",
+  "phase": 1,
+  "premium": false,
+  "boroughs": [
+    "Barnet"
+  ],
+  "postcodes": [
+    "NW4",
+    "NW2"
+  ],
+  "distanceMiles": 1,
+  "metaTitle": "House Removals Brent Cross NW4 | Pearl Removals",
+  "metaDescription": "Professional removals in Brent Cross NW4 & Brent Cross Town. Fully insured moving teams for modern apartments & residential homes. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers comprehensive, fully insured residential removals throughout Brent Cross and the surrounding NW4 and NW2 borders. Positioned barely one mile north of our Cricklewood dispatch depot, our moving crews can reach your property within minutes. From contemporary high-specification apartments in the landmark Brent Cross Town regeneration quarter to established suburban houses bordering Hendon and Temple Fortune, we provide seamless relocations tailored to modern apartment living, concierge logistics, and family house moves alike with dedicated professional moving care and absolute punctuality. We take pride in delivering stress-free moves backed by extensive experience with regional housing developments. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London.",
+  "localKnowledge": "Brent Cross is undergoing an extraordinary residential transformation with the development of Brent Cross Town, introducing thousands of sustainable modern apartments, lush parklands, and pedestrian plazas alongside Brent Cross West Thameslink station. Our drivers know the exact loading bay configurations, barrier heights, and underground service basements throughout these newly built residential towers, as well as the established residential streets along Brent Terrace and Claremont Road.",
+  "propertyTypes": "The residential architecture of Brent Cross spans stylish new-build development complexes with high-speed lifts and secure underground parking facilities, through to quiet suburban 1930s maisonettes, converted flats, and solid semi-detached homes in nearby established side roads toward Golders Green and Hendon.",
+  "parkingAndAccess": "The London Borough of Barnet enforces controlled parking across surrounding residential zones. In newer apartment complexes like Brent Cross Town, loading is managed strictly through private concierge teams and designated loading docks with 2-hour or 4-hour booking windows. We liaise with estate management in advance to secure loading gate passes, while arranging Barnet CPZ permits on public streets.",
+  "transportLinks": "Exceptional transit options via the Northern Line tube at Brent Cross station, mainline Thameslink services at Brent Cross West, and major bus terminals at the shopping centre.",
+  "travelInfo": "Adjacent to the junction of the A406 North Circular, A41 Hendon Way, and M1 motorway, enabling rapid transport to any London or regional destination.",
+  "nearbyAreas": [
+    {
+      "name": "Cricklewood",
+      "slug": "cricklewood"
+    },
+    {
+      "name": "Hendon",
+      "slug": "hendon"
+    },
+    {
+      "name": "Golders Green",
+      "slug": "golders-green"
+    },
+    {
+      "name": "Childs Hill",
+      "slug": "childs-hill"
+    },
+    {
+      "name": "Neasden",
+      "slug": "neasden"
+    }
+  ],
+  "servicesOffered": [
+    "Apartment Removals Brent Cross",
+    "House Removals NW4",
+    "Man and Van Brent Cross Town",
+    "Packing & Crate Hire",
+    "Secure NW London Storage"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you service the new apartment developments in Brent Cross Town?",
+      "answer": "Yes. We regularly handle moves in Brent Cross Town, coordinating directly with on-site building concierges, booking service lifts, and securing loading bay permits.",
+      "display": true
+    },
+    {
+      "question": "Are your vans able to enter underground car parks in Brent Cross?",
+      "answer": "Underground residential basements typically have strict 2.1m to 2.4m height limits. We deploy low-height transport vehicles or park in surface loading bays and use pneumatic dollies to transport items to lifts.",
+      "display": true
+    },
+    {
+      "question": "How quickly can your team reach Brent Cross from your base?",
+      "answer": "Our main depot on Cricklewood Broadway is just one mile away, allowing us to arrive at Brent Cross properties in under 8 minutes.",
+      "display": true
+    },
+    {
+      "question": "Do you supply wardrobe boxes for apartment moves in NW4?",
+      "answer": "Yes. We provide heavy-duty hanging wardrobe cartons with steel rails so your garments transfer directly from your wardrobe without creasing.",
+      "display": true
+    }
+  ],
+  "testimonial": {
+    "name": "Oliver K.",
+    "quote": "Moved into a new penthouse in Brent Cross Town. Pearl Removals communicated seamlessly with the building concierge, booked the service lift, and protected all the corridor floors.",
+    "rating": 5
+  },
+  "status": "published"
+}

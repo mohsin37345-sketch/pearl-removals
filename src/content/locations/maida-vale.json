@@ -1,0 +1,84 @@
+{
+  "name": "Maida Vale",
+  "slug": "maida-vale",
+  "region": "west-london",
+  "phase": 1,
+  "premium": true,
+  "boroughs": [
+    "Westminster"
+  ],
+  "postcodes": [
+    "W9"
+  ],
+  "distanceMiles": 3,
+  "metaTitle": "House Removals Maida Vale W9 | Pearl Removals",
+  "metaDescription": "White-glove removals in Maida Vale W9 & Little Venice. Specialist moving teams for red-brick mansion blocks, lifts & parking suspensions. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides refined, white-glove removals throughout Maida Vale and Little Venice, serving the W9 postcode. Renowned for its sweeping tree-lined boulevards, red-brick Victorian mansion blocks, and tranquil Regent’s Canal waterways, Maida Vale demands a superior level of removal expertise. We specialise in the intricate logistics of mansion flat relocations—coordinating with head porters, booking service lifts, safeguarding communal heritage staircases, and handling Westminster council parking suspensions with meticulous attention to detail to ensure your prized belongings move securely with total peace of mind and utmost discretion. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London.",
+  "localKnowledge": "Maida Vale is characterized by its wide, dignified avenues like Elgin Avenue, Lauderdale Road, Biddulph Road, and Randolph Avenue. Many mansion developments back onto private communal gardens (paddock gardens) shared exclusively between residents. Our crews know the precise entrance ways, rear courtyard loading arches, and tradesman access doors that make moving into these grand buildings smooth and stress-free.",
+  "propertyTypes": "The architectural signature of Maida Vale is its palatial late-Victorian and Edwardian red-brick mansion flats featuring high ceilings, ornate cornicing, and parquet floorboards. Alongside these are handsome stucco villas in Little Venice, elegant canal-side terraces, and discreet mews properties off Sutherland Avenue.",
+  "parkingAndAccess": "The City of Westminster strictly enforces Controlled Parking Zone (Zone B) across Maida Vale. Residential bays are in high demand and parking outside mansion blocks requires advance Westminster bay suspensions. We handle all council applications, reserving curbside space right at your building’s main entrance or service gate.",
+  "transportLinks": "Convenient transit via the Bakerloo line tube stations at Maida Vale and Warwick Avenue, with swift access to Paddington mainline station and the Elizabeth Line.",
+  "travelInfo": "Direct southward access into Central London via Edgware Road and quick westward connectivity along the Westway (A40) towards Heathrow and the M25.",
+  "nearbyAreas": [
+    {
+      "name": "St John's Wood",
+      "slug": "st-johns-wood"
+    },
+    {
+      "name": "Paddington",
+      "slug": "paddington"
+    },
+    {
+      "name": "Notting Hill",
+      "slug": "notting-hill"
+    },
+    {
+      "name": "Bayswater",
+      "slug": "bayswater"
+    },
+    {
+      "name": "Marylebone & Regent's Park",
+      "slug": "marylebone-and-regents-park"
+    },
+    {
+      "name": "Kensal Green & North Kensington",
+      "slug": "kensal-green-and-north-kensington"
+    }
+  ],
+  "servicesOffered": [
+    "Mansion Block Removals Maida Vale",
+    "White-Glove Flat Moves W9",
+    "Full Packing & Wardrobe Service",
+    "Fine Art & Antique Transport",
+    "Padded Lift & Hallway Protection"
+  ],
+  "premiumAngle": "Our Maida Vale white-glove package features liaison with resident building concierges, custom protective padding for communal passenger lifts, carpet protection throughout entrance foyers, and bespoke hanging wardrobe packing.",
+  "localFaqs": [
+    {
+      "question": "How do you coordinate with mansion block porters in Maida Vale?",
+      "answer": "We introduce ourselves to head porters in advance, confirm building moving time windows (typically 9 AM to 5 PM), and install protective wall and lift padding prior to moving.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange Westminster parking suspensions for W9 moves?",
+      "answer": "Yes. We apply directly to Westminster City Council for parking bay suspensions, ensuring our removal vehicle has an official reserved bay directly outside your steps.",
+      "display": true
+    },
+    {
+      "question": "Can you move large furniture up mansion block staircases when the lift is small?",
+      "answer": "Yes. Many historic Maida Vale passenger lifts have compact dimensions. Our teams are highly skilled in manual stair carries and can dismantle large furniture items to fit safely.",
+      "display": true
+    },
+    {
+      "question": "What packing services do you offer for Little Venice and Maida Vale residents?",
+      "answer": "We offer full turnkey packing, using acid-free paper for fine china, specialized picture cartons for artwork, and hanging wardrobe boxes for designer clothing.",
+      "display": true
+    }
+  ],
+  "testimonial": {
+    "name": "Julian & Camilla H.",
+    "quote": "Moving from our 4th-floor mansion flat on Lauderdale Road was seamless. Pearl Removals padded the lift perfectly, respected all building rules, and took incredible care of our antique furniture.",
+    "rating": 5
+  },
+  "status": "published"
+}

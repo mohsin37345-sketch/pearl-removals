@@ -1,0 +1,87 @@
+---
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import Hero from 'theme/components/Hero.astro';
+import TrustStrip from 'theme/components/TrustStrip.astro';
+import Breadcrumbs from 'theme/components/Breadcrumbs.astro';
+import ServiceGrid from 'theme/components/ServiceGrid.astro';
+import HowItWorks from 'theme/components/HowItWorks.astro';
+import PricingTable from 'theme/components/PricingTable.astro';
+import FAQ from 'theme/components/FAQ.astro';
+import QuoteFormSection from 'theme/components/QuoteFormSection.astro';
+import CTABand from 'theme/components/CTABand.astro';
+
+const breadcrumbs = [
+  { name: 'Services', url: '/removals/' }
+];
+
+const serviceFaqs = [
+  {
+    question: 'Which removal services do you offer across North West London?',
+    answer: 'We provide comprehensive residential and commercial moving solutions, including full house removals, flat and apartment moves, professional man and van hire, office relocations, packing services with premium materials, and secure containerised storage. Specialist services such as piano moves and fine art transport are also coordinated by our senior crews.',
+    display: true
+  },
+  {
+    question: 'How do you handle parking suspensions and permits in London?',
+    answer: 'Our Cricklewood operations team assists you in arranging parking suspensions and dispensations with local councils—including Camden, Barnet, Brent, Westminster, and Kensington & Chelsea. We advise on exact suspension lead times (typically 10 to 14 working days) and van bay requirements.',
+    display: true
+  },
+  {
+    question: 'Are my belongings insured during transit and packing?',
+    answer: 'Yes. Every booking includes comprehensive Goods in Transit insurance up to £50,000 as standard (with options to increase cover for high-value items upon declaration) and £5,000,000 Public Liability insurance.',
+    display: true
+  },
+  {
+    question: 'Can you provide packing materials if I want to pack myself?',
+    answer: 'Yes, we supply heavy-duty double-walled boxes, wardrobe cartons with hanging rails, acid-free tissue paper, bubble wrap, and packing tape delivered directly to your home prior to your move date.',
+    display: true
+  }
+];
+---
+
+<BaseLayout
+  title="Removals Services North West London | Pearl Removals"
+  description="Explore Pearl Removals full range of moving services in North West London: house removals, flat moves, man and van, office relocations, packing and storage."
+  canonicalUrl="https://www.pearlremovals.co.uk/removals/"
+  breadcrumbs={breadcrumbs}
+  faqs={serviceFaqs}
+>
+  <Hero
+    variant="service"
+    title="Professional Removal Services Across North West London"
+    subtitle="From single-item transport and compact flat moves to multi-bedroom family homes and office relocations, Pearl Removals delivers tailored, fully insured removals with exceptional care."
+    eyebrow="TAILORED REMOVAL SOLUTIONS"
+  />
+
+  <TrustStrip />
+
+  <Breadcrumbs items={breadcrumbs} />
+
+  <!-- Services Grid -->
+  <ServiceGrid showSpecialistRow={true} />
+
+  <!-- How It Works Section -->
+  <HowItWorks
+    title="How Our Removal Process Works"
+    subtitle="Four simple steps to ensure a completely stress-free moving day from start to finish."
+  />
+
+  <!-- Pricing Table Section -->
+  <PricingTable
+    title="Clear, Transparent Moving Rates"
+    subtitle="All prices are transparent with qualifying criteria. No hidden fuel surcharges or surprise fees."
+  />
+
+  <!-- FAQs -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <FAQ items={serviceFaqs} title="Frequently Asked Questions About Our Services" />
+  </div>
+
+  <!-- Inline Quote Form Section -->
+  <QuoteFormSection title="Request Your Free Removal Quote" />
+
+  <!-- CTA Band -->
+  <CTABand
+    title="Ready to Plan Your North West London Move?"
+    subtitle="Call our Cricklewood dispatch team or submit an enquiry online for a quick, no-obligation quote."
+  />
+</BaseLayout>

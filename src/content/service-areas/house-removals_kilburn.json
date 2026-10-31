@@ -1,0 +1,31 @@
+{
+  "service": "house-removals",
+  "location": "kilburn",
+  "status": "published",
+  "uniqueIntro": "Pearl Removals provides full-scale residential house removals for terraced houses, large conversions, and townhouses across Kilburn NW6. Combining experienced multi-person moving teams with complete packing solutions, we make moving your family home in Kilburn smooth, structured, and entirely stress-free.",
+  "localAngle": "Kilburn properties frequently feature steep front entrance steps, narrow hallway doglegs, and dual-council parking enforcement between Brent and Camden. We calculate your exact parking bay requirements and protect delicate Victorian banisters and plaster cornices from start to finish.",
+  "whatsIncluded": [
+    "Itemised fixed quotation following video or on-site volume assessment",
+    "Dedicated removal team equipped with protective transit wraps and floor runners",
+    "Careful loading, vehicle strapping, and room-by-room unloading at destination",
+    "Standard £50,000 Goods in Transit and £5M Public Liability insurance"
+  ],
+  "priceGuidance": "From £350 for compact home moves; comprehensive bespoke quotations for multi-bedroom period houses.",
+  "faqs": [
+    {
+      "question": "Which council handles parking bay suspensions in Kilburn?",
+      "answer": "East of Kilburn High Road is managed by Camden; west is managed by Brent. We handle the entire application process with the relevant borough.",
+      "display": true
+    },
+    {
+      "question": "Can you dismantle large IKEA PAX wardrobes in Kilburn flats?",
+      "answer": "Yes. Our team carries full toolkits and will dismantle, transport flat, and reassemble large modular wardrobes perfectly.",
+      "display": true
+    },
+    {
+      "question": "How do you safeguard carpeted communal hallways in converted houses?",
+      "answer": "We lay heavy-duty self-adhesive floor protection over carpets and stairs before carrying any cartons or furniture down.",
+      "display": true
+    }
+  ]
+}

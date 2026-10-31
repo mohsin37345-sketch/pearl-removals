@@ -1,0 +1,70 @@
+{
+  "name": "Camden Town",
+  "slug": "camden-town",
+  "region": "central-london",
+  "phase": 2,
+  "premium": false,
+  "boroughs": [
+    "Camden"
+  ],
+  "postcodes": [
+    "NW1"
+  ],
+  "distanceMiles": 4,
+  "metaTitle": "House Removals Camden Town NW1 | Pearl Removals",
+  "metaDescription": "Professional removals in Camden Town NW1. Flat and house moving, packing services & Camden Council parking suspensions. Call 020 3151 8452 for a free quote.",
+  "intro": "Pearl Removals provides energetic, dependable, and fully insured moving services throughout Camden Town and the surrounding NW1 postcode district. Famous worldwide for its creative culture, historic canal basin, and iconic markets, Camden Town also encompasses charming Victorian residential streets, garden squares like Camden Square, and canal-side warehouse loft conversions. Whether you are moving from a split-level conversion flat near Mornington Crescent, settling into an Edwardian townhouse, or relocating a creative design studio near Regent’s Canal, our experienced removal team ensures a smooth, stress-free move carried out with genuine London care. Our moving coordinators conduct thorough pre-move surveys, calculate exact vehicle payload requirements, and provide complete packing supplies to ensure that every stage of your move in Camden Town is handled with absolute punctuality, courteous communication, and total care.",
+  "localKnowledge": "Moving in Camden Town requires active management of dense urban traffic and pedestrian crowds, particularly around Camden High Street, Chalk Farm Road, and the Lock. Residential side roads like Albert Street, Arlington Road, and Murray Mews offer quieter access, but feature narrow lanes and continuous resident parking. Our drivers plan vehicle routes carefully to avoid market day bottlenecks and school run congestion near Regent’s Park.",
+  "propertyTypes": "Housing in Camden Town features multi-storey Victorian terraced houses, converted upper maisonettes with steep staircases, industrial brick warehouse conversions with high ceilings, and modern canal-front apartment blocks with secure access gates.",
+  "parkingAndAccess": "The London Borough of Camden enforces strict Controlled Parking Zone (CPZ) regulations across NW1. Many streets have dedicated resident permit bays with limited pay-by-phone capacity. We arrange official Camden Council parking suspensions well in advance, reserving legal kerbside space for our Luton removal vehicles.",
+  "transportLinks": "Exceptional transit links via Camden Town and Mornington Crescent stations (Northern line), Camden Road (Overground), and extensive 24-hour bus services.",
+  "travelInfo": "Situated only 4 miles southeast of our Cricklewood dispatch base, our vehicles reach Camden Town in 15 to 20 minutes via the A41 Finchley Road and Prince of Wales Road.",
+  "nearbyAreas": [
+    {
+      "name": "Primrose Hill",
+      "slug": "primrose-hill"
+    },
+    {
+      "name": "Kentish Town",
+      "slug": "kentish-town"
+    },
+    {
+      "name": "Marylebone & Regent's Park",
+      "slug": "marylebone-and-regents-park"
+    },
+    {
+      "name": "Belsize Park",
+      "slug": "belsize-park"
+    }
+  ],
+  "servicesOffered": [
+    "Flat Removals Camden Town",
+    "House Moving NW1",
+    "Man and Van Camden",
+    "Office Relocations NW1",
+    "Packing Materials & Box Hire"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you organize parking suspensions with Camden Council?",
+      "answer": "We submit formal bay suspension applications directly to Camden Council, ensuring official yellow suspension notices are posted outside your address before moving day.",
+      "display": true
+    },
+    {
+      "question": "Can you move heavy furniture up narrow stairs in Camden conversions?",
+      "answer": "Yes. Our moving porters specialize in manual handling for narrow period stairwells, disassembling large wardrobes and sofas where necessary.",
+      "display": true
+    },
+    {
+      "question": "Do you offer office and studio relocations in Camden Town?",
+      "answer": "Yes. We regularly move creative agencies, design studios, and local commercial businesses, providing evening and weekend moving slots to minimize downtime.",
+      "display": true
+    },
+    {
+      "question": "How far in advance should I book my Camden move?",
+      "answer": "We recommend booking 1 to 2 weeks ahead, particularly if Camden parking suspensions are required, though short-notice moves can often be accommodated.",
+      "display": true
+    }
+  ],
+  "status": "published"
+}

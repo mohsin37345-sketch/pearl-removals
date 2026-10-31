@@ -1,0 +1,31 @@
+{
+  "service": "man-and-van",
+  "location": "belsize-park",
+  "status": "published",
+  "uniqueIntro": "Our Belsize Park man and van service offers refined, professional moving assistance for residents and professionals in NW3. Ideal for stylish mansion flat moves along Haverstock Hill, boutique shopping deliveries on England’s Lane, and studio relocations in Belsize Village, we deliver white-glove courtesy with every booking.",
+  "localAngle": "Belsize Park features majestic white-stucco architecture with sweeping porticos. Our movers use protective doorstep ramps and non-marking rubber dollies to move designer furniture across original stone entrance steps without causing scratches or chipped masonry.",
+  "whatsIncluded": [
+    "Immaculately clean Luton van with carpeted interior walls",
+    "Expert moving technician equipped with tools, straps, and blankets",
+    "Hanging wardrobe boxes for designer clothing and evening wear",
+    "Full transit insurance covering your belongings throughout the move"
+  ],
+  "priceGuidance": "Hourly rates from £75/hour (2-hour minimum). Transparent fixed rates available upon item declaration.",
+  "faqs": [
+    {
+      "question": "Can you help move heavy designer furniture in Belsize Park flats?",
+      "answer": "Yes. Our movers have extensive experience with designer European brands like B&B Italia, Poliform, and Ligne Roset.",
+      "display": true
+    },
+    {
+      "question": "Do you provide hanging garment boxes for clothes?",
+      "answer": "Yes, we supply sturdy wardrobe boxes with hanging rails so clothes move directly from your closet without wrinkling.",
+      "display": true
+    },
+    {
+      "question": "How much notice do you need for a Belsize Park man and van booking?",
+      "answer": "We recommend 2 to 3 days advance notice, but can frequently accommodate same-day short-notice bookings.",
+      "display": true
+    }
+  ]
+}

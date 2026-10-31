@@ -1,0 +1,299 @@
+---
+import { siteConfig } from 'src/data/site';
+import { servicesRegistry } from 'src/data/services';
+import navData from 'src/data/navigation.json';
+import socialData from 'src/data/social.json';
+import { absoluteUrl } from 'theme/utils/absoluteUrl';
+
+interface BreadcrumbItem {
+  name: string;
+  url: string;
+}
+
+interface FaqItem {
+  question: string;
+  answer: string;
+  display?: boolean;
+}
+
+interface Props {
+  type?: 'home' | 'service' | 'area' | 'micro' | 'region' | 'service-area' | 'about' | 'contact' | 'blog' | 'post' | 'page';
+  title?: string;
+  description?: string;
+  breadcrumbs?: BreadcrumbItem[];
+  faqs?: FaqItem[];
+  serviceData?: any;
+  areaData?: any;
+  publishedAreas?: any[];
+  verifiedReviews?: any[];
+}
+
+const {
+  type = 'page',
+  title = siteConfig.businessName,
+  description = 'Premium house removals company based in Cricklewood, North West London.',
+  breadcrumbs = [],
+  faqs = [],
+  serviceData,
+  areaData,
+  publishedAreas = [],
+  verifiedReviews = []
+} = Astro.props;
+
+const orgId = `${siteConfig.siteUrl}/#organisation`;
+const websiteId = `${siteConfig.siteUrl}/#website`;
+
+// Build clean sameAs array from social config
+const sameAs = Object.values(socialData).filter(Boolean);
+
+// Filter enabled services for OfferCatalog
+const enabledServices = servicesRegistry.filter((s) => s.enabled);
+
+// Boroughs list for administrative areas
+const defaultBoroughs = ['Brent', 'Barnet', 'Camden', 'Westminster', 'Kensington & Chelsea', 'Ealing', 'Haringey', 'Harrow'];
+
+// Construct Graph Array
+const graph: any[] = [];
+
+// 1. Organization / MovingCompany
+const movingCompanySchema: any = {
+  '@type': ['LocalBusiness', 'MovingCompany'],
+  '@id': orgId,
+  'name': siteConfig.businessName,
+  'legalName': siteConfig.legalName,
+  'url': siteConfig.siteUrl,
+  'telephone': siteConfig.phoneE164,
+  'email': siteConfig.email,
+  'priceRange': siteConfig.priceRange,
+  'currenciesAccepted': 'GBP',
+  'paymentAccepted': 'Cash, Credit Card, Bank Transfer',
+  'vatID': siteConfig.vatNumber,
+  'logo': {
+    '@type': 'ImageObject',
+    'url': absoluteUrl('/images/logo.png'),
+    'caption': siteConfig.businessName
+  },
+  'image': absoluteUrl('/images/hero-pearl-removals-van.jpg'),
+  'description': 'Premium house removals, packing and secure storage based in Cricklewood, North West London.',
+  'address': {
+    '@type': 'PostalAddress',
+    'streetAddress': siteConfig.tradingAddress.street,
+    'addressLocality': siteConfig.tradingAddress.city,
+    'addressRegion': siteConfig.tradingAddress.area,
+    'postalCode': siteConfig.tradingAddress.postcode,
+    'addressCountry': 'GB'
+  },
+  'geo': {
+    '@type': 'GeoCoordinates',
+    'latitude': siteConfig.geo.latitude,
+    'longitude': siteConfig.geo.longitude
+  },
+  'openingHoursSpecification': siteConfig.openingHoursSpecification.map((spec) => ({
+    '@type': 'OpeningHoursSpecification',
+    'dayOfWeek': spec.dayOfWeek,
+    'opens': spec.opens,
+    'closes': spec.closes
+  })),
+  'areaServed': [
+    ...publishedAreas.map((area) => ({
+      '@type': 'Place',
+      'name': area.name,
+      'postalCode': area.postcodes
+    })),
+    ...defaultBoroughs.map((borough) => ({
+      '@type': 'AdministrativeArea',
+      'name': `London Borough of ${borough}`
+    })),
+    {
+      '@type': 'GeoCircle',
+      'geoMidpoint': {
+        '@type': 'GeoCoordinates',
+        'latitude': siteConfig.geo.latitude,
+        'longitude': siteConfig.geo.longitude
+      },
+      'geoRadius': siteConfig.geoRadiusByPhase[siteConfig.publishPhase]
+    }
+  ],
+  'hasOfferCatalog': {
+    '@type': 'OfferCatalog',
+    'name': 'Pearl Removals Services',
+    'itemListElement': enabledServices.map((service, index) => ({
+      '@type': 'Offer',
+      'itemOffered': {
+        '@type': 'Service',
+        'name': service.title,
+        'url': absoluteUrl(`/removals/${service.slug}/`),
+        'description': service.summary
+      },
+      'priceSpecification': service.priceFrom ? {
+        '@type': 'PriceSpecification',
+        'price': service.priceFrom,
+        'priceCurrency': 'GBP',
+        'unitText': service.priceUnit || 'move'
+      } : undefined
+    }))
+  }
+};
+
+if (sameAs.length > 0) {
+  movingCompanySchema.sameAs = sameAs;
+}
+
+// Add AggregateRating only if genuine verified reviews exist
+if (verifiedReviews && verifiedReviews.length > 0) {
+  const total = verifiedReviews.reduce((sum, r) => sum + (r.rating || 5), 0);
+  const avg = (total / verifiedReviews.length).toFixed(1);
+  movingCompanySchema.aggregateRating = {
+    '@type': 'AggregateRating',
+    'ratingValue': avg,
+    'reviewCount': verifiedReviews.length,
+    'bestRating': '5',
+    'worstRating': '1'
+  };
+  movingCompanySchema.review = verifiedReviews.map((rev) => ({
+    '@type': 'Review',
+    'author': {
+      '@type': 'Person',
+      'name': rev.name
+    },
+    'reviewRating': {
+      '@type': 'Rating',
+      'ratingValue': rev.rating || 5,
+      'bestRating': '5'
+    },
+    'reviewBody': rev.body,
+    'datePublished': typeof rev.date === 'string' ? rev.date : new Date(rev.date).toISOString().split('T')[0]
+  }));
+}
+
+graph.push(movingCompanySchema);
+
+// 2. WebSite Schema
+const webSiteSchema: any = {
+  '@type': 'WebSite',
+  '@id': websiteId,
+  'url': siteConfig.siteUrl,
+  'name': siteConfig.businessName,
+  'publisher': {
+    '@id': orgId
+  },
+  'inLanguage': 'en-GB'
+};
+graph.push(webSiteSchema);
+
+// 3. SiteNavigationElement
+if (navData.header && navData.header.length > 0) {
+  const navSchema = {
+    '@type': 'SiteNavigationElement',
+    '@id': `${siteConfig.siteUrl}/#navigation`,
+    'name': 'Main Navigation',
+    'hasPart': navData.header.map((item) => ({
+      '@type': 'WebPage',
+      'name': item.label,
+      'url': absoluteUrl(item.href)
+    }))
+  };
+  graph.push(navSchema);
+}
+
+// 4. BreadcrumbList (Every page except Home)
+if (breadcrumbs && breadcrumbs.length > 0) {
+  const breadcrumbSchema = {
+    '@type': 'BreadcrumbList',
+    '@id': `${Astro.url.href}#breadcrumb`,
+    'itemListElement': breadcrumbs.map((crumb, idx) => ({
+      '@type': 'ListItem',
+      'position': idx + 1,
+      'name': crumb.name,
+      'item': crumb.url.startsWith('http') ? crumb.url : absoluteUrl(crumb.url)
+    }))
+  };
+  graph.push(breadcrumbSchema);
+}
+
+// 5. Page-Specific Schemas
+if (type === 'about') {
+  graph.push({
+    '@type': 'AboutPage',
+    '@id': `${Astro.url.href}#aboutpage`,
+    'url': Astro.url.href,
+    'name': title,
+    'description': description,
+    'mainEntity': { '@id': orgId }
+  });
+} else if (type === 'contact') {
+  graph.push({
+    '@type': 'ContactPage',
+    '@id': `${Astro.url.href}#contactpage`,
+    'url': Astro.url.href,
+    'name': title,
+    'description': description,
+    'mainEntity': { '@id': orgId }
+  });
+} else if (type === 'service' && serviceData) {
+  graph.push({
+    '@type': 'Service',
+    '@id': `${Astro.url.href}#service`,
+    'name': serviceData.title,
+    'serviceType': serviceData.title,
+    'description': serviceData.summary || description,
+    'provider': { '@id': orgId },
+    'areaServed': movingCompanySchema.areaServed
+  });
+} else if (type === 'area' && areaData) {
+  graph.push({
+    '@type': 'Service',
+    '@id': `${Astro.url.href}#service`,
+    'name': `House Removals in ${areaData.name}`,
+    'serviceType': 'House Removals',
+    'provider': { '@id': orgId },
+    'areaServed': {
+      '@type': 'Place',
+      'name': areaData.name,
+      'postalCode': areaData.postcodes
+    }
+  });
+}
+
+// 6. FAQPage Schema (Where FAQs exist and display !== false)
+const validFaqs = faqs.filter((f) => f.display !== false);
+if (validFaqs.length > 0) {
+  const faqSchema = {
+    '@type': 'FAQPage',
+    '@id': `${Astro.url.href}#faq`,
+    'mainEntity': validFaqs.map((faq) => ({
+      '@type': 'Question',
+      'name': faq.question,
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': faq.answer
+      }
+    }))
+  };
+  graph.push(faqSchema);
+}
+
+// Helper to strip null and undefined fields recursively
+function cleanSchema(obj: any): any {
+  if (Array.isArray(obj)) {
+    return obj.map(cleanSchema).filter((v) => v !== null && v !== undefined);
+  } else if (obj !== null && typeof obj === 'object') {
+    const res: any = {};
+    for (const key of Object.keys(obj)) {
+      const val = cleanSchema(obj[key]);
+      if (val !== null && val !== undefined && val !== '') {
+        res[key] = val;
+      }
+    }
+    return res;
+  }
+  return obj;
+}
+
+const cleanedGraph = cleanSchema({
+  '@context': 'https://schema.org',
+  '@graph': graph
+});
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(cleanedGraph)} />

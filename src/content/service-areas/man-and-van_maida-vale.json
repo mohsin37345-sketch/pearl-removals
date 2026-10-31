@@ -1,0 +1,31 @@
+{
+  "service": "man-and-van",
+  "location": "maida-vale",
+  "status": "published",
+  "uniqueIntro": "Our Maida Vale man and van service offers refined, white-glove moving assistance for residents and professionals across W9 and Little Venice. Perfect for mansion flat relocations along Elgin Avenue, canal-side studio moves, and delicate antique transport, we deliver exceptional care and punctuality.",
+  "localAngle": "Maida Vale is famous for its grand red-brick mansion blocks and tree-lined boulevards. Our moving teams are thoroughly familiar with building concierge rules, passenger lift dimensions, and Westminster parking controls, ensuring smooth and quiet loading.",
+  "whatsIncluded": [
+    "Padded Luton removal van equipped with tail lift and load-lock tracking",
+    "Professional art-trained mover to assist with carrying and vehicle stowing",
+    "Wardrobe boxes with steel hanging rails for designer clothing",
+    "Goods in Transit insurance covering up to £50,000 as standard"
+  ],
+  "priceGuidance": "From £75/hour (2-hour minimum) for professional white-glove man and van service in W9.",
+  "faqs": [
+    {
+      "question": "Can you coordinate with mansion block concierges in Maida Vale?",
+      "answer": "Yes. We liaise with building porters, observe permitted moving hours, and install protective padding inside lifts.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange Westminster parking suspensions for W9 moves?",
+      "answer": "Yes. We apply directly to Westminster City Council for parking bay suspensions outside your building steps.",
+      "display": true
+    },
+    {
+      "question": "Can you move heavy furniture up mansion block stairs if the lift is small?",
+      "answer": "Yes. Our teams are experienced in manual stair carries and can dismantle large furniture items to fit safely.",
+      "display": true
+    }
+  ]
+}

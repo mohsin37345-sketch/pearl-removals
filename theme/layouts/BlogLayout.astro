@@ -1,0 +1,128 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from 'theme/components/Breadcrumbs.astro';
+import TableOfContents from 'theme/components/TableOfContents.astro';
+import SocialShare from 'theme/components/SocialShare.astro';
+import FAQ from 'theme/components/FAQ.astro';
+import CTABand from 'theme/components/CTABand.astro';
+import RelatedLinks from 'theme/components/RelatedLinks.astro';
+import { formatDate } from 'theme/utils/formatDate';
+import Icon from 'theme/components/Icon.astro';
+
+interface Props {
+  post: {
+    title: string;
+    description: string;
+    date: Date | string;
+    updatedDate?: Date | string;
+    author: string;
+    category: string;
+    readTime?: string;
+    image?: string;
+    imageAlt?: string;
+    slug: string;
+    faqs?: Array<{ question: string; answer: string }>;
+    relatedServices?: string[];
+    relatedLocations?: string[];
+  };
+  headings?: Array<{ depth: number; slug: string; text: string }>;
+}
+
+const { post, headings = [] } = Astro.props;
+
+const breadcrumbs = [
+  { name: 'Blog', url: '/blog/' },
+  { name: post.category, url: `/blog/category/${post.category.toLowerCase().replace(/\s+/g, '-')}/` },
+  { name: post.title, url: `/blog/${post.slug}/` }
+];
+
+const relatedServiceLinks = (post.relatedServices || ['house-removals', 'packing-services']).map((s) => ({
+  title: s.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()),
+  url: `/removals/${s}/`
+}));
+
+const relatedAreaLinks = (post.relatedLocations || ['cricklewood', 'hampstead']).map((a) => ({
+  title: `${a.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())} Removals`,
+  url: `/areas/${a}/`
+}));
+---
+
+<BaseLayout
+  title={`${post.title} | Pearl Removals`}
+  description={post.description}
+  canonicalUrl={`https://www.pearlremovals.co.uk/blog/${post.slug}/`}
+  ogType="article"
+  ogImage={post.image}
+  ogImageAlt={post.imageAlt}
+  publishedTime={new Date(post.date).toISOString()}
+  modifiedTime={post.updatedDate ? new Date(post.updatedDate).toISOString() : undefined}
+  breadcrumbs={breadcrumbs}
+  faqs={post.faqs || []}
+>
+  <Breadcrumbs items={breadcrumbs} />
+
+  <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- Header -->
+    <header class="mb-8 space-y-4">
+      <div class="flex items-center gap-2">
+        <a
+          href={`/blog/category/${post.category.toLowerCase().replace(/\s+/g, '-')}/`}
+          class="glass-pill px-3 py-1 rounded-full text-xs font-bold text-royal"
+        >
+          {post.category}
+        </a>
+        <span class="text-xs text-surface-400">•</span>
+        <span class="text-xs text-surface-500">{post.readTime || '4 min read'}</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-navy dark:text-pearl tracking-tight leading-tight">
+        {post.title}
+      </h1>
+
+      <p class="text-base sm:text-lg text-surface-600 dark:text-surface-300 font-normal leading-relaxed">
+        {post.description}
+      </p>
+
+      <div class="flex items-center justify-between py-3 border-y border-surface-200 dark:border-white/10 text-xs text-surface-500">
+        <div class="flex items-center gap-2">
+          <Icon name="user" class="w-4 h-4 text-royal" />
+          <span>By <strong>{post.author}</strong></span>
+        </div>
+        <time datetime={new Date(post.date).toISOString().split('T')[0]}>
+          {formatDate(post.date)}
+        </time>
+      </div>
+    </header>
+
+    <!-- Social Share Top -->
+    <SocialShare title={post.title} />
+
+    <!-- Table of Contents -->
+    {headings && headings.length > 0 && (
+      <TableOfContents headings={headings} />
+    )}
+
+    <!-- Article Content -->
+    <div class="prose prose-lg dark:prose-invert max-w-none text-surface-700 dark:text-surface-300 leading-relaxed space-y-6">
+      <slot />
+    </div>
+
+    <!-- Social Share Bottom -->
+    <div class="pt-8">
+      <SocialShare title={post.title} />
+    </div>
+
+    <!-- Related Internal Links -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8">
+      <RelatedLinks heading="Recommended Services" links={relatedServiceLinks} />
+      <RelatedLinks heading="Featured Moving Areas" links={relatedAreaLinks} />
+    </div>
+
+    <!-- FAQ Accordion If Available -->
+    {post.faqs && post.faqs.length > 0 && (
+      <FAQ items={post.faqs} title="Article FAQs" />
+    )}
+
+    <CTABand />
+  </article>
+</BaseLayout>

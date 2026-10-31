@@ -1,0 +1,84 @@
+{
+  "name": "Hampstead",
+  "slug": "hampstead",
+  "region": "north-west-london",
+  "phase": 1,
+  "premium": true,
+  "boroughs": [
+    "Camden"
+  ],
+  "postcodes": [
+    "NW3"
+  ],
+  "distanceMiles": 2.5,
+  "metaTitle": "House Removals Hampstead NW3 | Pearl Removals",
+  "metaDescription": "White-glove house removals in Hampstead NW3. Specialist moving teams for historic hilltop village homes, fine art crating & Georgian villas. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides distinguished, white-glove residential removals throughout the world-famous hilltop enclave of Hampstead, serving NW3. Renowned for its ancient cobbled lanes, literary heritage, historic Georgian and Victorian architecture, and the sprawling wild expanse of Hampstead Heath, Hampstead demands an elite tier of removal expertise. We cater to discerning homeowners, estate trustees, and private collectors, providing discreet, masterfully planned relocations with bespoke fine-art crating, antique handling, and attentive white-glove care that honours the heritage of every residence we enter. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London.",
+  "localKnowledge": "Hampstead’s historic hilltop geography presents some of London’s most challenging removal logistics. Steep gradients along Holly Hill, Heath Street, and Downshire Hill, combined with narrow unadopted mews, restrictive overhanging brick archways, and tight turning circles, require seasoned driving expertise. Our senior team conducts exhaustive physical access surveys to determine precise vehicle sizing and loading plans.",
+  "propertyTypes": "Hampstead boasts an extraordinary portfolio of architectural masterpieces: Grade I and Grade II listed Queen Anne and Georgian townhouses, grand Victorian red-brick villas, historic cottages in the Vale of Health, and modernist architectural icons. Homes often feature intricate period staircases, antique parquetry, and valuable original joinery.",
+  "parkingAndAccess": "The London Borough of Camden enforces strict Controlled Parking Zone (Zone CA-H) across Hampstead. Narrow historic carriageways mean parking bay suspensions and police traffic dispensations are frequently required. We manage the entire council permitting process well in advance to reserve legal curbside access.",
+  "transportLinks": "Northern Line tube services from Hampstead station (the deepest underground station in London) and London Overground services at Hampstead Heath.",
+  "travelInfo": "Direct southward access into Central London via Fitzjohn's Avenue and Swiss Cottage, with quick northward routes towards the Finchley Road and North Circular.",
+  "nearbyAreas": [
+    {
+      "name": "Highgate",
+      "slug": "highgate"
+    },
+    {
+      "name": "Kentish Town",
+      "slug": "kentish-town"
+    },
+    {
+      "name": "Camden Town",
+      "slug": "camden-town"
+    },
+    {
+      "name": "Belsize Park",
+      "slug": "belsize-park"
+    },
+    {
+      "name": "West Hampstead",
+      "slug": "west-hampstead"
+    },
+    {
+      "name": "Childs Hill",
+      "slug": "childs-hill"
+    }
+  ],
+  "servicesOffered": [
+    "White-Glove House Removals Hampstead",
+    "Fine Art & Antiques Crating NW3",
+    "Heritage Property Specialists",
+    "Dedicated Move Management",
+    "Climate-Controlled Storage"
+  ],
+  "premiumAngle": "Our Hampstead white-glove service features dedicated move directors, bespoke timber crating for original artwork, cotton-glove handling for porcelain and antique furniture, floor and banister protection, and unbranded vehicles upon request.",
+  "localFaqs": [
+    {
+      "question": "How do your large vehicles navigate narrow, steep streets in Hampstead Village?",
+      "answer": "We deploy specialized 3.5-tonne Luton vans and low-profile support vehicles tailored to tight lanes like Flask Walk and Holly Mount, using multiple coordinated shuttles when necessary.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange Camden parking suspensions for steep Hampstead lanes?",
+      "answer": "Yes. We handle all formal parking bay suspension and traffic dispensation applications with Camden Council, reserving dedicated loading bays outside your gates.",
+      "display": true
+    },
+    {
+      "question": "Can you transport museum-grade art collections and antique tapestries?",
+      "answer": "Yes. Our fine-art division manufactures custom timber crates with archival foam lining, ensuring delicate canvases and sculpture travel under optimal protection.",
+      "display": true
+    },
+    {
+      "question": "Do you offer non-disclosure agreements for high-profile Hampstead clients?",
+      "answer": "Yes. We regularly execute confidentiality agreements and provide discreet, unbranded removal vehicles for public figures and private estates.",
+      "display": true
+    }
+  ],
+  "testimonial": {
+    "name": "Sir Thomas & Lady W.",
+    "quote": "Moving an extensive art collection and 200-year-old mahogany furniture from our home near Church Row was executed with extraordinary skill and discretion by Pearl Removals.",
+    "rating": 5
+  },
+  "status": "published"
+}

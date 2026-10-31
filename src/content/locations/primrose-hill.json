@@ -1,0 +1,81 @@
+{
+  "name": "Primrose Hill",
+  "slug": "primrose-hill",
+  "region": "north-west-london",
+  "phase": 1,
+  "premium": true,
+  "boroughs": [
+    "Camden"
+  ],
+  "postcodes": [
+    "NW1",
+    "NW3"
+  ],
+  "distanceMiles": 3.5,
+  "metaTitle": "House Removals Primrose Hill NW1 | Pearl Removals",
+  "metaDescription": "Discreet, white-glove removals in Primrose Hill NW1 & NW3. Luxury house moves, fine art crating & antiques transport. Fully insured. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers distinguished, white-glove residential removals throughout the prestigious enclave of Primrose Hill, serving NW1 and NW3. Renowned for its picturesque pastel-coloured Regency townhouses, vibrant village high street along Regent’s Park Road, and panoramic summit park vistas, Primrose Hill is one of the capital's most desirable residential neighbourhoods. We cater to high-net-worth homeowners, celebrities, and design professionals, providing discreet, impeccably planned removals with bespoke fine-art crating, antique protection, and attentive white-glove care that safeguards your valuable property every step of the way. Our team handles every move with unmatched discretion and refined courtesy. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London.",
+  "localKnowledge": "Primrose Hill maintains a tranquil village atmosphere despite its close proximity to Central London. Streets like Chalcot Square, Chalcot Crescent, and Gloucester Avenue feature delicate stucco facades, narrow carriageways, and tight corner turning radiuses. Our senior drivers have years of experience manoeuvring removal vehicles through these conservation streets without causing traffic blockages or pavement wear.",
+  "propertyTypes": "The neighbourhood is defined by its celebrated pastel-hued Regency and early Victorian stucco villas, elegant four-storey Italianate terraced townhouses, and discreet converted mews cottages. Properties frequently showcase original floor-to-ceiling sash windows, delicate wrought-iron balconies, ornate cornicing, and narrow internal spiral staircases that require specialized rigging techniques.",
+  "parkingAndAccess": "The London Borough of Camden enforces strict Controlled Parking Zone (Zone CA-F) regulations across Primrose Hill, with limited pay-and-display bays and high resident parking demand. We submit formal parking bay suspension applications to Camden Council well in advance, reserving exclusive space outside your front railings.",
+  "transportLinks": "Walking distance to Chalk Farm and Camden Town tube stations on the Northern Line, with swift road links to St John’s Wood, Regent’s Park, and the West End.",
+  "travelInfo": "Close proximity to the Outer Circle of Regent’s Park and Avenue Road provides clear, dignified routes through to Marylebone, Mayfair, and Central London.",
+  "nearbyAreas": [
+    {
+      "name": "Camden Town",
+      "slug": "camden-town"
+    },
+    {
+      "name": "Marylebone & Regent's Park",
+      "slug": "marylebone-and-regents-park"
+    },
+    {
+      "name": "Belsize Park",
+      "slug": "belsize-park"
+    },
+    {
+      "name": "St John's Wood",
+      "slug": "st-johns-wood"
+    },
+    {
+      "name": "Hampstead",
+      "slug": "hampstead"
+    }
+  ],
+  "servicesOffered": [
+    "White-Glove House Removals Primrose Hill",
+    "Fine Art & Antiques Handling NW1",
+    "Full Packing & Fragile Unpack",
+    "Discreet Executive Relocations",
+    "Climate-Controlled Storage Solutions"
+  ],
+  "premiumAngle": "Our Primrose Hill VIP service provides dedicated move management, bespoke timber crating for original artwork, cotton-glove handling for sculpture and antique ceramics, and unbranded vehicle transport upon request for complete privacy.",
+  "localFaqs": [
+    {
+      "question": "Do you offer discreet or unbranded vehicles for high-profile Primrose Hill moves?",
+      "answer": "Yes. We frequently manage confidential executive and celebrity relocations in Primrose Hill and can deploy discreet, unbranded removal vehicles upon request.",
+      "display": true
+    },
+    {
+      "question": "How do you protect fragile Regency plasterwork and narrow hallways in Primrose Hill?",
+      "answer": "We wrap all staircase banisters in padded quilted protectors, install heavy neoprene floor runners, and use corner door guards to eliminate any risk of accidental contact.",
+      "display": true
+    },
+    {
+      "question": "Can you handle valuable art collections and antique mirrors?",
+      "answer": "Yes. Our fine-art technicians custom-build wooden crates lined with archival foam for oil paintings, sculptures, and gilt-framed mirrors.",
+      "display": true
+    },
+    {
+      "question": "How far ahead must Camden parking suspensions be booked in NW1?",
+      "answer": "Camden Council requires a minimum of 14 working days notice for residential bay suspensions in Primrose Hill. We manage this entire paperwork timeline for you.",
+      "display": true
+    }
+  ],
+  "testimonial": {
+    "name": "Charlotte V.",
+    "quote": "Moving from Chalcot Crescent was daunting due to the narrow street and four floors of stairs. Pearl Removals provided an absolute masterclass in care, discretion, and professionalism.",
+    "rating": 5
+  },
+  "status": "published"
+}

@@ -1,0 +1,106 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from 'theme/components/Breadcrumbs.astro';
+import TableOfContents from 'theme/components/TableOfContents.astro';
+import { formatDate } from 'theme/utils/formatDate';
+
+interface Props {
+  title: string;
+  description: string;
+  lastUpdated?: string;
+  headings?: Array<{ depth: number; slug: string; text: string }>;
+}
+
+const {
+  title,
+  description,
+  lastUpdated = "2026-06-01",
+  headings = []
+} = Astro.props;
+
+const breadcrumbs = [
+  { name: 'Legal', url: '/terms-and-conditions/' },
+  { name: title, url: Astro.url.pathname }
+];
+---
+
+<BaseLayout
+  title={`${title} | Pearl Removals UK`}
+  description={description}
+  canonicalUrl={`https://www.pearlremovals.co.uk${Astro.url.pathname}`}
+  breadcrumbs={breadcrumbs}
+>
+  <Breadcrumbs items={breadcrumbs} />
+
+  <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+    <header class="mb-8 pb-6 border-b border-surface-200 dark:border-white/10 space-y-2">
+      <div class="text-xs font-bold uppercase tracking-widest text-royal">
+        Compliance & Legal Documentation
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-black text-navy dark:text-pearl tracking-tight">
+        {title}
+      </h1>
+      <p class="text-xs sm:text-sm text-surface-500">
+        Effective / Last Updated: <time datetime={lastUpdated}>{formatDate(lastUpdated)}</time>
+      </p>
+    </header>
+
+    {headings && headings.length > 0 && (
+      <TableOfContents headings={headings} />
+    )}
+
+    <!-- Legal Text Content -->
+    <div class="glass-panel p-6 sm:p-10 rounded-3xl space-y-6 text-xs sm:text-sm text-surface-700 dark:text-surface-300 leading-relaxed legal-content">
+      <slot />
+    </div>
+  </article>
+</BaseLayout>
+
+<style is:global>
+  .legal-content h2 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(15, 30, 61, 0.08);
+  }
+  .legal-content h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .legal-content p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+  }
+  .legal-content ul, .legal-content ol {
+    margin-bottom: 1.25rem;
+    padding-left: 1.5rem;
+  }
+  .legal-content li {
+    margin-bottom: 0.5rem;
+  }
+  .legal-content a {
+    color: var(--color-royal);
+    text-decoration: underline;
+  }
+  .legal-content table {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border-collapse: collapse;
+  }
+  .legal-content th, .legal-content td {
+    padding: 0.75rem;
+    border: 1px solid rgba(15, 30, 61, 0.1);
+    text-align: left;
+  }
+  .legal-content th {
+    background: rgba(15, 30, 61, 0.04);
+    font-weight: 700;
+  }
+</style>

@@ -1,0 +1,101 @@
+---
+import LegalLayout from 'theme/layouts/LegalLayout.astro';
+import { siteConfig } from 'src/data/site';
+
+const headings = [
+  { depth: 2, slug: 'what-are-cookies', text: '1. What Are Cookies' },
+  { depth: 2, slug: 'consent-mode', text: '2. Google Consent Mode v2 & Your Control' },
+  { depth: 2, slug: 'cookie-table', text: '3. Detailed Inventory of Cookies Used' },
+  { depth: 2, slug: 'managing-cookies', text: '4. How to Manage and Revoke Consent' }
+];
+---
+
+<LegalLayout
+  title="Cookie Policy"
+  description="Pearl Removals Cookie Policy detailing our cookie audit, Google Consent Mode v2 implementation, and options for managing cookie preferences."
+  lastUpdated="2026-06-01"
+  headings={headings}
+>
+  <p>
+    This Cookie Policy explains how <strong>{siteConfig.businessName}</strong> ("we", "us", or "our") uses cookies and related tracking technologies on our website (<a href={siteConfig.siteUrl}>{siteConfig.siteUrl}</a>). We comply with the <strong>Privacy and Electronic Communications Regulations (PECR)</strong> and the <strong>UK GDPR</strong>.
+  </p>
+
+  <h2 id="what-are-cookies">1. What Are Cookies</h2>
+  <p>
+    Cookies are small text files placed on your computer or mobile device when you browse websites. They are widely used to make web applications function efficiently, remember your preferences (such as light or dark theme mode), and provide anonymous aggregate analytics to site operators.
+  </p>
+
+  <h2 id="consent-mode">2. Google Consent Mode v2 & Your Control</h2>
+  <p>
+    Our website uses <strong>Google Consent Mode v2</strong>. By default, all analytical and advertising storage tags are set to "denied" before any script executes. No analytical tracking cookies are stored on your device unless you provide positive, affirmative opt-in consent through our cookie consent banner. You may change or withdraw your consent at any time without penalty.
+  </p>
+
+  <h2 id="cookie-table">3. Detailed Inventory of Cookies Used</h2>
+  <p>
+    Below is a comprehensive schedule of the cookies used across our website:
+  </p>
+
+  <div class="overflow-x-auto my-6">
+    <table>
+      <thead>
+        <tr>
+          <th>Cookie Identifier</th>
+          <th>Provider</th>
+          <th>Category</th>
+          <th>Purpose</th>
+          <th>Expiry / Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>theme</code></td>
+          <td>Pearl Removals (First Party)</td>
+          <td>Strictly Necessary / Functional</td>
+          <td>Stores your light or dark mode visual preference across page navigation.</td>
+          <td>Persistent (Local Storage)</td>
+        </tr>
+        <tr>
+          <td><code>pr_quote_step</code></td>
+          <td>Pearl Removals (First Party)</td>
+          <td>Strictly Necessary / Functional</td>
+          <td>Temporarily remembers your position in our 7-step quote wizard so you do not lose progress if you refresh.</td>
+          <td>Session (Cleared on browser close)</td>
+        </tr>
+        <tr>
+          <td><code>cookieyes-consent</code> / <code>Cookiebot</code></td>
+          <td>Consent Management Provider</td>
+          <td>Strictly Necessary</td>
+          <td>Records your consent preferences for GDPR and PECR audit compliance.</td>
+          <td>12 Months</td>
+        </tr>
+        <tr>
+          <td><code>_ga</code></td>
+          <td>Google Analytics (GA4)</td>
+          <td>Analytics (Consent-Gated)</td>
+          <td>Distinguishes unique users and measures aggregate page engagement across sessions. Loaded only after consent.</td>
+          <td>2 Years</td>
+        </tr>
+        <tr>
+          <td><code>_ga_*</code></td>
+          <td>Google Analytics (GA4)</td>
+          <td>Analytics (Consent-Gated)</td>
+          <td>Maintains session state and measures quote funnel completion rates. Loaded only after consent.</td>
+          <td>2 Years</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="managing-cookies">4. How to Manage and Revoke Consent</h2>
+  <p>
+    You are always in control of your cookie preferences:
+  </p>
+  <ul>
+    <li>
+      <strong>Consent Banner / Footer Link:</strong> You can click the <strong>"Cookie Preferences"</strong> link located in the footer of every page on our website to reopen the settings modal and adjust your permissions.
+    </li>
+    <li>
+      <strong>Browser Settings:</strong> Most modern browsers (Chrome, Safari, Firefox, Edge) allow you to block third-party cookies or delete existing cookies via your browser's security or privacy settings.
+    </li>
+  </ul>
+</LegalLayout>

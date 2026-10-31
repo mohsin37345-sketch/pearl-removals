@@ -1,0 +1,32 @@
+{
+  "service": "piano-removals",
+  "location": "st-johns-wood",
+  "status": "published",
+  "uniqueIntro": "Pearl Removals delivers white-glove piano removals throughout St John's Wood NW8. Renowned for grand avenues, luxury portered blocks, and musical landmarks, our team transports uprights, baby grands, and concert grand pianos with unmatched acoustic care and technical precision.",
+  "localAngle": "St John’s Wood boasts substantial detached residences along Avenue Road and Hamilton Terrace, alongside prestigious mansion blocks on Prince Albert Road. Moving a concert grand piano here involves coordinated logistics: liaising with head porters, pre-booking service elevators, and using hydraulic tail lifts for smooth transit.",
+  "whatsIncluded": [
+    "Certified four-person piano moving specialist team",
+    "Heavy-duty padded piano jackets, keyboard clamps, and pedal sleeves",
+    "Timber skid boards with industrial non-marking soft rollers",
+    "Tail-lift vehicle equipped with soft air suspension and tracking rails",
+    "Full £50,000 Goods in Transit insurance protection as standard"
+  ],
+  "priceGuidance": "Upright moves in NW8 start from £190. Grand piano moves quoted based on instrument size and floor level.",
+  "faqs": [
+    {
+      "question": "Can you transport a concert grand piano into a mansion block in NW8?",
+      "answer": "Yes. We measure service elevators and stairwells in advance, fitting protective elevator wall pads and using specialized piano skids for lateral moves.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange Westminster parking suspensions outside mansion blocks?",
+      "answer": "Yes. We handle all paperwork with Westminster City Council to reserve legal curbside parking outside residential forecourts.",
+      "display": true
+    },
+    {
+      "question": "How do you protect marble and polished parquetry floors in St John’s Wood?",
+      "answer": "Our porters lay heavy neoprene floor mats across all transit routes to prevent wheel impressions or scuffs on delicate flooring.",
+      "display": true
+    }
+  ]
+}

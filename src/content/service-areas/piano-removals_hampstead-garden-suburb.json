@@ -1,0 +1,32 @@
+{
+  "service": "piano-removals",
+  "location": "hampstead-garden-suburb",
+  "status": "published",
+  "uniqueIntro": "Pearl Removals provides refined piano removals in Hampstead Garden Suburb across NW11 and N2. Catering to Arts & Crafts cottages around Central Square and grand residences along The Bishops Avenue and Winnington Road, we transport upright and grand pianos with utmost acoustic reverence and care.",
+  "localAngle": "Hampstead Garden Suburb operates under strict conservation regulations enforced by the Suburb Trust. Homes feature historic timber casements, narrow front doorways, and open grass verges where vehicles must not park. We deploy agile Luton vans with tail lifts, using rubber runners to protect grass verges and garden paths.",
+  "whatsIncluded": [
+    "Dedicated piano moving team certified in acoustic instrument transit",
+    "Heavy-duty quilted piano jacket and keyboard locking straps",
+    "Timber skid boards with soft polyurethane rolling wheels",
+    "Hydraulic tail lift vehicle with interior load-lock cushioning",
+    "Full £50,000 Goods in Transit insurance cover"
+  ],
+  "priceGuidance": "Upright moves in Hampstead Garden Suburb from £190. Grand piano moves quoted upon survey.",
+  "faqs": [
+    {
+      "question": "How do you avoid damaging historic grass verges in the Suburb?",
+      "answer": "We position our vehicles strictly along the asphalt roadway, laying temporary protective rubber runners across paths to transfer the piano safely.",
+      "display": true
+    },
+    {
+      "question": "Can you move grand pianos in luxury homes along The Bishops Avenue?",
+      "answer": "Yes. We regularly handle concert and baby grand pianos in large residences, utilizing four-person teams and protective floor mats throughout.",
+      "display": true
+    },
+    {
+      "question": "Do you provide transit insurance for high-value grand pianos?",
+      "answer": "Yes. Comprehensive goods-in-transit insurance is included as standard, with higher declared valuation cover available on request.",
+      "display": true
+    }
+  ]
+}

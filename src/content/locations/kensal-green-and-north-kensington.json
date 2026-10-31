@@ -1,0 +1,81 @@
+{
+  "name": "Kensal Green & North Kensington",
+  "slug": "kensal-green-and-north-kensington",
+  "region": "west-london",
+  "phase": 1,
+  "premium": false,
+  "boroughs": [
+    "Brent",
+    "Kensington & Chelsea"
+  ],
+  "postcodes": [
+    "NW10",
+    "W10"
+  ],
+  "distanceMiles": 3,
+  "metaTitle": "House Removals Kensal Green & North Kensington | Pearl Removals",
+  "metaDescription": "Expert removals in Kensal Green NW10 & North Kensington W10. Specialist moving teams for Victorian terraces near Golborne Road. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers comprehensive, fully insured residential removals across Kensal Green and North Kensington, spanning the NW10 and W10 postcodes. Bordering the Grand Union Canal and vibrant Golborne Road, this dynamic West London quarter blends bohemian market culture with beautiful Victorian terraced architecture and canal-side developments. Situated just three miles from our Cricklewood base, our skilled moving teams offer deep familiarity with local street layouts, canal bridges, and council parking rules, providing dependable, courteous, and damage-free moving services with complete peace of mind. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London.",
+  "localKnowledge": "Kensal Green and North Kensington occupy a unique boundary between Brent and the Royal Borough of Kensington & Chelsea (RBKC). The vibrant market energy along Golborne Road and Portobello Road creates steady foot traffic. Our drivers know how to navigate the network of residential streets running off Harrow Road and Ladbroke Grove, timing vehicle arrival to avoid market congestion.",
+  "propertyTypes": "The residential architecture features handsome multi-storey Victorian bay-fronted terraced houses, charming pastel-painted workers' cottages, canal-side loft conversions, and elegant modern apartment developments overlooking the Grand Union Canal.",
+  "parkingAndAccess": "The London Borough of Brent and the Royal Borough of Kensington & Chelsea strictly enforce Controlled Parking Zones (Zone KG and Zone 1) across the area. Narrow street widths mean advance parking bay suspensions are essential. We coordinate all council applications on your behalf.",
+  "transportLinks": "Excellent public transport connectivity via Kensal Green station (Bakerloo Line and London Overground) and nearby Ladbroke Grove on the Circle and Hammersmith & City lines.",
+  "travelInfo": "Direct road access along the A404 Harrow Road towards Central London, with rapid southern access into Notting Hill and the Westway (A40).",
+  "nearbyAreas": [
+    {
+      "name": "Notting Hill",
+      "slug": "notting-hill"
+    },
+    {
+      "name": "Acton",
+      "slug": "acton"
+    },
+    {
+      "name": "Maida Vale",
+      "slug": "maida-vale"
+    },
+    {
+      "name": "Queen's Park",
+      "slug": "queens-park"
+    },
+    {
+      "name": "Kensal Rise",
+      "slug": "kensal-rise"
+    }
+  ],
+  "servicesOffered": [
+    "Victorian House Removals NW10",
+    "Canal-Side Loft Removals W10",
+    "Full Packing & Fragile Unpack",
+    "Man and Van Golborne Road",
+    "Secure Storage Facilities"
+  ],
+  "localFaqs": [
+    {
+      "question": "Which council handles parking on my street in North Kensington?",
+      "answer": "Properties north of the railway tracks generally fall under Brent, while southern streets are in Kensington & Chelsea. We verify your exact boundary and manage the permit process.",
+      "display": true
+    },
+    {
+      "question": "Can you move bulky furniture up narrow period cottage stairwells?",
+      "answer": "Yes. Our movers are experts at navigating tight period staircases and can safely dismantle beds and wardrobes to ensure smooth passage.",
+      "display": true
+    },
+    {
+      "question": "How far in advance should RBKC parking suspensions be booked in W10?",
+      "answer": "The Royal Borough of Kensington & Chelsea requires at least 10 working days notice for parking suspensions. We submit all paperwork in advance.",
+      "display": true
+    },
+    {
+      "question": "Do you offer canal-side apartment moving in Kensal Green?",
+      "answer": "Yes, we regularly handle moves into canal-side residential developments, coordinating gate access and lift protection with managing agents.",
+      "display": true
+    }
+  ],
+  "testimonial": {
+    "name": "Sebastian & Mia R.",
+    "quote": "Moved from Golborne Road to a terrace in Kensal Green. The Pearl Removals team was brilliant, navigating our steep stairs without a hitch and taking great care of our vintage furniture.",
+    "rating": 5
+  },
+  "status": "published"
+}

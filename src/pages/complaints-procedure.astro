@@ -1,0 +1,91 @@
+---
+import LegalLayout from 'theme/layouts/LegalLayout.astro';
+import { siteConfig } from 'src/data/site';
+
+const headings = [
+  { depth: 2, slug: 'commitment', text: '1. Our Customer Service Commitment' },
+  { depth: 2, slug: 'step-1-informal', text: '2. Stage 1: Informal Immediate Resolution' },
+  { depth: 2, slug: 'step-2-formal', text: '3. Stage 2: Formal Written Investigation' },
+  { depth: 2, slug: 'step-3-final-review', text: '4. Stage 3: Management Review & Final Decision' },
+  { depth: 2, slug: 'external-escalation', text: '5. External Escalation & Alternative Dispute Resolution (ADR)' },
+  { depth: 2, slug: 'record-keeping', text: '6. Record Keeping & Continuous Improvement' }
+];
+---
+
+<LegalLayout
+  title="Complaints Procedure"
+  description="Pearl Removals customer complaints procedure, setting out response timescales, investigation steps, and clear escalation routes for resolution."
+  lastUpdated="2026-06-01"
+  headings={headings}
+>
+  <p>
+    At <strong>{siteConfig.businessName}</strong> (operated by <strong>{siteConfig.legalName}</strong>), we take immense pride in delivering careful, punctual, and courteous removals services across North West London and beyond. However, we recognise that moving home can be stressful and on rare occasions, unforeseen issues or service discrepancies may occur.
+  </p>
+  <p>
+    This Complaints Procedure explains how you can raise any concerns with our management team, the specific timescales you can expect for a response, and how disputes are handled impartially in accordance with UK consumer protection regulations.
+  </p>
+
+  <h2 id="commitment">1. Our Customer Service Commitment</h2>
+  <p>
+    We treat every complaint seriously, promptly, and constructively. Our policy is designed to ensure:
+  </p>
+  <ul>
+    <li>All complaints are investigated impartially by senior operations management.</li>
+    <li>Complainants receive clear, polite, and transparent explanations at every stage.</li>
+    <li>Where we have made an error or our service has fallen short, we take immediate remedial action or provide fair redress.</li>
+    <li>Complaints are handled without any prejudice to ongoing insurance claims or legal rights under the <strong>Consumer Rights Act 2015</strong>.</li>
+  </ul>
+
+  <h2 id="step-1-informal">2. Stage 1: Informal Immediate Resolution</h2>
+  <p>
+    If you experience an issue on moving day or immediately following your move (for example, regarding crew arrival time, parking logistics, or property care):
+  </p>
+  <ul>
+    <li><strong>Speak with the Team Leader:</strong> In the first instance, please notify the on-site team leader immediately. Many operational concerns can be rectified on the spot.</li>
+    <li><strong>Contact Operations Dispatch:</strong> If the on-site team cannot resolve the matter, or if your move has already completed, call our Cricklewood dispatch office directly on <strong><a href={`tel:${siteConfig.phoneE164}`}>{siteConfig.phone}</a></strong> or email <strong><a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a></strong>.</li>
+    <li><strong>Timescale:</strong> We aim to acknowledge and resolve informal verbal complaints within <strong>24 to 48 hours</strong> of receipt.</li>
+  </ul>
+
+  <h2 id="step-2-formal">3. Stage 2: Formal Written Investigation</h2>
+  <p>
+    If an informal discussion does not resolve your concern, or if your complaint involves financial claims, contractual disputes, or significant property damage, please submit a formal written complaint:
+  </p>
+  <ul>
+    <li><strong>Send via Email:</strong> Address your email to <em>Customer Complaints Manager</em> at <strong><a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a></strong> with the subject line <em>"Formal Complaint - [Your Move Reference Number]"</em>.</li>
+    <li><strong>Send via Post:</strong> Alternatively, write to our registered office: <em>Customer Services, {siteConfig.legalName}, {siteConfig.registeredAddress}</em>.</li>
+    <li><strong>Information to Include:</strong> Your full name, move date, collection and delivery addresses, quotation or invoice reference, a clear chronology of what took place, photographs of any physical damage, and the specific outcome you are seeking.</li>
+  </ul>
+  <p>
+    <strong>Timescales for Stage 2:</strong>
+  </p>
+  <ul>
+    <li><strong>Acknowledgement:</strong> We will acknowledge your formal written complaint within <strong>2 business days</strong> of receipt.</li>
+    <li><strong>Investigation:</strong> Our Customer Services Manager will review crew worksheets, GPS vehicle tracking records, survey inventories, and speak with the personnel involved.</li>
+    <li><strong>Formal Written Outcome:</strong> We will provide a comprehensive written response detailing our findings and proposed resolution within <strong>14 business days</strong>. If complex circumstances require additional time, we will write to you explaining the delay and provide an updated resolution target.</li>
+  </ul>
+
+  <h2 id="step-3-final-review">4. Stage 3: Management Review & Final Decision</h2>
+  <p>
+    If you are not satisfied with the formal outcome provided at Stage 2, you may request that your case be escalated to our Managing Director:
+  </p>
+  <ul>
+    <li>You must submit your escalation request within <strong>14 days</strong> of receiving the Stage 2 outcome letter, explaining why you believe the initial finding was unsatisfactory.</li>
+    <li>The Managing Director will independently re-examine all documentation, evidence, and correspondence.</li>
+    <li>A final review letter ("Final Decision Letter") will be issued within <strong>10 business days</strong> of escalation, setting out our conclusive position.</li>
+  </ul>
+
+  <h2 id="external-escalation">5. External Escalation & Alternative Dispute Resolution (ADR)</h2>
+  <p>
+    We strive to settle all complaints amiably and fairly. However, if our internal procedures have been exhausted and you remain dissatisfied after receiving our Final Decision Letter, you have the right to seek independent resolution:
+  </p>
+  <ul>
+    <li><strong>Alternative Dispute Resolution (ADR):</strong> In accordance with the Alternative Dispute Resolution for Consumer Disputes (Competent Authorities and Information) Regulations 2015, we will notify you of certified ADR entities appropriate for removals and transport disputes.</li>
+    <li><strong>Citizens Advice Consumer Service:</strong> For free, confidential, and impartial consumer advice, you may contact the Citizens Advice Consumer Service via <a href="https://www.citizensadvice.org.uk/consumer/" target="_blank" rel="noopener noreferrer">citizensadvice.org.uk</a> or by phone on 0808 223 1133.</li>
+    <li><strong>Statutory Legal Rights:</strong> Nothing in this procedure affects your legal statutory rights under English Law, including your right to bring an action through the County Court (small claims track).</li>
+  </ul>
+
+  <h2 id="record-keeping">6. Record Keeping & Continuous Improvement</h2>
+  <p>
+    All complaints, whether informal or formal, are logged in our internal quality management register. We review this data quarterly to identify training opportunities, vehicle equipment upgrades, and customer communication enhancements so that our moving standards remain consistently outstanding.
+  </p>
+</LegalLayout>

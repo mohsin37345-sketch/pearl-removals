@@ -1,0 +1,224 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Hero from 'theme/components/Hero.astro';
+import TrustStrip from 'theme/components/TrustStrip.astro';
+import Breadcrumbs from 'theme/components/Breadcrumbs.astro';
+import MicroAreaGrid from 'theme/components/MicroAreaGrid.astro';
+import PremiumServicesCallout from 'theme/components/PremiumServicesCallout.astro';
+import FAQ from 'theme/components/FAQ.astro';
+import CTABand from 'theme/components/CTABand.astro';
+import QuoteFormSection from 'theme/components/QuoteFormSection.astro';
+import RelatedLinks from 'theme/components/RelatedLinks.astro';
+import Icon from 'theme/components/Icon.astro';
+
+interface Props {
+  area: {
+    name: string;
+    slug: string;
+    region: string;
+    regionName?: string;
+    phase: 1 | 2 | 3;
+    premium: boolean;
+    boroughs: string[];
+    postcodes: string[];
+    distanceMiles: number;
+    metaTitle: string;
+    metaDescription: string;
+    intro: string;
+    localKnowledge: string;
+    propertyTypes: string;
+    parkingAndAccess: string;
+    transportLinks?: string;
+    travelInfo?: string;
+    nearbyAreas?: Array<{ name: string; slug: string }>;
+    servicesOffered?: string[];
+    localFaqs?: Array<{ question: string; answer: string; display?: boolean }>;
+    testimonial?: { name: string; quote: string; rating?: number };
+    micros?: Array<{ name: string; slug: string; premium?: boolean }>;
+  };
+}
+
+const { area } = Astro.props;
+
+const breadcrumbs = [
+  { name: 'Areas', url: '/areas/' },
+  { name: area.regionName || 'North West London', url: `/areas/${area.region}/` },
+  { name: area.name, url: `/areas/${area.slug}/` }
+];
+
+const nearbyLinks = (area.nearbyAreas || []).map((a) => ({
+  title: `Removals in ${a.name}`,
+  url: `/areas/${a.slug}/`
+}));
+
+const serviceLinks = [
+  { title: `House Removals ${area.name}`, url: `/removals/house-removals/${area.slug}/` },
+  { title: `Man and Van ${area.name}`, url: `/removals/man-and-van/${area.slug}/` },
+  { title: `Flat Removals ${area.name}`, url: `/removals/flat-removals/` },
+  { title: `Packing Services ${area.name}`, url: `/removals/packing-services/` },
+  { title: `Storage Solutions ${area.name}`, url: `/removals/storage/` }
+];
+---
+
+<BaseLayout
+  title={area.metaTitle}
+  description={area.metaDescription}
+  canonicalUrl={`https://www.pearlremovals.co.uk/areas/${area.slug}/`}
+  schemaType="area"
+  areaData={area}
+  breadcrumbs={breadcrumbs}
+  faqs={area.localFaqs || []}
+>
+  <!-- Area Hero Section -->
+  <Hero
+    variant="area"
+    title={`House Removals in ${area.name}`}
+    highlightText={area.name}
+    subtitle={`Professional, insured residential removals and man & van services across ${area.postcodes.join(', ')}.`}
+    eyebrow={`LOCAL LONDON REMOVALS • ~${area.distanceMiles} MILES FROM OUR CRICKLEWOOD BASE`}
+    badges={[...area.postcodes, ...area.boroughs.map(b => `London Borough of ${b}`)]}
+  />
+
+  <TrustStrip />
+
+  <Breadcrumbs items={breadcrumbs} />
+
+  <!-- Main Area Content Container -->
+  <article class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
+    
+    <!-- Intro & Local Knowledge -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="lg:col-span-8 space-y-6 text-sm sm:text-base leading-relaxed text-surface-700 dark:text-surface-300">
+        
+        <!-- Area Intro -->
+        <div class="glass-panel p-6 sm:p-8 rounded-3xl">
+          <h2 class="text-xl sm:text-2xl font-black text-navy dark:text-pearl mb-3">
+            Trusted Removals in {area.name} ({area.postcodes.join(', ')})
+          </h2>
+          <p class="leading-relaxed">
+            {area.intro}
+          </p>
+        </div>
+
+        <!-- Local Knowledge Section -->
+        <div class="space-y-4">
+          <h3 class="text-lg font-bold text-navy dark:text-pearl flex items-center gap-2">
+            <Icon name="map-pin" class="w-5 h-5 text-royal" />
+            <span>Local Access & Geography in {area.name}</span>
+          </h3>
+          <p class="leading-relaxed">
+            {area.localKnowledge}
+          </p>
+        </div>
+
+        <!-- Property Types & Access / CPZ notes -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+          <div class="glass-pill p-5 rounded-2xl">
+            <h4 class="font-bold text-sm text-navy dark:text-pearl mb-2 flex items-center gap-1.5">
+              <Icon name="building" class="w-4 h-4 text-royal" />
+              <span>Property Architecture</span>
+            </h4>
+            <p class="text-xs text-surface-600 dark:text-surface-400 leading-relaxed">
+              {area.propertyTypes}
+            </p>
+          </div>
+
+          <div class="glass-pill p-5 rounded-2xl">
+            <h4 class="font-bold text-sm text-navy dark:text-pearl mb-2 flex items-center gap-1.5">
+              <Icon name="truck" class="w-4 h-4 text-royal" />
+              <span>Parking & CPZ Regulations</span>
+            </h4>
+            <p class="text-xs text-surface-600 dark:text-surface-400 leading-relaxed">
+              {area.parkingAndAccess}
+            </p>
+          </div>
+        </div>
+
+        <!-- Travel & Transport Info -->
+        {area.travelInfo && (
+          <div class="text-xs text-surface-500 leading-relaxed pt-2">
+            <strong>Logistics & Connectivity:</strong> {area.travelInfo}
+          </div>
+        )}
+
+        <slot />
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="lg:col-span-4 space-y-6">
+        <div class="glass-panel p-6 rounded-3xl sticky top-28 border border-white/60 dark:border-white/10 space-y-4">
+          <h3 class="text-sm font-bold uppercase tracking-wider text-navy dark:text-pearl">
+            {area.name} Quick Facts
+          </h3>
+
+          <ul class="space-y-2 text-xs text-surface-600 dark:text-surface-300">
+            <li class="flex justify-between py-1 border-b border-surface-200/50 dark:border-white/5">
+              <span>Postcode Districts:</span>
+              <strong class="text-navy dark:text-pearl">{area.postcodes.join(', ')}</strong>
+            </li>
+            <li class="flex justify-between py-1 border-b border-surface-200/50 dark:border-white/5">
+              <span>Local Authority:</span>
+              <strong class="text-navy dark:text-pearl">{area.boroughs.join(' / ')}</strong>
+            </li>
+            <li class="flex justify-between py-1 border-b border-surface-200/50 dark:border-white/5">
+              <span>Distance to NW2 Base:</span>
+              <strong class="text-navy dark:text-pearl">~{area.distanceMiles} miles</strong>
+            </li>
+            <li class="flex justify-between py-1 border-b border-surface-200/50 dark:border-white/5">
+              <span>Standard Insurance:</span>
+              <strong class="text-navy dark:text-pearl">£50k GIT / £5M PL</strong>
+            </li>
+          </ul>
+
+          <div class="pt-2">
+            <a
+              href="/get-a-quote/"
+              class="w-full py-3 px-4 rounded-full bg-royal text-white text-center font-bold text-xs block hover:bg-royal-hover transition-colors shadow-md shadow-royal/20"
+            >
+              Get a Quote for {area.name} →
+            </a>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Micro Areas Grid (hides automatically if empty) -->
+    {area.micros && area.micros.length > 0 && (
+      <MicroAreaGrid parentSlug={area.slug} parentName={area.name} micros={area.micros} />
+    )}
+
+    <!-- Premium Services Block (Mandatory on premium areas per spec!) -->
+    {area.premium && (
+      <PremiumServicesCallout areaName={area.name} />
+    )}
+
+    <!-- Services Offered in This Area -->
+    <RelatedLinks
+      heading={`Removals Services in ${area.name}`}
+      links={serviceLinks}
+    />
+
+    <!-- Nearby Areas Internal Links -->
+    {nearbyLinks.length > 0 && (
+      <RelatedLinks
+        heading={`Nearby Areas We Cover Around ${area.name}`}
+        links={nearbyLinks}
+      />
+    )}
+
+    <!-- Local FAQs -->
+    {area.localFaqs && area.localFaqs.length > 0 && (
+      <FAQ items={area.localFaqs} title={`Removals in ${area.name} FAQs`} />
+    )}
+
+    <!-- CTA Band -->
+    <CTABand areaName={area.name} />
+
+    <!-- Inline Form -->
+    <QuoteFormSection
+      title={`Get a Free Moving Quote for ${area.name}`}
+      defaultFromPostcode={area.postcodes[0] || 'NW2'}
+    />
+
+  </article>
+</BaseLayout>

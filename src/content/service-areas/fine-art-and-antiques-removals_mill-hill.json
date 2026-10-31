@@ -1,0 +1,32 @@
+{
+  "service": "fine-art-and-antiques-removals",
+  "location": "mill-hill",
+  "status": "published",
+  "uniqueIntro": "Pearl Removals delivers white-glove fine art and antique moving services across Mill Hill NW7. Tailored for family estates along The Ridgeway and Mill Hill Village, we provide custom timber crating, protective wrapping, and careful transport for valuable artwork, antiques, and heirlooms.",
+  "localAngle": "Substantial residences in Mill Hill frequently house multi-generational antique furniture, grand grandfather clocks, and valuable painting collections. Moving these items requires expert dismantling of pediments and weights, non-abrasive wrapping, and secure horizontal strapping inside our vehicles.",
+  "whatsIncluded": [
+    "Custom wooden crates constructed for paintings, mirrors, and chandeliers",
+    "Conservation-grade wrapping materials including acid-free tissue and foam padding",
+    "Carpeted, climate-conscious removal vehicles with secure tie rails",
+    "Enhanced transit insurance protection up to full valuation",
+    "Careful uncrating and room-by-room positioning"
+  ],
+  "priceGuidance": "Fine art handling from £120 per cased item. Complete household antique collections quoted individually.",
+  "faqs": [
+    {
+      "question": "How do you move antique grandfather clocks safely in Mill Hill?",
+      "answer": "We remove pendulum weights and chime rods, pack them in padded containers, and wrap the clock cabinet in cushioned transit blankets.",
+      "display": true
+    },
+    {
+      "question": "Can you transport large outdoor garden urns and bronzes?",
+      "answer": "Yes. Our team handles heavy stone and bronze garden statuary using hydraulic lifting gear and padded transport cradles.",
+      "display": true
+    },
+    {
+      "question": "Do you deliver packing materials in advance in NW7?",
+      "answer": "Yes. We supply heavy-duty double-walled cartons, bubble wrap, and acid-free tissue paper well ahead of your moving date.",
+      "display": true
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "name": "Marylebone & Regent's Park",
+  "slug": "marylebone-and-regents-park",
+  "region": "central-london",
+  "phase": 2,
+  "premium": true,
+  "boroughs": [
+    "Westminster"
+  ],
+  "postcodes": [
+    "W1",
+    "NW1"
+  ],
+  "distanceMiles": 4.5,
+  "metaTitle": "House Removals Marylebone W1 NW1 | Pearl Removals",
+  "metaDescription": "White-glove removals in Marylebone & Regent's Park W1 NW1. Fine art handling, mansion block porters & Westminster parking coordination. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers distinguished, white-glove residential removals throughout Marylebone and the Regent's Park perimeter, spanning the W1 and NW1 postcodes. Celebrated for elegant Georgian garden squares, grand John Nash neoclassical terraces, and prestigious pre-war mansion blocks, this prime Central London district demands impeccable moving standards, total discretion, and disciplined logistical coordination. Operating straight down the A41 corridor from our Cricklewood depot, our liveried vehicles arrive punctually, equipped with quilted furniture covers, lift liners, and specialist crating for fine art, antiques, and grand pianos. Our moving coordinators conduct thorough pre-move surveys, calculate exact vehicle payload requirements, and provide complete packing supplies to ensure that every stage of your move in Marylebone & Regent's Park is handled with absolute punctuality, courteous communication, and total care.",
+  "localKnowledge": "Marylebone combines village-like charm with central London density. Relocating properties along Marylebone High Street, Harley Street, Portland Place, and Dorset Square requires expert navigation of Westminster City Council loading regulations, red routes, and the Congestion Charge zone. Around the Regent's Park outer circle and Cumberland Terrace, Crown Estate guidelines govern vehicle positioning, noise control, and access through historic carriage arches.",
+  "propertyTypes": "The architectural fabric features Grade I and Grade II listed Georgian townhouses, opulent mansion apartments with resident head porters, medical consulting suites, and secluded mews cottages. Interiors boast delicate plaster cornicing, high ceilings, marble fireplaces, and French-polished doors that our porters shield with custom padding.",
+  "parkingAndAccess": "Westminster City Council enforces strict Controlled Parking Zones with heavy traffic warden presence. Kerbside parking requires advance bay suspensions or commercial loading dispensations. Our move coordinators handle all formal applications with Westminster Council, reserving van space directly outside your entrance portico.",
+  "transportLinks": "Superb transport connections via Marylebone mainline station, Baker Street (Jubilee, Bakerloo, Metropolitan, Circle, Hammersmith & City lines), and Regent's Park station.",
+  "travelInfo": "Direct route south via the A41 Finchley Road and Wellington Road allows our removal vans to reach Marylebone addresses in under 20 minutes from our Cricklewood dispatch base.",
+  "nearbyAreas": [
+    {
+      "name": "St John's Wood",
+      "slug": "st-johns-wood"
+    },
+    {
+      "name": "Primrose Hill",
+      "slug": "primrose-hill"
+    },
+    {
+      "name": "Camden Town",
+      "slug": "camden-town"
+    },
+    {
+      "name": "Bayswater",
+      "slug": "bayswater"
+    }
+  ],
+  "servicesOffered": [
+    "Mansion Block Removals Marylebone",
+    "Fine Art Transport W1",
+    "Piano Moving Regent's Park",
+    "Full Export Packing NW1",
+    "Discreet Home Moves"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do your vehicles pay the Central London Congestion Charge?",
+      "answer": "Yes. All statutory Congestion Charge and ULEZ fees are included transparently within your fixed quotation, with zero unexpected charges on moving day.",
+      "display": true
+    },
+    {
+      "question": "How do you coordinate moves in portered mansion blocks in Marylebone?",
+      "answer": "We contact the resident building manager and head porter well in advance, reserve the service elevator, and fit protective wall padding throughout communal hallways.",
+      "display": true
+    },
+    {
+      "question": "Can you move valuable art and antique collections in W1?",
+      "answer": "Yes. Our specialist technicians construct bespoke timber crates and utilize non-acidic packing materials for fine oil paintings, sculpture, and antique clocks.",
+      "display": true
+    },
+    {
+      "question": "Are Westminster parking suspensions handled by Pearl Removals?",
+      "answer": "Yes. We prepare and submit all parking suspension paperwork to Westminster City Council to guarantee dedicated curbside loading space outside your entrance.",
+      "display": true
+    }
+  ],
+  "premiumAngle": "Marylebone’s neoclassical Nash terraces, portered mansion flats, and high-value antique collections require white-glove moving standards. We offer dedicated crating, comprehensive fine art transit insurance, and discreet, uniformed personnel.",
+  "status": "published"
+}

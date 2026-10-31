@@ -1,0 +1,113 @@
+---
+import Icon from './Icon.astro';
+
+interface ComparisonRow {
+  feature: string;
+  pearl: boolean | string;
+  standard: boolean | string;
+}
+
+const rows: ComparisonRow[] = [
+  {
+    feature: "Written Fixed-Price Quotation (No Hidden Day-Of Surprises)",
+    pearl: true,
+    standard: "Rarely (Often variable hourly meter)"
+  },
+  {
+    feature: "Goods In Transit Insurance (£50,000 Level)",
+    pearl: true,
+    standard: "Limited or customer risk"
+  },
+  {
+    feature: "£5,000,000 Public Liability Insurance",
+    pearl: true,
+    standard: false
+  },
+  {
+    feature: "Padded Transit Blankets, Sofa & Mattress Covers Standard",
+    pearl: true,
+    standard: false
+  },
+  {
+    feature: "Camden, Brent & Barnet CPZ Parking Suspension Guidance",
+    pearl: true,
+    standard: false
+  },
+  {
+    feature: "Uniformed, Experienced Moving Crew",
+    pearl: true,
+    standard: "Variable / Casual"
+  },
+  {
+    feature: "Full Furniture Dismantling & Reassembly Service",
+    pearl: true,
+    standard: "Extra / DIY"
+  },
+  {
+    feature: "Completion Day Key Delay Grace Window",
+    pearl: true,
+    standard: "Heavy punitive hourly charges"
+  }
+];
+---
+
+<div class="overflow-x-auto my-8">
+  <table class="w-full text-left text-sm border-collapse glass-panel overflow-hidden">
+    <thead>
+      <tr class="border-b border-surface-200 dark:border-white/10 bg-surface-100/60 dark:bg-white/5">
+        <th scope="col" class="py-4 px-4 sm:px-6 font-bold text-navy dark:text-pearl w-1/2">Standard Moving Feature</th>
+        <th scope="col" class="py-4 px-4 sm:px-6 font-bold text-royal text-center bg-royal/5 w-1/4">
+          <div class="font-extrabold text-base">PEARL REMOVALS</div>
+          <div class="text-[11px] font-normal uppercase tracking-wider text-surface-500">Premium Standard</div>
+        </th>
+        <th scope="col" class="py-4 px-4 sm:px-6 font-semibold text-surface-500 text-center w-1/4">
+          <div>Casual Van Driver</div>
+          <div class="text-[11px] font-normal uppercase tracking-wider">Unregulated</div>
+        </th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-surface-200/60 dark:divide-white/5">
+      {rows.map((row) => (
+        <tr class="hover:bg-surface-50/50 dark:hover:bg-white/5 transition-colors">
+          <td class="py-3.5 px-4 sm:px-6 font-medium text-navy dark:text-pearl">
+            {row.feature}
+          </td>
+          
+          <!-- Pearl Removals Value -->
+          <td class="py-3.5 px-4 sm:px-6 text-center bg-royal/5">
+            {typeof row.pearl === 'boolean' ? (
+              row.pearl ? (
+                <div class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-emerald-100 dark:bg-emerald-900/50 text-emerald-600 dark:text-emerald-300">
+                  <Icon name="check" class="w-4 h-4 font-bold" />
+                </div>
+              ) : (
+                <div class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-rose-100 text-rose-600">
+                  <Icon name="x" class="w-4 h-4 font-bold" />
+                </div>
+              )
+            ) : (
+              <span class="text-xs font-bold text-navy dark:text-pearl">{row.pearl}</span>
+            )}
+          </td>
+
+          <!-- Standard Competitor Value -->
+          <td class="py-3.5 px-4 sm:px-6 text-center text-xs text-surface-500">
+            {typeof row.standard === 'boolean' ? (
+              row.standard ? (
+                <div class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-surface-200 text-surface-600">
+                  <Icon name="check" class="w-4 h-4" />
+                </div>
+              ) : (
+                <div class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-rose-50 text-rose-400">
+                  <Icon name="x" class="w-4 h-4" />
+                </div>
+              )
+            ) : (
+              <span>{row.standard}</span>
+            )}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>

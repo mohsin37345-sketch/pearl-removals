@@ -1,0 +1,31 @@
+{
+  "service": "man-and-van",
+  "location": "hendon",
+  "status": "published",
+  "uniqueIntro": "Our Hendon man and van service offers fast, cost-effective moving solutions for students, flat renters, and small businesses across NW4 and NW9. Ideal for moves into modern riverside apartments at Hendon Waterside, student accommodation near Middlesex University, or transporting furniture across North West London.",
+  "localAngle": "Located just two miles north of our central depot, we can be at any Hendon location in minutes. We navigate the busy A41 Watford Way and Brent Street with ease, offering convenient drop-off access directly to apartment loading docks and suburban driveways.",
+  "whatsIncluded": [
+    "Spacious 3.5-tonne Luton van with tail lift and carpeted interior",
+    "Professional mover-loader to assist with carrying and van packing",
+    "Protective padding for monitors, televisions, and delicate appliances",
+    "Direct point-to-point transit with zero shared co-loading"
+  ],
+  "priceGuidance": "Hourly rates from £65/hour (2-hour minimum). Special student discount rates available with valid ID.",
+  "faqs": [
+    {
+      "question": "Do you offer student discounts for moves to Middlesex University?",
+      "answer": "Yes! We offer discounted student rates for term-time arrivals, room changes, and summer luggage storage in Hendon.",
+      "display": true
+    },
+    {
+      "question": "Can you access underground parking in modern Hendon apartments?",
+      "answer": "We deploy low-profile vehicles for basement bays or park in surface loading docks and trolley items directly into elevators.",
+      "display": true
+    },
+    {
+      "question": "Is there a minimum booking time for man and van in Hendon?",
+      "answer": "Our standard booking has a 2-hour minimum, with straightforward 30-minute incremental billing thereafter.",
+      "display": true
+    }
+  ]
+}

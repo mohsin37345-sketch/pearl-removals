@@ -1,0 +1,31 @@
+{
+  "service": "house-removals",
+  "location": "belsize-park",
+  "status": "published",
+  "uniqueIntro": "Pearl Removals provides distinguished, fully insured house removals for grand Victorian villas, stucco family houses, and palatial mansion apartments across Belsize Park NW3. With complete packing solutions, delicate antique protection, and attentive white-glove care, we ensure your relocation is serene and flawless.",
+  "localAngle": "Many Belsize Park properties are situated in wide, tree-lined avenues like Belsize Park Gardens and Lancaster Drive, requiring Camden Council parking bay suspensions. We coordinate with local building committees, protect communal entrance halls, and manage vehicle parking with utmost discretion.",
+  "whatsIncluded": [
+    "Comprehensive video or in-person pre-move survey with fixed written quote",
+    "Dedicated multi-man team with padded Luton and 7.5t vehicles",
+    "Communal carpet protection and passenger lift padding in mansion blocks",
+    "Disassembly and reassembly of all primary beds and modular furniture"
+  ],
+  "priceGuidance": "Full house and mansion flat relocations quoted on a bespoke fixed-price basis following survey.",
+  "faqs": [
+    {
+      "question": "How do you protect communal entranceways in Belsize Park mansion blocks?",
+      "answer": "We lay heavy-duty protective runners across entrance foyers and wrap lift walls in quilted blankets before moving begins.",
+      "display": true
+    },
+    {
+      "question": "Can you handle delicate chandeliers and gilt-framed mirrors in NW3?",
+      "answer": "Yes. We construct bespoke timber crates lined with protective foam for delicate light fixtures and heritage mirrors.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange parking suspensions with Camden Council in Belsize Park?",
+      "answer": "Yes. We submit all parking bay suspension applications directly to Camden Council at least 14 working days in advance.",
+      "display": true
+    }
+  ]
+}

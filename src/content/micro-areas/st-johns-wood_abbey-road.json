@@ -1,0 +1,43 @@
+{
+  "name": "Abbey Road",
+  "slug": "abbey-road",
+  "parent": "st-johns-wood",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "NW8"
+  ],
+  "metaTitle": "Removals in Abbey Road, St John's Wood | Pearl Removals",
+  "metaDescription": "Professional removals in Abbey Road, St John's Wood (NW8). House & flat moves, packing & storage from our local NW2 depot. Call 020 3151 8452.",
+  "intro": "Experience smooth, first-class relocation services in Abbey Road, St John's Wood (NW8) with our Cricklewood-based removal specialists. The area offers a characterful urban fabric within Westminster, where classic Victorian dwellings stand alongside sympathetic modern developments. Our staff are fully trained in manual handling techniques, navigating stairs and narrow entryways effortlessly in Abbey Road. Trust our experienced removals team to deliver a calm, structured, and effortless moving day in Abbey Road. Every detail of your relocation is coordinated by an experienced supervisor to ensure complete satisfaction in Abbey Road. Our crews treat both your old and new residences with maximum consideration, laying carpet protection from door to van in Abbey Road.",
+  "whatMovingHereInvolves": "Our removals operations in Abbey Road account for local width restrictions, traffic calming measures, and pedestrian footpaths in St John's Wood. Detached properties in Abbey Road boast expansive driveways, enabling our team to stage goods efficiently straight from wide double garage doors. We coordinate with Westminster to suspend pay-and-display bays or resident bays directly adjacent to your front entrance in Abbey Road. We ensure that all high-value items, mirrors, and televisions are bubble-wrapped and strapped securely in Abbey Road. Our trained movers handle awkward corners and narrow doorways with expert technique and zero wall contact in Abbey Road.",
+  "landmarks": [
+    "Abbey Road Centre",
+    "St John's Wood High Road",
+    "Local Parklands"
+  ],
+  "nearbyMicroAreas": [
+    "hamilton-terrace",
+    "avenue-road",
+    "st-johns-wood-high-street",
+    "grove-end-road",
+    "lords"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you arrange parking suspensions for removals in Abbey Road?",
+      "answer": "We submit official parking bay suspension requests directly to the London Borough of Westminster on your behalf, reserving legal curbside loading space directly outside your property well in advance of moving day.",
+      "display": true
+    },
+    {
+      "question": "Can your team move large furniture up narrow stairwells in Abbey Road?",
+      "answer": "Yes. Our trained moving porters specialize in navigating period staircases, narrow conversions, and tight corners across Abbey Road, using protective quilted covers and partial disassembly where needed.",
+      "display": true
+    },
+    {
+      "question": "How quickly can Pearl Removals reach Abbey Road from your depot?",
+      "answer": "Our main operating base on Cricklewood Broadway NW2 is situated within easy reach of Abbey Road, allowing our removal vans to arrive punctually and provide responsive local moving support.",
+      "display": true
+    }
+  ]
+}

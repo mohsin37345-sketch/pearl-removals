@@ -1,0 +1,80 @@
+{
+  "name": "Dollis Hill",
+  "slug": "dollis-hill",
+  "region": "north-west-london",
+  "phase": 1,
+  "premium": false,
+  "boroughs": [
+    "Brent"
+  ],
+  "postcodes": [
+    "NW2",
+    "NW10"
+  ],
+  "distanceMiles": 1,
+  "metaTitle": "House Removals Dollis Hill NW2 | Pearl Removals",
+  "metaDescription": "Reliable removals in Dollis Hill NW2 & NW10. Expert movers for 1930s family homes & flats near Gladstone Park. Call 020 3151 8452 for a free quote.",
+  "intro": "Pearl Removals delivers dependable and fully insured removals across Dollis Hill, covering both NW2 and NW10 postal districts. Perched gently atop one of North West London’s most attractive elevated residential ridges, Dollis Hill is renowned for its panoramic views over the capital and its direct access to the rolling green lawns of Gladstone Park. Situated only one mile from our Cricklewood dispatch headquarters, our local crews know every turn along Dollis Hill Lane, Chapter Road, and the quiet residential estates adjoining the former Post Office Research Station. We handle local and long-distance relocations with unmatched punctuality and courteous professionalism. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London.",
+  "localKnowledge": "Dollis Hill offers a peaceful suburban retreat just moments from central transport arteries. Streets sloping down from Gladstone Park towards Dudden Hill Lane can be surprisingly steep, requiring careful vehicle balancing and experienced brake management when parking heavy removal vehicles. Our team is accustomed to loading on these gradients and understands how to avoid blocking communal driveways during morning commuter peaks.",
+  "propertyTypes": "The residential fabric of Dollis Hill is distinguished by attractive 1920s and 1930s semi-detached homes, mock-Tudor gabled houses, and spacious inter-war detached properties with generous private driveways. Towards Dudden Hill and Willesden, there are numerous attractive Edwardian maisonettes and converted flats featuring private garden plots.",
+  "parkingAndAccess": "The London Borough of Brent oversees parking enforcement across Dollis Hill. While many houses benefit from dropped curbs and private front driveways, properties on Dudden Hill Lane and around the Jubilee Line station require parking bay suspensions for curb loading. We coordinate directly with Brent Council to secure reserved bays.",
+  "transportLinks": "Dollis Hill Jubilee Line station provides speedy 15-minute journeys into Baker Street, Bond Street, and Westminster, with direct bus routes along Dudden Hill Lane.",
+  "travelInfo": "Convenient western access towards Neasden and the A406 North Circular, with swift eastward connections into Cricklewood Broadway and Central London via the A5.",
+  "nearbyAreas": [
+    {
+      "name": "Cricklewood",
+      "slug": "cricklewood"
+    },
+    {
+      "name": "Willesden Green",
+      "slug": "willesden-green"
+    },
+    {
+      "name": "Neasden",
+      "slug": "neasden"
+    },
+    {
+      "name": "Harlesden & Willesden",
+      "slug": "harlesden-and-willesden"
+    },
+    {
+      "name": "Brent Cross",
+      "slug": "brent-cross"
+    }
+  ],
+  "servicesOffered": [
+    "Family House Removals Dollis Hill",
+    "Man and Van NW2",
+    "Gladstone Park Relocations",
+    "Packing & Box Supply",
+    "Container Storage"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do removal vans have trouble parking on Dollis Hill slopes?",
+      "answer": "Not with our team. Our experienced drivers use heavy-duty wheel chocks and hydraulic levelling on steep avenues near Gladstone Park to guarantee stable loading.",
+      "display": true
+    },
+    {
+      "question": "Can you move heavy garden furniture and outdoor play equipment in Dollis Hill?",
+      "answer": "Yes. Many properties in NW2 feature generous gardens. We dismantle and transport trampolines, climbing frames, stone planters, and hardwood patio sets.",
+      "display": true
+    },
+    {
+      "question": "How close is your depot to Dollis Hill?",
+      "answer": "Our central depot on Cricklewood Broadway is barely one mile away, meaning our vans can reach Dollis Hill homes in under seven minutes.",
+      "display": true
+    },
+    {
+      "question": "Do I need a parking suspension if I have a front driveway?",
+      "answer": "If your driveway is wide enough to accommodate a 3.5-tonne Luton van without blocking the public footway, no council suspension is needed.",
+      "display": true
+    }
+  ],
+  "testimonial": {
+    "name": "Rachel P.",
+    "quote": "Moved into our 1930s semi on Dollis Hill Lane. Pearl Removals arrived promptly, protected our newly installed oak floors, and carried all our heavy boxes up without a single scuff.",
+    "rating": 5
+  },
+  "status": "published"
+}

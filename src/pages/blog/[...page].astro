@@ -1,0 +1,113 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection } from 'astro:content';
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import Hero from 'theme/components/Hero.astro';
+import TrustStrip from 'theme/components/TrustStrip.astro';
+import Breadcrumbs from 'theme/components/Breadcrumbs.astro';
+import BlogGrid from 'theme/components/BlogGrid.astro';
+import Pagination from 'theme/components/Pagination.astro';
+import CTABand from 'theme/components/CTABand.astro';
+import { siteConfig } from 'src/data/site';
+
+export const getStaticPaths = (async ({ paginate }) => {
+  let posts: any[] = [];
+  try {
+    posts = await getCollection('blog');
+  } catch {
+    posts = [];
+  }
+
+  const publishedPosts = posts
+    .filter((p) => !p.data.draft)
+    .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
+  if (publishedPosts.length === 0) {
+    return [
+      {
+        params: { page: undefined },
+        props: {
+          page: {
+            data: [],
+            start: 0,
+            end: 0,
+            total: 0,
+            currentPage: 1,
+            size: 12,
+            lastPage: 1,
+            url: { current: '/blog/', prev: undefined, next: undefined }
+          }
+        }
+      }
+    ];
+  }
+
+  return paginate(publishedPosts, { pageSize: 12 });
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+const isEmpty = page.total === 0;
+
+const breadcrumbs = [
+  { name: 'Moving Advice & Guides', url: '/blog/' }
+];
+---
+
+<BaseLayout
+  title="Moving Advice & Relocation Guides | Pearl Removals"
+  description="Expert guidance on moving home in North West London, packing techniques, parking suspensions, and stress-free relocation planning."
+  canonicalUrl="https://www.pearlremovals.co.uk/blog/"
+  noindex={isEmpty}
+  breadcrumbs={breadcrumbs}
+>
+  <Hero
+    variant="blog"
+    title="London Moving Guides & Relocation Advice"
+    subtitle="Straight-talking practical advice from experienced London removals professionals on packing, council parking permits, chain delays, and property transitions."
+    eyebrow="REMOVALS INSIGHTS & ADVICE"
+  />
+
+  <TrustStrip />
+
+  <Breadcrumbs items={breadcrumbs} />
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    {isEmpty ? (
+      <div class="glass-panel p-8 sm:p-12 text-center max-w-2xl mx-auto space-y-6">
+        <div class="w-16 h-16 rounded-full bg-royal/10 text-royal flex items-center justify-center mx-auto text-2xl font-bold">
+          &#9997;
+        </div>
+        <h2 class="text-2xl font-black text-navy dark:text-pearl tracking-tight">
+          Moving Guides Coming Soon
+        </h2>
+        <p class="text-sm sm:text-base text-surface-600 dark:text-surface-400 leading-relaxed">
+          Our moving guides, packing checklists, and London relocation advice articles are currently being prepared by our editorial team. In the meantime, call our Cricklewood dispatch team on <a href={`tel:${siteConfig.phoneE164}`} class="text-royal font-bold hover:underline">{siteConfig.phone}</a> for straight-talking advice or request a free quote.
+        </p>
+        <div class="pt-2">
+          <a
+            href="/get-a-quote/"
+            class="px-6 py-3 rounded-full bg-royal text-white font-bold text-xs inline-block hover:bg-royal-hover transition-colors shadow-md shadow-royal/20"
+          >
+            Get a Free Quote Online &rarr;
+          </a>
+        </div>
+      </div>
+    ) : (
+      <div>
+        <BlogGrid posts={page.data} />
+        <Pagination
+          currentPage={page.currentPage}
+          lastPage={page.lastPage}
+          total={page.total}
+          pageSize={page.size}
+          basePath="/blog"
+        />
+      </div>
+    )}
+  </section>
+
+  <CTABand
+    title="Planning a Move in North West London?"
+    subtitle="Speak directly with our Cricklewood removals specialists for friendly, honest advice."
+  />
+</BaseLayout>

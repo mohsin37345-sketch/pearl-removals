@@ -1,0 +1,107 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Hero from 'theme/components/Hero.astro';
+import Breadcrumbs from 'theme/components/Breadcrumbs.astro';
+import FAQ from 'theme/components/FAQ.astro';
+import CTABand from 'theme/components/CTABand.astro';
+import QuoteFormSection from 'theme/components/QuoteFormSection.astro';
+import RelatedLinks from 'theme/components/RelatedLinks.astro';
+
+interface Props {
+  serviceArea: {
+    serviceSlug: string;
+    serviceTitle: string;
+    areaSlug: string;
+    areaTitle: string;
+    uniqueIntro: string;
+    localAngle: string;
+    whatsIncluded?: string[];
+    priceGuidance?: string;
+    caseStudy?: { title: string; details: string };
+    faqs?: Array<{ question: string; answer: string; display?: boolean }>;
+    neighbouringAreas?: Array<{ name: string; slug: string }>;
+  };
+}
+
+const { serviceArea } = Astro.props;
+
+const breadcrumbs = [
+  { name: 'Services', url: '/removals/' },
+  { name: serviceArea.serviceTitle, url: `/removals/${serviceArea.serviceSlug}/` },
+  { name: serviceArea.areaTitle, url: `/removals/${serviceArea.serviceSlug}/${serviceArea.areaSlug}/` }
+];
+
+const relatedLinks = [
+  { title: `All ${serviceArea.serviceTitle} Services`, url: `/removals/${serviceArea.serviceSlug}/` },
+  { title: `All Removals in ${serviceArea.areaTitle}`, url: `/areas/${serviceArea.areaSlug}/` },
+  ...(serviceArea.neighbouringAreas || []).map((n) => ({
+    title: `${serviceArea.serviceTitle} in ${n.name}`,
+    url: `/removals/${serviceArea.serviceSlug}/${n.slug}/`
+  }))
+];
+---
+
+<BaseLayout
+  title={`${serviceArea.serviceTitle} in ${serviceArea.areaTitle} | Pearl Removals`}
+  description={`Professional, fully insured ${serviceArea.serviceTitle.toLowerCase()} in ${serviceArea.areaTitle}. Local moving crews, CPZ guidance, and fixed pricing.`}
+  canonicalUrl={`https://www.pearlremovals.co.uk/removals/${serviceArea.serviceSlug}/${serviceArea.areaSlug}/`}
+  schemaType="service-area"
+  breadcrumbs={breadcrumbs}
+  faqs={serviceArea.faqs || []}
+>
+  <Hero
+    variant="service"
+    title={`${serviceArea.serviceTitle} ${serviceArea.areaTitle}`}
+    highlightText={serviceArea.areaTitle}
+    subtitle={`Dedicated, insured ${serviceArea.serviceTitle.toLowerCase()} service tailored to ${serviceArea.areaTitle} properties.`}
+    eyebrow={`SPECIALIST SERVICE × AREA • PEARL REMOVALS`}
+  />
+
+  <Breadcrumbs items={breadcrumbs} />
+
+  <article class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-10">
+    <div class="glass-panel p-6 sm:p-10 rounded-3xl space-y-6 text-sm sm:text-base leading-relaxed text-surface-700 dark:text-surface-300">
+      <h2 class="text-xl sm:text-2xl font-black text-navy dark:text-pearl">
+        {serviceArea.serviceTitle} Services for {serviceArea.areaTitle} Residents
+      </h2>
+      <p>{serviceArea.uniqueIntro}</p>
+
+      <div class="my-6 p-5 rounded-2xl bg-royal/5 border border-royal/20">
+        <h3 class="font-bold text-sm text-navy dark:text-pearl mb-1">
+          Local {serviceArea.areaTitle} Access & Logistics
+        </h3>
+        <p class="text-xs sm:text-sm text-surface-600 dark:text-surface-300 leading-relaxed">
+          {serviceArea.localAngle}
+        </p>
+      </div>
+
+      <slot />
+    </div>
+
+    <!-- Case Study If Real -->
+    {serviceArea.caseStudy && (
+      <div class="glass-panel p-6 sm:p-8 rounded-3xl border-l-4 border-royal">
+        <div class="text-xs font-bold uppercase tracking-widest text-royal mb-1">Recent Job Profile</div>
+        <h3 class="text-lg font-bold text-navy dark:text-pearl mb-2">
+          {serviceArea.caseStudy.title}
+        </h3>
+        <p class="text-xs sm:text-sm text-surface-600 dark:text-surface-300 leading-relaxed">
+          {serviceArea.caseStudy.details}
+        </p>
+      </div>
+    )}
+
+    <RelatedLinks
+      heading="Related Services & Nearby Areas"
+      links={relatedLinks}
+    />
+
+    {serviceArea.faqs && serviceArea.faqs.length > 0 && (
+      <FAQ items={serviceArea.faqs} title={`${serviceArea.serviceTitle} in ${serviceArea.areaTitle} FAQs`} />
+    )}
+
+    <CTABand areaName={serviceArea.areaTitle} />
+
+    <QuoteFormSection title={`Get a Free Quote for ${serviceArea.serviceTitle} in ${serviceArea.areaTitle}`} />
+  </article>
+</BaseLayout>

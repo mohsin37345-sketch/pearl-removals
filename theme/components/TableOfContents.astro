@@ -1,0 +1,43 @@
+---
+import Icon from './Icon.astro';
+
+interface TocHeading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  headings?: TocHeading[];
+}
+
+const { headings = [] } = Astro.props;
+const filteredHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
+---
+
+{filteredHeadings.length > 0 && (
+  <nav aria-label="Table of Contents" class="glass-panel p-5 rounded-2xl mb-8">
+    <details class="lg:open group" open>
+      <summary class="list-none flex items-center justify-between cursor-pointer font-bold text-xs uppercase tracking-wider text-navy dark:text-pearl select-none">
+        <span class="flex items-center gap-2">
+          <Icon name="receipt" class="w-4 h-4 text-royal" />
+          <span>Table of Contents</span>
+        </span>
+        <Icon name="chevron-down" class="w-4 h-4 text-surface-400 group-open:rotate-180 transition-transform" />
+      </summary>
+
+      <ul class="mt-4 space-y-2 text-xs border-t border-surface-200/50 dark:border-white/5 pt-3">
+        {filteredHeadings.map((h) => (
+          <li class={h.depth === 3 ? 'pl-4' : ''}>
+            <a
+              href={`#${h.slug}`}
+              class="text-surface-600 dark:text-surface-300 hover:text-royal transition-colors block py-0.5 leading-snug"
+            >
+              {h.text}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </details>
+  </nav>
+)}

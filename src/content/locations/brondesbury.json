@@ -1,0 +1,80 @@
+{
+  "name": "Brondesbury",
+  "slug": "brondesbury",
+  "region": "north-west-london",
+  "phase": 1,
+  "premium": false,
+  "boroughs": [
+    "Brent"
+  ],
+  "postcodes": [
+    "NW2",
+    "NW6"
+  ],
+  "distanceMiles": 1,
+  "metaTitle": "House Removals Brondesbury NW6 | Pearl Removals",
+  "metaDescription": "Expert removals in Brondesbury NW6 & NW2. Specialist movers for grand Victorian villas, Mapesbury conservation flats & terraces. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers premier residential removals across Brondesbury, serving both NW6 and NW2 postcodes. Bordered by Kilburn, Queen’s Park, and the leafy Mapesbury Conservation Area, Brondesbury is renowned for its wide residential avenues lined with substantial Victorian and Edwardian brick villas. Operating just one mile south of our central Cricklewood headquarters, our skilled removal teams offer extensive experience in maneuvering large furniture down period stairwells, coordinating parking on permit-controlled roads, and delivering white-glove packing services that keep your cherished possessions completely safe throughout your moving journey. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London. Our customer care team ensures all packing, furniture handling, and vehicle transit adhere to the strictest standards of quality and efficiency throughout London.",
+  "localKnowledge": "Brondesbury is celebrated for its wide, tree-lined residential avenues such as Christchurch Avenue, Teignmouth Road, and The Avenue. The adjacent Mapesbury estate is one of the largest and best-preserved Victorian conservation areas in the UK. Our drivers are well versed in preserving the quiet character of these avenues, respecting tree canopies, and positioning vehicles discreetly during moves.",
+  "propertyTypes": "The architectural signature of Brondesbury comprises grand detached and semi-detached red-brick Victorian houses, substantial Edwardian family homes, and elegant period conversion apartments featuring original high corniced ceilings, marble fireplaces, and expansive private gardens.",
+  "parkingAndAccess": "The London Borough of Brent enforces Controlled Parking Zones (Zone BR and Zone KB) across Brondesbury. Many larger homes possess off-street carriage driveways, but for conversion apartments and terraced homes, we arrange formal Brent Council bay suspensions to guarantee an unobstructed loading space.",
+  "transportLinks": "Excellent connections via Brondesbury and Brondesbury Park London Overground stations, plus nearby Jubilee Line services at Kilburn and Willesden Green.",
+  "travelInfo": "Convenient road links southward down Kilburn High Road towards Maida Vale, and northward towards the A406 North Circular and M1 via Cricklewood.",
+  "nearbyAreas": [
+    {
+      "name": "Kilburn",
+      "slug": "kilburn"
+    },
+    {
+      "name": "Queens Park",
+      "slug": "queens-park"
+    },
+    {
+      "name": "West Hampstead",
+      "slug": "west-hampstead"
+    },
+    {
+      "name": "Willesden Green",
+      "slug": "willesden-green"
+    },
+    {
+      "name": "Cricklewood",
+      "slug": "cricklewood"
+    }
+  ],
+  "servicesOffered": [
+    "Period Villa Removals Brondesbury",
+    "Mapesbury Conservation House Moves",
+    "Flat Removals NW6",
+    "Fine Art Packing",
+    "Secure Storage Solutions"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you have experience moving homes in the Mapesbury Conservation Area?",
+      "answer": "Yes. We regularly move families in the Mapesbury area and take special care with wide gravel drives, stone entrance pillars, and heritage doorway mouldings.",
+      "display": true
+    },
+    {
+      "question": "Can you move heavy garden planters and stone statues in Brondesbury?",
+      "answer": "Yes. Our heavy-item lifting equipment and padded transport dollies allow us to relocate heavy outdoor furniture, urns, and garden statues safely.",
+      "display": true
+    },
+    {
+      "question": "How do you handle moves into upper-floor conversions without a lift in NW6?",
+      "answer": "Our teams are trained in synchronized manual handling techniques to navigate narrow period stairways without damaging banisters or wall finishes.",
+      "display": true
+    },
+    {
+      "question": "Do you offer crate hire for fragile book and vinyl collections?",
+      "answer": "Yes, we supply heavy-duty plastic lidded crates that stack securely in our vehicles, ideal for large home libraries and music collections.",
+      "display": true
+    }
+  ],
+  "testimonial": {
+    "name": "Dr. Alistair R.",
+    "quote": "Superb move from our five-bedroom house on The Avenue. The crew was respectful of our home, packed our fragile ceramics flawlessly, and worked with exceptional speed.",
+    "rating": 5
+  },
+  "status": "published"
+}

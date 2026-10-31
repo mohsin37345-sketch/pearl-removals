@@ -1,0 +1,31 @@
+{
+  "service": "house-removals",
+  "location": "st-johns-wood",
+  "status": "published",
+  "uniqueIntro": "Pearl Removals provides world-class white-glove house removals for grand detached villas, diplomatic residences, and luxury penthouse apartments across St John's Wood NW8. Serving iconic addresses along Hamilton Terrace, Avenue Road, and Prince Albert Road, our senior teams deliver flawless relocations with total confidentiality.",
+  "localAngle": "Substantial estates in St John's Wood feature private security gates, extensive carriage drives, and strict Westminster City Council parking controls. Our operations team manages security gate access, private driveway protection, and council bay suspensions with military precision.",
+  "whatsIncluded": [
+    "Dedicated move director managing every phase from packing to final room styling",
+    "Custom timber crating for museum-grade paintings, sculpture, and chandeliers",
+    "Protective driveway matting, entrance portico wraps, and banister covers",
+    "Comprehensive declared-value transit insurance covering valuable private estates"
+  ],
+  "priceGuidance": "Bespoke fixed written quotations following an exhaustive in-person or high-definition video survey.",
+  "faqs": [
+    {
+      "question": "How do you protect carriage drives and stone paving in St John's Wood?",
+      "answer": "We lay heavy-duty rubberised ground mats and wooden boards over gravel carriage sweeps and stone paving to prevent marks.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange Westminster parking suspensions for NW8 moves?",
+      "answer": "Yes. We apply directly to Westminster City Council for parking bay suspensions outside residential properties.",
+      "display": true
+    },
+    {
+      "question": "Can you move grand pianos and concert harps in St John’s Wood?",
+      "answer": "Yes. Our specialized instrument division uses custom piano shoes, padded coats, and hydraulic tail lifts for grand pianos.",
+      "display": true
+    }
+  ]
+}

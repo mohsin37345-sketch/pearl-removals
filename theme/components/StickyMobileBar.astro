@@ -1,0 +1,62 @@
+---
+import { siteConfig } from 'src/data/site';
+import Icon from './Icon.astro';
+
+interface Props {
+  areaName?: string;
+  serviceTitle?: string;
+}
+
+const { areaName, serviceTitle } = Astro.props;
+
+// Contextual WhatsApp pre-fill message
+let waMessage = "Hello Pearl Removals, I would like to get a quote for a move.";
+if (areaName && serviceTitle) {
+  waMessage = `Hello Pearl Removals, I'm looking for ${serviceTitle} in ${areaName} and would like a quote.`;
+} else if (areaName) {
+  waMessage = `Hello Pearl Removals, I am planning a move in ${areaName} and would like a quote.`;
+} else if (serviceTitle) {
+  waMessage = `Hello Pearl Removals, I'm enquiring about your ${serviceTitle} service and would like a quote.`;
+}
+
+const waUrl = `https://wa.me/${siteConfig.whatsAppE164.replace(/\+/g, '')}?text=${encodeURIComponent(waMessage)}`;
+---
+
+<div 
+  class="md:hidden fixed bottom-0 inset-x-0 z-40 p-3 bg-white/95 dark:bg-navy/95 backdrop-blur-lg border-t border-surface-200 dark:border-white/10 shadow-lg pb-[calc(0.75rem+env(safe-area-inset-bottom,0px))]"
+  id="sticky-mobile-bar"
+>
+  <div class="grid grid-cols-3 gap-2 max-w-md mx-auto">
+    <!-- Call Button -->
+    <a
+      href={`tel:${siteConfig.phoneE164}`}
+      class="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-surface-100 dark:bg-white/10 text-navy dark:text-pearl hover:bg-surface-200 transition-colors text-center"
+      aria-label="Call Pearl Removals"
+    >
+      <Icon name="phone" class="w-4 h-4 text-royal mb-0.5" />
+      <span class="text-[11px] font-bold">Call Now</span>
+    </a>
+
+    <!-- WhatsApp Button -->
+    <a
+      href={waUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/50 hover:bg-emerald-100 transition-colors text-center"
+      aria-label="Message Pearl Removals on WhatsApp"
+    >
+      <Icon name="mail" class="w-4 h-4 text-emerald-600 dark:text-emerald-400 mb-0.5" />
+      <span class="text-[11px] font-bold">WhatsApp</span>
+    </a>
+
+    <!-- Get Quote Button -->
+    <a
+      href="/get-a-quote/"
+      class="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-royal text-white hover:bg-royal-hover shadow-sm transition-colors text-center"
+      aria-label="Get a moving quote"
+    >
+      <Icon name="receipt" class="w-4 h-4 text-white mb-0.5" />
+      <span class="text-[11px] font-bold">Free Quote</span>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,119 @@
+---
+import LegalLayout from 'theme/layouts/LegalLayout.astro';
+import { siteConfig } from 'src/data/site';
+
+const headings = [
+  { depth: 2, slug: 'quotation-validity', text: '1. Quotation Scope & Validity' },
+  { depth: 2, slug: 'payment-terms', text: '2. Payment Terms & Deposits' },
+  { depth: 2, slug: 'cancellation-rights', text: '3. Consumer Cancellation Rights (14-Day Statutory Window)' },
+  { depth: 2, slug: 'postponement-cancellation', text: '4. Postponement & Cancellation Charges' },
+  { depth: 2, slug: 'customer-responsibilities', text: '5. Customer Responsibilities (Parking, CPZs & Access)' },
+  { depth: 2, slug: 'excluded-items', text: '6. Items We Do Not Transport (Dangerous & Excluded Goods)' },
+  { depth: 2, slug: 'special-value-items', text: '7. Declaration of High-Value Possessions' },
+  { depth: 2, slug: 'liability-insurance', text: '8. Goods in Transit Insurance & Liability Limits' },
+  { depth: 2, slug: 'completion-delays', text: '9. Completion Day Delays & Waiting Time' },
+  { depth: 2, slug: 'damage-claims', text: '10. Damage Claim Notification Window & Procedure' },
+  { depth: 2, slug: 'storage-terms', text: '11. Container Storage Conditions' }
+];
+---
+
+<LegalLayout
+  title="Terms of Business (Removals Contract)"
+  description="Pearl Removals standard terms of business for household and commercial removals, covering insurance cover, parking rules, payment terms, and consumer rights."
+  lastUpdated="2026-06-01"
+  headings={headings}
+>
+  <p>
+    These Terms of Business form the removals contract between <strong>{siteConfig.legalName}</strong> trading as <strong>{siteConfig.businessName}</strong> ("the Contractor", "we", "us") and the customer ("you"). They are written in plain English in accordance with the <strong>Consumer Rights Act 2015</strong> and the <strong>Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013</strong>.
+  </p>
+
+  <h2 id="quotation-validity">1. Quotation Scope & Validity</h2>
+  <p>
+    Our formal written quotation is valid for <strong>28 days</strong> from the date of issue. The price quoted is based on the specific inventory, access factors, and addresses declared during the initial survey. We reserve the right to revise the quotation if:
+  </p>
+  <ul>
+    <li>Additional items are added to the move inventory that were not declared during the initial survey.</li>
+    <li>Access obstacles exist at either property that were not disclosed (e.g. broken lifts, red routes, or stairs above the declared floor).</li>
+    <li>Extra packing or specialized dismantling services are requested on the day of the move.</li>
+  </ul>
+
+  <h2 id="payment-terms">2. Payment Terms & Deposits</h2>
+  <p>
+    To secure your moving date on our schedule, a booking deposit of <strong>20%</strong> of the total quotation is payable upon booking confirmation. The remaining balance must be settled in cleared funds no later than <strong>48 hours prior to the scheduled move start date</strong>, or on the morning of the move by debit/credit card or bank transfer as agreed in writing.
+  </p>
+
+  <h2 id="cancellation-rights">3. Consumer Cancellation Rights (14-Day Statutory Window)</h2>
+  <p>
+    Under the Consumer Contracts Regulations 2013, if you agree to this contract away from our business premises (e.g. over the phone or online), you have the statutory right to cancel this contract within <strong>14 days</strong> without giving any reason.
+  </p>
+  <p>
+    <strong>Express Request to Begin Work Early:</strong> If your scheduled move date falls within this 14-day cancellation period, you must make an express request for us to commence services. If you subsequently cancel after services have commenced, you will be liable to pay for the reasonable cost of services performed up to the cancellation notice.
+  </p>
+
+  <h2 id="postponement-cancellation">4. Postponement & Cancellation Charges</h2>
+  <p>
+    Because moving crews, vehicles, and equipment are reserved exclusively for you, the following fair cancellation and postponement schedule applies once the 14-day statutory period has expired:
+  </p>
+  <ul>
+    <li><strong>More than 7 business days notice:</strong> Full refund of deposit minus a £35 administrative booking fee.</li>
+    <li><strong>Between 3 and 7 business days notice:</strong> Deposit retained (20% of quote).</li>
+    <li><strong>Less than 48 hours notice:</strong> 50% of the total agreed quotation charge.</li>
+    <li><strong>Cancellation on the day of the move:</strong> 75% of the total quotation charge.</li>
+  </ul>
+
+  <h2 id="customer-responsibilities">5. Customer Responsibilities (Parking, CPZs & Access)</h2>
+  <p>
+    You are responsible for ensuring lawful vehicular access for our removal vehicles:
+  </p>
+  <ul>
+    <li><strong>Controlled Parking Zones (CPZs):</strong> Unless agreed in writing that Pearl Removals will manage this on your behalf, you are responsible for obtaining parking bay suspensions or resident dispensations from the relevant London borough council (Camden, Brent, Barnet, Westminster, etc.). Any council application fees remain your liability.</li>
+    <li><strong>Penalty Charge Notices (PCNs):</strong> If parking restrictions were not suspended and our crew is directed to park on yellow lines or in unauthorised bays at your instruction, you will reimburse any resulting council PCNs.</li>
+    <li><strong>Building Access & Porter Rules:</strong> You must ensure lift access is reserved and building porters / concierges are notified in advance for apartment complexes and mansion blocks.</li>
+  </ul>
+
+  <h2 id="excluded-items">6. Items We Do Not Transport (Dangerous & Excluded Goods)</h2>
+  <p>
+    Under our insurance policy and transit regulations, our crews cannot transport the following prohibited goods:
+  </p>
+  <ul>
+    <li>Hazardous materials: gas bottles, petrol/diesel, solvents, paint tins, fireworks, or flammable chemicals.</li>
+    <li>Perishable foods and deep-frozen goods liable to spoil.</li>
+    <li>Live animals, reptiles, birds, or delicate house plants requiring controlled conditions.</li>
+    <li>Cash, currency, bank cards, lottery tickets, bearer securities, and precious jewellery. These must remain in your personal custody.</li>
+  </ul>
+
+  <h2 id="special-value-items">7. Declaration of High-Value Possessions</h2>
+  <p>
+    If your consignment includes individual items valued at more than <strong>£1,500</strong> (such as grand pianos, high-value oil paintings, antique furniture, or designer electronics), you must declare them in writing prior to moving day so appropriate export crating and transit insurance limits are recorded.
+  </p>
+
+  <h2 id="liability-insurance">8. Goods in Transit Insurance & Liability Limits</h2>
+  <p>
+    Pearl Removals maintains comprehensive insurance cover throughout your move:
+  </p>
+  <ul>
+    <li><strong>Goods in Transit Insurance:</strong> £50,000 cover against physical loss or damage while your property is in our care, custody, and control.</li>
+    <li><strong>Public Liability Insurance:</strong> £5,000,000 protection against accidental damage to third-party premises or property.</li>
+    <li><strong>Negligence:</strong> Nothing in these terms excludes or restricts our liability for loss or damage caused by our negligence, nor does it affect your statutory rights under the Consumer Rights Act 2015.</li>
+  </ul>
+
+  <h2 id="completion-delays">9. Completion Day Delays & Waiting Time</h2>
+  <p>
+    We understand that solicitors and mortgage lenders frequently experience transaction delays on completion day. We provide a <strong>60-minute complimentary waiting window</strong> past the scheduled key-collection time (typically 1:00pm). If key release is delayed beyond this window, a transparent standby rate of £45 + VAT per hour per vehicle and crew applies.
+  </p>
+
+  <h2 id="damage-claims">10. Damage Claim Notification Window & Procedure</h2>
+  <p>
+    We ask that you inspect your possessions as they are delivered. In the unlikely event that any loss or damage is detected:
+  </p>
+  <ul>
+    <li>Notify the lead mover on-site where reasonably apparent, or submit written notice to <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a> within <strong>7 days</strong> of delivery.</li>
+    <li>Provide clear photographic evidence of the item and its packaging.</li>
+    <li>Retain the damaged article and any original wrapping materials for inspection by our insurance loss adjusters.</li>
+  </ul>
+
+  <h2 id="storage-terms">11. Container Storage Conditions</h2>
+  <p>
+    Where goods are stored in our secure container facilities between moves, rental fees are charged weekly or monthly in advance. Storage fees do not include disposal of unwanted furniture unless agreed in writing.
+  </p>
+</LegalLayout>

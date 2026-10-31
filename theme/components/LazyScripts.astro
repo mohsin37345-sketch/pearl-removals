@@ -1,0 +1,43 @@
+---
+// Lazy-loads analytics and third-party scripts only on first user interaction or fallback timer
+interface Props {
+  gaId?: string;
+}
+
+const { gaId = import.meta.env.PUBLIC_GA4_MEASUREMENT_ID } = Astro.props;
+---
+
+{gaId && (
+  <script is:inline define:vars={{ gaId }}>
+    (function() {
+      let loaded = false;
+      function loadThirdParty() {
+        if (loaded) return;
+        loaded = true;
+        
+        // Remove event listeners
+        ['mouseover', 'touchstart', 'keydown', 'scroll'].forEach(evt => {
+          window.removeEventListener(evt, loadThirdParty, { passive: true });
+        });
+
+        // Check if analytics storage is granted or wait for consent
+        const script = document.createElement('script');
+        script.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`;
+        script.async = true;
+        document.head.appendChild(script);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', gaId, { send_page_view: true });
+      }
+
+      ['mouseover', 'touchstart', 'keydown', 'scroll'].forEach(evt => {
+        window.addEventListener(evt, loadThirdParty, { once: true, passive: true });
+      });
+
+      // 3.5s fallback
+      setTimeout(loadThirdParty, 3500);
+    })();
+  </script>
+)}

@@ -1,0 +1,31 @@
+{
+  "service": "house-removals",
+  "location": "hampstead",
+  "status": "published",
+  "uniqueIntro": "Pearl Removals delivers premier white-glove house removals for grand Georgian townhouses, historic village villas, and contemporary architectural estates across Hampstead NW3. We provide discreet, masterfully planned relocations complete with bespoke fine-art crating, antique joinery handling, and dedicated move management.",
+  "localAngle": "Hampstead presents unique logistical challenges: steep gradients, narrow historic mews, and strict Camden Council CPZ enforcement (Zone CA-H). Our team coordinates physical access surveys, multiple shuttle vehicles if required, and all parking bay suspensions so your heritage property is preserved immaculately.",
+  "whatsIncluded": [
+    "Dedicated move coordinator and exhaustive pre-move survey",
+    "Bespoke timber crating for delicate artwork, mirrors, and chandeliers",
+    "Floor runners, door jamb guards, and quilted banister wraps throughout",
+    "Comprehensive high-value transit insurance with declared value extensions"
+  ],
+  "priceGuidance": "Bespoke quotations following detailed survey. Full turnkey service including packing, crating, and fine art handling.",
+  "faqs": [
+    {
+      "question": "How do you manage multi-vehicle moves on narrow Hampstead streets?",
+      "answer": "We utilize coordinated shuttle vans to transfer items from narrow hilltop streets down to larger transport vehicles if access is restricted.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange Camden parking suspensions for steep lanes in NW3?",
+      "answer": "Yes. We apply for all formal bay suspensions and police dispensations with Camden Council well in advance.",
+      "display": true
+    },
+    {
+      "question": "Can you pack and transport rare vintage wine cellars?",
+      "answer": "Yes. We supply specialized insulated bottle cartons with cell dividers for safe, temperature-conscious wine cellar relocations.",
+      "display": true
+    }
+  ]
+}

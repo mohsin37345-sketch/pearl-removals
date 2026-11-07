@@ -3,17 +3,50 @@ import { siteConfig } from 'src/data/site';
 import Logo from './Logo.astro';
 ---
 
-<!-- TOP BAR -->
-<div class="topbar">
+<!-- TOP BAR (Animated Announcement Slider) -->
+<div class="topbar" id="topbar">
   <div class="container">
-    <div class="topbar__left">
-      <span class="topbar__item"><span class="live-dot"></span> Booking now for this week — 3 slots left</span>
-      <span class="topbar__item"><svg><use href="#i-shield"/></svg> Fully insured up to £50k GIT</span>
-      <span class="topbar__item"><svg><use href="#i-clock"/></svg> Mon–Sun · 7am–9pm</span>
-    </div>
-    <div class="topbar__right">
-      <a class="topbar__item" href="/reviews/"><span class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span> 4.9 from 380+ reviews</a>
-      <a class="topbar__item" href={`mailto:${siteConfig.email}`}><svg><use href="#i-mail"/></svg> {siteConfig.email}</a>
+    <div class="topbar__slider" id="topbarSlider" role="region" aria-label="Pearl Removals Announcements">
+      <button class="topbar__ctrl topbar__ctrl--prev" id="topbarPrev" aria-label="Previous announcement" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+
+      <div class="topbar__track" id="topbarTrack">
+        <div class="topbar__slide is-active" data-index="0">
+          <span class="live-dot"></span>
+          <span>Booking now for this week — 3 slots left</span>
+        </div>
+        <div class="topbar__slide" data-index="1">
+          <svg class="topbar__icon"><use href="#i-shield"/></svg>
+          <span>Fully insured up to £50k GIT</span>
+        </div>
+        <div class="topbar__slide" data-index="2">
+          <svg class="topbar__icon"><use href="#i-clock"/></svg>
+          <span>Mon–Sun · 7am–9pm</span>
+        </div>
+        <div class="topbar__slide" data-index="3">
+          <a class="topbar__link" href="/reviews/">
+            <span class="stars">
+              <svg><use href="#i-star"/></svg>
+              <svg><use href="#i-star"/></svg>
+              <svg><use href="#i-star"/></svg>
+              <svg><use href="#i-star"/></svg>
+              <svg><use href="#i-star"/></svg>
+            </span>
+            <span>4.9 from 380+ reviews</span>
+          </a>
+        </div>
+        <div class="topbar__slide" data-index="4">
+          <a class="topbar__link" href={`mailto:${siteConfig.email}`}>
+            <svg class="topbar__icon"><use href="#i-mail"/></svg>
+            <span>{siteConfig.email}</span>
+          </a>
+        </div>
+      </div>
+
+      <button class="topbar__ctrl topbar__ctrl--next" id="topbarNext" aria-label="Next announcement" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
     </div>
   </div>
 </div>
@@ -350,3 +383,126 @@ import Logo from './Logo.astro';
     </div>
   </div>
 </div>
+
+<!-- Topbar Announcement Slider Script -->
+<script is:inline>
+  (function () {
+    function initTopbarSlider() {
+      const track = document.getElementById('topbarTrack');
+      if (!track) return;
+      const slides = Array.from(track.querySelectorAll('.topbar__slide'));
+      if (slides.length <= 1) return;
+
+      let current = 0;
+      let timer = null;
+      const intervalMs = 3500; // rotate every 3.5s
+
+      function showSlide(nextIndex, direction = 1) {
+        if (nextIndex === current) return;
+        const prevSlide = slides[current];
+        const nextSlide = slides[nextIndex];
+
+        // Reset any other slides to ready position
+        slides.forEach((s, idx) => {
+          if (idx !== current && idx !== nextIndex) {
+            s.classList.remove('is-active', 'is-prev');
+            s.style.transform = direction > 0 ? 'translateY(100%)' : 'translateY(-100%)';
+            s.style.opacity = '0';
+          }
+        });
+
+        // Current slide slides out
+        prevSlide.classList.remove('is-active');
+        prevSlide.classList.add('is-prev');
+        prevSlide.style.transform = direction > 0 ? 'translateY(-100%)' : 'translateY(100%)';
+        prevSlide.style.opacity = '0';
+
+        // Next slide slides in
+        nextSlide.classList.remove('is-prev');
+        nextSlide.classList.add('is-active');
+        nextSlide.style.transform = 'translateY(0)';
+        nextSlide.style.opacity = '1';
+
+        current = nextIndex;
+      }
+
+      function next() {
+        const nextIdx = (current + 1) % slides.length;
+        showSlide(nextIdx, 1);
+      }
+
+      function prev() {
+        const prevIdx = (current - 1 + slides.length) % slides.length;
+        showSlide(prevIdx, -1);
+      }
+
+      function start() {
+        stop();
+        timer = setInterval(next, intervalMs);
+      }
+
+      function stop() {
+        if (timer) {
+          clearInterval(timer);
+          timer = null;
+        }
+      }
+
+      start();
+
+      // Controls
+      const prevBtn = document.getElementById('topbarPrev');
+      const nextBtn = document.getElementById('topbarNext');
+      if (prevBtn) {
+        prevBtn.onclick = (e) => {
+          e.preventDefault();
+          prev();
+          start();
+        };
+      }
+      if (nextBtn) {
+        nextBtn.onclick = (e) => {
+          e.preventDefault();
+          next();
+          start();
+        };
+      }
+
+      // Pause on hover
+      const slider = document.getElementById('topbarSlider');
+      if (slider) {
+        slider.onmouseenter = stop;
+        slider.onmouseleave = start;
+
+        // Mobile touch swipe support
+        let touchStartX = 0;
+        slider.addEventListener('touchstart', (e) => {
+          stop();
+          touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        slider.addEventListener('touchend', (e) => {
+          const touchEndX = e.changedTouches[0].screenX;
+          if (touchStartX - touchEndX > 35) {
+            next();
+          } else if (touchEndX - touchStartX > 35) {
+            prev();
+          }
+          start();
+        }, { passive: true });
+      }
+
+      // Pause when tab is hidden to save resources
+      document.addEventListener('visibilitychange', () => {
+        if (document.hidden) stop();
+        else start();
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initTopbarSlider);
+    } else {
+      initTopbarSlider();
+    }
+  })();
+</script>

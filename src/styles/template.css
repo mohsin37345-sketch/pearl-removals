@@ -160,15 +160,149 @@ ul { margin: 0; padding: 0; list-style: none; }
 @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
 
 /* =========================================================
-   4. HEADER
+   4. TOP BAR (Animated Announcement Slider)
    ========================================================= */
-.topbar { background: var(--ink); color: rgba(255,255,255,.82); font-size: 13.5px; }
-.topbar .container { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 42px; }
-.topbar__left, .topbar__right { display: flex; align-items: center; gap: 22px; }
-.topbar a:hover { color: #fff; }
-.topbar__item { display: inline-flex; align-items: center; gap: 8px; }
-.topbar__item svg { width: 15px; height: 15px; color: var(--accent); }
-.topbar .stars svg { width: 13px; height: 13px; }
+.topbar { 
+  background: var(--ink); 
+  color: rgba(255, 255, 255, 0.88); 
+  font-size: 13px;
+  font-weight: 500;
+  height: 38px;
+  position: relative;
+  overflow: hidden;
+  z-index: 55;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.topbar .container { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  height: 100%; 
+  position: relative;
+}
+.topbar__slider {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.topbar__track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topbar__slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.92);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(100%);
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.45s;
+  pointer-events: none;
+}
+.topbar__slide.is-active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.topbar__slide.is-prev {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-100%);
+}
+
+.topbar__icon {
+  width: 15px !important;
+  height: 15px !important;
+  min-width: 15px !important;
+  min-height: 15px !important;
+  color: var(--accent);
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+.topbar__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.92);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.topbar__link:hover {
+  color: #ffffff;
+}
+.topbar .stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  color: #ff9864;
+}
+.topbar .stars svg {
+  width: 12px;
+  height: 12px;
+  fill: currentColor;
+}
+
+/* Nav arrows for slider */
+.topbar__ctrl {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.45);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: color 0.2s, background 0.2s;
+  padding: 0;
+  z-index: 2;
+}
+.topbar__ctrl:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+.topbar__ctrl svg {
+  width: 13px;
+  height: 13px;
+  stroke: currentColor;
+}
+
+@media (max-width: 600px) {
+  .topbar {
+    height: 34px;
+    font-size: 12px;
+  }
+  .topbar__slider {
+    height: 34px;
+  }
+  .topbar__slide {
+    font-size: 12px;
+    gap: 6px;
+  }
+  .topbar__ctrl {
+    display: none;
+  }
+}
 
 .header {
   position: sticky; top: 0; z-index: 50;
@@ -1195,7 +1329,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   .footer__brand, .footer__news { grid-column: span 3; }
 }
 @media (max-width: 1024px) {
-  .nav, .header__actions .btn, .header__phone, .topbar__right { display: none; }
+  .nav, .header__actions .btn, .header__phone { display: none; }
   .burger { display: grid; }
   .header__actions { margin-left: auto; }
   .hero__grid, .split, .areas, .faq, .cta-band { grid-template-columns: 1fr; }
@@ -1214,7 +1348,6 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 @media (max-width: 720px) {
   :root { --header-h: 68px; }
-  .topbar__left .topbar__item:not(:first-child) { display: none; }
   .hero__visual { min-height: 0; display: flex; flex-direction: column; gap: 16px; }
   .hero__photo { position: relative; inset: auto; height: 260px; border-radius: 28px; }
   .quote-card, .hero-form-card { position: relative; width: 100%; margin-top: -60px; margin-inline: auto; width: calc(100% - 16px); }

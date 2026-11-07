@@ -1,0 +1,74 @@
+{
+  "name": "Shepherd's Bush & White City",
+  "slug": "shepherds-bush-and-white-city",
+  "region": "west-london",
+  "phase": 3,
+  "premium": false,
+  "boroughs": [
+    "Hammersmith & Fulham"
+  ],
+  "postcodes": [
+    "W12"
+  ],
+  "distanceMiles": 6,
+  "metaTitle": "House Removals Shepherd's Bush & White City W12 | Pearl Removals",
+  "metaDescription": "Trusted removals in Shepherd's Bush & White City W12. Westfield apartments, Victorian terraces & H&F parking. Call 020 3151 8452 for a free quote.",
+  "intro": "Pearl Removals delivers dependable, fully insured removals across vibrant Shepherd’s Bush, White City, and the W12 postcode district. From Victorian family terraces in Brackenbury Village and Askew Road to contemporary high-rise apartments in the Television Centre and White City Living developments, our professional moving crews provide punctual, structured, and affordable moving services. Located within swift reach via the A40 Westway from our Cricklewood headquarters, our vehicles arrive fully equipped for efficient urban relocations. Our moving coordinators conduct detailed access reviews, arrange parking suspensions with Hammersmith & Fulham Council, and ensure that furniture, electronics, and boxed belongings are loaded systematically and protected with heavy-duty quilted transit covers throughout your move, providing total peace of mind for every household and business relocation.",
+  "localKnowledge": "Shepherd’s Bush is a dynamic west London hub centred on Shepherd’s Bush Green and the Westfield shopping complex. Moving here involves navigating high-density traffic along Uxbridge Road and Shepherd’s Bush roundabout. In modern apartment developments around Wood Lane and the former BBC Television Centre, our drivers are experienced with dedicated underground loading docks, concierge protocols, and strict service lift reservation windows.",
+  "propertyTypes": "The area offers a compelling mix of architectural eras: handsome three- to four-storey Victorian terraced homes, Edwardian mansion flats near Goldhawk Road, modern residential towers with private balconies, and converted lofts. Properties often feature narrow stairwells requiring careful porter navigation.",
+  "parkingAndAccess": "The London Borough of Hammersmith & Fulham enforces Controlled Parking Zones across W12. Loading outside Victorian terraces off Askew Road or near Uxbridge Road requires pre-booked council parking suspensions. We handle all application paperwork to secure dedicated curbside space.",
+  "transportLinks": "Exceptional transport connections via Shepherd’s Bush (Central line and Overground), White City (Central line), and Goldhawk Road (Circle and Hammersmith & City lines).",
+  "travelInfo": "Direct southbound transit down the A40 Westway links White City and Shepherd’s Bush to our Cricklewood dispatch centre in under 20 minutes.",
+  "nearbyAreas": [
+    {
+      "name": "Hammersmith",
+      "slug": "hammersmith"
+    },
+    {
+      "name": "Kensington",
+      "slug": "kensington"
+    },
+    {
+      "name": "Acton",
+      "slug": "acton"
+    },
+    {
+      "name": "Chiswick",
+      "slug": "chiswick"
+    },
+    {
+      "name": "Notting Hill",
+      "slug": "notting-hill"
+    }
+  ],
+  "servicesOffered": [
+    "House Removals Shepherd's Bush",
+    "White City Apartment Moves",
+    "Packing Services W12",
+    "Man and Van Shepherd's Bush",
+    "Storage Solutions W12"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you coordinate moves in the Television Centre and White City Living?",
+      "answer": "We liaise directly with building concierges to reserve underground loading bays and service lifts, adhering to all development moving guidelines.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange Hammersmith & Fulham parking suspensions in W12?",
+      "answer": "Yes. We apply directly to H&F council for official parking suspensions, ensuring legal space is reserved for your removal van.",
+      "display": true
+    },
+    {
+      "question": "Can you move heavy furniture up narrow stairs in Victorian terrace conversions?",
+      "answer": "Yes. Our moving porters specialize in narrow staircase maneuvers, using protective quilted covers and partial disassembly where needed.",
+      "display": true
+    },
+    {
+      "question": "Do you offer same-day or short-notice moving in Shepherd's Bush?",
+      "answer": "Subject to vehicle availability, our close proximity allows us to accommodate short-notice and urgent moves across W12.",
+      "display": true
+    }
+  ],
+  "status": "published"
+}

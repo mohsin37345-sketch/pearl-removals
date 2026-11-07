@@ -22,20 +22,24 @@
   "travelInfo": "Convenient vehicular links via Holland Park Avenue connecting directly to the A402, A406, and Westway corridor for smooth transit to our Cricklewood fleet yard.",
   "nearbyAreas": [
     {
+      "name": "Kensington",
+      "slug": "kensington"
+    },
+    {
+      "name": "Shepherd's Bush & White City",
+      "slug": "shepherds-bush-and-white-city"
+    },
+    {
+      "name": "Hammersmith",
+      "slug": "hammersmith"
+    },
+    {
       "name": "Notting Hill",
       "slug": "notting-hill"
     },
     {
       "name": "Bayswater",
       "slug": "bayswater"
-    },
-    {
-      "name": "Acton",
-      "slug": "acton"
-    },
-    {
-      "name": "Kensal Green & North Kensington",
-      "slug": "kensal-green-and-north-kensington"
     }
   ],
   "servicesOffered": [

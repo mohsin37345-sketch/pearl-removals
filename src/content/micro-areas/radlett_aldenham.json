@@ -1,0 +1,41 @@
+{
+  "name": "Aldenham",
+  "slug": "aldenham",
+  "parent": "radlett",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "WD7"
+  ],
+  "metaTitle": "Removals in Aldenham, Radlett | Pearl Removals",
+  "metaDescription": "Professional removals in Aldenham, Radlett (WD7). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers premier, white-glove removals across historic Aldenham Village and Aldenham Country Park in WD7. Featuring timber-framed 16th-century cottages, historic churches, and sprawling country estates, Aldenham offers an idyllic Hertfordshire country lifestyle. Our specialist moving teams manage country home relocations with profound care and discretion. Picturesque village lanes and historic timbered farmhouses require careful vehicle maneuvering and rural road awareness. Our team protects traditional flagstone floors and low ceiling beams, ensuring every cherished antiquity arrives in perfect order. Our dedicated moving professionals provide gentle, methodical handling for period and contemporary homes alike.",
+  "whatMovingHereInvolves": "Aldenham features narrow rural country lanes, overhanging mature trees, and private unadopted carriage drives. Negotiating access around Aldenham Village and Church Lane requires experienced drivers familiar with rural verges. Inside period country homes, our porters lay protective floor coverings across flagstone and antique oak floors.",
+  "landmarks": [
+    "Aldenham Country Park and Reservoir",
+    "St John the Baptist Church",
+    "Haberdashers' Boys' School"
+  ],
+  "nearbyMicroAreas": [
+    "shenley",
+    "bushey-heath",
+    "elstree"
+  ],
+  "localFaqs": [
+    {
+      "question": "Can your removal vans access rural lanes around Aldenham Village?",
+      "answer": "Yes. We inspect access routes for tree canopy clearance and deploy appropriately sized vehicles to navigate rural lanes safely.",
+      "display": true
+    },
+    {
+      "question": "Do you manage moves for large country estates in Aldenham?",
+      "answer": "Yes. We routinely coordinate multi-vehicle moves for 5 to 7 bedroom country homes, deploying dedicated loading supervisors and packing teams.",
+      "display": true
+    },
+    {
+      "question": "How do you protect delicate gravel and resin driveways in Aldenham properties?",
+      "answer": "We lay heavy-duty ground protection mats across sensitive resin-bound gravel and block paving to protect your driveway surface.",
+      "display": true
+    }
+  ]
+}

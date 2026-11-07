@@ -1,0 +1,40 @@
+{
+  "name": "Northwood Hills",
+  "slug": "northwood-hills",
+  "parent": "northwood",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "HA6"
+  ],
+  "metaTitle": "Removals in Northwood Hills, Northwood | Pearl Removals",
+  "metaDescription": "Professional removals in Northwood Hills, Northwood (HA6). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers comprehensive, fully insured house removals across suburban Northwood Hills in HA6. Centred on Joel Street shopping parade and Northwood Hills Metropolitan line station, this leafy residential quarter offers attractive 1930s family homes and quiet cul-de-sacs. Our professional moving crews manage family relocations with care and punctuality. Elevated residential streets near the station feature attractive detached properties with ample off-street parking. We provide full packing services the day prior, allowing you to relax while our crew packs and boxes your entire household methodically.",
+  "whatMovingHereInvolves": "Residential roads in Northwood Hills offer wide streets and private driveways, making vehicle parking straightforward. Properties frequently contain large family furniture items, garden tools, and multi-bedroom inventories. Our crews handle loading systematically, securing goods with commercial transit straps and laying floor runners across hallways.",
+  "landmarks": [
+    "Northwood Hills Station",
+    "Joel Street Parade",
+    "Potter Street Hill"
+  ],
+  "nearbyMicroAreas": [
+    "moor-park",
+    "batchworth-heath"
+  ],
+  "localFaqs": [
+    {
+      "question": "Can you move 3- and 4-bedroom family houses in Northwood Hills?",
+      "answer": "Yes. We deploy large Luton or 7.5t vehicles and experienced multi-man crews, providing full packing services and furniture dismantling.",
+      "display": true
+    },
+    {
+      "question": "Do you provide wardrobe cartons and mattress bags for Northwood Hills moves?",
+      "answer": "Yes. We supply heavy-duty wardrobe cartons, mattress covers, and quilted sofa covers as part of every domestic move.",
+      "display": true
+    },
+    {
+      "question": "How quickly can your vehicles reach Northwood Hills from your depot?",
+      "answer": "Via the A404 corridor from our Cricklewood depot, our vehicles arrive in Northwood Hills in approximately 25 minutes.",
+      "display": true
+    }
+  ]
+}

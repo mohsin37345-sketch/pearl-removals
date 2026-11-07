@@ -1,62 +1,182 @@
 ---
-import { servicesRegistry } from 'src/data/services';
-import ServiceCard from './ServiceCard.astro';
+interface ServiceItem {
+  id?: string;
+  title: string;
+  description: string;
+  features?: string[];
+  price: string;
+  icon: string;
+  link: string;
+  isFeature?: boolean;
+  tag?: string;
+  photoUrl?: string;
+  photoAlt?: string;
+}
 
 interface Props {
+  eyebrow?: string;
+  title?: string;
+  ctaText?: string;
+  ctaLink?: string;
+  services?: ServiceItem[];
   showSpecialistRow?: boolean;
 }
 
-const { showSpecialistRow = true } = Astro.props;
+const defaultServices: ServiceItem[] = [
+  {
+    title: "House Removals",
+    description: "From studio flats to five-bed family homes. We protect floors, wrap furniture, dismantle beds and reassemble everything at your new place.",
+    features: [
+      "Quilted furniture wrapping & floor runners",
+      "Full dismantling & precision reassembly",
+      "Dedicated Luton vans & 2–4 movers"
+    ],
+    price: "From <b>£299</b>",
+    icon: "home",
+    link: "/removals/house-removals/",
+    isFeature: true,
+    tag: "Most booked",
+    photoUrl: "/images/house-removals-north-west-london.webp",
+    photoAlt: "Pearl Removals low-loader Luton van outside residential house in North West London"
+  },
+  {
+    title: "Flat Removals",
+    description: "Mansion blocks, tight Victorian staircases, lift bookings and building porter liaison across London.",
+    price: "From <b>£199</b>",
+    icon: "building",
+    link: "/removals/flat-removals/"
+  },
+  {
+    title: "Office Moves",
+    description: "Evening & weekend relocations so your business operates with zero operational downtime.",
+    price: "From <b>£499</b>",
+    icon: "office",
+    link: "/removals/office-removals/"
+  },
+  {
+    title: "Packing Service",
+    description: "Heavy-duty boxes, quilted wraps, wardrobe cartons and careful room-by-room packing.",
+    price: "From <b>£149</b>",
+    icon: "box",
+    link: "/removals/packing-services/"
+  },
+  {
+    title: "Secure Storage",
+    description: "Clean, dry, alarmed and 24/7 CCTV-monitored container storage by the week or month.",
+    price: "From <b>£25/wk</b>",
+    icon: "storage",
+    link: "/removals/storage/"
+  },
+  {
+    title: "Man & Van",
+    description: "Fast, reliable transport for single items, student moves and small apartment loads.",
+    price: "From <b>£45/hr</b>",
+    icon: "truck",
+    link: "/removals/man-and-van/"
+  }
+];
 
-const coreServices = servicesRegistry.filter((s) => s.tier === 'core');
-const specialistServices = servicesRegistry.filter((s) => s.tier === 'specialist');
+const specialistServices = [
+  { title: "Piano Removals", desc: "Uprights & baby grands", link: "/removals/piano-removals/", icon: "star" },
+  { title: "Fine Art & Antiques", desc: "Custom crating & white glove", link: "/removals/fine-art-and-antiques-removals/", icon: "shield" },
+  { title: "Furniture Assembly", desc: "Flat-pack & heavy items", link: "/removals/furniture-removals/", icon: "home" },
+  { title: "Long Distance", desc: "London to UK-wide routes", link: "/removals/long-distance-removals/", icon: "pin" },
+  { title: "Student Removals", desc: "Term moves & storage", link: "/removals/student-removals/", icon: "box" },
+  { title: "Same-Day Urgency", desc: "Emergency relocations", link: "/removals/same-day-removals/", icon: "clock" }
+];
+
+const {
+  eyebrow = "Our services",
+  title = "Every kind of move, handled by one team.",
+  ctaText = "View all services",
+  ctaLink = "/removals/",
+  services = defaultServices,
+  showSpecialistRow = false
+} = Astro.props;
 ---
 
-<section class="py-12 lg:py-16" aria-labelledby="services-heading">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center max-w-2xl mx-auto mb-10">
-      <div class="text-xs font-bold uppercase tracking-widest text-royal mb-2">Comprehensive Moving Solutions</div>
-      <h2 id="services-heading" class="text-3xl sm:text-4xl font-black text-navy dark:text-pearl tracking-tight">
-        Our Removal Services
-      </h2>
-      <p class="text-sm sm:text-base text-surface-600 dark:text-surface-400 mt-2">
-        Expertly equipped for London properties — from Victorian mansion flats and terraced cottages to large detached homes.
-      </p>
-    </div>
-
-    <!-- 6 Core Services Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-      {coreServices.map((service) => (
-        <ServiceCard
-          title={service.title}
-          slug={service.slug}
-          summary={service.summary}
-          icon={service.icon}
-          priceFrom={service.priceFrom}
-          priceUnit={service.priceUnit}
-        />
-      ))}
-    </div>
-
-    <!-- Specialist Services Row -->
-    {showSpecialistRow && (
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-head section-head--split reveal">
       <div>
-        <div class="flex items-center gap-4 mb-6">
-          <h3 class="text-sm font-bold uppercase tracking-wider text-surface-500 dark:text-surface-400 whitespace-nowrap">
-            Specialist Services
-          </h3>
-          <div class="h-px bg-surface-200 dark:bg-white/10 w-full"></div>
-        </div>
+        <span class="eyebrow">{eyebrow}</span>
+        <h2>{title}</h2>
+      </div>
+      <a href={ctaLink} class="btn btn--ghost">
+        {ctaText} <svg class="arrow"><use href="#i-arrow"/></svg>
+      </a>
+    </div>
 
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
-          {specialistServices.map((service) => (
-            <ServiceCard
-              title={service.title}
-              slug={service.slug}
-              summary={service.summary}
-              icon={service.icon}
-              isSpecialist={true}
-            />
+    <div class="services">
+      {services.map((s) => {
+        if (s.isFeature) {
+          return (
+            <a href={s.link} class="service service--feature reveal">
+              <div class="service__body">
+                <span class="icon-tile"><svg><use href={`#i-${s.icon}`}/></svg></span>
+                <h3>{s.title}</h3>
+                <p>{s.description}</p>
+                {s.features && (
+                  <ul class="service__list">
+                    {s.features.map((f) => (
+                      <li><svg><use href="#i-check-circle"/></svg>{f}</li>
+                    ))}
+                  </ul>
+                )}
+                <div class="service__foot">
+                  <span class="service__price" set:html={s.price}></span>
+                  <span class="service__arrow"><svg><use href="#i-arrow"/></svg></span>
+                </div>
+              </div>
+              <div class="photo">
+                <img src={s.photoUrl || '/images/house-removals-north-west-london.webp'} alt={s.photoAlt || s.title} width="768" height="1024" loading="lazy" />
+                <div class="photo__overlay-badge">
+                  <span class="live-dot"></span>
+                  <span>NW London &amp; Greater London</span>
+                </div>
+              </div>
+              {s.tag && <span class="tag">{s.tag}</span>}
+            </a>
+          );
+        }
+
+        return (
+          <a href={s.link} class="service reveal">
+            <span class="icon-tile"><svg><use href={`#i-${s.icon}`}/></svg></span>
+            <h3>{s.title}</h3>
+            <p>{s.description}</p>
+            <div class="service__foot">
+              <span class="service__price" set:html={s.price}></span>
+              <span class="service__arrow"><svg><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+        );
+      })}
+    </div>
+
+    {showSpecialistRow && (
+      <div style="margin-top: 36px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-xl); padding: clamp(20px, 3vw, 32px); box-shadow: var(--shadow-sm);">
+        <div style="display: flex; flex-direction: column; md:flex-row; justify-content: space-between; align-items: flex-start; md:items-center; gap: 16px; margin-bottom: 20px;">
+          <div>
+            <span class="eyebrow" style="margin-bottom: 4px;">Specialist Moving Solutions</span>
+            <h4 style="font-size: 20px; font-weight: 700; color: var(--ink); margin: 0;">Need something specialised moved?</h4>
+          </div>
+          <a href="/removals/" class="btn btn--ghost btn--sm">View all 12 services <svg class="arrow"><use href="#i-arrow"/></svg></a>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px;">
+          {specialistServices.map((spec) => (
+            <a
+              href={spec.link}
+              style="display: flex; align-items: center; gap: 12px; padding: 12px 14px; background: var(--pearl); border: 1px solid var(--line); border-radius: var(--r-md); transition: transform .2s, border-color .2s; text-decoration: none;"
+            >
+              <span class="icon-tile" style="width: 36px; height: 36px; border-radius: 10px; background: var(--surface); color: var(--accent); flex-shrink: 0;">
+                <svg style="width: 18px; height: 18px;"><use href={`#i-${spec.icon}`}/></svg>
+              </span>
+              <div>
+                <strong style="display: block; font-size: 13.5px; color: var(--ink);">{spec.title}</strong>
+                <span style="display: block; font-size: 11.5px; color: var(--muted);">{spec.desc}</span>
+              </div>
+            </a>
           ))}
         </div>
       </div>

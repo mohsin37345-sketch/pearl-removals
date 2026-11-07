@@ -1,0 +1,42 @@
+{
+  "name": "Sloane Square",
+  "slug": "sloane-square",
+  "parent": "chelsea",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "SW1",
+    "SW3"
+  ],
+  "metaTitle": "Removals in Sloane Square, Chelsea | Pearl Removals",
+  "metaDescription": "Professional removals in Sloane Square, Chelsea (SW1, SW3). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides distinguished residential removals surrounding prestigious Sloane Square in Chelsea SW1 and SW3. At the junction of King’s Road and Sloane Street, this vibrant architectural hub features grand Victorian red-brick mansion apartments and Regency townhouses. Our skilled moving teams deliver prompt, confidential, and damage-free moving services. The junction between Chelsea and Belgravia features busy pedestrian crossways, Royal Court Theatre crowds, and tight residential mews. We schedule our vehicle arrivals to beat morning congestion, ensuring an orderly, efficient transfer into your new London home.",
+  "whatMovingHereInvolves": "Operating around Sloane Square involves coordinating moves around active pedestrian flows, luxury shopping traffic, and the Royal Court Theatre. Loading outside mansion flats requires pre-booked RBKC parking suspensions and coordination with building porters for service lift access. Our crews lay protective floor runners and padded lift blankets.",
+  "landmarks": [
+    "Royal Court Theatre",
+    "Peter Jones Department Store",
+    "Venus Fountain"
+  ],
+  "nearbyMicroAreas": [
+    "kings-road",
+    "cheyne-walk",
+    "sloane-street"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you coordinate with building porters for moves near Sloane Square?",
+      "answer": "Yes. We communicate with building management in advance to confirm lift access times and install protective lift padding.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange RBKC parking suspensions near Sloane Square?",
+      "answer": "Yes. We submit official parking bay suspension applications directly to the Royal Borough of Kensington & Chelsea.",
+      "display": true
+    },
+    {
+      "question": "Can your team dismantle and reassemble large modular wardrobes and beds?",
+      "answer": "Yes. Our moving teams carry full toolkits to take down and rebuild beds, dining tables, and modular wardrobes.",
+      "display": true
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Crouch End Broadway",
+  "slug": "crouch-end-broadway",
+  "parent": "crouch-end",
+  "premium": false,
+  "status": "published",
+  "postcodes": [
+    "N8"
+  ],
+  "metaTitle": "Removals in Crouch End Broadway, Crouch End | Pearl Removals",
+  "metaDescription": "Professional removals in Crouch End Broadway, Crouch End (N8). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers dependable house and flat removals across Crouch End Broadway in N8. Famed for its iconic red-brick Victorian Clock Tower, independent bakeries, and bustling village cafes, the Broadway contains attractive upper maisonettes and period conversions. Our experienced moving crews provide punctual, structured, and affordable moving services. Distinctive red-brick clock tower views and bustling shopping streets require careful vehicle positioning on side roads like Weston Park. Our team navigates multi-storey period flats with enthusiasm, ensuring heavy furniture is delivered without hassle.",
+  "whatMovingHereInvolves": "Crouch End Broadway is the vibrant commercial core of N8, with continuous bus routes and shopper pedestrian traffic. Direct curbside loading on the Broadway requires pre-booked Haringey Council parking suspensions or scheduling early morning moves before shops open. Our porters navigate narrow stairwells and entrance halls with floor runners.",
+  "landmarks": [
+    "Crouch End Clock Tower",
+    "Hornsey Town Hall Arts Centre",
+    "The Broadway Cafe Strip"
+  ],
+  "nearbyMicroAreas": [
+    "hornsey",
+    "stroud-green"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you manage parking suspensions along Crouch End Broadway?",
+      "answer": "We apply directly to Haringey Council for official bay suspensions on connecting residential turnings to avoid blocking main road bus routes.",
+      "display": true
+    },
+    {
+      "question": "Can you move heavy furniture up narrow stairs in Broadway upper flats?",
+      "answer": "Yes. Our moving porters specialize in narrow staircase maneuvers, using protective quilted blankets and careful disassembly.",
+      "display": true
+    },
+    {
+      "question": "Do you offer early morning moves to avoid town centre congestion?",
+      "answer": "Yes. We frequently arrange early morning starts before 08:00 AM to complete loading before local retail traffic builds up.",
+      "display": true
+    }
+  ]
+}

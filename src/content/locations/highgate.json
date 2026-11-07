@@ -22,6 +22,10 @@
   "travelInfo": "Rapid transit via Highgate Hill, Archway Road (A1), and Hampstead Lane connects Highgate directly to our Cricklewood dispatch headquarters in approximately 15 minutes.",
   "nearbyAreas": [
     {
+      "name": "Crouch End",
+      "slug": "crouch-end"
+    },
+    {
       "name": "Hampstead",
       "slug": "hampstead"
     },
@@ -30,12 +34,12 @@
       "slug": "muswell-hill"
     },
     {
-      "name": "Finchley",
-      "slug": "finchley"
+      "name": "East Finchley",
+      "slug": "east-finchley"
     },
     {
-      "name": "Kentish Town",
-      "slug": "kentish-town"
+      "name": "Archway & Tufnell Park",
+      "slug": "archway-and-tufnell-park"
     }
   ],
   "servicesOffered": [

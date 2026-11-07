@@ -1,0 +1,40 @@
+{
+  "name": "Hornsey",
+  "slug": "hornsey",
+  "parent": "crouch-end",
+  "premium": false,
+  "status": "published",
+  "postcodes": [
+    "N8"
+  ],
+  "metaTitle": "Removals in Hornsey, Crouch End | Pearl Removals",
+  "metaDescription": "Professional removals in Hornsey, Crouch End (N8). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides reliable, fully insured house removals throughout Hornsey N8. From Victorian artisan terraced homes along Hornsey High Street and Priory Road to contemporary apartments in the New River Village development, Hornsey offers vibrant family living. Our professional moving teams deliver organized, punctual, and damage-free moving care. Sloping Victorian terraced streets near Hornsey station feature classic front gardens and narrow entrance hallways. We dismantle large wardrobes and dining suites so they pass through doors effortlessly, keeping your walls and woodwork pristine.",
+  "whatMovingHereInvolves": "Moving in Hornsey involves quiet residential streets with resident parking bays on both sides. In modern developments like New River Village, moves require liaising with on-site concierges and accessing underground parking bays with specific height clearances. Our porters use heavy-duty floor runners to protect interior hallways and staircases.",
+  "landmarks": [
+    "Hornsey High Street",
+    "Priory Park",
+    "Hornsey Railway Station"
+  ],
+  "nearbyMicroAreas": [
+    "crouch-end-broadway",
+    "stroud-green"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you arrange Haringey Council parking suspensions in Hornsey?",
+      "answer": "Yes. We submit official parking bay suspension requests to Haringey Council to secure legal loading space outside your home.",
+      "display": true
+    },
+    {
+      "question": "Can you coordinate moves in New River Village apartment developments?",
+      "answer": "Yes. We liaise with building concierges, check vehicle height clearances for basement docks, and reserve service elevators.",
+      "display": true
+    },
+    {
+      "question": "Do you supply durable moving boxes and bubble wrap in Hornsey?",
+      "answer": "Yes. We supply double-walled boxes, bubble wrap, packing tape, and wardrobe cartons delivered in advance.",
+      "display": true
+    }
+  ]
+}

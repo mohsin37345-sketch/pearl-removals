@@ -1,0 +1,42 @@
+{
+  "name": "Brackenbury Village",
+  "slug": "brackenbury-village",
+  "parent": "shepherds-bush-and-white-city",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "W12"
+  ],
+  "metaTitle": "Removals in Brackenbury Village, Shepherd's Bush & White Cit",
+  "metaDescription": "Professional removals in Brackenbury Village, Shepherd's Bush & White City (W12). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers tailored, fully insured removals across charming Brackenbury Village in W12. Tucked between Shepherd’s Bush and Hammersmith, this coveted residential quarter features pastel-coloured Victorian cottages, tree-lined avenues, and acclaimed local primary schools. Our professional moving crews manage family relocations with friendly efficiency and diligent care. The narrow residential avenues here feature delicate Victorian wrought ironwork and tight curbside parking that require proactive council permits. Our agile Luton vans navigate the leafy streets effortlessly, ensuring family belongings arrive safely and are positioned in your chosen rooms.",
+  "whatMovingHereInvolves": "Brackenbury Village is characterized by narrow residential roads like Bradmore Park Road, Cardross Street, and Aldensley Road with resident permit bays on both sides. Parking removal vehicles requires precise placement to avoid obstructing residential traffic. Our porters specialize in navigating period front porches, narrow hallway turnings, and multi-flight stairways.",
+  "landmarks": [
+    "Brackenbury Road Delis",
+    "Ravenscourt Park Border",
+    "Local Primary Academies"
+  ],
+  "nearbyMicroAreas": [
+    "white-city",
+    "wood-lane",
+    "askew-road",
+    "brook-green"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you arrange Hammersmith & Fulham parking suspensions in Brackenbury Village?",
+      "answer": "Yes. We submit all parking bay suspension paperwork directly to H&F Council to guarantee loading space outside your cottage.",
+      "display": true
+    },
+    {
+      "question": "Can you move heavy furniture up narrow Victorian cottage stairwells?",
+      "answer": "Yes. Our moving porters specialize in narrow staircase maneuvers, using protective quilted blankets and careful disassembly.",
+      "display": true
+    },
+    {
+      "question": "How quickly can your vans reach Brackenbury Village from Cricklewood?",
+      "answer": "Via the A40 Westway corridor, our vehicles reach Brackenbury Village addresses in less than 20 minutes from our NW2 depot.",
+      "display": true
+    }
+  ]
+}

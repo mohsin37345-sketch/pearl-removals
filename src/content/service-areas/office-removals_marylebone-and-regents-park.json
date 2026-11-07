@@ -1,0 +1,38 @@
+{
+  "service": "office-removals",
+  "location": "marylebone-and-regents-park",
+  "status": "published",
+  "uniqueIntro": "Pearl Removals provides discreet, sophisticated commercial office relocations throughout Marylebone, Regent’s Park, and the premier NW1 and W1 business enclaves. From Harley Street and Wimpole Street medical clinics, dental surgeries, and private consulting rooms to boutique investment funds, legal practices, and architectural studios along Baker Street, Marylebone High Street, and Portland Place, our commercial moving specialists execute relocations with exceptional attention to detail, complete confidentiality, and white-glove professionalism. Operating from our central NW2 logistics hub, our vehicles navigate the Marylebone commercial network seamlessly via the A5 Edgware Road and Marylebone Road corridors.",
+  "localAngle": "Commercial properties in Marylebone are predominantly housed within prestigious Georgian and Regency period townhouses or converted Edwardian mansion buildings. Relocating businesses here requires managing narrow period entranceways, delicate architectural mouldings, and strict Westminster City Council Controlled Parking regulations. Red routes along Marylebone Road require meticulous loading coordination, while medical practices around Harley Street demand certified handling of high-value diagnostic apparatus, confidential patient archives, and strict adherence to hygiene standards.",
+  "whatsIncluded": [
+    "Senior commercial project coordinator overseeing the entire move from planning to execution",
+    "Specialist crating and transit for sensitive medical devices, optical equipment, and consulting furniture",
+    "Numbered security-sealed crates for confidential client records, legal briefs, and patient medical files",
+    "Full IT decommissioning, anti-static protective wrapping, and desk-by-desk hardware reconnection",
+    "Bespoke banister guards, wall padding, and carpet runners for historic Georgian townhouse interiors",
+    "Out-of-hours, evening, and weekend relocation services to ensure uninterrupted client appointments"
+  ],
+  "priceGuidance": "Commercial practice and office moves in Marylebone start from £750, with bespoke fixed quotes tailored to your exact inventory and building access requirements.",
+  "faqs": [
+    {
+      "question": "Do you have experience moving medical and consulting practices on Harley Street?",
+      "answer": "Yes. We regularly handle specialized moves for private doctors, dental clinics, and wellness practices in Harley Street and Wimpole Street, ensuring sensitive diagnostic tools and patient records are handled with utmost care.",
+      "display": true
+    },
+    {
+      "question": "How do you arrange Westminster parking suspensions for commercial moves in Marylebone?",
+      "answer": "We coordinate directly with Westminster City Council highways department to reserve commercial loading bays outside your premises, handling all permit paperwork well in advance.",
+      "display": true
+    },
+    {
+      "question": "Can you move confidential financial and legal files with chain-of-custody tracking?",
+      "answer": "Yes. We provide tamper-evident numbered security seals, locked lidded crates, and dedicated move manifests for sensitive legal, financial, and client files.",
+      "display": true
+    },
+    {
+      "question": "How do you safeguard historic Georgian doorways and staircases in Marylebone offices?",
+      "answer": "We install custom-fitted banister padding, protective foam corner guards, and heavy-duty floor runners across all entrance halls and staircases before carrying any equipment.",
+      "display": true
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "name": "Kensington",
+  "slug": "kensington",
+  "region": "west-london",
+  "phase": 3,
+  "premium": true,
+  "boroughs": [
+    "Kensington & Chelsea"
+  ],
+  "postcodes": [
+    "W8"
+  ],
+  "distanceMiles": 5.5,
+  "metaTitle": "House Removals Kensington W8 | Pearl Removals",
+  "metaDescription": "Discreet, premier removals in Kensington W8. White-glove home moving, fine art crating & RBKC parking management. Call 020 3151 8452 for a free quote.",
+  "intro": "Pearl Removals provides exceptional, white-glove residential removals throughout prestigious Kensington and the W8 postcode district. From grand Victorian townhouses along Kensington Church Street and the private Phillimore Estate to exclusive stucco residences around Campden Hill and Kensington Palace Gardens, our experienced moving crews manage every relocation with meticulous care, absolute discretion, and flawless logistical coordination. Based just a short transit away at our Cricklewood dispatch depot, our vehicles reach Kensington swiftly via the A40 Westway and Holland Park Avenue corridors, ensuring punctual arrival times, bespoke packing solutions, and total property protection. Our dedicated move coordinators conduct thorough pre-move surveys, calculate exact vehicle payload requirements, and provide complete packing supplies to ensure that every stage of your move in Kensington is handled with absolute punctuality, courteous communication, and total care.",
+  "localKnowledge": "Kensington is renowned for its architectural grandeur, embassies, and historic garden squares. Moving properties here requires an intricate understanding of the Royal Borough of Kensington and Chelsea (RBKC) street regulations. Narrow residential streets such as Gordon Place and Hornton Street present tight turning circles for large vehicles, while high-density commercial sections on Kensington High Street demand disciplined early morning van staging. Many properties back directly onto tranquil private communal garden enclosures where vehicle access is restricted and garden gates remain locked, requiring careful item routing through front porticos.",
+  "propertyTypes": "The architectural fabric of Kensington comprises magnificent five-storey Victorian and Georgian townhouses, raised-ground period conversions, private mews houses along cobbled lanes, and luxury mansion flats. Residences frequently feature delicate wrought-iron balconies, narrow original basement stairwells, high ceilings with ornate plaster cornices, and polished hardwood parquet floors that require specialist protective runners during moving operations.",
+  "parkingAndAccess": "RBKC enforces strict Controlled Parking Zone (CPZ) regulations across all streets in W8. Positioning a removal vehicle outside residences on Campden Hill Road, Kensington Church Street, or Phillimore Gardens requires pre-arranged parking bay suspensions through the council highways department. Our administrative team manages all permit bookings, calculating vehicle space accurately and ensuring statutory warning signage is posted well ahead of your moving date.",
+  "transportLinks": "Exceptional transport links via High Street Kensington (District and Circle lines), Notting Hill Gate (Central, District, and Circle lines), and Queensway, alongside multiple bus arteries.",
+  "travelInfo": "Direct vehicular access via the Westway (A40) connects Kensington to our NW2 transport base in under 25 minutes, facilitating rapid equipment dispatch and additional porter support.",
+  "nearbyAreas": [
+    {
+      "name": "Holland Park",
+      "slug": "holland-park"
+    },
+    {
+      "name": "Notting Hill",
+      "slug": "notting-hill"
+    },
+    {
+      "name": "Chelsea",
+      "slug": "chelsea"
+    },
+    {
+      "name": "Knightsbridge & Belgravia",
+      "slug": "knightsbridge-and-belgravia"
+    },
+    {
+      "name": "Hammersmith",
+      "slug": "hammersmith"
+    },
+    {
+      "name": "Shepherd's Bush & White City",
+      "slug": "shepherds-bush-and-white-city"
+    }
+  ],
+  "servicesOffered": [
+    "House Removals Kensington",
+    "Fine Art Removals W8",
+    "Piano Removals Kensington",
+    "Packing Services W8",
+    "White-Glove Removals"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you arrange RBKC parking suspensions in Kensington?",
+      "answer": "Yes. We manage the entire parking bay suspension process directly with the Royal Borough of Kensington & Chelsea, ensuring official signs are erected on time outside your residence.",
+      "display": true
+    },
+    {
+      "question": "Can you handle valuable antiques and fine art pieces in W8?",
+      "answer": "Yes. Our specialist fine art handling team crafts bespoke timber crates, uses acid-free wrapping materials, and transports delicate oil paintings and sculptures in climate-controlled vehicles.",
+      "display": true
+    },
+    {
+      "question": "How do you protect period staircases and walls in Kensington townhouses?",
+      "answer": "Our porters fit padded banister covers, foam corner protectors, and heavy-duty floor runners across all communal stairways and hallways before any item is lifted.",
+      "display": true
+    },
+    {
+      "question": "What is the best time to schedule moves along Kensington High Street?",
+      "answer": "We typically arrange early morning arrivals before 08:00 AM to take advantage of commercial loading windows and avoid peak commuter pedestrian traffic.",
+      "display": true
+    }
+  ],
+  "premiumAngle": "Kensington’s distinguished townhouses, prestigious embassies, and valuable antique collections require a truly white-glove moving standard. We offer dedicated crating, comprehensive fine art transit insurance, and discreet, uniformed personnel.",
+  "status": "published"
+}

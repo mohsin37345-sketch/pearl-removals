@@ -1,0 +1,42 @@
+{
+  "name": "Phillimore Estate",
+  "slug": "phillimore-estate",
+  "parent": "kensington",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "W8"
+  ],
+  "metaTitle": "Removals in Phillimore Estate, Kensington | Pearl Removals",
+  "metaDescription": "Professional removals in Phillimore Estate, Kensington (W8). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides exceptional, white-glove removals throughout the prestigious Phillimore Estate in Kensington W8. Spanning Upper Phillimore Gardens, Phillimore Walk, and Argyll Road, this private enclave contains some of London’s finest Victorian villas and stucco residences. Our skilled moving teams deliver impeccable service, total discretion, and complete property protection. We deploy experienced white-glove crews equipped with specialized floor runners, quilted door blankets, and heavy-duty stair armor to prevent any scuffs to historic skirting boards. Every consignment benefits from full insurance, punctual dispatch, and structured room-by-room reassembly.",
+  "whatMovingHereInvolves": "Substantial residences on the Phillimore Estate feature four to five storeys, sweeping stone entrance stairways, high ornate ceilings, and valuable interior finishes. Our removal porters fit tailored neoprene floor coverings across delicate parquet and install protective banister jackets on sweeping timber handrails. We coordinate parking suspensions along wide residential avenues to ensure our Luton vehicles stand directly adjacent to garden gates.",
+  "landmarks": [
+    "Upper Phillimore Gardens",
+    "Holland Park Border",
+    "Stafford Terrace Museum"
+  ],
+  "nearbyMicroAreas": [
+    "campden-hill",
+    "kensington-high-street",
+    "kensington-church-street",
+    "kensington-palace-gardens"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you manage moves for large five-storey villas on the Phillimore Estate?",
+      "answer": "Yes. We routinely provide multi-vehicle moves with dedicated supervisors, full packing teams, and white-glove furniture assembly.",
+      "display": true
+    },
+    {
+      "question": "How do you protect French-polished banisters and stone stairs in W8?",
+      "answer": "We install custom padded banister sleeves and heavy-duty floor runners across all communal stairs and hallways before loading.",
+      "display": true
+    },
+    {
+      "question": "Are your Phillimore Estate moving crews security-vetted?",
+      "answer": "Yes. All our personnel are uniformed, full-time employed, and trained to uphold strict client privacy and confidentiality.",
+      "display": true
+    }
+  ]
+}

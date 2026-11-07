@@ -23,20 +23,28 @@
   "travelInfo": "Direct vehicular access via the A404 Watford Road and A406 North Circular connects Harrow properties to our Cricklewood dispatch base in approximately 20 minutes.",
   "nearbyAreas": [
     {
-      "name": "Stanmore",
-      "slug": "stanmore"
+      "name": "Pinner",
+      "slug": "pinner"
+    },
+    {
+      "name": "Northwood",
+      "slug": "northwood"
+    },
+    {
+      "name": "Ealing",
+      "slug": "ealing"
     },
     {
       "name": "Wembley",
       "slug": "wembley"
     },
     {
-      "name": "Wembley Park",
-      "slug": "wembley-park"
+      "name": "Harrow on the Hill",
+      "slug": "harrow-on-the-hill"
     },
     {
-      "name": "Colindale & Kingsbury",
-      "slug": "colindale-and-kingsbury"
+      "name": "Harrow Weald",
+      "slug": "harrow-weald"
     }
   ],
   "servicesOffered": [

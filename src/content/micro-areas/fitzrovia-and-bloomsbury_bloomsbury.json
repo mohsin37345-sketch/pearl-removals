@@ -1,0 +1,41 @@
+{
+  "name": "Bloomsbury",
+  "slug": "bloomsbury",
+  "parent": "fitzrovia-and-bloomsbury",
+  "premium": false,
+  "status": "published",
+  "postcodes": [
+    "WC1"
+  ],
+  "metaTitle": "Removals in Bloomsbury, Fitzrovia & Bloomsbury | Pearl Remov",
+  "metaDescription": "Professional removals in Bloomsbury, Fitzrovia & Bloomsbury (WC1). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers dependable, fully insured removals across historic, literary Bloomsbury in WC1. Famed for the British Museum, University of London colleges, and handsome Georgian garden squares like Bedford Square and Gordon Square, Bloomsbury requires respectful moving care. Our experienced moving crews handle period townhouses and academic flats with calm precision. Stately Georgian squares and academic quarter townhouses feature tall stone staircases, basement lightwells, and ornate cornicing. We install padded banister protectors and stair runners, ensuring period architecture remains completely unscathed.",
+  "whatMovingHereInvolves": "Bloomsbury features grand four-storey Georgian brick townhouses, listed timber panelling, and Bedford Estate architectural covenants. Navigating moving operations here involves liaising with Camden Council for parking bay suspensions and scheduling loading outside peak university lecture hours. Our porters use heavy-duty floor runners to protect delicate timber floorboards.",
+  "landmarks": [
+    "British Museum",
+    "Bedford Square Garden",
+    "Senate House Library"
+  ],
+  "nearbyMicroAreas": [
+    "fitzrovia",
+    "charlotte-street",
+    "russell-square"
+  ],
+  "localFaqs": [
+    {
+      "question": "Can you transport delicate book collections and antique furniture in Bloomsbury?",
+      "answer": "Yes. We provide specialized book cartons, bubble wrap, and acid-free tissue for historic literature and period timber furnishings.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange Camden Council parking suspensions on Bloomsbury squares?",
+      "answer": "Yes. We handle all paperwork directly with the London Borough of Camden to reserve parking bays outside your property.",
+      "display": true
+    },
+    {
+      "question": "How do you safeguard historic Georgian doorways and staircases in WC1?",
+      "answer": "We install custom-fitted banister padding, protective foam corner guards, and heavy-duty floor runners across all entrance halls.",
+      "display": true
+    }
+  ]
+}

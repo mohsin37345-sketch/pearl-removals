@@ -1,0 +1,41 @@
+{
+  "name": "Mount Street",
+  "slug": "mount-street",
+  "parent": "mayfair",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "W1"
+  ],
+  "metaTitle": "Removals in Mount Street, Mayfair | Pearl Removals",
+  "metaDescription": "Professional removals in Mount Street, Mayfair (W1). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers white-glove residential removals along distinguished Mount Street in Mayfair W1. Celebrated for its striking red terracotta architecture, luxury boutique fashion houses, and world-class dining, Mount Street contains exquisite period apartments. Our specialist moving teams provide attentive, confidential, and damage-free moving services. Red terracotta mansion blocks and high-end fashion boutiques along Mount Street dictate meticulous loading permissions from Westminster City Council. Our liveried moving crew uses padded elevator covers and floor armor, protecting expensive finishes throughout your building.",
+  "whatMovingHereInvolves": "Mount Street is an active luxury retail and culinary thoroughfare between Berkeley Square and South Audley Street. Street parking is strictly regulated. Our operations team coordinates with Westminster Council to reserve commercial loading bays, scheduling moves during quiet morning hours. Porters navigate narrow period stairways with custom padded covers.",
+  "landmarks": [
+    "Scott's Restaurant",
+    "Mount Street Gardens",
+    "Goyard Mayfair"
+  ],
+  "nearbyMicroAreas": [
+    "grosvenor-square",
+    "berkeley-square",
+    "park-lane"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you coordinate moves on active retail streets like Mount Street?",
+      "answer": "We schedule loading during early morning permitted hours before boutiques and restaurants open to traffic.",
+      "display": true
+    },
+    {
+      "question": "Can you transport delicate haute couture and wardrobe collections in W1?",
+      "answer": "Yes. We supply heavy-duty wardrobe cartons with metal rails, keeping garments hanging in pristine condition.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange Westminster parking suspensions for Mount Street apartments?",
+      "answer": "Yes. We handle all paperwork and liaison with Westminster City Council to ensure legal loading bays are reserved.",
+      "display": true
+    }
+  ]
+}

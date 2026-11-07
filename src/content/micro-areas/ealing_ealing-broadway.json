@@ -1,0 +1,42 @@
+{
+  "name": "Ealing Broadway",
+  "slug": "ealing-broadway",
+  "parent": "ealing",
+  "premium": false,
+  "status": "published",
+  "postcodes": [
+    "W5"
+  ],
+  "metaTitle": "Removals in Ealing Broadway, Ealing | Pearl Removals",
+  "metaDescription": "Professional removals in Ealing Broadway, Ealing (W5). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers dependable removals across bustling Ealing Broadway W5. As the commercial and transport heart of Ealing with Elizabeth line connections, this district features contemporary town-centre apartments, converted Victorian flats, and traditional homes off Haven Green. Our punctual moving teams ensure an orderly, stress-free relocation. Modern high-rise towers near the Elizabeth line interchange require advance booking of service bays and freight lifts. Our coordinators manage all building liaison, ensuring your furniture, IT equipment, and personal effects are carried directly into your high-rise residence.",
+  "whatMovingHereInvolves": "Operating near Ealing Broadway station and The Broadway shopping precinct involves navigating pedestrian crossings, bus lanes, and strict Controlled Parking Zones. Loading outside town-centre apartments requires pre-arranged Ealing Council parking suspensions or use of dedicated building service bays. Our teams are experienced with freight lift bookings and security concierges.",
+  "landmarks": [
+    "Ealing Broadway Station",
+    "Haven Green",
+    "Ealing Broadway Shopping Centre"
+  ],
+  "nearbyMicroAreas": [
+    "ealing-common",
+    "pitshanger",
+    "west-ealing",
+    "hanger-hill"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you coordinate moves in town-centre apartments near Ealing Broadway?",
+      "answer": "We arrange parking bay suspensions on connecting residential avenues or liaise with building management for service dock access.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange Ealing Council parking suspensions in W5?",
+      "answer": "Yes. We manage the entire parking suspension application process with Ealing Council to secure legal loading space.",
+      "display": true
+    },
+    {
+      "question": "Can you help dismantle and rebuild modular furniture and office desks?",
+      "answer": "Yes. Our moving teams carry full toolkits to take down and rebuild beds, desks, and wardrobes efficiently.",
+      "display": true
+    }
+  ]
+}

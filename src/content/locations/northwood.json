@@ -1,0 +1,75 @@
+{
+  "name": "Northwood",
+  "slug": "northwood",
+  "region": "outer-north-west-london",
+  "phase": 3,
+  "premium": true,
+  "boroughs": [
+    "Hillingdon"
+  ],
+  "postcodes": [
+    "HA6"
+  ],
+  "distanceMiles": 10,
+  "metaTitle": "House Removals Northwood HA6 | Pearl Removals",
+  "metaDescription": "Premier house removals in Northwood HA6 & Moor Park. Luxury detached homes, fine art crating & Hillingdon parking. Call 020 3151 8452 for a free quote.",
+  "intro": "Pearl Removals delivers white-glove, fully insured removals across prestigious Northwood, Moor Park, and the HA6 postcode district. From palatial private residences in gated Moor Park and substantial detached family estates along Northwood Hills to leafy properties bordering Batchworth Heath and Ruislip Woods, our experienced moving crews manage high-value relocations with seamless organization, total discretion, and complete property care. Operating with direct connections to North West London arteries, our vehicles reach Northwood swiftly from our Cricklewood dispatch base. Our comprehensive services include full pre-move packing, custom timber crating for delicate heirlooms and grand pianos, and white-glove placement of all furniture, ensuring an effortless moving experience designed specifically around the refined standards of Northwood homeowners, supported by comprehensive goods-in-transit insurance and attentive move managers.",
+  "localKnowledge": "Northwood is renowned for its affluent suburban character, renowned golf courses, and NATO military headquarters. Moving properties in exclusive private estates such as Moor Park involves gated barrier access, security protocols, and private estate speed limits. Our operations team coordinates with estate security offices in advance to ensure smooth entry for our removal vehicles and crew.",
+  "propertyTypes": "Northwood features remarkable residential properties: sprawling six- to eight-bedroom detached homes with carriage driveways, tennis courts, and swimming pools, architect-designed contemporary villas, and luxury low-rise apartment blocks. Properties frequently contain grand entrance atriums, delicate marble flooring, and expansive open-plan living areas.",
+  "parkingAndAccess": "The London Borough of Hillingdon enforces parking restrictions near Northwood tube station and Green Lane commercial areas. In Moor Park and residential avenues, extensive private driveways provide ample space for large removal lorries, where we apply heavy-duty ground protective mats to safeguard paved surfaces.",
+  "transportLinks": "Convenient rail links via Northwood and Northwood Hills stations on the Metropolitan line (direct into Baker Street, Kings Cross, and the City), with direct road links to the M25 Junction 17 / 18.",
+  "travelInfo": "Convenient vehicular access via Rickmansworth Road and the A404 connects Northwood to our Cricklewood depot in approximately 25 to 30 minutes.",
+  "nearbyAreas": [
+    {
+      "name": "Pinner",
+      "slug": "pinner"
+    },
+    {
+      "name": "Harrow",
+      "slug": "harrow"
+    },
+    {
+      "name": "Stanmore",
+      "slug": "stanmore"
+    },
+    {
+      "name": "Radlett",
+      "slug": "radlett"
+    },
+    {
+      "name": "Bushey & Elstree",
+      "slug": "bushey-and-elstree"
+    }
+  ],
+  "servicesOffered": [
+    "House Removals Northwood",
+    "Moor Park Estate Relocations",
+    "Fine Art Packing HA6",
+    "Piano Removals Northwood",
+    "Complete Unpacking Services"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you coordinate moves within the gated Moor Park estate?",
+      "answer": "We register vehicle details and crew credentials with Moor Park estate security prior to moving day, ensuring seamless gate clearance.",
+      "display": true
+    },
+    {
+      "question": "Can you handle grand pianos and high-value antique furnishings in HA6?",
+      "answer": "Yes. Our specialist team uses piano dollies, heavy-duty quilted covers, and bespoke wooden crating for concert grands and antique pieces.",
+      "display": true
+    },
+    {
+      "question": "Do you offer a complete turnkey packing and unpacking service in Northwood?",
+      "answer": "Yes. Our team can pack your entire home before moving day, transport your possessions, and unpack all contents directly onto shelves and into cupboards.",
+      "display": true
+    },
+    {
+      "question": "What insurance is included with Northwood residential moves?",
+      "answer": "We provide £50,000 Goods in Transit insurance as standard, with options to extend cover for high-value art, antiques, and luxury furnishings.",
+      "display": true
+    }
+  ],
+  "premiumAngle": "Northwood’s prestigious Moor Park residences, private estates, and luxury interiors require white-glove moving standards. We offer custom timber crating, comprehensive goods-in-transit insurance, and discreet, uniformed personnel.",
+  "status": "published"
+}

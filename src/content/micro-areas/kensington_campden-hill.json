@@ -1,0 +1,42 @@
+{
+  "name": "Campden Hill",
+  "slug": "campden-hill",
+  "parent": "kensington",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "W8"
+  ],
+  "metaTitle": "Removals in Campden Hill, Kensington | Pearl Removals",
+  "metaDescription": "Professional removals in Campden Hill, Kensington (W8). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers distinguished property removals across elevated Campden Hill in Kensington W8. Nestled between Notting Hill and Kensington High Street, this tranquil hilltop neighbourhood features handsome red-brick Victorian terraces, detached stucco villas, and peaceful communal gardens. Our moving specialists handle every relocation with calm efficiency and attentive care. Navigating the steep elevation and narrow turning heads of Aubrey Walk or Hillsleigh Road requires our seasoned driving hands and precision parking suspensions. We handle multi-tier properties with ease, taking care of delicate chandeliers, oil paintings, and solid timber furnishings.",
+  "whatMovingHereInvolves": "Campden Hill’s topography introduces steep gradients along roads like Campden Hill Square, Aubrey Walk, and Hillsleigh Road. Positioning heavy removal lorries on sloping carriageways requires specialized chocking, balanced loading, and cautious maneuvering. Our crews are expert at navigating narrow period front gardens, external basement lightwells, and spiral staircases.",
+  "landmarks": [
+    "Campden Hill Square",
+    "Aubrey House",
+    "Kensington Reservoir Gardens"
+  ],
+  "nearbyMicroAreas": [
+    "phillimore-estate",
+    "kensington-church-street",
+    "kensington-high-street",
+    "kensington-palace-gardens"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you handle vehicle parking on steep Campden Hill roads?",
+      "answer": "Our vehicles use heavy-duty commercial wheel chocks and hydraulic tail lifts to ensure stable, level loading on hilly streets.",
+      "display": true
+    },
+    {
+      "question": "Can you move grand pianos down basement staircases on Campden Hill?",
+      "answer": "Yes. We use specialized piano dolleys, protective quilted covers, and trained piano movers for complex staircase removals.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange RBKC parking suspensions around Campden Hill Square?",
+      "answer": "Yes. We apply directly to the Royal Borough of Kensington & Chelsea to reserve curbside space for your moving date.",
+      "display": true
+    }
+  ]
+}

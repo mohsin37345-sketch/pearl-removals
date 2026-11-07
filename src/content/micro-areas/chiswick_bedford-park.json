@@ -1,0 +1,42 @@
+{
+  "name": "Bedford Park",
+  "slug": "bedford-park",
+  "parent": "chiswick",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "W4"
+  ],
+  "metaTitle": "Removals in Bedford Park, Chiswick | Pearl Removals",
+  "metaDescription": "Professional removals in Bedford Park, Chiswick (W4). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides exceptional, white-glove removals across historic Bedford Park in Chiswick W4. Celebrated as the world’s first garden suburb, Bedford Park features exquisite Queen Anne revival residences designed by Norman Shaw, with distinctive red brick, decorative tile hanging, and painted timber balconies. We handle these architectural treasures with profound care. The architectural heritage of the worlds first garden suburb requires deep respect for Norman Shaw tile-hung facades, slender balustrades, and fragile fanlights. Our porters use bespoke corner guards and protective booties to preserve every historic surface during transit.",
+  "whatMovingHereInvolves": "Homes in Bedford Park, such as along Woodstock Road, Queen Anne’s Gardens, and Marlborough Crescent, feature delicate period woodwork, historic bay windows, and listed building protections. Navigating these narrow tree-lined avenues requires experienced heavy vehicle drivers. Our porters lay breathable floor protection and padded door jamb covers throughout your home.",
+  "landmarks": [
+    "St Michael and All Angels Church",
+    "Bedford Park Club",
+    "Norman Shaw Architecture"
+  ],
+  "nearbyMicroAreas": [
+    "chiswick-high-road",
+    "turnham-green",
+    "strand-on-the-green",
+    "grove-park"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you safeguard listed Queen Anne interiors in Bedford Park?",
+      "answer": "We fit custom-padded banister guards, door frame protectors, and floor runners to prevent contact with historic woodwork.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange Hounslow parking bay suspensions in Bedford Park?",
+      "answer": "Yes. We apply directly to the London Borough of Hounslow for official bay suspensions outside your property.",
+      "display": true
+    },
+    {
+      "question": "Can you move antique timber furniture and fine artworks safely?",
+      "answer": "Yes. Our specialist crating team builds bespoke timber packing crates and wraps delicate items in acid-free glassine paper.",
+      "display": true
+    }
+  ]
+}

@@ -3,9 +3,11 @@ import 'src/styles/global.css';
 import ConsentInit from 'theme/components/ConsentInit.astro';
 import SEOHead from 'theme/components/SEOHead.astro';
 import SchemaOrg from 'theme/components/SchemaOrg.astro';
+import SvgSprite from 'theme/components/SvgSprite.astro';
 import Header from 'theme/components/Header.astro';
 import Footer from 'theme/components/Footer.astro';
 import StickyMobileBar from 'theme/components/StickyMobileBar.astro';
+import SiteScripts from 'theme/components/SiteScripts.astro';
 import LazyScripts from 'theme/components/LazyScripts.astro';
 import { getPublishedAreas } from 'theme/utils/published';
 
@@ -25,6 +27,7 @@ interface Props {
   ogImageAlt?: string;
   publishedTime?: string;
   modifiedTime?: string;
+  showStickyBar?: boolean;
 }
 
 const {
@@ -42,21 +45,22 @@ const {
   ogImage,
   ogImageAlt,
   publishedTime,
-  modifiedTime
+  modifiedTime,
+  showStickyBar = true
 } = Astro.props;
 
 const publishedAreas = await getPublishedAreas();
 ---
 
 <!DOCTYPE html>
-<html lang="en-GB" dir="ltr" class="scroll-smooth">
+<html lang="en-GB" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     
-    <!-- 1. Consent Mode v2 & Theme Anti-Flash must be first -->
+    <!-- 1. Consent Mode v2 -->
     <ConsentInit />
 
-    <!-- 2. Meta, Canonical, Robots, Open Graph -->
+    <!-- 2. Meta, Canonical, Robots, Open Graph & Fonts -->
     <SEOHead
       title={title}
       description={description}
@@ -83,31 +87,36 @@ const publishedAreas = await getPublishedAreas();
     />
   </head>
 
-  <body class="bg-pearl dark:bg-navy-dark text-navy dark:text-pearl min-h-screen flex flex-col antialiased selection:bg-royal/20 selection:text-royal">
-    <!-- Accessible Skip to Content Link (WCAG 2.2 AA) -->
-    <a
-      href="#main-content"
-      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-[100] px-4 py-2 bg-royal text-white rounded-full font-bold shadow-xl focus:outline-none focus:ring-2 focus:ring-white"
-    >
+  <body>
+    <!-- SVG Icon Sprite -->
+    <SvgSprite />
+
+    <!-- Accessible Skip to Content Link -->
+    <a href="#main-content" class="visually-hidden">
       Skip to main content
     </a>
 
-    <!-- Sticky Floating Glass Header -->
+    <!-- Global Header (Top bar + Sticky Menu + Mega Dropdowns + Mobile Drawer) -->
     <Header />
 
-    <!-- Main Content Landmark -->
-    <main id="main-content" class="flex-grow focus:outline-none">
+    <!-- Main Landmark -->
+    <main id="main-content">
       <slot />
     </main>
 
-    <!-- Footer -->
+    <!-- Global Footer -->
     <Footer />
 
-    <!-- Sticky Mobile Action Bar -->
-    <StickyMobileBar 
-      areaName={areaData?.name} 
-      serviceTitle={serviceData?.title} 
-    />
+    <!-- Mobile Sticky Call & Quote Bar -->
+    {showStickyBar && (
+      <StickyMobileBar 
+        areaName={areaData?.name} 
+        serviceTitle={serviceData?.title} 
+      />
+    )}
+
+    <!-- Global Core Interactions (from design-template/script.js) -->
+    <SiteScripts />
 
     <!-- Interaction-Gated Third-Party Scripts -->
     <LazyScripts />

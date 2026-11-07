@@ -1,0 +1,41 @@
+{
+  "name": "Eaton Square",
+  "slug": "eaton-square",
+  "parent": "knightsbridge-and-belgravia",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "SW1"
+  ],
+  "metaTitle": "Removals in Eaton Square, Knightsbridge & Belgravia | Pearl ",
+  "metaDescription": "Professional removals in Eaton Square, Knightsbridge & Belgravia (SW1). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides elite residential removals overlooking magnificent Eaton Square in Belgravia SW1. Regarded as one of London’s most prestigious residential addresses, Eaton Square features grand white stucco terraces and private central gardens. Our specialized moving teams deliver flawless, white-glove relocations tailored to international and private clients. Eaton Squares private communal gardens and regal colonnaded porticos necessitate polite coordination with the Grosvenor Estate. Our skilled porters manage heavy antique sideboards and delicate artwork with whisper-quiet efficiency, ensuring a dignified moving experience.",
+  "whatMovingHereInvolves": "Conducting moves on Eaton Square involves liaising with the Grosvenor Estate office and Westminster City Council. Moving teams must navigate grand porticos, sweeping internal stairs, and private lifts. Our crews employ custom wooden crating for fine art collections, crystal chandeliers, and high-value antique furnishings, ensuring zero damage during transit.",
+  "landmarks": [
+    "Eaton Square Private Gardens",
+    "St Peter's Church Eaton Square",
+    "Grosvenor Estate Offices"
+  ],
+  "nearbyMicroAreas": [
+    "belgravia",
+    "knightsbridge",
+    "sloane-street"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you liaise with the Grosvenor Estate for Eaton Square removals?",
+      "answer": "Yes. We coordinate move schedules, vehicle weights, and loading hours directly with the estate office and building porters.",
+      "display": true
+    },
+    {
+      "question": "How do you safeguard chandeliers and delicate mirrors during the move?",
+      "answer": "We construct tailored museum-grade wooden crates lined with shock-absorbent foam to guarantee complete protection.",
+      "display": true
+    },
+    {
+      "question": "Are your Eaton Square moving crews vetted and experienced in prime London moves?",
+      "answer": "Yes. All our personnel are full-time employed, uniformed, background-checked, and trained in white-glove handling.",
+      "display": true
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "name": "Mayfair",
+  "slug": "mayfair",
+  "region": "central-london",
+  "phase": 3,
+  "premium": true,
+  "boroughs": [
+    "Westminster"
+  ],
+  "postcodes": [
+    "W1"
+  ],
+  "distanceMiles": 5,
+  "metaTitle": "House Removals Mayfair W1 | Pearl Removals",
+  "metaDescription": "Discreet, luxury removals in Mayfair W1. Grosvenor Square penthouses, heritage townhouses & Westminster parking permits. Call 020 3151 8452 for a free quote.",
+  "intro": "Pearl Removals provides an elite, discreet residential removals service throughout Mayfair and the prime W1 postcode district. From palatial Georgian mansions and lateral apartments overlooking Grosvenor Square and Berkeley Square to luxury boutique penthouses along Mount Street and Park Lane, our specialized removal personnel manage high-value relocations with absolute confidentiality, white-glove precision, and meticulous planning. Based close to central London arteries at our Cricklewood logistics centre, our modern fleet navigates Mayfair seamlessly via the Edgware Road and Park Lane corridors. Every relocation is overseen by an experienced move manager who coordinates concierge communications, organizes specialist art crating, and ensures that sensitive furnishings and delicate interior finishes are protected from collection to delivery, providing discerning clients with flawless moving execution and comprehensive high-value transit protection.",
+  "localKnowledge": "Mayfair represents one of the world’s most prestigious residential districts. Conducting removals here requires rigorous coordination with Westminster City Council, building concierges, and private estate managements such as the Grosvenor Estate. Streets such as South Audley Street, Charles Street, and Curzon Street feature high volumes of chauffeur-driven traffic and narrow carriageways, making pre-arranged loading bays and early morning starts imperative.",
+  "propertyTypes": "Mayfair’s residences include magnificent multi-storey Georgian townhouses, opulent red-brick Victorian conversions, and ultra-prime modern developments. Properties frequently showcase antique marble fireplaces, high-gloss French-polished banisters, passenger and service lifts with strict booking slots, and sensitive security protocols requiring vetting of moving teams.",
+  "parkingAndAccess": "Westminster City Council operates stringent parking controls across Mayfair. Parking a removal lorry on Park Street, Upper Grosvenor Street, or Davies Street demands formal parking bay suspensions booked at least ten working days in advance. Our dedicated logistics team takes care of all council permits and liaises with building concierges regarding service lift access.",
+  "transportLinks": "Centrally located with nearby stations at Green Park (Jubilee, Piccadilly, Victoria lines), Bond Street (Central, Jubilee, Elizabeth lines), and Marble Arch (Central line).",
+  "travelInfo": "Rapid southbound transit down the A5 Edgware Road corridor links Mayfair directly to our Cricklewood dispatch headquarters in approximately 20 minutes.",
+  "nearbyAreas": [
+    {
+      "name": "Marylebone & Regent's Park",
+      "slug": "marylebone-and-regents-park"
+    },
+    {
+      "name": "Fitzrovia & Bloomsbury",
+      "slug": "fitzrovia-and-bloomsbury"
+    },
+    {
+      "name": "Knightsbridge & Belgravia",
+      "slug": "knightsbridge-and-belgravia"
+    },
+    {
+      "name": "Chelsea",
+      "slug": "chelsea"
+    },
+    {
+      "name": "Bayswater",
+      "slug": "bayswater"
+    }
+  ],
+  "servicesOffered": [
+    "Luxury Removals Mayfair",
+    "Fine Art & Antiques Crating W1",
+    "Penthouse Relocations Mayfair",
+    "White-Glove Packing W1",
+    "Discreet Home Moves"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you maintain discretion and privacy during Mayfair moves?",
+      "answer": "We operate discreetly with unbranded or subtle vehicles on request, uniformed security-vetted personnel, and strict confidentiality agreements for all prime central London relocations.",
+      "display": true
+    },
+    {
+      "question": "Do you coordinate with Mayfair building concierges and estate managers?",
+      "answer": "Yes. We liaise with building management well in advance to book service lifts, provide public liability certificates, and install full lift and corridor protective padding.",
+      "display": true
+    },
+    {
+      "question": "How far in advance must Westminster parking suspensions be arranged in Mayfair?",
+      "answer": "Westminster City Council requires a minimum of ten working days for parking bay suspension approvals, which our operations team handles on your behalf.",
+      "display": true
+    },
+    {
+      "question": "Can you transport fine art collections and climate-sensitive wine cellars in W1?",
+      "answer": "Yes. We build custom museum-grade wooden packing cases and transport high-value artworks, sculptures, and wine collections under specialist transit insurance.",
+      "display": true
+    }
+  ],
+  "premiumAngle": "Mayfair’s ultra-prime properties, private art collections, and heritage architectural finishes require the highest standard of white-glove care. We provide bespoke timber crating, comprehensive high-value transit insurance, and discreet, vetted moving crews.",
+  "status": "published"
+}

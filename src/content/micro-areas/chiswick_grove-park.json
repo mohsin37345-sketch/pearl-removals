@@ -1,0 +1,42 @@
+{
+  "name": "Grove Park",
+  "slug": "grove-park",
+  "parent": "chiswick",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "W4"
+  ],
+  "metaTitle": "Removals in Grove Park, Chiswick | Pearl Removals",
+  "metaDescription": "Professional removals in Grove Park, Chiswick (W4). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers premier house removals throughout prestigious Grove Park in Chiswick W4. Bordered by the River Thames and Chiswick House Grounds, Grove Park features spacious Edwardian and late Victorian detached and semi-detached family residences with large gardens. Our professional moving teams manage substantial family relocations with calm efficiency. Wide suburban avenues near the river feature spacious Edwardian villas with gravel driveways and generous room dimensions. We bring complete packing materials, from acid-free tissue to bubble blanket wrap, ensuring your treasured heirlooms and garden planters travel securely.",
+  "whatMovingHereInvolves": "Residential streets in Grove Park, such as Grove Park Gardens, Bolton Road, and Hartington Road, offer generous road widths and private driveways. Properties frequently contain extensive outdoor garden furniture, home gym equipment, and substantial family inventories. We deploy multi-man teams and large capacity Luton vehicles to complete moves smoothly in a single day.",
+  "landmarks": [
+    "Chiswick House and Gardens",
+    "Chiswick Railway Station",
+    "Dukes Meadows"
+  ],
+  "nearbyMicroAreas": [
+    "strand-on-the-green",
+    "turnham-green",
+    "chiswick-high-road",
+    "bedford-park"
+  ],
+  "localFaqs": [
+    {
+      "question": "Can you handle large 5- and 6-bedroom family home moves in Grove Park?",
+      "answer": "Yes. We routinely deploy multiple vehicles and full packing teams to relocate substantial family residences smoothly.",
+      "display": true
+    },
+    {
+      "question": "Do you move garden planters, outdoor furniture, and garden statues?",
+      "answer": "Yes. We have heavy lifting equipment, straps, and protective padding designed specifically for outdoor and patio furniture.",
+      "display": true
+    },
+    {
+      "question": "How do you protect delicate gravel and block-paved driveways in Grove Park?",
+      "answer": "We lay heavy-duty rubber driveway mats to prevent tyre scuffing and oil spots from heavy removal vehicles.",
+      "display": true
+    }
+  ]
+}

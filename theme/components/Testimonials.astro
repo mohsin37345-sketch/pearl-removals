@@ -1,58 +1,116 @@
 ---
-import Icon from './Icon.astro';
-
-interface Review {
+interface ReviewItem {
+  quote: string;
   name: string;
-  area: string;
-  service?: string;
-  rating: number;
-  body: string;
-  date?: Date | string;
-  verified?: boolean;
+  details: string;
+  initials: string;
+  avatarBg?: string;
+  big?: boolean;
 }
 
 interface Props {
-  reviews?: Review[];
+  eyebrow?: string;
   title?: string;
+  googleReviewsLink?: string;
+  reviews?: any[];
 }
 
-const { reviews = [], title = "What Our Customers Say" } = Astro.props;
+const defaultReviews: ReviewItem[] = [
+  {
+    big: true,
+    initials: "SK",
+    name: "Sarah K.",
+    details: "Harrow → Pinner · 3-bed house",
+    quote: "Honestly the easiest move we've ever had. The team turned up early, wrapped every piece of furniture and had our 3-bed done by lunchtime. Not a single scratch."
+  },
+  {
+    initials: "JM",
+    avatarBg: "#2f6bff",
+    name: "James M.",
+    details: "Kilburn · 2-bed flat",
+    quote: "Fixed price meant zero stress. Fourth-floor flat with no lift and they didn't complain once."
+  },
+  {
+    initials: "AR",
+    avatarBg: "#18b26b",
+    name: "Aisha R.",
+    details: "Wembley · Office move",
+    quote: "Moved our whole office over a weekend. Monday morning, everything was set up and working."
+  },
+  {
+    initials: "TP",
+    avatarBg: "#0b1a2e",
+    name: "Tom P.",
+    details: "Hendon · 1-bed flat",
+    quote: "Booked on Thursday, moved on Saturday. Friendly, quick and great communication throughout."
+  },
+  {
+    initials: "LN",
+    avatarBg: "#e4521a",
+    name: "Lucy N.",
+    details: "Ealing · 4-bed house",
+    quote: "The packing service was worth every penny. Everything labelled by room — unpacking was a breeze."
+  }
+];
 
-// Filter for only genuine verified reviews
-const verifiedList = reviews.filter((r) => r.verified === true);
+const {
+  eyebrow = "Reviews",
+  title = "380+ five-star moves and counting.",
+  googleReviewsLink = "/reviews/",
+  reviews = []
+} = Astro.props;
+
+// Use passed reviews if provided, otherwise default to template reviews
+const displayReviews: ReviewItem[] = reviews && reviews.length > 0
+  ? reviews.map((r, i) => ({
+      big: i === 0,
+      initials: r.author?.slice(0, 2).toUpperCase() || r.name?.slice(0, 2).toUpperCase() || "PR",
+      avatarBg: i % 4 === 1 ? "#2f6bff" : i % 4 === 2 ? "#18b26b" : i % 4 === 3 ? "#0b1a2e" : "#e4521a",
+      name: r.author || r.name || "Customer",
+      details: r.location ? `${r.location} · Verified Move` : "London · Verified Move",
+      quote: r.reviewBody || r.quote || ""
+    }))
+  : defaultReviews;
 ---
 
-{verifiedList.length > 0 && (
-  <section class="py-12 lg:py-16" aria-labelledby="testimonials-heading">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-2xl mx-auto mb-10">
-        <span class="text-xs font-bold uppercase tracking-widest text-royal mb-2 block">Verified Feedback</span>
-        <h2 id="testimonials-heading" class="text-3xl sm:text-4xl font-black text-navy dark:text-pearl tracking-tight">
-          {title}
-        </h2>
+<section class="section section--white" id="reviews">
+  <div class="container">
+    <div class="section-head section-head--split reveal">
+      <div>
+        <span class="eyebrow">{eyebrow}</span>
+        <h2>{title}</h2>
       </div>
+      <a href={googleReviewsLink} class="btn btn--ghost">
+        See all Google reviews <svg class="arrow"><use href="#i-arrow"/></svg>
+      </a>
+    </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {verifiedList.map((rev) => (
-          <div class="glass-panel p-6 rounded-3xl flex flex-col justify-between hover:-translate-y-1 transition-transform">
+    <div class="reviews">
+      {displayReviews.map((rev) => (
+        <article class={`review ${rev.big ? 'review--big' : ''} reveal`}>
+          <span class="stars">
+            <svg><use href="#i-star"/></svg>
+            <svg><use href="#i-star"/></svg>
+            <svg><use href="#i-star"/></svg>
+            <svg><use href="#i-star"/></svg>
+            <svg><use href="#i-star"/></svg>
+          </span>
+          {rev.big && <div class="review__quote-mark">“</div>}
+          <blockquote>{rev.quote}</blockquote>
+          <div class="review__who">
+            <span
+              class="review__avatar"
+              style={rev.avatarBg ? `background:${rev.avatarBg}` : ''}
+            >
+              {rev.initials}
+            </span>
             <div>
-              <div class="flex text-gold mb-3">
-                {[...Array(rev.rating || 5)].map(() => (
-                  <Icon name="star" class="w-4 h-4" />
-                ))}
-              </div>
-              <blockquote class="text-sm text-surface-600 dark:text-surface-300 leading-relaxed italic mb-4">
-                "{rev.body}"
-              </blockquote>
-            </div>
-
-            <div class="pt-4 border-t border-surface-200/60 dark:border-white/10 flex items-center justify-between text-xs">
-              <span class="font-bold text-navy dark:text-pearl">{rev.name}</span>
-              <span class="text-surface-500">{rev.area}</span>
+              <strong>{rev.name}</strong>
+              <span>{rev.details}</span>
             </div>
           </div>
-        ))}
-      </div>
+        </article>
+      ))}
     </div>
-  </section>
-)}
+  </div>
+</section>

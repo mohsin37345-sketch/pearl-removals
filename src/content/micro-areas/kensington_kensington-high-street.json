@@ -1,0 +1,42 @@
+{
+  "name": "Kensington High Street",
+  "slug": "kensington-high-street",
+  "parent": "kensington",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "W8"
+  ],
+  "metaTitle": "Removals in Kensington High Street, Kensington | Pearl Remov",
+  "metaDescription": "Professional removals in Kensington High Street, Kensington (W8). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers discreet, white-glove removals across Kensington High Street and surrounding side turnings in W8. From luxury lateral apartments in grand Art Deco blocks to converted period maisonettes off Derry Street and Wrights Lane, our experienced porters manage moves with clockwork punctuality, zero disruption, and full goods protection. Based close by in NW2, our vehicles navigate prime West London routes swiftly. We coordinate building manager protocols, lift protection, and parking suspensions directly with the council, allowing you to settle without friction. Whether relocating antique furnishings or modern designer collections, our attentive moving crew handles every carton and crate with consummate professional care.",
+  "whatMovingHereInvolves": "Operating along Kensington High Street demands meticulous coordination around high pedestrian density, red route loading restrictions, and retail delivery bays. Our operations team arranges official RBKC parking bay suspensions along side turnings like Allen Street or Argyle Road. Inside high-specification residential developments, our crews coordinate with on-site building porters, booking passenger and goods lifts and installing protective wall and floor padding.",
+  "landmarks": [
+    "Design Museum",
+    "High Street Kensington Station",
+    "Holland Park Entrance"
+  ],
+  "nearbyMicroAreas": [
+    "kensington-church-street",
+    "phillimore-estate",
+    "campden-hill",
+    "kensington-palace-gardens"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you handle moves on busy Kensington High Street?",
+      "answer": "We schedule loading during early morning hours and position our vehicles along pre-suspended residential bays on connecting side roads.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange RBKC parking suspensions for High Street apartments?",
+      "answer": "Yes. We manage all application procedures directly with the Royal Borough of Kensington & Chelsea highways department.",
+      "display": true
+    },
+    {
+      "question": "Can you move heavy designer furniture and antique armoires?",
+      "answer": "Yes. Our trained moving specialists use padded carrying harnesses, specialized furniture dolleys, and partial disassembly where required.",
+      "display": true
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "from": "London (North West London NW2)",
+  "to": "Cambridge",
+  "slug": "london-to-cambridge",
+  "enabled": false,
+  "intro": "Relocating from London to Cambridge connects the capital's vibrant urban life with the historic university city and thriving silicon fen tech ecosystem. Whether moving from Golders Green, Mill Hill, or Finchley to Newnham, De Freville Avenue, Trumpington, Chesterton, or the historic historic centre, Pearl Removals delivers a dependable, high-quality removal service. With immediate access to the A41, M1, and A1(M)/M11 from our NW2 depot, our vehicles reach Cambridge quickly and safely.",
+  "body": "Spanning approximately 60 miles north along the M11 or A10, the London to Cambridge relocation corridor is one of our primary routes. Moving to Cambridge combines historic college heritage with modern scientific developments, presenting diverse architectural styles from Victorian terraced streets near the railway station to contemporary sustainable homes in Eddington and Trumpington.\n\nCambridge's historic centre features narrow medieval thoroughfares, cycle-prioritised streets, and restricted pedestrian corridors. Conducting removals in areas like Newnham or the historic kite district requires skilled maneuvering and considerate vehicle placement. Pearl Removals deploys appropriate 3.5-tonne Luton vehicles equipped with tail lifts, ensuring our drivers can access residential streets without obstructing bicycle lanes or local transit.\n\nUnder our strict sole-occupancy guarantee, your removal vehicle is assigned exclusively to your move. We never mix loads with other households. Our packing specialists can attend your London home the day prior, packing delicate glassware, computers, and home essentials with premium materials. On moving day, our team unloads each carton into the appropriate room, reassembles standard furniture, and removes all packing materials so your Cambridge house immediately feels like home.",
+  "faqs": [
+    {
+      "question": "What is the driving time from North West London to Cambridge?",
+      "answer": "Transit between our NW2 operating base and Cambridge typically takes between 1.5 and 2 hours via the M25 and M11 corridors under regular traffic conditions.",
+      "display": true
+    },
+    {
+      "question": "How do you handle cycle lanes and restricted streets in Cambridge?",
+      "answer": "Our drivers are trained in Cambridge urban access protocols, ensuring removal vehicles are positioned legally and safely without obstructing busy cycle routes or pedestrian paths.",
+      "display": true
+    },
+    {
+      "question": "Can you move sensitive laboratory or IT workstation equipment?",
+      "answer": "Yes. We provide anti-static bubble wrap, padded computer monitor crates, and secure transit ties for technology professionals moving to the Cambridge cluster.",
+      "display": true
+    },
+    {
+      "question": "Do you provide parking dispensation advice for Cambridgeshire moves?",
+      "answer": "Yes. We guide clients on securing parking waivers through Cambridgeshire County Council and liaise with local authorities on vehicle dimensions.",
+      "display": true
+    }
+  ]
+}

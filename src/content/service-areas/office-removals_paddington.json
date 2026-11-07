@@ -1,0 +1,38 @@
+{
+  "service": "office-removals",
+  "location": "paddington",
+  "status": "published",
+  "uniqueIntro": "Pearl Removals delivers commercial office and business relocation services throughout Paddington W2 and the thriving commercial quarter of Paddington Basin. From high-growth technology firms and consultancies in modern glass towers along Merchant Square, North Wharf Road, and Eastbourne Terrace to established professional practices near Paddington Station and Praed Street, our commercial moving specialists execute office moves with meticulous phasing, zero disruption to your daily operations, and total data and equipment security. Stationed barely 15 minutes away at our Cricklewood dispatch headquarters, our fleet and commercial teams arrive with heavy-duty IT roll cages, colour-coded computer crates, and specialized anti-static packaging.",
+  "localAngle": "Commercial relocations across Paddington Basin present distinct logistical requirements. Modern office complexes such as 5 Merchant Square, 2 Kingdom Street, and 4 More London Riverside feature subterranean service basements with strict vehicle height limits, security dock marshalling, and rigid time-slot booking systems. Our commercial project managers liaise with building facilities teams well before moving day, completing all security RAMS documentation, booking goods lifts exclusively, and scheduling moves over weekends or overnight to guarantee that your workforce experiences zero business downtime on Monday morning.",
+  "whatsIncluded": [
+    "Dedicated commercial move manager and comprehensive pre-move phasing plan",
+    "Colour-coded IT crates, security seals, and anti-static bubble wrap for desktop equipment",
+    "De-commissioning, secure packing, transport, and re-commissioning of PC workstations and monitors",
+    "Server rack relocation, confidential file sequential packing, and commercial archive crate hire",
+    "Floor and wall surface protection across reception atriums, passenger lifts, and commercial corridors",
+    "Disassembly and re-assembly of boardroom tables, modular bench desking, and office screening"
+  ],
+  "priceGuidance": "Commercial office moves in Paddington start from £650 for small offices (up to 10 workstations) and are quoted on a transparent, fixed-price basis following a comprehensive site survey.",
+  "faqs": [
+    {
+      "question": "Can you carry out office moves in Paddington over the weekend to prevent business downtime?",
+      "answer": "Yes. The vast majority of our commercial office relocations across Paddington Basin take place between Friday evening and Sunday afternoon, ensuring your business is fully operational and employees can work as normal on Monday morning.",
+      "display": true
+    },
+    {
+      "question": "Do you provide risk assessments and method statements (RAMS) for Paddington building management?",
+      "answer": "Yes. We supply comprehensive site-specific Risk Assessments, Method Statements, and our £5,000,000 Public Liability insurance documentation directly to your Paddington building managers or facilities team in advance.",
+      "display": true
+    },
+    {
+      "question": "How do you handle subterranean vehicle height restrictions in Paddington commercial loading bays?",
+      "answer": "Our fleet includes specialized low-profile commercial vehicles and heavy-duty wheeled equipment designed specifically to clear Paddington Basin basement loading docks and service bay barriers.",
+      "display": true
+    },
+    {
+      "question": "Can your team dismantle and reassemble modular systems desking in Paddington offices?",
+      "answer": "Yes. Our experienced office fitting crew carries commercial power toolkits to systematically de-rig and re-assemble bench desking, conference tables, monitor arms, and cable trays.",
+      "display": true
+    }
+  ]
+}

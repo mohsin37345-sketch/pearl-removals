@@ -21,20 +21,24 @@
   "travelInfo": "Direct vehicular access via the A41 Hendon Way and Brockley Hill provides smooth connectivity to our Cricklewood fleet base in under 20 minutes.",
   "nearbyAreas": [
     {
+      "name": "Bushey & Elstree",
+      "slug": "bushey-and-elstree"
+    },
+    {
+      "name": "Radlett",
+      "slug": "radlett"
+    },
+    {
+      "name": "Pinner",
+      "slug": "pinner"
+    },
+    {
       "name": "Edgware & Burnt Oak",
       "slug": "edgware-and-burnt-oak"
     },
     {
-      "name": "Harrow",
-      "slug": "harrow"
-    },
-    {
-      "name": "Mill Hill",
-      "slug": "mill-hill"
-    },
-    {
-      "name": "Colindale & Kingsbury",
-      "slug": "colindale-and-kingsbury"
+      "name": "Harrow Weald",
+      "slug": "harrow-weald"
     }
   ],
   "servicesOffered": [

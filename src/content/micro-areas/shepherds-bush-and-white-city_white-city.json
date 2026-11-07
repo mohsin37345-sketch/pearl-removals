@@ -1,0 +1,41 @@
+{
+  "name": "White City",
+  "slug": "white-city",
+  "parent": "shepherds-bush-and-white-city",
+  "premium": false,
+  "status": "published",
+  "postcodes": [
+    "W12"
+  ],
+  "metaTitle": "Removals in White City, Shepherd's Bush & White City | Pearl",
+  "metaDescription": "Professional removals in White City, Shepherd's Bush & White City (W12). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides reliable, modern apartment removals across White City W12. Centred on the landmark Television Centre and White City Living developments, this rapidly evolving quarter features luxury high-rise apartments with concierges, underground parking, and landscaped public spaces. We provide smooth, structured relocations tailored to modern apartment living. Contemporary apartment blocks around Television Centre demand scheduled freight lift slots, concierge check-in, and strict floor protection guidelines. Our logistics personnel handle every booking detail in advance, making your transition into White City smooth, prompt, and stress-free.",
+  "whatMovingHereInvolves": "Moving in White City apartment developments involves strict adherence to building management logistics. Removal vehicles must access dedicated subterranean loading bays off Wood Lane with specific height clearances. Our team books service lifts, supplies RAMS documentation to building concierges, and uses wheeled cages to transfer goods smoothly along residential corridors.",
+  "landmarks": [
+    "BBC Television Centre",
+    "White City Living",
+    "Westfield London"
+  ],
+  "nearbyMicroAreas": [
+    "wood-lane",
+    "askew-road",
+    "brackenbury-village"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you coordinate moves in the Television Centre and White City Living?",
+      "answer": "We liaise directly with building concierges to reserve underground loading bays and service lifts in advance.",
+      "display": true
+    },
+    {
+      "question": "Do you provide risk assessments (RAMS) for White City building managers?",
+      "answer": "Yes. We issue formal Risk Assessments, Method Statements, and proof of our £5M Public Liability cover prior to moving day.",
+      "display": true
+    },
+    {
+      "question": "Can you dismantle and rebuild modern flat-pack bedroom furniture?",
+      "answer": "Yes. Our moving teams carry professional cordless tools to take down and reassemble bedframes, wardrobes, and modular desks.",
+      "display": true
+    }
+  ]
+}

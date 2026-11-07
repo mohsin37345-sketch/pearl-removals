@@ -59,6 +59,25 @@
 
 ---
 
+## Phase 3 Editorial Expansion (Weeks 41–52: Wider Reach & Long-Distance Routes)
+
+| Week | Title / Topic Angle | Primary Keyword | Intent | Funnel Stage | Target Internal Links (Areas & Services) |
+|---|---|---|---|---|---|
+| **41** | Kensington Removals: Moving Townhouses, Art Deco Flats & Diplomatic Enclaves | removals kensington w8 | Commercial | Bottom | `/areas/kensington/`, `/removals/fine-art-and-antiques-removals/` |
+| **42** | Moving House in Chiswick: Riverside Mall, Bedford Park & Garden Suburb Logistics | removals chiswick w4 | Commercial | Bottom | `/areas/chiswick/`, `/removals/house-removals/` |
+| **43** | Mayfair & Belgravia: Ultra-Discreet Moving into London's Premier Garden Squares | luxury removals mayfair | Commercial | Bottom | `/areas/mayfair/`, `/areas/knightsbridge-and-belgravia/`, `/removals/white-glove/` |
+| **44** | Moving Along King's Road & Cheyne Walk: Chelsea Relocations & RBKC Rules | removals chelsea sw3 | Commercial | Bottom | `/areas/chelsea/`, `/removals/flat-removals/` |
+| **45** | Substantial Family Estates in Hadley Wood & Arkley: Convoys & Garden Access | removals barnet en5 | Commercial | Bottom | `/areas/barnet/`, `/removals/house-removals/` |
+| **46** | Moving to Pinner & Hatch End: Mock-Tudor Residences & Village Character | removals pinner ha5 | Commercial | Bottom | `/areas/pinner/`, `/removals/house-removals/` |
+| **47** | Private Gated Living in Moor Park & Northwood: High-Value Estate Moving | removals northwood ha6 | Commercial | Bottom | `/areas/northwood/`, `/removals/fine-art-and-antiques-removals/` |
+| **48** | Relocating Across Bushey Heath & Radlett: Hertfordshire Border Moves | removals radlett wd7 | Commercial | Bottom | `/areas/radlett/`, `/areas/bushey-and-elstree/` |
+| **49** | Commercial Studio & Office Relocations: Paddington Basin to Camden Lock | office removals central london | Commercial | Bottom | `/removals/office-removals/`, `/areas/paddington/` |
+| **50** | Moving from London to Manchester: Intercity Direct Door-to-Door Removals | london to manchester removals | Commercial | Bottom | `/removals/long-distance-removals/london-to-manchester/`, `/removals/long-distance-removals/` |
+| **51** | Relocating from London to Birmingham & the Midlands: Dedicated Vehicle Moves | london to birmingham removals | Commercial | Bottom | `/removals/long-distance-removals/london-to-birmingham/`, `/removals/long-distance-removals/` |
+| **52** | West Country Bound: London to Bristol & Bath Moving Logistics | london to bristol removals | Commercial | Bottom | `/removals/long-distance-removals/london-to-bristol/`, `/removals/long-distance-removals/` |
+
+---
+
 ## Editorial Guidelines for Content Creation
 
 1. **Tone:** Authoritative, reassuring, articulate UK English. Plain-speaking London professional.

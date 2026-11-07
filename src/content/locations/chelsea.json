@@ -1,0 +1,76 @@
+{
+  "name": "Chelsea",
+  "slug": "chelsea",
+  "region": "central-london",
+  "phase": 3,
+  "premium": true,
+  "boroughs": [
+    "Kensington & Chelsea"
+  ],
+  "postcodes": [
+    "SW3",
+    "SW10"
+  ],
+  "distanceMiles": 7,
+  "metaTitle": "House Removals Chelsea SW3 SW10 | Pearl Removals",
+  "metaDescription": "Bespoke house removals in Chelsea SW3 & SW10. King's Road townhouses, Cheyne Walk riverside homes & RBKC parking suspensions. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers distinguished, white-glove removals throughout Chelsea, covering postcodes SW3 and SW10. From historic riverside mansions along Cheyne Walk overlooking the Thames and elegant Victorian red-brick townhouses in Sloane Square to peaceful pastel-coloured cottages off King's Road and modern penthouses in Chelsea Harbour, our experienced moving crews execute every move with impeccable attention to detail, respectful care, and total property protection. Situated within easy reach via the West London road network from our Cricklewood dispatch base, our vehicles arrive fully prepared for seamless Chelsea relocations. We understand the specific logistical nuances of moving within the Royal Borough of Kensington & Chelsea, providing tailored packing services, specialized piano handling, and prompt parking management that make moving day an orderly, stress-free experience.",
+  "localKnowledge": "Chelsea is an iconic London neighbourhood combining high-fashion retail along King’s Road and Sloane Street with quiet, historic residential streets. Navigating moves along narrow turnings such as Bywater Street, Wellington Square, and Royal Avenue requires skilled vehicle positioning. Near Cheyne Walk and the Embankment, commercial traffic along the River Thames corridor necessitates precise timing to avoid peak congestion hours.",
+  "propertyTypes": "Properties in Chelsea range from grand four- to five-storey Georgian and Victorian family townhouses to converted artist studios in Tite Street, riverside mansion flats, and secluded mews houses. Interiors often feature delicate antique floorboards, narrow winding basement staircases, and valuable collections of contemporary art and designer furniture.",
+  "parkingAndAccess": "The Royal Borough of Kensington and Chelsea (RBKC) rigorously enforces parking throughout SW3 and SW10. Parking a Luton or 7.5-tonne removal vehicle requires formal bay suspensions arranged directly with the council highways department. Our operations office manages the permit paperwork, calculating vehicle dimensions and ensuring advance warning boards are properly installed.",
+  "transportLinks": "Served by Sloane Square (District and Circle lines), South Kensington (Piccadilly, District, and Circle lines), and Imperial Wharf (Overground and Southern rail).",
+  "travelInfo": "Convenient vehicular access via Earl’s Court Road and the Westway connects Chelsea directly to our Cricklewood logistics hub in approximately 25 minutes.",
+  "nearbyAreas": [
+    {
+      "name": "Kensington",
+      "slug": "kensington"
+    },
+    {
+      "name": "Knightsbridge & Belgravia",
+      "slug": "knightsbridge-and-belgravia"
+    },
+    {
+      "name": "Hammersmith",
+      "slug": "hammersmith"
+    },
+    {
+      "name": "Mayfair",
+      "slug": "mayfair"
+    },
+    {
+      "name": "Holland Park",
+      "slug": "holland-park"
+    }
+  ],
+  "servicesOffered": [
+    "House Removals Chelsea",
+    "Fine Art Moving SW3",
+    "Piano Removals Chelsea",
+    "Packing Services SW10",
+    "Antique Furniture Relocations"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you arrange RBKC parking bay suspensions for Chelsea removals?",
+      "answer": "Yes. We handle all paperwork and liaison with the Royal Borough of Kensington & Chelsea to ensure legal parking bays are reserved outside your property.",
+      "display": true
+    },
+    {
+      "question": "Can you navigate narrow residential streets off King’s Road?",
+      "answer": "Yes. We utilize our agile 3.5-tonne Luton vans for tight Chelsea turnings, preventing obstruction while providing ample carrying volume.",
+      "display": true
+    },
+    {
+      "question": "How do you protect fragile artwork and mirrors during Chelsea moves?",
+      "answer": "We build tailored timber crates with shock-absorbing foam lining and wrap delicate items in acid-free glassine paper to guarantee zero damage during transit.",
+      "display": true
+    },
+    {
+      "question": "Do you provide wardrobe cartons and hanging clothes protection?",
+      "answer": "Yes. We supply heavy-duty wardrobe cartons with metal hanging bars, transferring your clothing directly from your wardrobes without creasing.",
+      "display": true
+    }
+  ],
+  "premiumAngle": "Chelsea’s refined historic townhouses, riverside residences, and designer furnishings demand white-glove moving standards. We offer custom timber crating, full packing, comprehensive goods-in-transit insurance, and discreet, uniformed personnel.",
+  "status": "published"
+}

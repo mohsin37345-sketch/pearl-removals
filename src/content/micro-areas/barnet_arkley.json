@@ -1,0 +1,42 @@
+{
+  "name": "Arkley",
+  "slug": "arkley",
+  "parent": "barnet",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "EN5"
+  ],
+  "metaTitle": "Removals in Arkley, Barnet | Pearl Removals",
+  "metaDescription": "Professional removals in Arkley, Barnet (EN5). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides exceptional, white-glove removals across exclusive Arkley in Barnet EN5. Set amidst green belt countryside, Arkley is celebrated for its multi-million pound gated estates, custom-built contemporary mansions, and equestrian properties along Rowley Green Road and Barnet Road. Our moving specialists deliver private, meticulous moving care for large family residences. Substantial country homes and gated estates along Barnet Road feature extensive private gravel drives and multi-car garages. We bring our full-capacity removal vehicles right to your doorway, providing comprehensive packing, unpacking, and furniture placement.",
+  "whatMovingHereInvolves": "Substantial properties in Arkley feature long private driveways, automated security gates, and extensive grounds. Moving large 5- to 7-bedroom homes requires deploying multiple vehicles and dedicated loading supervisors. Our crews lay heavy-duty ground mats across sensitive gravel and resin driveways to avoid tyre marks and surface scuffing during loading.",
+  "landmarks": [
+    "Arkley Windmill",
+    "Rowley Green Common",
+    "Arkley Golf Club"
+  ],
+  "nearbyMicroAreas": [
+    "high-barnet",
+    "hadley-wood",
+    "monken-hadley",
+    "underhill"
+  ],
+  "localFaqs": [
+    {
+      "question": "Can you coordinate multi-vehicle moves for large gated estates in Arkley?",
+      "answer": "Yes. We routinely manage multi-vehicle relocations for 5 to 7 bedroom homes, deploying dedicated loading supervisors and packing teams.",
+      "display": true
+    },
+    {
+      "question": "How do you protect resin or gravel driveways in Arkley properties?",
+      "answer": "We lay heavy-duty ground protection mats across sensitive resin-bound gravel and block paving to protect your driveway surface.",
+      "display": true
+    },
+    {
+      "question": "Can you move heavy home gym equipment, ride-on mowers, and outdoor furniture?",
+      "answer": "Yes. We have specialized lifting gear, ramps, and protective blankets designed for heavy leisure and garden equipment.",
+      "display": true
+    }
+  ]
+}

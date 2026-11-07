@@ -1,64 +1,47 @@
 ---
 import { siteConfig } from 'src/data/site';
-import Icon from './Icon.astro';
 
 interface Props {
   title?: string;
   subtitle?: string;
+  description?: string;
   areaName?: string;
+  primaryCtaText?: string;
+  primaryCtaLink?: string;
+  secondaryCtaText?: string;
+  secondaryCtaLink?: string;
+  marginTop?: boolean;
 }
 
 const {
-  title = "Ready for a Stress-Free Moving Day?",
-  subtitle = "Contact our Cricklewood team today for honest advice, free video surveys, and a transparent fixed-price quotation.",
-  areaName
+  title,
+  subtitle,
+  description,
+  areaName,
+  primaryCtaText = "Get my free quote",
+  primaryCtaLink = "/get-a-quote/",
+  secondaryCtaText = siteConfig.phone,
+  secondaryCtaLink = `tel:${siteConfig.phoneE164}`,
+  marginTop = true
 } = Astro.props;
 
-const heading = areaName ? `Planning a Move in ${areaName}?` : title;
+const effectiveTitle = title || (areaName ? `Moving to or from ${areaName}?` : "Ready to move? Let's get you a price.");
+const effectiveDesc = subtitle || description || "Free, fixed quotes in 60 seconds. No obligation and no hidden fees — just a smoother move day.";
 ---
 
-<section class="py-12 lg:py-16" aria-labelledby="cta-band-heading">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="glass-panel p-8 sm:p-12 lg:p-16 rounded-3xl bg-gradient-to-r from-navy via-navy-light to-navy text-white text-center relative overflow-hidden shadow-2xl border border-white/20">
-      
-      <!-- Subtle Background Iridescent Accent -->
-      <div class="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-royal/30 blur-3xl pointer-events-none"></div>
-      <div class="absolute -bottom-24 -left-24 w-72 h-72 rounded-full bg-royal-light/20 blur-3xl pointer-events-none"></div>
-
-      <div class="max-w-2xl mx-auto relative z-10 space-y-4">
-        <span class="text-xs font-bold uppercase tracking-widest text-royal-light block">
-          North West London Removal Specialists
-        </span>
-
-        <h2 id="cta-band-heading" class="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
-          {heading}
-        </h2>
-
-        <p class="text-sm sm:text-base text-pearl/80 max-w-xl mx-auto leading-relaxed">
-          {subtitle}
-        </p>
-
-        <div class="pt-4 flex flex-wrap items-center justify-center gap-4">
-          <a
-            href="/get-a-quote/"
-            class="px-8 py-4 rounded-full bg-royal hover:bg-royal-hover text-white font-extrabold text-sm tracking-wide shadow-lg shadow-royal/30 active:scale-[0.98] transition-all"
-          >
-            Get Your Free Quote →
-          </a>
-          <a
-            href={`tel:${siteConfig.phoneE164}`}
-            class="px-6 py-4 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-sm tracking-wide transition-colors flex items-center gap-2"
-          >
-            <Icon name="phone" class="w-4 h-4 text-royal-light" />
-            <span>Call {siteConfig.phone}</span>
-          </a>
-        </div>
-
-        <p class="text-xs text-pearl/60 pt-2">
-          Fully Insured • £50k Goods In Transit • Free No-Obligation Surveys
-        </p>
-      </div>
-
+<section class="container" style={marginTop ? "margin-top: var(--section-y);" : ""}>
+  <div class="cta-band reveal">
+    <div>
+      <h2>{effectiveTitle}</h2>
+      <p>{effectiveDesc}</p>
+    </div>
+    <div class="cta-band__actions">
+      <a href={primaryCtaLink} class="btn btn--light">
+        {primaryCtaText} <svg class="arrow"><use href="#i-arrow"/></svg>
+      </a>
+      <a href={secondaryCtaLink} class="btn btn--outline-light">
+        <svg><use href="#i-phone"/></svg> {secondaryCtaText}
+      </a>
     </div>
   </div>
 </section>

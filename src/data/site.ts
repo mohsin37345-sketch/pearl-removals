@@ -57,7 +57,7 @@ export interface SiteConfig {
 
 const envPhase = typeof process !== 'undefined' && process.env?.PUBLISH_PHASE 
   ? parseInt(process.env.PUBLISH_PHASE, 10) 
-  : 2;
+  : 3;
 
 export const siteConfig: SiteConfig = {
   siteUrl: 'https://www.pearlremovals.co.uk',
@@ -99,7 +99,7 @@ export const siteConfig: SiteConfig = {
     publicLiability: '£5,000,000'
   },
   priceRange: '££–£££',
-  publishPhase: (envPhase === 1 || envPhase === 3 ? envPhase : 2) as 1 | 2 | 3,
+  publishPhase: ([1, 2, 3].includes(envPhase) ? envPhase : 3) as 1 | 2 | 3,
   geoRadiusByPhase: {
     1: 8000,
     2: 12000,

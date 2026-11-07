@@ -108,3 +108,21 @@ To protect domain integrity and ensure compliance with Google's Spam Policies:
 - ❌ **No automated comment or web 2.0 spam**.
 - ❌ **No paid dofollow sponsored posts** without `rel="sponsored"` or `rel="nofollow"`.
 - ❌ **No exact-match anchor text over-optimization**; maintain a healthy ratio of branded ("Pearl Removals"), URL ("pearlremovals.co.uk"), and natural anchors ("visit website", "removal company").
+
+---
+
+## 7. Phase 3 Extended Regional Partnerships & Digital PR Campaigns
+
+### Phase 3 Estate Agency Partnerships
+- **Kensington & Chelsea:** Russell Simpson, John D Wood, Strutt & Parker Kensington, Savills Chelsea.
+- **Mayfair & Belgravia:** Wetherell, Knight Frank Mayfair, Carter Jonas.
+- **Chiswick & Hammersmith:** Whitman & Co, Finlay Brewer, Hamptons Chiswick.
+- **Ealing:** Go View London, Leslie & Co, Aston Row.
+- **Barnet & Herts Borders:** Statons (Hadley Wood & Radlett), Lumley Estates, Village Estates (Elstree).
+
+### High-Net-Worth Family & Heritage PR Angles
+- **Campaign 4: "Moving Rare Art & Antiques on Billionaires' Row"**
+  - Case-study editorial detailing security clearances, bespoke timber crating, and white-glove protocols for moves along Kensington Palace Gardens, Eaton Square, and Grosvenor Square.
+- **Campaign 5: "London to the Countryside: The New Commuter Migration"**
+  - Data study tracking the flow of families moving from Central/North West London to Radlett, St Albans, Oxford, Cambridge, and Bristol via our dedicated long-distance route network.
+

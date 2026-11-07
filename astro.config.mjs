@@ -22,7 +22,8 @@ export default defineConfig({
           path.includes('/404') ||
           path.includes('/thank-you') ||
           path.includes('/llms.txt') ||
-          path.includes('draft')
+          path.includes('draft') ||
+          (path.startsWith('/removals/long-distance-removals/') && path !== '/removals/long-distance-removals/')
         ) {
           return false;
         }

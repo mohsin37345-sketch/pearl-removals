@@ -1,0 +1,41 @@
+{
+  "name": "Fitzrovia",
+  "slug": "fitzrovia",
+  "parent": "fitzrovia-and-bloomsbury",
+  "premium": false,
+  "status": "published",
+  "postcodes": [
+    "W1"
+  ],
+  "metaTitle": "Removals in Fitzrovia, Fitzrovia & Bloomsbury | Pearl Remova",
+  "metaDescription": "Professional removals in Fitzrovia, Fitzrovia & Bloomsbury (W1). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides structured, professional residential removals across vibrant Fitzrovia in W1. Bordering Oxford Street and Regent’s Park, Fitzrovia combines historic Georgian townhouses, converted media lofts, and boutique modern apartments with a thriving cafe and culinary scene. Our punctual moving teams ensure an orderly, stress-free move. Vibrant media district side streets around Charlotte Street feature narrow thoroughfares and strict Camden CPZ rules. We secure official morning bay suspensions, transferring tech office suites, designer furniture, and flat contents with rapid efficiency.",
+  "whatMovingHereInvolves": "Operating in Fitzrovia requires managing narrow residential one-way streets, commercial delivery bays, and high pedestrian traffic. Streets like Goodge Street and Foley Street require pre-arranged Camden Council parking suspensions to reserve loading space. Porters navigate narrow period stairways and modern passenger elevators with protective padding.",
+  "landmarks": [
+    "BT Tower Landmark",
+    "Fitzroy Square Gardens",
+    "Goodge Street Cafes"
+  ],
+  "nearbyMicroAreas": [
+    "bloomsbury",
+    "charlotte-street",
+    "russell-square"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you arrange Camden Council parking suspensions in Fitzrovia?",
+      "answer": "Yes. We submit official parking bay suspension applications directly to Camden Council to guarantee legal loading space outside your flat.",
+      "display": true
+    },
+    {
+      "question": "How do you handle moves in converted loft apartments with narrow stairs?",
+      "answer": "Our moving porters specialize in narrow staircase maneuvers, using protective quilted blankets and careful disassembly.",
+      "display": true
+    },
+    {
+      "question": "Are Congestion Charge and ULEZ fees included in your moving quotes?",
+      "answer": "Our removal vehicles are fully ULEZ-compliant. Any applicable central London congestion charges are transparently detailed on your written quotation.",
+      "display": true
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Kensington Church Street",
+  "slug": "kensington-church-street",
+  "parent": "kensington",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "W8"
+  ],
+  "metaTitle": "Removals in Kensington Church Street, Kensington | Pearl Rem",
+  "metaDescription": "Professional removals in Kensington Church Street, Kensington (W8). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides bespoke residential removals along picturesque Kensington Church Street in W8. Famed for its historic antique shops, art galleries, and steep incline climbing toward Notting Hill Gate, this refined enclave requires specialist handling for fine furniture and period properties. Our experienced crews deliver attentive, courteous moving services tailored to Kensington residents. Our vehicles tackle the gradient and tight bends with calibrated loading plans, while our packing specialists supply custom foam encasements for fragile porcelain, bronze statuary, and rare vintage prints. We keep your street unobstructed and your precious items safeguarded throughout.",
+  "whatMovingHereInvolves": "Navigating Kensington Church Street involves managing continuous traffic flows and narrow pavements between St Mary Abbots Church and Notting Hill. Properties along side lanes like Ducie Mews and Holland Street feature historic cobblestones and tight turning circles. Our moving porters specialize in carrying delicate antiquities, grandfather clocks, and oil paintings using museum-grade protective crates and acid-free wrapping.",
+  "landmarks": [
+    "St Mary Abbots Church",
+    "Historic Antique Quarter",
+    "Holland Street Mews"
+  ],
+  "nearbyMicroAreas": [
+    "kensington-high-street",
+    "campden-hill",
+    "phillimore-estate",
+    "kensington-palace-gardens"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you protect rare antiques during moves on Kensington Church Street?",
+      "answer": "We build custom-fitted timber crates with shock-absorbent lining and wrap items in acid-free glassine paper.",
+      "display": true
+    },
+    {
+      "question": "Can your vans access tight mews lanes off Kensington Church Street?",
+      "answer": "Yes. We deploy our agile 3.5-tonne Luton vans equipped with tail lifts to maneuver through historic mews entrances safely.",
+      "display": true
+    },
+    {
+      "question": "How far in advance should parking suspensions be booked in W8?",
+      "answer": "RBKC requires a minimum of ten working days for parking suspension processing, which our logistics team handles on your behalf.",
+      "display": true
+    }
+  ]
+}

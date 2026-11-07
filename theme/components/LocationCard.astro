@@ -1,6 +1,4 @@
 ---
-import Icon from './Icon.astro';
-
 interface Props {
   name: string;
   slug: string;
@@ -20,39 +18,69 @@ const {
   premium = false,
   microCount = 0
 } = Astro.props;
+
+const isHub = slug === 'cricklewood' || name.toLowerCase().includes('cricklewood');
 ---
 
 <a
   href={`/areas/${slug}/`}
-  class="glass-panel p-5 rounded-2xl block group hover:-translate-y-1 hover:shadow-xl transition-all duration-200 border border-white/60 dark:border-white/10"
+  class={`location-card ${isHub ? 'location-card--hub' : ''} ${premium ? 'location-card--premium' : ''}`}
 >
-  <div class="flex items-start justify-between gap-2 mb-2">
-    <div class="flex items-center gap-1.5 font-extrabold text-base text-navy dark:text-pearl group-hover:text-royal transition-colors">
-      <Icon name="map-pin" class="w-4 h-4 text-royal flex-shrink-0" />
-      <span>{name}</span>
-    </div>
-
-    {premium && (
-      <span class="inline-flex items-center gap-1 text-[11px] font-bold text-gold bg-amber-50 dark:bg-amber-950/40 px-2 py-0.5 rounded-full border border-amber-200 dark:border-amber-800">
-        ★ Premium
+  <!-- Card Header -->
+  <div class="location-card__top">
+    <div class="location-card__title-wrap">
+      <span class="location-card__icon">
+        <svg><use href="#i-pin"/></svg>
+        {isHub && <span class="hub-pulse"></span>}
       </span>
-    )}
-  </div>
-
-  <div class="flex flex-wrap items-center gap-1.5 text-xs text-surface-500 mb-3">
-    <span class="font-bold text-navy/80 dark:text-pearl/80">{postcodes.join(', ')}</span>
-    <span>•</span>
-    <span>~{distanceMiles} {distanceMiles === 1 ? 'mile' : 'miles'} from NW2</span>
-  </div>
-
-  {boroughs.length > 0 && (
-    <div class="text-[11px] text-surface-400 mb-3">
-      Borough: {boroughs.join(' / ')}
+      <div>
+        <h3 class="location-card__name">{name}</h3>
+        {boroughs && boroughs.length > 0 ? (
+          <span class="location-card__borough">{boroughs.join(' / ')}</span>
+        ) : (
+          <span class="location-card__borough">North West London</span>
+        )}
+      </div>
     </div>
-  )}
 
-  <div class="flex items-center justify-between pt-3 border-t border-surface-200/50 dark:border-white/5 text-xs font-semibold text-royal">
-    <span>{microCount > 0 ? `${microCount} micro areas` : 'Explore removals'}</span>
-    <Icon name="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+    {isHub ? (
+      <span class="tag-hub">
+        <span class="live-dot-sm"></span> HQ Hub
+      </span>
+    ) : premium ? (
+      <span class="tag-premium">
+        <svg width="11" height="11"><use href="#i-star"/></svg> Prime Care
+      </span>
+    ) : null}
+  </div>
+
+  <!-- Meta row: Postcodes & Distance -->
+  <div class="location-card__meta">
+    <div class="location-card__postcodes">
+      {postcodes.map((pc) => (
+        <span class="postcode-badge">{pc}</span>
+      ))}
+    </div>
+    <span class="location-card__distance">
+      <svg><use href="#i-truck"/></svg>
+      {distanceMiles === 0 ? 'NW2 Operations Base' : `~${distanceMiles} ${distanceMiles === 1 ? 'mile' : 'miles'} from NW2`}
+    </span>
+  </div>
+
+  <!-- Card Footer -->
+  <div class="location-card__foot">
+    <span class="location-card__subtext">
+      {microCount > 0 ? (
+        <span><strong>{microCount}</strong> micro areas &amp; street guides</span>
+      ) : (
+        <span>Full house &amp; flat removals</span>
+      )}
+    </span>
+    <span class="location-card__cta">
+      <span>Explore</span>
+      <span class="cta-circle">
+        <svg class="arrow"><use href="#i-arrow"/></svg>
+      </span>
+    </span>
   </div>
 </a>

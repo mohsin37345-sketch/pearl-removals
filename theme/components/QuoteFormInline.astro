@@ -10,49 +10,23 @@ const { buttonText = "Get Free Quote", defaultPostcode = "" } = Astro.props;
 <form
   action="/get-a-quote/"
   method="GET"
-  class="glass-panel p-4 sm:p-5 rounded-2xl flex flex-col sm:flex-row items-center gap-3 w-full max-w-2xl"
+  style="display: flex; gap: 10px; flex-wrap: wrap; background: var(--surface); padding: 8px; border: 1px solid var(--line); border-radius: var(--r-pill); max-width: 520px;"
 >
-  <div class="w-full sm:flex-1">
-    <label for="inline-name" class="sr-only">Your Name</label>
+  <div style="flex: 1; min-width: 140px; position: relative;">
     <input
       type="text"
-      id="inline-name"
-      name="name"
-      placeholder="Your Name"
-      required
-      class="w-full px-4 py-2.5 rounded-xl bg-white/70 dark:bg-white/10 border border-surface-200 dark:border-white/10 text-sm text-navy dark:text-pearl placeholder-surface-400 focus:outline-none focus:ring-2 focus:ring-royal"
-    />
-  </div>
-
-  <div class="w-full sm:flex-1">
-    <label for="inline-phone" class="sr-only">Phone Number</label>
-    <input
-      type="tel"
-      id="inline-phone"
-      name="phone"
-      placeholder="Phone (e.g. 020...)"
-      required
-      class="w-full px-4 py-2.5 rounded-xl bg-white/70 dark:bg-white/10 border border-surface-200 dark:border-white/10 text-sm text-navy dark:text-pearl placeholder-surface-400 focus:outline-none focus:ring-2 focus:ring-royal"
-    />
-  </div>
-
-  <div class="w-full sm:w-36">
-    <label for="inline-postcode" class="sr-only">Postcode</label>
-    <input
-      type="text"
-      id="inline-postcode"
       name="from_postcode"
       value={defaultPostcode}
-      placeholder="Postcode (NW2)"
+      placeholder="Moving from (e.g. NW2)"
       required
-      class="w-full px-4 py-2.5 rounded-xl bg-white/70 dark:bg-white/10 border border-surface-200 dark:border-white/10 text-sm text-navy dark:text-pearl placeholder-surface-400 uppercase focus:outline-none focus:ring-2 focus:ring-royal"
+      style="width: 100%; border: 0; background: none; padding: 10px 16px; font-size: 15px; outline: none;"
     />
   </div>
 
   <button
     type="submit"
-    class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-royal text-white text-sm font-bold tracking-wide hover:bg-royal-hover active:scale-[0.98] transition-all whitespace-nowrap shadow-md shadow-royal/20"
+    class="btn btn--accent btn--sm"
   >
-    {buttonText} →
+    {buttonText} <svg class="arrow"><use href="#i-arrow"/></svg>
   </button>
 </form>

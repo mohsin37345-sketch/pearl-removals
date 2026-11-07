@@ -1,0 +1,41 @@
+{
+  "name": "Berkeley Square",
+  "slug": "berkeley-square",
+  "parent": "mayfair",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "W1"
+  ],
+  "metaTitle": "Removals in Berkeley Square, Mayfair | Pearl Removals",
+  "metaDescription": "Professional removals in Berkeley Square, Mayfair (W1). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers discreet, premier residential removals surrounding historic Berkeley Square in Mayfair W1. Famous for its ancient plane trees, exclusive private members' clubs, and luxury lateral penthouses, this prime central London location requires exceptional logistical finesse. Our moving crews operate with absolute confidentiality and care. Private hedge funds, luxury residential penthouses, and heritage buildings around the plane trees demand quiet, zero-impact removals. We stage items swiftly via service lifts or designated loading docks, guaranteeing total discretion and uncompromised schedule compliance.",
+  "whatMovingHereInvolves": "Operating around Berkeley Square involves managing commercial traffic, diplomatic vehicles, and tight curbside space along Davies Street, Bruton Street, and Charles Street. Our logistics managers book official parking suspensions with Westminster Council and schedule van arrivals during early morning hours. Inside properties, we install full floor and wall protection.",
+  "landmarks": [
+    "Historic Plane Trees",
+    "Annabel's Club",
+    "Rolls-Royce Mayfair"
+  ],
+  "nearbyMicroAreas": [
+    "grosvenor-square",
+    "mount-street",
+    "park-lane"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you ensure discretion and privacy during Berkeley Square moves?",
+      "answer": "We operate with unbranded or discreet vehicles on request, uniformed security-vetted staff, and strict confidentiality agreements.",
+      "display": true
+    },
+    {
+      "question": "Can you move high-value wine collections and climate-sensitive goods?",
+      "answer": "Yes. We provide insulated temperature-controlled packing and secure transport for private cellar collections.",
+      "display": true
+    },
+    {
+      "question": "How far in advance must Westminster parking permits be booked?",
+      "answer": "Westminster City Council requires a minimum of ten working days for parking bay suspension processing.",
+      "display": true
+    }
+  ]
+}

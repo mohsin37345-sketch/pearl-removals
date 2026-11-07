@@ -21,16 +21,24 @@
   "travelInfo": "Rapid transit via Bayswater Road and the A40 Westway corridor connects our removal fleet directly with our Cricklewood dispatch headquarters in under 20 minutes.",
   "nearbyAreas": [
     {
-      "name": "Paddington",
-      "slug": "paddington"
+      "name": "Kensington",
+      "slug": "kensington"
+    },
+    {
+      "name": "Mayfair",
+      "slug": "mayfair"
+    },
+    {
+      "name": "Knightsbridge & Belgravia",
+      "slug": "knightsbridge-and-belgravia"
     },
     {
       "name": "Notting Hill",
       "slug": "notting-hill"
     },
     {
-      "name": "Holland Park",
-      "slug": "holland-park"
+      "name": "Paddington",
+      "slug": "paddington"
     },
     {
       "name": "Marylebone & Regent's Park",

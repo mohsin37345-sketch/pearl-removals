@@ -1,12 +1,9 @@
 ---
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
-import Hero from 'theme/components/Hero.astro';
 import TrustStrip from 'theme/components/TrustStrip.astro';
 import Breadcrumbs from 'theme/components/Breadcrumbs.astro';
 import Testimonials from 'theme/components/Testimonials.astro';
 import CTABand from 'theme/components/CTABand.astro';
-import Icon from 'theme/components/Icon.astro';
-import { siteConfig } from 'src/data/site';
 import { getCollection } from 'astro:content';
 
 let verifiedReviews: any[] = [];
@@ -28,54 +25,35 @@ const breadcrumbs = [
   breadcrumbs={breadcrumbs}
   verifiedReviews={verifiedReviews}
 >
-  <Hero
-    variant="simple"
-    title="Customer Reviews & Experiences"
-    subtitle="Verified feedback from homeowners and tenants who have moved with Pearl Removals across North West London."
-    eyebrow="GENUINE CUSTOMER FEEDBACK"
-    badges={["Verified Moves", "North West London", "Zero Invented Reviews"]}
-  />
+  <section class="page-intro">
+    <div class="container">
+      <div class="page-intro__content">
+        <div class="page-intro__eyebrow">
+          <span class="eyebrow">GENUINE CUSTOMER FEEDBACK</span>
+        </div>
+        <h1 class="page-intro__title">
+          Customer <span class="mark">Reviews<svg viewBox="0 0 200 20" preserveAspectRatio="none"><path d="M3 15 C 50 4, 140 2, 197 12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg></span> &amp; Experiences
+        </h1>
+        <p class="page-intro__lead">
+          Verified feedback from homeowners and tenants who have moved with Pearl Removals across North West London.
+        </p>
+        <div class="page-intro__badges">
+          <span class="pill"><span class="stars" style="margin-right:2px"><svg><use href="#i-star"/></svg></span>4.9★ Google Rating</span>
+          <span class="pill"><span class="pill__dot"><svg><use href="#i-check"/></svg></span>380+ Verified Moves</span>
+          <span class="pill"><span class="pill__dot"><svg><use href="#i-pin"/></svg></span>North West London Base</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <TrustStrip />
 
   <Breadcrumbs items={breadcrumbs} />
 
-  <article class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
-    
-    {verifiedReviews.length > 0 ? (
-      <Testimonials reviews={verifiedReviews} title="Verified Customer Feedback" />
-    ) : (
-      <div class="glass-panel p-8 sm:p-12 rounded-3xl text-center max-w-2xl mx-auto space-y-4">
-        <div class="w-14 h-14 rounded-full bg-royal/10 text-royal flex items-center justify-center mx-auto">
-          <Icon name="award" class="w-7 h-7" />
-        </div>
-        
-        <h2 class="text-2xl font-bold text-navy dark:text-pearl tracking-tight">
-          Customer Testimonials Being Compiled
-        </h2>
+  <Testimonials reviews={verifiedReviews} />
 
-        <p class="text-sm text-surface-600 dark:text-surface-300 leading-relaxed max-w-lg mx-auto">
-          We operate a strict policy against manufactured or unverified reviews. As part of our verified customer review intake process, client testimonials for recent North West London moves are currently being collected and verified.
-        </p>
-
-        <p class="text-xs text-surface-500 pt-2">
-          Want reference checks or to speak directly with our team about previous moves in your street? Call our dispatch desk on <strong class="text-navy dark:text-pearl">{siteConfig.phone}</strong>.
-        </p>
-
-        <div class="pt-4 flex justify-center">
-          <a
-            href="/get-a-quote/"
-            class="px-6 py-3 rounded-full bg-royal text-white font-bold text-xs sm:text-sm hover:bg-royal-hover transition-colors shadow-md shadow-royal/20"
-          >
-            Request a Free Moving Quote &rarr;
-          </a>
-        </div>
-      </div>
-    )}
-
-    <CTABand
-      title="Experience Our Standard Firsthand"
-      subtitle="Book your move with Pearl Removals for attentive, reliable moving service across London."
-    />
-  </article>
+  <CTABand
+    title="Ready for your next stress-free move?"
+    description="Join hundreds of happy customers across North West London. Get a transparent, fixed-price quote today."
+  />
 </BaseLayout>

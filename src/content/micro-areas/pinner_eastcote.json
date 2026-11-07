@@ -1,0 +1,41 @@
+{
+  "name": "Eastcote",
+  "slug": "eastcote",
+  "parent": "pinner",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "HA5"
+  ],
+  "metaTitle": "Removals in Eastcote, Pinner | Pearl Removals",
+  "metaDescription": "Professional removals in Eastcote, Pinner (HA5). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides reliable, fully insured residential removals across leafy Eastcote in HA5. Straddling the River Pinn and featuring historic Eastcote House Gardens, this peaceful suburban quarter contains 1930s semi-detached properties, detached family homes, and modern apartments. Our skilled moving teams deliver punctual, structured, and affordable moving care. Quiet cul-de-sacs and 1930s garden suburb avenues provide straightforward vehicle access and peaceful working conditions. We take extra care with family heirlooms, children bedroom sets, and garden pottery, providing a friendly, stress-free move.",
+  "whatMovingHereInvolves": "Moving in Eastcote involves residential streets branching off Field End Road and High Road Eastcote. Most properties feature private driveways or off-street parking bays. Our moving porters protect interior hallways and staircases with floor runners, dismantling and rebuilding beds and dining tables to ensure an effortless domestic move.",
+  "landmarks": [
+    "Eastcote House Gardens",
+    "Eastcote Underground Station",
+    "River Pinn Walk"
+  ],
+  "nearbyMicroAreas": [
+    "pinner-village",
+    "pinner-hill",
+    "hatch-end"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you arrange parking suspensions with Hillingdon Council in Eastcote?",
+      "answer": "Yes. Where on-street parking controls exist, we manage the entire suspension application process with Hillingdon Council.",
+      "display": true
+    },
+    {
+      "question": "Can you move 3- and 4-bedroom family houses in Eastcote?",
+      "answer": "Yes. We deploy large Luton or 7.5t vehicles and experienced multi-man crews, providing full packing services and furniture dismantling.",
+      "display": true
+    },
+    {
+      "question": "Do you supply durable moving boxes and bubble wrap in Eastcote?",
+      "answer": "Yes. We supply double-walled boxes, bubble wrap, packing tape, and wardrobe cartons delivered in advance.",
+      "display": true
+    }
+  ]
+}

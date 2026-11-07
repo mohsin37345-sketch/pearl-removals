@@ -1,0 +1,41 @@
+{
+  "name": "Shenley",
+  "slug": "shenley",
+  "parent": "radlett",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "WD7"
+  ],
+  "metaTitle": "Removals in Shenley, Radlett | Pearl Removals",
+  "metaDescription": "Professional removals in Shenley, Radlett (WD7). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers exceptional, fully insured residential removals across picturesque Shenley in WD7. Known for Shenley Park with its historic walled garden, Shenley features converted chapel apartments, executive detached family homes in Porters Park, and rural cottages. Our experienced moving crews provide structured, damage-free moving services. Quiet residential closes and conversion apartments in Shenley Park offer pleasant, calm environments for moving house. We take care of heavy garden tools, children furniture, and fragile glassware, making your countryside move a true pleasure.",
+  "whatMovingHereInvolves": "Moving in Shenley involves modern executive detached residences on the Porters Park development, alongside rural country lanes around Shenleybury. Properties frequently contain large family furniture inventories, home offices, and garden patio sets. Our teams deploy multi-man crews, heavy-duty floor runners, and wardrobe cartons.",
+  "landmarks": [
+    "Shenley Park Walled Garden",
+    "Historic Shenley Water Tower",
+    "Porters Park Golf Club"
+  ],
+  "nearbyMicroAreas": [
+    "aldenham",
+    "bushey-heath",
+    "elstree"
+  ],
+  "localFaqs": [
+    {
+      "question": "Can you move 4- and 5-bedroom executive homes in Porters Park Shenley?",
+      "answer": "Yes. We routinely manage large family home relocations, providing multiple vehicles, dedicated packing teams, and furniture assembly services.",
+      "display": true
+    },
+    {
+      "question": "Do you disassemble large wardrobes and beds during the move in WD7?",
+      "answer": "Yes. Our moving teams carry full toolkits to take down and rebuild beds, dining tables, and flat-pack or solid wood wardrobes.",
+      "display": true
+    },
+    {
+      "question": "How quickly can your vehicles reach Shenley from your depot?",
+      "answer": "Directly via the A5 Watling Street and M1 from our Cricklewood depot, our vehicles arrive in Shenley in approximately 20 minutes.",
+      "display": true
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "name": "Knightsbridge & Belgravia",
+  "slug": "knightsbridge-and-belgravia",
+  "region": "central-london",
+  "phase": 3,
+  "premium": true,
+  "boroughs": [
+    "Westminster",
+    "Kensington & Chelsea"
+  ],
+  "postcodes": [
+    "SW1",
+    "SW7"
+  ],
+  "distanceMiles": 6,
+  "metaTitle": "House Removals Knightsbridge & Belgravia SW1 SW7 | Pearl Removals",
+  "metaDescription": "Premier white-glove removals in Knightsbridge & Belgravia. Eaton Square townhouses, fine art moving & Westminster / RBKC parking. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers peerless, white-glove residential removals throughout the ultra-prime enclaves of Knightsbridge and Belgravia, spanning postcodes SW1 and SW7. From the iconic white stucco terraces of Eaton Square and Chester Square to luxury modern residences along Sloane Street and private mews lanes near Montpelier Square, our moving teams manage complex, high-value relocations with consummate professionalism, absolute discretion, and flawless logistical precision. Operating from our dispatch hub in North West London, our specialized vehicles access Knightsbridge and Belgravia directly via Park Lane and Hyde Park Corner. Our experienced operations supervisors handle all necessary building liaison, parking bay suspensions across both Westminster and Kensington & Chelsea, and provide bespoke protective crating to safeguard priceless artworks, fine crystal, and luxury designer furnishings throughout the moving process.",
+  "localKnowledge": "Knightsbridge and Belgravia represent an enclave of historic grandeur, private garden squares, and foreign embassies. Relocating properties here demands seamless navigation of both Westminster and Kensington & Chelsea council jurisdictions. Red routes along Brompton Road and Knightsbridge require strict loading compliance, while quiet residential squares managed by the Grosvenor and Cadogan estates maintain specific rules concerning vehicle weights, moving times, and communal garden access.",
+  "propertyTypes": "The architectural character of Belgravia and Knightsbridge is defined by majestic six-storey white stucco Grade II* listed townhouses, ambassadorial residences, lateral luxury apartments, and secluded cobblestone mews properties. Features include grand cantilevered stone staircases, delicate chandeliers, original wall mouldings, and private passenger lifts requiring comprehensive protective quilting.",
+  "parkingAndAccess": "Controlled Parking Zones in SW1 and SW7 are heavily enforced. Reserving parking bays on Eaton Square, Wilton Crescent, or Ennismore Gardens necessitates early application through either Westminster City Council or the Royal Borough of Kensington and Chelsea. We take care of all suspension logistics, warning sign verification, and kerbside management.",
+  "transportLinks": "Convenient central London transport links via Knightsbridge and Hyde Park Corner (Piccadilly line), and Sloane Square (District and Circle lines).",
+  "travelInfo": "Direct southbound transit through Park Lane or along the Westway connects Knightsbridge and Belgravia to our NW2 headquarters in approximately 25 minutes.",
+  "nearbyAreas": [
+    {
+      "name": "Chelsea",
+      "slug": "chelsea"
+    },
+    {
+      "name": "Mayfair",
+      "slug": "mayfair"
+    },
+    {
+      "name": "Kensington",
+      "slug": "kensington"
+    },
+    {
+      "name": "Marylebone & Regent's Park",
+      "slug": "marylebone-and-regents-park"
+    },
+    {
+      "name": "Bayswater",
+      "slug": "bayswater"
+    }
+  ],
+  "servicesOffered": [
+    "Luxury Removals Belgravia",
+    "Knightsbridge Penthouse Moves",
+    "Fine Art Packing SW1",
+    "Antique Furniture Removals SW7",
+    "White-Glove Porters"
+  ],
+  "localFaqs": [
+    {
+      "question": "Which council handles parking suspensions in Knightsbridge & Belgravia?",
+      "answer": "The area spans both Westminster City Council and the Royal Borough of Kensington & Chelsea. We determine the exact boundary and manage all permit applications directly.",
+      "display": true
+    },
+    {
+      "question": "Can you move heavy bronze sculptures and large canvases up townhouse stairs?",
+      "answer": "Yes. Our specialized art handling team employs specialized hoisting systems, padded carrying straps, and stair-climbing equipment to protect both art and architecture.",
+      "display": true
+    },
+    {
+      "question": "Do you offer non-disclosure agreements for high-profile clients in SW1?",
+      "answer": "Yes. We regularly execute confidentiality agreements and operate with utmost discretion for private individuals, embassy staff, and family offices.",
+      "display": true
+    },
+    {
+      "question": "How do you safeguard cantilevered stone staircases during moving operations?",
+      "answer": "We install custom-fitted neoprene stair runners, padded banister sleeves, and corner guards to ensure zero contact with delicate stone steps and decorative ironwork.",
+      "display": true
+    }
+  ],
+  "premiumAngle": "The ambassadorial townhouses, Grade II listed interiors, and priceless art collections of Belgravia and Knightsbridge require exceptional moving standards. We offer bespoke wooden crating, comprehensive high-value transit insurance, and discreet, security-vetted personnel.",
+  "status": "published"
+}

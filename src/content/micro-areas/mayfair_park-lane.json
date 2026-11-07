@@ -1,0 +1,41 @@
+{
+  "name": "Park Lane",
+  "slug": "park-lane",
+  "parent": "mayfair",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "W1"
+  ],
+  "metaTitle": "Removals in Park Lane, Mayfair | Pearl Removals",
+  "metaDescription": "Professional removals in Park Lane, Mayfair (W1). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides elite residential removals along prestigious Park Lane in Mayfair W1. Overlooking the broad greenery of Hyde Park, Park Lane is home to luxury penthouse apartments and five-star residences. Our experienced commercial and domestic moving crews manage high-value relocations with flawless precision, discretion, and total protection. Prestigious addresses overlooking Hyde Park feature dedicated concierge desks, underground vehicular ramps, and strict time limits. We work hand-in-glove with building superintendents, ensuring smooth transit for fine art, designer wardrobes, and bespoke furniture.",
+  "whatMovingHereInvolves": "Park Lane is a premier multi-lane dual carriageway with strict Red Route stopping controls enforced by Transport for London. Loading directly from Park Lane is prohibited. Moves must be executed via rear mews entrances such as Dunraven Street or Park Street, or via underground vehicle elevators. Our teams coordinate with building concierges and underground dock marshals.",
+  "landmarks": [
+    "Hyde Park Views",
+    "The Dorchester",
+    "Grosvenor House"
+  ],
+  "nearbyMicroAreas": [
+    "grosvenor-square",
+    "berkeley-square",
+    "mount-street"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you load vehicles when moving on Park Lane?",
+      "answer": "We access buildings via designated rear mews turnings or underground vehicle lifts, avoiding main road Red Route restrictions.",
+      "display": true
+    },
+    {
+      "question": "Can you handle moves in luxury penthouse apartments with private lifts?",
+      "answer": "Yes. We coordinate with building concierges to reserve service elevators and install comprehensive lift and corridor padding.",
+      "display": true
+    },
+    {
+      "question": "Do you provide transit insurance for multi-million pound contents in W1?",
+      "answer": "Yes. We provide comprehensive £50,000 Goods in Transit cover as standard, with options to declare higher bespoke values.",
+      "display": true
+    }
+  ]
+}

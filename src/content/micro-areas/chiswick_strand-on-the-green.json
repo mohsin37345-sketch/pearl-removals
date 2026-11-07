@@ -1,0 +1,42 @@
+{
+  "name": "Strand on the Green",
+  "slug": "strand-on-the-green",
+  "parent": "chiswick",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "W4"
+  ],
+  "metaTitle": "Removals in Strand on the Green, Chiswick | Pearl Removals",
+  "metaDescription": "Professional removals in Strand on the Green, Chiswick (W4). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides bespoke residential removals along picturesque Strand on the Green in Chiswick W4. Overlooking the River Thames with its historic 18th-century riverside cottages and historic pubs, this idyllic waterfront setting requires unique logistical planning. Our experienced moving crews manage riverside relocations with unmatched attention to detail and care. Riverside properties along the Thames towpath face tidal flooding risks and pedestrianized alleyways inaccessible to large HGVs. We utilize compact 3.5-tonne vans, timing our loading cycles around high tide predictions to deliver your belongings dry, safe, and sound.",
+  "whatMovingHereInvolves": "Moving along Strand on the Green requires checking Port of London Authority Thames tide tables, as spring high tides can submerge low-lying riverbank paths and roadways. Vehicular access directly onto the riverside path is restricted, necessitating vehicle staging near Kew Bridge and hand-trolley transit along pedestrian paths. Our crews take extra precautions against river moisture.",
+  "landmarks": [
+    "The Bull's Head Pub",
+    "Kew Railway Bridge",
+    "Historic River Towpath"
+  ],
+  "nearbyMicroAreas": [
+    "grove-park",
+    "chiswick-high-road",
+    "turnham-green",
+    "bedford-park"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you coordinate moves with River Thames tides on Strand on the Green?",
+      "answer": "We review Port of London tide predictions to time loading and unloading windows safely away from high spring tides.",
+      "display": true
+    },
+    {
+      "question": "How do you access properties where vehicles cannot drive directly to the door?",
+      "answer": "We stage our vehicles at the nearest permitted vehicle turning and transfer goods using specialized pneumatic-tyred trolleys.",
+      "display": true
+    },
+    {
+      "question": "Do you provide waterproof wrapping for riverside removals in W4?",
+      "answer": "Yes. All furniture and cartons are enclosed in heavy-duty waterproof transit covers to protect against river damp and weather.",
+      "display": true
+    }
+  ]
+}

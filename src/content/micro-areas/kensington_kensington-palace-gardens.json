@@ -1,0 +1,42 @@
+{
+  "name": "Kensington Palace Gardens",
+  "slug": "kensington-palace-gardens",
+  "parent": "kensington",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "W8"
+  ],
+  "metaTitle": "Removals in Kensington Palace Gardens, Kensington | Pearl Re",
+  "metaDescription": "Professional removals in Kensington Palace Gardens, Kensington (W8). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers elite, ultra-secure residential removals along the world-renowned Kensington Palace Gardens and Palace Green in W8. Home to foreign embassies, ambassadorial residences, and palatial private estates, this private gated thoroughfare demands the absolute pinnacle of security clearance, discretion, and white-glove moving expertise. Operating along Billionaires Row requires rigorous security clearance, verified driver credentials, and discreet diplomatic-level etiquette. Our team liaises seamlessly with private security details and palace management to conduct transfers with quiet, unhurried precision and utmost confidentiality.",
+  "whatMovingHereInvolves": "Conducting relocations on \"Billionaires’ Row\" requires strict pre-clearance with the Crown Estate and Diplomatic Protection Group. Vehicle registrations, driver credentials, and move manifests must be submitted and vetted well in advance of moving day. Our moving teams operate with immaculate discretion, managing priceless art, crystal chandeliers, and museum-quality antiquities with bespoke crating.",
+  "landmarks": [
+    "Kensington Palace",
+    "Embassy Row",
+    "Crown Estate Private Gate"
+  ],
+  "nearbyMicroAreas": [
+    "phillimore-estate",
+    "campden-hill",
+    "kensington-church-street",
+    "kensington-high-street"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you handle security clearance on Kensington Palace Gardens?",
+      "answer": "We register vehicle details and security-vetted crew credentials with Crown Estate security and local diplomatic police in advance.",
+      "display": true
+    },
+    {
+      "question": "Do you sign non-disclosure agreements for ambassadorial moves?",
+      "answer": "Yes. We routinely operate under strict confidentiality agreements for high-profile individuals, diplomats, and family offices.",
+      "display": true
+    },
+    {
+      "question": "Can you provide climate-controlled transport for high-value art collections?",
+      "answer": "Yes. We provide insulated, temperature-monitored vehicles and custom timber crates for museum-grade paintings and sculptures.",
+      "display": true
+    }
+  ]
+}

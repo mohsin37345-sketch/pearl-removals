@@ -92,3 +92,24 @@ To ensure search engine topical authority is consolidated before expanding crawl
   - Top 5 Local Pack rankings in at least 3 Phase 2 areas (e.g. Marylebone, Highgate, Stanmore).
   - ≥ 60 verified Google reviews total.
   - Lead generation exceeding 50 qualified removal enquiries per month.
+
+---
+
+## 7. Phase 3 Release Execution & Final Full-Site Audit
+
+### Phase 3 Full Coverage Scope (publishPhase = 3)
+- **57 Main Areas** (All 4 Regions + Herts borders)
+- **245 Micro Areas** (All unique, ≥ 80 words intro, ≥ 3 FAQs, < 60% similarity)
+- **38 Service × Area Pages** (Including 4 Wave 7 Office Removals pages)
+- **8 Dedicated Long-Distance Routes** (M1, M4, M6, M40, M23 corridors; `enabled: false`)
+- **23 Published Blog Guides** (`draft: false`, zero placeholders)
+
+### Final Acceptance Audit Checklist
+- [x] **Registry & Content Validation:** `npm run validate` passes with 57 locations, 245 micro-areas, 38 service-areas, and pairwise similarity < 60%.
+- [x] **TypeScript & Astro Check:** `npx astro check` passes with 0 errors and 0 warnings.
+- [x] **Production Build Resilience:** `npm run build` succeeds cleanly, building 412 static pages in ~8.5s.
+- [x] **Schema Graph Integrity:** Centralized `@graph` emits valid `MovingCompany`, `WebSite`, `Service`, `Place`, `BreadcrumbList`, and `FAQPage` schemas with GeoCircle widened to 18,000m (`geoRadiusByPhase[3]`).
+- [x] **HTML & XML Sitemaps:** All 57 main areas with nested micro-areas, 38 service-areas, 23 blog posts, and pagination included in `/sitemap/`; disabled routes excluded from XML sitemap.
+- [x] **Robots & AI Governance:** `/robots.txt` disallows `/404/`, `/thank-you/`, and tracking params while pointing to `sitemap-index.xml`; `/llms.txt` documents full business reach.
+- [x] **Border Areas Cross-Linking:** Phase 2 border locations link cleanly to Phase 3 neighbours.
+

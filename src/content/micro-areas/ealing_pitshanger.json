@@ -1,0 +1,42 @@
+{
+  "name": "Pitshanger",
+  "slug": "pitshanger",
+  "parent": "ealing",
+  "premium": false,
+  "status": "published",
+  "postcodes": [
+    "W13"
+  ],
+  "metaTitle": "Removals in Pitshanger, Ealing | Pearl Removals",
+  "metaDescription": "Professional removals in Pitshanger, Ealing (W13). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers dependable, family-friendly house removals across charming Pitshanger Village and the Brentham Garden Suburb in Ealing W13. Awarded London High Street of the Year, Pitshanger combines a vibrant village centre with Arts and Crafts cottages and Edwardian family residences. Our professional moving crews provide organized, stress-free relocations. The intimate village atmosphere and active independent high street make friendly, community-conscious moving essential. We schedule quiet morning departures from side roads, ensuring family moves across Scotch Common or Meadvale Road proceed without disruption.",
+  "whatMovingHereInvolves": "Moving in Pitshanger involves navigating family-oriented streets off Pitshanger Lane like Meadvale Road and Curzon Road, alongside historic conservation cottages in the Brentham Garden Suburb. Narrow cottage doors and low garden gates require careful furniture angling. Our team manages parking suspensions with Ealing Council and protects interior hallways.",
+  "landmarks": [
+    "Pitshanger Lane Shops",
+    "Pitshanger Park",
+    "Brentham Club"
+  ],
+  "nearbyMicroAreas": [
+    "ealing-broadway",
+    "ealing-common",
+    "west-ealing",
+    "hanger-hill"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you arrange Ealing Council parking suspensions in Pitshanger?",
+      "answer": "Yes. We submit official parking bay suspension requests to Ealing Council to secure legal loading space outside your home.",
+      "display": true
+    },
+    {
+      "question": "Can you move furniture through narrow Arts and Crafts cottage doors in Brentham?",
+      "answer": "Yes. Our porters specialize in careful angling and partial dismantling to navigate historic cottage doorways safely.",
+      "display": true
+    },
+    {
+      "question": "Do you offer secure storage between sale and completion in Ealing?",
+      "answer": "Yes. We provide 24/7 monitored containerized storage facilities, perfect for transitional periods between property dates.",
+      "display": true
+    }
+  ]
+}

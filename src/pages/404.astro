@@ -1,6 +1,5 @@
 ---
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
-import Icon from 'theme/components/Icon.astro';
 import { siteConfig } from 'src/data/site';
 
 const breadcrumbs = [
@@ -15,58 +14,40 @@ const breadcrumbs = [
   noindex={true}
   breadcrumbs={breadcrumbs}
 >
-  <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-    <div class="glass-panel p-8 sm:p-12 rounded-3xl space-y-6">
+  <article class="container" style="max-width: 720px; padding-block: 80px; text-align: center;">
+    <div style="background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-xl); padding: clamp(32px, 6vw, 64px); box-shadow: var(--shadow-md);">
       
-      <div class="text-6xl sm:text-7xl font-black text-royal">
+      <div style="font-family: var(--font-display); font-size: clamp(64px, 10vw, 96px); font-weight: 800; color: var(--accent); line-height: 1;">
         404
       </div>
 
-      <div class="space-y-2">
-        <h1 class="text-2xl sm:text-3xl font-black text-navy dark:text-pearl tracking-tight">
+      <div style="margin-top: 16px;">
+        <h1 style="font-size: clamp(24px, 4vw, 36px); font-family: var(--font-display); color: var(--ink);">
           Page Not Found
         </h1>
-        <p class="text-sm text-surface-600 dark:text-surface-400 max-w-md mx-auto leading-relaxed">
+        <p style="color: var(--muted); font-size: 16px; margin-top: 8px;">
           The link you followed may be incorrect, or the page may have been moved.
         </p>
       </div>
 
       <!-- Quick Helpful Links -->
-      <div class="pt-4 border-t border-surface-200 dark:border-white/10 text-xs">
-        <h2 class="font-bold text-navy dark:text-pearl mb-3">Popular Helpful Destinations:</h2>
-        <div class="flex flex-wrap items-center justify-center gap-2">
-          <a href="/" class="glass-pill px-4 py-2 rounded-xl text-royal font-bold hover:bg-royal hover:text-white transition-colors">
-            Homepage
-          </a>
-          <a href="/removals/" class="glass-pill px-4 py-2 rounded-xl text-navy dark:text-pearl hover:text-royal transition-colors">
-            Our Services
-          </a>
-          <a href="/areas/" class="glass-pill px-4 py-2 rounded-xl text-navy dark:text-pearl hover:text-royal transition-colors">
-            Areas We Cover
-          </a>
-          <a href="/prices/" class="glass-pill px-4 py-2 rounded-xl text-navy dark:text-pearl hover:text-royal transition-colors">
-            Pricing Guide
-          </a>
-          <a href="/get-a-quote/" class="glass-pill px-4 py-2 rounded-xl text-navy dark:text-pearl hover:text-royal transition-colors">
-            Get a Quote
-          </a>
+      <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--line);">
+        <h2 style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 16px;">
+          Popular Helpful Destinations:
+        </h2>
+        <div class="chips" style="justify-content: center; margin-top: 0;">
+          <a href="/" class="chip">Homepage</a>
+          <a href="/removals/" class="chip">Our Services</a>
+          <a href="/areas/" class="chip">Areas We Cover</a>
+          <a href="/get-a-quote/" class="chip">Get a Quote</a>
         </div>
       </div>
 
-      <div class="pt-6">
-        <a
-          href="/"
-          class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-royal text-white font-bold text-xs tracking-wide hover:bg-royal-hover transition-colors shadow-md shadow-royal/20"
-        >
-          <Icon name="home" class="w-4 h-4" />
-          <span>Back to Home</span>
+      <div style="margin-top: 36px;">
+        <a href="/" class="btn btn--accent">
+          Return to Homepage <svg class="arrow"><use href="#i-arrow"/></svg>
         </a>
       </div>
-
-      <p class="text-[11px] text-surface-400">
-        Need immediate help? Call our office on <a href={`tel:${siteConfig.phoneE164}`} class="text-royal underline font-bold">{siteConfig.phone}</a>.
-      </p>
-
     </div>
   </article>
 </BaseLayout>

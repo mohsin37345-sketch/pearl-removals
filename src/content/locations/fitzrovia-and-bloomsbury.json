@@ -1,0 +1,76 @@
+{
+  "name": "Fitzrovia & Bloomsbury",
+  "slug": "fitzrovia-and-bloomsbury",
+  "region": "central-london",
+  "phase": 3,
+  "premium": false,
+  "boroughs": [
+    "Camden",
+    "Westminster"
+  ],
+  "postcodes": [
+    "W1",
+    "WC1"
+  ],
+  "distanceMiles": 5,
+  "metaTitle": "House Removals Fitzrovia & Bloomsbury W1 WC1 | Pearl Removals",
+  "metaDescription": "Central London removals in Fitzrovia & Bloomsbury. Period garden squares, university apartments & Camden/Westminster permits. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides structured, professional residential removals across historic Fitzrovia, literary Bloomsbury, and the W1 and WC1 postcode districts. From handsome Georgian townhouses surrounding Russell Square, Gordon Square, and Bedford Square to boutique modern apartments off Charlotte Street and Goodge Street, our moving crews manage central London relocations with expert planning, prompt communication, and complete property protection. Stationed at our Cricklewood dispatch base, our vehicles reach Fitzrovia and Bloomsbury swiftly via the A5 Edgware Road and Euston Road corridors. Our moving teams are well versed in central London access regulations, offering complete packing solutions, parking bay suspensions across Camden and Westminster, and courteous porter service to ensure an orderly, stress-free move with dedicated furniture blankets, mattress protectors, and floor runners.",
+  "localKnowledge": "Fitzrovia and Bloomsbury feature a unique blend of academic institutions, medical facilities, publishing houses, and historic residential squares. Moving here requires negotiating red routes along Euston Road and Tottenham Court Road, as well as strict time-window restrictions on Charlotte Street and Goodge Street due to pedestrianized outdoor dining schemes. Knowledge of loading restrictions in this vibrant central district is essential.",
+  "propertyTypes": "The area is characterized by fine Georgian terraced townhouses with stucco basements, Victorian mansion flats, converted artist workshops, and modern residential developments. Many buildings feature narrow stairwells, listed timber panelling, and delicate period banisters that require padded protection.",
+  "parkingAndAccess": "The area bridges Camden and Westminster council jurisdictions. Controlled Parking Zones are enforced seven days a week in many sectors. We determine which local authority governs your street, booking parking bay suspensions or commercial dispensations well ahead of your moving date.",
+  "transportLinks": "Exceptional public transport with nearby stations at Russell Square (Piccadilly line), Goodge Street and Warren Street (Northern and Victoria lines), and Tottenham Court Road (Elizabeth and Central lines).",
+  "travelInfo": "Direct southbound transit down the A41 / A5 and Euston Road connects Fitzrovia and Bloomsbury to our Cricklewood transport hub in approximately 20 minutes.",
+  "nearbyAreas": [
+    {
+      "name": "Marylebone & Regent's Park",
+      "slug": "marylebone-and-regents-park"
+    },
+    {
+      "name": "Camden Town",
+      "slug": "camden-town"
+    },
+    {
+      "name": "Mayfair",
+      "slug": "mayfair"
+    },
+    {
+      "name": "Primrose Hill",
+      "slug": "primrose-hill"
+    },
+    {
+      "name": "Kentish Town",
+      "slug": "kentish-town"
+    }
+  ],
+  "servicesOffered": [
+    "Central London Removals",
+    "Bloomsbury Apartment Moves",
+    "Fitzrovia House Removals",
+    "Packing Services WC1",
+    "Office & Student Removals W1"
+  ],
+  "localFaqs": [
+    {
+      "question": "Which council handles parking suspensions in Fitzrovia & Bloomsbury?",
+      "answer": "The district is divided between Camden and Westminster. We verify your exact property boundary and manage the correct council application.",
+      "display": true
+    },
+    {
+      "question": "How do you coordinate moves on streets with outdoor dining like Charlotte Street?",
+      "answer": "We arrange early morning arrivals before 09:00 AM to complete loading before pedestrian and restaurant delivery hours commence.",
+      "display": true
+    },
+    {
+      "question": "Can you transport delicate book collections and antique furniture in Bloomsbury?",
+      "answer": "Yes. We provide specialized book cartons, bubble wrap, and acid-free tissue for historic literature and period timber furnishings.",
+      "display": true
+    },
+    {
+      "question": "Are Congestion Charge and ULEZ fees included in your moving quotes?",
+      "answer": "Our removal vehicles are fully ULEZ-compliant. Any applicable central London congestion charges are transparently detailed on your written quotation.",
+      "display": true
+    }
+  ],
+  "status": "published"
+}

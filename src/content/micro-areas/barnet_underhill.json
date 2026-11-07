@@ -1,0 +1,42 @@
+{
+  "name": "Underhill",
+  "slug": "underhill",
+  "parent": "barnet",
+  "premium": false,
+  "status": "published",
+  "postcodes": [
+    "EN5"
+  ],
+  "metaTitle": "Removals in Underhill, Barnet | Pearl Removals",
+  "metaDescription": "Professional removals in Underhill, Barnet (EN5). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers dependable, fully insured house removals across family-friendly Underhill in Barnet EN5. Situated south of High Barnet along the Dollis Brook valley, Underhill features attractive 1930s semi-detached family homes, quiet residential crescents, and generous rear gardens. Our professional moving teams deliver organized, punctual, and affordable moving care. Mixed residential streets sloping down toward Dollis Valley feature family semis with convenient driveway parking. Our efficient crews work rapidly to load garden furniture, bikes, and packed storage boxes, helping you settle into your new home ahead of schedule.",
+  "whatMovingHereInvolves": "Residential roads in Underhill, such as Mays Lane and Fairfield Way, offer good road widths and private driveways, making vehicle parking straightforward. Our moving crews handle multi-bedroom family house moves with structured packing, protective floor runners, and furniture reassembly, ensuring a smooth transition for local families.",
+  "landmarks": [
+    "Dollis Brook Open Space",
+    "Barnet Playing Fields",
+    "Underhill Primary"
+  ],
+  "nearbyMicroAreas": [
+    "high-barnet",
+    "arkley",
+    "hadley-wood",
+    "monken-hadley"
+  ],
+  "localFaqs": [
+    {
+      "question": "Can you move 3- and 4-bedroom family houses in Underhill?",
+      "answer": "Yes. We deploy large Luton or 7.5t vehicles and experienced multi-man crews, providing full packing services and furniture dismantling.",
+      "display": true
+    },
+    {
+      "question": "Do you provide wardrobe cartons and mattress bags for Underhill moves?",
+      "answer": "Yes. We supply heavy-duty wardrobe cartons, mattress covers, and quilted sofa covers as part of every domestic move.",
+      "display": true
+    },
+    {
+      "question": "How quickly can your vehicles reach Underhill from your depot?",
+      "answer": "Via the A41 and A1 corridor from our Cricklewood depot, our vans reach Underhill addresses in approximately 20 minutes.",
+      "display": true
+    }
+  ]
+}

@@ -12,7 +12,7 @@ interface BlogPost {
 }
 
 interface Props {
-  posts?: BlogPost[];
+  posts?: any[];
 }
 
 const { posts = [] } = Astro.props;
@@ -20,16 +20,25 @@ const { posts = [] } = Astro.props;
 
 {posts && posts.length > 0 ? (
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    {posts.map((post) => (
-      <BlogCard
-        title={post.title}
-        slug={post.slug}
-        description={post.description}
-        date={post.date}
-        category={post.category}
-        readTime={post.readTime}
-      />
-    ))}
+    {posts.map((post) => {
+      const title = post.data?.title || post.title;
+      const slug = post.id ? post.id.replace(/\.mdx?$/, '') : (post.slug || post.data?.slug);
+      const description = post.data?.description || post.description;
+      const date = post.data?.date || post.date;
+      const category = post.data?.category || post.category || 'Moving Advice';
+      const readTime = post.data?.readTime || post.readTime || '4 min read';
+
+      return (
+        <BlogCard
+          title={title}
+          slug={slug}
+          description={description}
+          date={date}
+          category={category}
+          readTime={readTime}
+        />
+      );
+    })}
   </div>
 ) : (
   <div class="glass-panel p-8 sm:p-12 text-center rounded-3xl max-w-xl mx-auto my-12 border border-white/60 dark:border-white/10">

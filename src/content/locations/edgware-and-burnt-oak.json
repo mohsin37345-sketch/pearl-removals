@@ -22,20 +22,24 @@
   "travelInfo": "Straightforward transit down the A5 Edgware Road connects HA8 directly to our Cricklewood fleet yard in just 12 to 15 minutes, enabling agile response times.",
   "nearbyAreas": [
     {
-      "name": "Mill Hill",
-      "slug": "mill-hill"
+      "name": "Bushey & Elstree",
+      "slug": "bushey-and-elstree"
+    },
+    {
+      "name": "Barnet",
+      "slug": "barnet"
     },
     {
       "name": "Stanmore",
       "slug": "stanmore"
     },
     {
-      "name": "Colindale & Kingsbury",
-      "slug": "colindale-and-kingsbury"
+      "name": "Mill Hill",
+      "slug": "mill-hill"
     },
     {
-      "name": "Hendon",
-      "slug": "hendon"
+      "name": "Colindale & Kingsbury",
+      "slug": "colindale-and-kingsbury"
     }
   ],
   "servicesOffered": [

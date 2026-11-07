@@ -1,14 +1,37 @@
 ---
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
-import Hero from 'theme/components/Hero.astro';
 import Breadcrumbs from 'theme/components/Breadcrumbs.astro';
-import { getPublishedRegions, getPublishedServiceAreas } from 'theme/utils/published';
+import { getPublishedRegions, getPublishedServiceAreas, getPublishedMicroAreas } from 'theme/utils/published';
 import { servicesRegistry } from 'src/data/services';
+import { getCollection } from 'astro:content';
 import Icon from 'theme/components/Icon.astro';
 
 const publishedRegions = await getPublishedRegions();
 const publishedServiceAreas = await getPublishedServiceAreas();
+const allMicroAreas = await getPublishedMicroAreas();
 const enabledServices = servicesRegistry.filter((s) => s.enabled);
+
+let blogPosts: any[] = [];
+try {
+  const allPosts = await getCollection('blog');
+  blogPosts = allPosts.filter((p) => !p.data.draft);
+} catch {
+  blogPosts = [];
+}
+
+const totalBlogPages = Math.ceil(blogPosts.length / 12) || 1;
+const blogPaginationPages = Array.from({ length: totalBlogPages }, (_, i) => ({
+  title: i === 0 ? 'Blog Page 1 (Main)' : `Blog Page ${i + 1}`,
+  url: i === 0 ? '/blog/' : `/blog/${i + 1}/`
+}));
+
+// Group micro areas by parent area slug
+const microMap = new Map<string, any[]>();
+for (const micro of allMicroAreas) {
+  const parent = micro.parentSlug;
+  if (!microMap.has(parent)) microMap.set(parent, []);
+  microMap.get(parent)!.push(micro);
+}
 
 const staticPages = [
   { title: 'Home', url: '/' },
@@ -19,7 +42,6 @@ const staticPages = [
   { title: 'Customer Reviews', url: '/reviews/' },
   { title: 'Frequently Asked Questions', url: '/faqs/' },
   { title: 'Get a Free Quote', url: '/get-a-quote/' },
-  { title: 'Moving Cost Calculator', url: '/moving-cost-calculator/' },
   { title: 'Coverage Hub (Areas)', url: '/areas/' },
   { title: 'All Services Hub', url: '/removals/' },
   { title: 'Moving Advice Blog', url: '/blog/' },
@@ -41,12 +63,21 @@ const breadcrumbs = [
   canonicalUrl="https://www.pearlremovals.co.uk/sitemap/"
   breadcrumbs={breadcrumbs}
 >
-  <Hero
-    variant="simple"
-    title="HTML Sitemap"
-    subtitle="Quick reference overview of all live pages, removal services, coverage districts, and resources on Pearl Removals."
-    eyebrow="INDEX & DIRECTORY"
-  />
+  <section class="page-intro">
+    <div class="container">
+      <div class="page-intro__content">
+        <div class="page-intro__eyebrow">
+          <span class="eyebrow">INDEX &amp; DIRECTORY</span>
+        </div>
+        <h1 class="page-intro__title">
+          Website <span class="mark">Sitemap<svg viewBox="0 0 200 20" preserveAspectRatio="none"><path d="M3 15 C 50 4, 140 2, 197 12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg></span>
+        </h1>
+        <p class="page-intro__lead">
+          Quick reference directory of all published pages, services, coverage districts, and resources on Pearl Removals.
+        </p>
+      </div>
+    </div>
+  </section>
 
   <Breadcrumbs items={breadcrumbs} />
 
@@ -86,7 +117,7 @@ const breadcrumbs = [
       </ul>
     </div>
 
-    <!-- 3. Regional Hubs & Published Areas -->
+    <!-- 3. Regional Hubs & Published Areas with Nested Micro Areas -->
     <div class="glass-panel p-6 sm:p-8 rounded-3xl">
       <h2 class="text-xl font-bold text-navy dark:text-pearl mb-4 flex items-center gap-2">
         <Icon name="map-pin" class="w-5 h-5 text-royal" />
@@ -94,32 +125,43 @@ const breadcrumbs = [
       </h2>
 
       {publishedRegions.length > 0 ? (
-        <div class="space-y-6">
+        <div class="space-y-8">
           {publishedRegions.map((region) => (
-            <div>
-              <h3 class="text-sm font-bold uppercase tracking-wider text-royal mb-2">
+            <div class="border-b border-surface-200 dark:border-navy-800 pb-6 last:border-0 last:pb-0">
+              <h3 class="text-base font-bold uppercase tracking-wider text-royal mb-4">
                 <a href={`/areas/${region.slug}/`} class="hover:underline">
-                  {region.name} Hub
+                  {region.name} Hub &rarr;
                 </a>
               </h3>
-              <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-xs">
-                {region.areas.map((area) => (
-                  <li>
-                    <a href={`/areas/${area.slug}/`} class="text-surface-700 dark:text-surface-300 hover:text-royal transition-colors">
-                      {area.name} ({area.postcodes.join(', ')})
-                    </a>
-                  </li>
-                ))}
-              </ul>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {region.areas.map((area) => {
+                  const micros = microMap.get(area.slug) || [];
+                  return (
+                    <div class="bg-surface-50/50 dark:bg-navy-900/40 p-4 rounded-xl border border-surface-200/60 dark:border-navy-800/60">
+                      <a href={`/areas/${area.slug}/`} class="text-sm font-bold text-navy dark:text-pearl hover:text-royal transition-colors block mb-2">
+                        {area.name} <span class="text-xs font-normal text-surface-500">({area.postcodes.join(', ')})</span>
+                      </a>
+                      {micros.length > 0 && (
+                        <ul class="pl-3 border-l border-surface-200 dark:border-navy-700 space-y-1 text-xs">
+                          {micros.map((m) => (
+                            <li>
+                              <a href={`/areas/${area.slug}/${m.slug}/`} class="text-surface-600 dark:text-surface-400 hover:text-royal transition-colors">
+                                {m.name}
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           ))}
         </div>
       ) : (
         <div class="text-xs text-surface-500">
-          <p>Local area landing pages for Phase 1 launch are currently staged. Serving our primary base: Cricklewood NW2 and all North West London postcodes.</p>
-          <a href="/areas/" class="text-royal font-bold hover:underline block mt-2">
-            View All Coverage Areas →
-          </a>
+          <p>Serving our primary base: Cricklewood NW2 and all North West London postcodes.</p>
         </div>
       )}
     </div>
@@ -129,13 +171,42 @@ const breadcrumbs = [
       <div class="glass-panel p-6 sm:p-8 rounded-3xl">
         <h2 class="text-xl font-bold text-navy dark:text-pearl mb-4 flex items-center gap-2">
           <Icon name="award" class="w-5 h-5 text-royal" />
-          <span>Local Service x Location Guides</span>
+          <span>Local Service &times; Location Guides</span>
         </h2>
         <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-xs">
           {publishedServiceAreas.map((sa) => (
             <li>
               <a href={sa.url} class="text-surface-700 dark:text-surface-300 hover:text-royal transition-colors">
                 {sa.serviceTitle} in {sa.areaTitle}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+
+    <!-- 5. Moving Guides & Blog Articles -->
+    {blogPosts.length > 0 && (
+      <div class="glass-panel p-6 sm:p-8 rounded-3xl">
+        <h2 class="text-xl font-bold text-navy dark:text-pearl mb-4 flex items-center gap-2">
+          <Icon name="document-text" class="w-5 h-5 text-royal" />
+          <span>Moving Guides, Advice & Checklists ({blogPosts.length} Articles)</span>
+        </h2>
+        
+        <div class="mb-4 flex flex-wrap gap-2 text-xs">
+          <span class="font-bold text-surface-500">Pagination:</span>
+          {blogPaginationPages.map((pg) => (
+            <a href={pg.url} class="px-2.5 py-1 rounded bg-surface-200 dark:bg-navy-800 text-royal hover:underline font-medium">
+              {pg.title}
+            </a>
+          ))}
+        </div>
+
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-xs">
+          {blogPosts.map((post) => (
+            <li>
+              <a href={`/blog/${post.id ? post.id.replace(/\.mdx?$/, '') : post.slug}/`} class="text-surface-700 dark:text-surface-300 hover:text-royal transition-colors">
+                {post.data.title}
               </a>
             </li>
           ))}

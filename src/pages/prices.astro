@@ -1,12 +1,10 @@
 ---
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
-import Hero from 'theme/components/Hero.astro';
 import TrustStrip from 'theme/components/TrustStrip.astro';
 import Breadcrumbs from 'theme/components/Breadcrumbs.astro';
 import PricingTable from 'theme/components/PricingTable.astro';
 import ComparisonTable from 'theme/components/ComparisonTable.astro';
 import CTABand from 'theme/components/CTABand.astro';
-import Icon from 'theme/components/Icon.astro';
 
 const breadcrumbs = [
   { name: 'Pricing', url: '/prices/' }
@@ -19,114 +17,104 @@ const breadcrumbs = [
   canonicalUrl="https://www.pearlremovals.co.uk/prices/"
   breadcrumbs={breadcrumbs}
 >
-  <Hero
-    variant="simple"
-    title="House Removals Pricing Guide"
-    subtitle="Transparent, upfront rate bands with clearly stated conditions. We believe you should know what your move costs before booking."
-    eyebrow="CLEAR & HONEST PRICING"
-    badges={["Fixed Written Quotes", "No Hidden Key-Wait Surcharges", "All Insurance Included"]}
-  />
+  <section class="page-intro">
+    <div class="container">
+      <div class="page-intro__content">
+        <div class="page-intro__eyebrow">
+          <span class="eyebrow">CLEAR &amp; HONEST PRICING</span>
+        </div>
+        <h1 class="page-intro__title">
+          House Removals <span class="mark">Pricing Guide<svg viewBox="0 0 200 20" preserveAspectRatio="none"><path d="M3 15 C 50 4, 140 2, 197 12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg></span>
+        </h1>
+        <p class="page-intro__lead">
+          Transparent, upfront rate bands with clearly stated conditions. We believe you should know what your move costs before booking.
+        </p>
+        <div class="page-intro__badges">
+          <span class="pill"><span class="pill__dot"><svg><use href="#i-pound"/></svg></span>Fixed Written Quotes</span>
+          <span class="pill"><span class="pill__dot"><svg><use href="#i-clock"/></svg></span>No Hidden Key-Wait Fees</span>
+          <span class="pill"><span class="pill__dot"><svg><use href="#i-shield"/></svg></span>All Insurance Included</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <TrustStrip />
 
   <Breadcrumbs items={breadcrumbs} />
 
-  <article class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+  <article class="container" style="padding-block: 40px; display: flex; flex-direction: column; gap: 40px;">
     
     <div>
-      <h2 class="text-2xl sm:text-3xl font-black text-navy dark:text-pearl tracking-tight mb-2">
-        Guideline Removal Rates in North West London
-      </h2>
-      <p class="text-sm text-surface-600 dark:text-surface-400 mb-6">
-        Below are our standard starting prices by property size. Each price includes our fully equipped Luton vans, professional movers, padded transit blankets, and £50k Goods in Transit insurance.
-      </p>
-
       <PricingTable />
     </div>
 
     <!-- Pricing Factors Explanation -->
-    <div class="glass-panel p-6 sm:p-10 rounded-3xl space-y-6">
-      <h3 class="text-xl sm:text-2xl font-bold text-navy dark:text-pearl">
+    <div style="background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-xl); padding: clamp(28px, 5vw, 44px); box-shadow: var(--shadow-sm);">
+      <span class="eyebrow" style="margin-bottom: 8px;">Cost Breakdown</span>
+      <h3 style="font-size: clamp(22px, 3.2vw, 30px); font-weight: 700; color: var(--ink); margin-bottom: 20px;">
         What Key Factors Determine Your Removal Quote?
       </h3>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-xs sm:text-sm text-surface-700 dark:text-surface-300">
-        <div class="space-y-1">
-          <strong class="font-bold text-navy dark:text-pearl flex items-center gap-1.5">
-            <Icon name="box" class="w-4 h-4 text-royal" />
-            1. Total Volume of Belongings (Cubic Feet)
-          </strong>
-          <p class="text-surface-600 dark:text-surface-400 leading-relaxed">
-            The overall volume of goods dictates whether your move requires one 3.5T Luton van, multiple vans, or a larger vehicle, along with the size of the moving crew.
-          </p>
+      <div class="features" style="margin-top: 0;">
+        <div class="feature">
+          <span class="icon-tile"><svg><use href="#i-box"/></svg></span>
+          <h4>1. Total Volume of Belongings</h4>
+          <p>The overall volume of goods dictates whether your move requires one 3.5T Luton van, multiple vans, or a larger vehicle, along with the size of the moving crew.</p>
         </div>
 
-        <div class="space-y-1">
-          <strong class="font-bold text-navy dark:text-pearl flex items-center gap-1.5">
-            <Icon name="building" class="w-4 h-4 text-royal" />
-            2. Property Access & Floor Levels
-          </strong>
-          <p class="text-surface-600 dark:text-surface-400 leading-relaxed">
-            Ground floor homes and properties with spacious lifts are faster to load than 3rd floor walk-ups in converted Victorian villas without a lift.
-          </p>
+        <div class="feature">
+          <span class="icon-tile"><svg><use href="#i-pin"/></svg></span>
+          <h4>2. Travel Distance &amp; London Traffic</h4>
+          <p>Distance between collection and delivery addresses, including travel time across London, congestion zones, and access routes.</p>
         </div>
 
-        <div class="space-y-1">
-          <strong class="font-bold text-navy dark:text-pearl flex items-center gap-1.5">
-            <Icon name="truck" class="w-4 h-4 text-royal" />
-            3. Parking Restrictions & Carry Distance
-          </strong>
-          <p class="text-surface-600 dark:text-surface-400 leading-relaxed">
-            Parking directly outside your front door on a private drive is straightforward. Controlled parking zones requiring council suspensions or long carrying walks take longer.
-          </p>
+        <div class="feature">
+          <span class="icon-tile"><svg><use href="#i-home"/></svg></span>
+          <h4>3. Property Access &amp; Flights of Stairs</h4>
+          <p>Whether your property has direct driveway access, tight staircase turns, elevator availability, or long walking distances from the van parking bay.</p>
         </div>
 
-        <div class="space-y-1">
-          <strong class="font-bold text-navy dark:text-pearl flex items-center gap-1.5">
-            <Icon name="award" class="w-4 h-4 text-royal" />
-            4. Packing & Specialist Items
-          </strong>
-          <p class="text-surface-600 dark:text-surface-400 leading-relaxed">
-            Opting for our full packing service, furniture dismantling and reassembly, or transporting upright/grand pianos will be clearly itemised on your quote.
-          </p>
+        <div class="feature">
+          <span class="icon-tile"><svg><use href="#i-shield"/></svg></span>
+          <h4>4. Specialist Services &amp; Packing</h4>
+          <p>Adding our full professional packing service, wardrobe boxes, fine art handling, or piano relocation.</p>
         </div>
       </div>
     </div>
 
-    <!-- Moving Cost Calculator CTA -->
-    <div class="glass-pill p-6 sm:p-8 rounded-3xl flex flex-col sm:flex-row items-center justify-between gap-6 border border-royal/30">
-      <div class="space-y-1 text-center sm:text-left">
-        <h3 class="text-lg font-bold text-navy dark:text-pearl">
-          Want a Custom Estimate in 60 Seconds?
+    <!-- Moving Cost Calculator Interactive Callout -->
+    <div style="background: var(--pearl); border: 1px solid var(--line); border-radius: var(--r-xl); padding: clamp(24px, 4vw, 36px); display: flex; flex-direction: column; md:flex-row; justify-content: space-between; align-items: center; gap: 24px; box-shadow: var(--shadow-sm);">
+      <div style="max-width: 600px;">
+        <span class="eyebrow" style="margin-bottom: 6px;">Instant Online Estimator</span>
+        <h3 style="font-size: clamp(20px, 2.5vw, 24px); font-weight: 700; color: var(--ink); margin-bottom: 8px;">
+          Want a Tailored Fixed Price in 60 Seconds?
         </h3>
-        <p class="text-xs sm:text-sm text-surface-600 dark:text-surface-400">
-          Try our interactive moving cost calculator to see real-time volume calculations and distance bands.
+        <p style="color: var(--muted); font-size: 14.5px; line-height: 1.6; margin: 0;">
+          Use our interactive multi-step quote form to select your exact items, dates, and property details for a guaranteed fixed price.
         </p>
       </div>
-      <a
-        href="/moving-cost-calculator/"
-        class="px-6 py-3 rounded-full bg-royal hover:bg-royal-hover text-white font-bold text-xs sm:text-sm whitespace-nowrap shadow-md shadow-royal/20 transition-all"
-      >
-        Try Cost Calculator →
-      </a>
+      <div>
+        <a href="/get-a-quote/" class="btn btn--accent btn--block">
+          Get a Free Quote <svg class="arrow"><use href="#i-arrow"/></svg>
+        </a>
+      </div>
     </div>
 
     <!-- Comparison Table -->
     <div>
-      <div class="mb-4">
-        <h3 class="text-xl font-bold text-navy dark:text-pearl">
+      <div class="section-head section-head--center" style="margin-bottom: 24px;">
+        <span class="eyebrow">The Professional Standard</span>
+        <h3 style="font-size: clamp(22px, 3vw, 30px); font-weight: 800; color: var(--ink);">
           Fixed Written Quotes vs Casual Hourly Rates
         </h3>
-        <p class="text-xs sm:text-sm text-surface-500 mt-1">
-          Why fixed price quotes protect your budget from unpredictable London traffic delays.
+        <p style="font-size: 15px; color: var(--muted);">
+          Why fixed price quotes protect your budget from unpredictable London traffic delays and key-waiting disputes.
         </p>
       </div>
       <ComparisonTable />
     </div>
 
-    <CTABand
-      title="Lock In Your Fixed-Price Removal Quote"
-      subtitle="Contact our Cricklewood office today or request your free video walk-through survey."
-    />
+    <CTABand />
+
   </article>
 </BaseLayout>

@@ -1,0 +1,41 @@
+{
+  "name": "Pinner Village",
+  "slug": "pinner-village",
+  "parent": "pinner",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "HA5"
+  ],
+  "metaTitle": "Removals in Pinner Village, Pinner | Pearl Removals",
+  "metaDescription": "Professional removals in Pinner Village, Pinner (HA5). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides exceptional, white-glove removals across historic Pinner Village in HA5. Famed for its medieval high street, 14th-century parish church, and timber-framed historic coaching buildings, this conservation quarter demands attentive moving care. Our experienced moving crews handle period properties with profound care, discretion, and punctuality. Timber-framed medieval cottages and historic high street pavements require sensitive, careful furniture transit. We position our vehicles along permitted bays, using padded covers to maneuver heirlooms through vintage doorways without touching historic timbers. We provide specialized quilted covers and floor protection to ensure complete peace of mind throughout your relocation.",
+  "whatMovingHereInvolves": "Pinner Village contains historic timber-framed properties with narrow entrance gates, ancient ceiling beams, and tight turning stairways along Bridge Street and High Street. Vehicle positioning must be carefully managed to avoid blocking village traffic. Our porters install padded banister sleeves and floor runners to safeguard historic oak beams and period plasterwork.",
+  "landmarks": [
+    "Pinner High Street",
+    "Pinner Parish Church St John the Baptist",
+    "Pinner Memorial Park"
+  ],
+  "nearbyMicroAreas": [
+    "pinner-hill",
+    "hatch-end",
+    "eastcote"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you protect timber-framed historic interiors in Pinner Village?",
+      "answer": "We fit padded door jamb protectors, specialized banister covers, and floor runners to safeguard historic oak beams and period plasterwork.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange Harrow parking permits for moves near Pinner station?",
+      "answer": "Yes. We coordinate directly with Harrow Council to secure parking bay suspensions and dispensations for CPZ roads in HA5.",
+      "display": true
+    },
+    {
+      "question": "Can your removal vans access narrow coaching archways in Pinner Village?",
+      "answer": "Yes. We inspect access routes in advance and deploy agile 3.5-tonne Luton vehicles to navigate tight historic archways safely.",
+      "display": true
+    }
+  ]
+}

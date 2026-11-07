@@ -1,0 +1,41 @@
+{
+  "name": "Askew Road",
+  "slug": "askew-road",
+  "parent": "shepherds-bush-and-white-city",
+  "premium": false,
+  "status": "published",
+  "postcodes": [
+    "W12"
+  ],
+  "metaTitle": "Removals in Askew Road, Shepherd's Bush & White City | Pearl",
+  "metaDescription": "Professional removals in Askew Road, Shepherd's Bush & White City (W12). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers comprehensive, fully insured house removals across the popular Askew Road neighbourhood in Shepherd’s Bush W12. Known for its independent cafes, bakeries, and handsome Victorian terraced family homes on roads like Starfield Road and Becklow Road, this family-oriented quarter receives prompt, courteous moving care from our Cricklewood-based crews. The vibrant cafe quarter and bustling bus routes necessitate swift, organized loading from side streets like Starfield Road or Curwen Road. Our friendly moving staff carry your wardrobes and glassware with reassuring skill, ensuring an effortless change of address.",
+  "whatMovingHereInvolves": "Askew Road itself is a vibrant commercial high street with continuous bus and customer traffic, while residential side streets feature tightly parked cars and narrow carriageways. Our drivers position our 3.5-tonne Luton vans carefully to ensure neighbour access is preserved while keeping carrying distances to your front garden gate as short as possible.",
+  "landmarks": [
+    "Askew Road Artisan Market",
+    "Starch Green",
+    "Wendell Park Border"
+  ],
+  "nearbyMicroAreas": [
+    "brackenbury-village",
+    "white-city",
+    "wood-lane"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you arrange parking suspensions for Askew Road side streets?",
+      "answer": "Yes. We apply directly to Hammersmith & Fulham Council to secure official parking bay suspensions outside your property.",
+      "display": true
+    },
+    {
+      "question": "Can you move heavy family appliances like American fridge-freezers?",
+      "answer": "Yes. We use heavy-duty appliance dollies, protective quilted covers, and tail-lift vehicles to move large kitchen appliances safely.",
+      "display": true
+    },
+    {
+      "question": "Do you offer full packing services the day before moving near Askew Road?",
+      "answer": "Yes. Our trained packing team can pack your entire home the day prior, labeling every box systematically by room.",
+      "display": true
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Bushey",
+  "slug": "bushey",
+  "parent": "bushey-and-elstree",
+  "premium": false,
+  "status": "published",
+  "postcodes": [
+    "WD23"
+  ],
+  "metaTitle": "Removals in Bushey, Bushey & Elstree | Pearl Removals",
+  "metaDescription": "Professional removals in Bushey, Bushey & Elstree (WD23). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers dependable house removals across historic Bushey Village in WD23. Known for its charming coaching inns, independent cafes, and Victorian cottages along High Street and Melbourne Road, Bushey offers a delightful village lifestyle. Our professional moving teams provide organized, stress-free relocations with full packing and transit care. The picturesque village high street and quiet surrounding closes feature Victorian brick terraces and modern family homes. Our moving teams work diligently from start to finish, ensuring your belongings are placed exactly where you wish in your new Bushey home.",
+  "whatMovingHereInvolves": "Moving in Bushey Village involves navigating historic coaching roads and narrow turning lanes near St James’s Church. Parking vehicles outside Victorian cottages requires careful positioning to preserve traffic flow. Our porters use padded floor runners and door jamb guards to protect period entranceways and wooden floors.",
+  "landmarks": [
+    "Bushey Museum and Art Gallery",
+    "St James's Church Bushey",
+    "Bushey Country Club"
+  ],
+  "nearbyMicroAreas": [
+    "bushey-heath",
+    "elstree",
+    "borehamwood"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you arrange Hertsmere Council parking dispensations in Bushey Village?",
+      "answer": "Yes. Where on-street parking controls exist, we manage the entire suspension application process with Hertsmere Council.",
+      "display": true
+    },
+    {
+      "question": "Can your team move heavy furniture up narrow stairs in period cottages?",
+      "answer": "Yes. Our moving porters specialize in narrow staircase maneuvers, using protective quilted blankets and careful disassembly.",
+      "display": true
+    },
+    {
+      "question": "Do you offer full packing services the day before moving in Bushey?",
+      "answer": "Yes. Our packing team can arrive the day prior with double-walled boxes, bubble wrap, and wardrobe cartons to pack your entire house.",
+      "display": true
+    }
+  ]
+}

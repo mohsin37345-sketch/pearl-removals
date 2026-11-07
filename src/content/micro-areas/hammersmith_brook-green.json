@@ -1,0 +1,41 @@
+{
+  "name": "Brook Green",
+  "slug": "brook-green",
+  "parent": "hammersmith",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "W6"
+  ],
+  "metaTitle": "Removals in Brook Green, Hammersmith | Pearl Removals",
+  "metaDescription": "Professional removals in Brook Green, Hammersmith (W6). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers premier, white-glove residential removals around picturesque Brook Green in Hammersmith W6. Fronting the historic green with its tennis courts and pavilion, this distinguished neighbourhood boasts substantial four-storey Victorian and Edwardian family residences. Our skilled moving porters manage every relocation with meticulous care, discretion, and total property protection. Georgian townhouses overlooking the green boast tall sash windows and listed frontages that require gentle handling and specialist padding. We arrange Hammersmith & Fulham bay suspensions well ahead, ensuring direct front-door access for seamless furniture offloading.",
+  "whatMovingHereInvolves": "Properties surrounding Brook Green, such as along Luxor Street, Rowan Road, and Aynhoe Road, feature grand architectural proportions, wide bay windows, and high decorative ceilings. Moving here requires managing morning school traffic around St Paul’s Girls’ School and Bute House. Our team secures official H&F bay suspensions to reserve kerbside space directly outside your front gate.",
+  "landmarks": [
+    "Brook Green Tennis Courts",
+    "St Paul's Girls' School",
+    "The Queen's Head Brook Green"
+  ],
+  "nearbyMicroAreas": [
+    "ravenscourt-park",
+    "hammersmith-broadway",
+    "brackenbury-village"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you coordinate moves around Brook Green school traffic?",
+      "answer": "We plan vehicle arrivals and primary loading outside morning and afternoon school run hours to ensure completely clear road access.",
+      "display": true
+    },
+    {
+      "question": "Do you provide protective floor runners for grand Brook Green hallways?",
+      "answer": "Yes. We lay heavy-duty non-slip floor runners and fitted banister protectors across all entrances and stairwells.",
+      "display": true
+    },
+    {
+      "question": "Can you dismantle and rebuild large four-poster or ottoman beds?",
+      "answer": "Yes. Our moving teams carry comprehensive toolkits to safely deconstruct and reassemble all types of beds and furniture.",
+      "display": true
+    }
+  ]
+}

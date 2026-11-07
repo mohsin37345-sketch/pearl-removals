@@ -1,320 +1,352 @@
 ---
 import { siteConfig } from 'src/data/site';
-import navData from 'src/data/navigation.json';
-import { getPublishedAreas } from 'theme/utils/published';
-import Icon from './Icon.astro';
-
-const publishedAreas = await getPublishedAreas();
-const currentPath = Astro.url.pathname;
+import Logo from './Logo.astro';
 ---
 
-<header class="sticky top-4 z-50 w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto transition-all duration-300" id="site-header">
-  <nav 
-    class="glass-nav rounded-full px-4 py-2.5 sm:px-6 sm:py-3 flex items-center justify-between gap-4 transition-all duration-200"
-    aria-label="Main Navigation"
-  >
-    <!-- Brand Logo -->
-    <a href="/" class="flex items-center gap-2.5 group focus:outline-none focus-visible:ring-2 focus-visible:ring-royal rounded-full pr-2" aria-label="Pearl Removals Home">
-      <div class="relative w-9 h-9 rounded-full bg-gradient-to-tr from-royal to-royal-light flex items-center justify-center text-white shadow-sm shadow-royal/20 transition-transform group-hover:scale-105">
-        <!-- Pearl Circle with House Motif -->
-        <span class="absolute inset-0.5 rounded-full border border-white/40"></span>
-        <Icon name="home" class="w-4 h-4 text-white relative z-10" />
-      </div>
-      <div class="flex flex-col">
-        <span class="font-extrabold text-base sm:text-lg tracking-tight text-navy dark:text-pearl leading-none">
-          PEARL <span class="text-royal font-semibold text-xs sm:text-sm tracking-widest uppercase block sm:inline">REMOVALS</span>
-        </span>
-      </div>
-    </a>
-
-    <!-- Desktop Center Nav Items -->
-    <ul class="hidden lg:flex items-center gap-1 xl:gap-2">
-      {navData.header.map((item) => {
-        const isActive = currentPath === item.href || (item.href !== '/' && currentPath.startsWith(item.href));
-        
-        if (item.label === 'Services') {
-          return (
-            <li class="relative group">
-              <a
-                href={item.href}
-                class={`px-3.5 py-2 rounded-full text-sm font-medium transition-colors flex items-center gap-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-royal ${
-                  isActive ? 'text-royal font-semibold' : 'text-navy/80 hover:text-royal dark:text-pearl/80 dark:hover:text-white'
-                }`}
-              >
-                {item.label}
-                <Icon name="chevron-down" class="w-3.5 h-3.5 transition-transform group-hover:rotate-180 opacity-70" />
-              </a>
-
-              <!-- Mega Menu Dropdown -->
-              <div class="absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 w-[580px]">
-                <div class="glass-panel p-5 bg-white/95 dark:bg-navy/95 rounded-2xl shadow-2xl border border-white/60 dark:border-white/10 grid grid-cols-2 gap-6">
-                  {item.groups?.map((group) => (
-                    <div>
-                      <h4 class="text-xs font-bold uppercase tracking-wider text-royal dark:text-royal-light mb-3 pb-1 border-b border-surface-200 dark:border-surface-700">
-                        {group.title}
-                      </h4>
-                      <ul class="space-y-1.5">
-                        {group.items.map((sub) => (
-                          <li>
-                            <a
-                              href={sub.href}
-                              class="block p-2 rounded-xl hover:bg-surface-100/80 dark:hover:bg-white/5 transition-colors group/sub"
-                            >
-                              <div class="font-medium text-sm text-navy dark:text-pearl group-hover/sub:text-royal">
-                                {sub.label}
-                              </div>
-                              <p class="text-xs text-surface-500 dark:text-surface-400 line-clamp-1">
-                                {sub.desc}
-                              </p>
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </li>
-          );
-        }
-
-        if (item.label === 'Areas We Cover') {
-          return (
-            <li class="relative group">
-              <a
-                href={item.href}
-                class={`px-3.5 py-2 rounded-full text-sm font-medium transition-colors flex items-center gap-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-royal ${
-                  isActive ? 'text-royal font-semibold' : 'text-navy/80 hover:text-royal dark:text-pearl/80 dark:hover:text-white'
-                }`}
-              >
-                {item.label}
-                <Icon name="chevron-down" class="w-3.5 h-3.5 transition-transform group-hover:rotate-180 opacity-70" />
-              </a>
-
-              <!-- Areas Mega Menu -->
-              <div class="absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 w-[420px]">
-                <div class="glass-panel p-5 bg-white/95 dark:bg-navy/95 rounded-2xl shadow-2xl border border-white/60 dark:border-white/10">
-                  <div class="flex items-center justify-between pb-2 mb-3 border-b border-surface-200 dark:border-surface-700">
-                    <span class="text-xs font-bold uppercase tracking-wider text-royal">Coverage Hub</span>
-                    <a href="/areas/" class="text-xs font-semibold text-royal hover:underline flex items-center gap-1">
-                      View all areas <Icon name="arrow-right" class="w-3 h-3" />
-                    </a>
-                  </div>
-
-                  {publishedAreas.length > 0 ? (
-                    <div class="grid grid-cols-2 gap-2 max-h-64 overflow-y-auto pr-1">
-                      {publishedAreas.map((area) => (
-                        <a
-                          href={`/areas/${area.slug}/`}
-                          class="p-2 rounded-lg text-xs font-medium text-navy dark:text-pearl hover:bg-surface-100/80 dark:hover:bg-white/5 hover:text-royal transition-colors flex items-center justify-between"
-                        >
-                          <span>{area.name}</span>
-                          {area.premium && <span class="text-gold text-[10px]">★</span>}
-                        </a>
-                      ))}
-                    </div>
-                  ) : (
-                    <div class="p-3 text-center text-xs text-surface-500">
-                      <p class="font-medium text-navy dark:text-pearl mb-1">Serving North West London</p>
-                      <p>Centred on our Cricklewood NW2 base. Area landing pages coming online shortly.</p>
-                      <a href="/areas/" class="inline-block mt-3 px-3 py-1.5 bg-royal text-white rounded-full text-xs font-semibold">
-                        View Coverage Area
-                      </a>
-                    </div>
-                  )}
-                </div>
-              </div>
-            </li>
-          );
-        }
-
-        return (
-          <li>
-            <a
-              href={item.href}
-              class={`px-3.5 py-2 rounded-full text-sm font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-royal ${
-                isActive ? 'text-royal font-semibold' : 'text-navy/80 hover:text-royal dark:text-pearl/80 dark:hover:text-white'
-              }`}
-            >
-              {item.label}
-            </a>
-          </li>
-        );
-      })}
-    </ul>
-
-    <!-- Header Actions (Call & Quote CTA + Dark Toggle) -->
-    <div class="flex items-center gap-2 sm:gap-3">
-      <!-- Dark Mode Switcher -->
-      <button
-        id="theme-toggle"
-        type="button"
-        class="w-9 h-9 rounded-full flex items-center justify-center text-navy/70 dark:text-pearl/80 hover:bg-white/40 dark:hover:bg-white/10 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-royal"
-        aria-label="Toggle colour scheme"
-      >
-        <span class="dark:hidden"><Icon name="moon" class="w-4 h-4" /></span>
-        <span class="hidden dark:inline"><Icon name="sun" class="w-4 h-4 text-gold" /></span>
-      </button>
-
-      <!-- Click to Call Phone CTA (Visible across all breakpoints per spec) -->
-      <a
-        href={`tel:${siteConfig.phoneE164}`}
-        class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs md:text-sm font-bold text-navy dark:text-pearl hover:text-royal dark:hover:text-royal-light transition-colors"
-        aria-label={`Call Pearl Removals on ${siteConfig.phone}`}
-      >
-        <Icon name="phone" class="w-4 h-4 text-royal" />
-        <span class="font-bold tracking-tight">{siteConfig.phone}</span>
-      </a>
-
-      <!-- Primary CTA Button -->
-      <a
-        href="/get-a-quote/"
-        class="inline-flex items-center justify-center px-4 py-2 sm:px-5 sm:py-2.5 rounded-full bg-royal text-white text-xs sm:text-sm font-semibold tracking-wide hover:bg-royal-hover active:scale-[0.98] transition-all shadow-md shadow-royal/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-royal focus-visible:ring-offset-2"
-      >
-        <span>Get a Free Quote</span>
-      </a>
-
-      <!-- Mobile Hamburger Button -->
-      <button
-        id="mobile-nav-toggle"
-        type="button"
-        class="lg:hidden w-9 h-9 rounded-full flex items-center justify-center text-navy dark:text-pearl hover:bg-white/40 dark:hover:bg-white/10 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-royal"
-        aria-label="Toggle mobile menu"
-        aria-expanded="false"
-        aria-controls="mobile-nav-panel"
-      >
-        <span id="menu-icon-open"><Icon name="receipt" class="w-5 h-5 rotate-90" /></span>
-        <span id="menu-icon-close" class="hidden"><Icon name="x" class="w-5 h-5" /></span>
-      </button>
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar__left">
+      <span class="topbar__item"><span class="live-dot"></span> Booking now for this week — 3 slots left</span>
+      <span class="topbar__item"><svg><use href="#i-shield"/></svg> Fully insured up to £50k GIT</span>
+      <span class="topbar__item"><svg><use href="#i-clock"/></svg> Mon–Sun · 7am–9pm</span>
     </div>
-  </nav>
+    <div class="topbar__right">
+      <a class="topbar__item" href="/reviews/"><span class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span> 4.9 from 380+ reviews</a>
+      <a class="topbar__item" href={`mailto:${siteConfig.email}`}><svg><use href="#i-mail"/></svg> {siteConfig.email}</a>
+    </div>
+  </div>
+</div>
 
-  <!-- Mobile Navigation Drawer / Panel -->
-  <div
-    id="mobile-nav-panel"
-    class="fixed inset-x-4 top-20 z-50 p-6 glass-panel bg-white/95 dark:bg-navy/95 border border-white/60 dark:border-white/10 shadow-2xl rounded-3xl hidden transition-all duration-300"
-    aria-hidden="true"
-    role="dialog"
-    aria-modal="true"
-    aria-label="Mobile Navigation Menu"
-  >
-    <div class="flex flex-col gap-4 max-h-[80vh] overflow-y-auto">
-      <div class="flex items-center justify-between pb-3 border-b border-surface-200 dark:border-surface-700">
-        <span class="font-bold text-navy dark:text-pearl">Menu</span>
-        <button id="mobile-nav-close" type="button" class="p-1 rounded-full text-surface-500 hover:text-navy dark:hover:text-white" aria-label="Close menu">
-          <Icon name="x" class="w-5 h-5" />
-        </button>
-      </div>
+<!-- STICKY HEADER -->
+<header class="header" id="header">
+  <div class="container">
+    <Logo variant="header" size="md" />
 
-      <ul class="flex flex-col gap-2">
-        <li>
-          <a href="/" class="block py-2 text-base font-semibold text-navy dark:text-pearl hover:text-royal mobile-link">Home</a>
+    <nav class="nav" aria-label="Main">
+      <ul class="nav__list">
+        <!-- 1. Services Mega Menu -->
+        <li class="nav__item">
+          <button class="nav__link" aria-expanded="false" aria-haspopup="true">Services <svg><use href="#i-chevron"/></svg></button>
+          <div class="mega">
+            <a class="mega__link" href="/removals/house-removals/"><span class="icon-tile"><svg><use href="#i-home"/></svg></span><span><strong>House Removals</strong><span>Homes of every size, fully managed</span></span></a>
+            <a class="mega__link" href="/removals/flat-removals/"><span class="icon-tile"><svg><use href="#i-building"/></svg></span><span><strong>Flat Removals</strong><span>Stairs, lifts &amp; tight access</span></span></a>
+            <a class="mega__link" href="/removals/office-removals/"><span class="icon-tile"><svg><use href="#i-office"/></svg></span><span><strong>Office Moves</strong><span>Out-of-hours, zero downtime</span></span></a>
+            <a class="mega__link" href="/removals/packing-services/"><span class="icon-tile"><svg><use href="#i-box"/></svg></span><span><strong>Packing Service</strong><span>Materials &amp; careful packing</span></span></a>
+            <a class="mega__link" href="/removals/storage/"><span class="icon-tile"><svg><use href="#i-storage"/></svg></span><span><strong>Secure Storage</strong><span>Short or long term, CCTV</span></span></a>
+            <a class="mega__link" href="/removals/man-and-van/"><span class="icon-tile"><svg><use href="#i-truck"/></svg></span><span><strong>Man &amp; Van</strong><span>Small moves from £45/hr</span></span></a>
+            <div class="mega__promo">
+              <div><h4>All Removal Services</h4><p>Full house, flat, office relocations &amp; specialist piano transit across London.</p></div>
+              <a href="/removals/" class="btn btn--accent btn--sm">View all services <svg class="arrow"><use href="#i-arrow"/></svg></a>
+            </div>
+          </div>
         </li>
-        <li>
-          <a href="/removals/" class="block py-2 text-base font-semibold text-navy dark:text-pearl hover:text-royal mobile-link">Services</a>
-          <ul class="pl-4 space-y-1 text-sm text-surface-600 dark:text-surface-400">
-            <li><a href="/removals/house-removals/" class="block py-1 hover:text-royal mobile-link">House Removals</a></li>
-            <li><a href="/removals/flat-removals/" class="block py-1 hover:text-royal mobile-link">Flat Removals</a></li>
-            <li><a href="/removals/man-and-van/" class="block py-1 hover:text-royal mobile-link">Man and Van</a></li>
-            <li><a href="/removals/office-removals/" class="block py-1 hover:text-royal mobile-link">Office Removals</a></li>
-            <li><a href="/removals/packing-services/" class="block py-1 hover:text-royal mobile-link">Packing Services</a></li>
-            <li><a href="/removals/storage/" class="block py-1 hover:text-royal mobile-link">Storage</a></li>
-          </ul>
+
+        <!-- 2. Areas Mega Menu -->
+        <li class="nav__item">
+          <button class="nav__link" aria-expanded="false" aria-haspopup="true">Areas We Cover <svg><use href="#i-chevron"/></svg></button>
+          <div class="mega mega--areas">
+            <a class="mega__link" href="/areas/cricklewood/">
+              <span class="icon-tile icon-tile--hub">
+                <svg><use href="#i-pin"/></svg>
+                <span class="hub-dot"></span>
+              </span>
+              <span class="area-meta">
+                <span class="area-head"><strong>Cricklewood</strong><span class="area-tag area-tag--hub">HQ Hub</span></span>
+                <span>NW2 Base · Rapid Dispatch</span>
+              </span>
+            </a>
+            <a class="mega__link" href="/areas/hampstead/">
+              <span class="icon-tile"><svg><use href="#i-pin"/></svg></span>
+              <span class="area-meta">
+                <span class="area-head"><strong>Hampstead</strong><span class="area-tag">NW3</span></span>
+                <span>Village &amp; Heath</span>
+              </span>
+            </a>
+            <a class="mega__link" href="/areas/belsize-park/">
+              <span class="icon-tile"><svg><use href="#i-pin"/></svg></span>
+              <span class="area-meta">
+                <span class="area-head"><strong>Belsize Park</strong><span class="area-tag">NW3</span></span>
+                <span>Mansion Flats</span>
+              </span>
+            </a>
+            <a class="mega__link" href="/areas/west-hampstead/">
+              <span class="icon-tile"><svg><use href="#i-pin"/></svg></span>
+              <span class="area-meta">
+                <span class="area-head"><strong>West Hampstead</strong><span class="area-tag">NW6</span></span>
+                <span>Local Movers</span>
+              </span>
+            </a>
+            <a class="mega__link" href="/areas/kilburn/">
+              <span class="icon-tile"><svg><use href="#i-pin"/></svg></span>
+              <span class="area-meta">
+                <span class="area-head"><strong>Kilburn</strong><span class="area-tag">NW6</span></span>
+                <span>CPZ Specialists</span>
+              </span>
+            </a>
+            <a class="mega__link" href="/areas/hendon/">
+              <span class="icon-tile"><svg><use href="#i-pin"/></svg></span>
+              <span class="area-meta">
+                <span class="area-head"><strong>Hendon</strong><span class="area-tag">NW4</span></span>
+                <span>NW4, NW9 · House Removals</span>
+              </span>
+            </a>
+            <a class="mega__link" href="/areas/golders-green/">
+              <span class="icon-tile"><svg><use href="#i-pin"/></svg></span>
+              <span class="area-meta">
+                <span class="area-head"><strong>Golders Green</strong><span class="area-tag">NW11</span></span>
+                <span>Family Moves</span>
+              </span>
+            </a>
+            <a class="mega__link" href="/areas/st-johns-wood/">
+              <span class="icon-tile"><svg><use href="#i-pin"/></svg></span>
+              <span class="area-meta">
+                <span class="area-head"><strong>St John's Wood</strong><span class="area-tag">NW8</span></span>
+                <span>Premium Care</span>
+              </span>
+            </a>
+            <a class="mega__link" href="/areas/harrow/">
+              <span class="icon-tile"><svg><use href="#i-pin"/></svg></span>
+              <span class="area-meta">
+                <span class="area-head"><strong>Harrow</strong><span class="area-tag">HA1</span></span>
+                <span>HA1 – HA3 · Full Moves</span>
+              </span>
+            </a>
+            <a class="mega__link" href="/areas/wembley/">
+              <span class="icon-tile"><svg><use href="#i-pin"/></svg></span>
+              <span class="area-meta">
+                <span class="area-head"><strong>Wembley</strong><span class="area-tag">HA9</span></span>
+                <span>HA0, HA9 · Reliable Crew</span>
+              </span>
+            </a>
+            <a class="mega__link" href="/areas/barnet/">
+              <span class="icon-tile"><svg><use href="#i-pin"/></svg></span>
+              <span class="area-meta">
+                <span class="area-head"><strong>Barnet</strong><span class="area-tag">EN5</span></span>
+                <span>Suburb Relocations</span>
+              </span>
+            </a>
+            <a class="mega__link" href="/areas/ealing/">
+              <span class="icon-tile"><svg><use href="#i-pin"/></svg></span>
+              <span class="area-meta">
+                <span class="area-head"><strong>Ealing</strong><span class="area-tag">W5</span></span>
+                <span>W5, W13 · West London</span>
+              </span>
+            </a>
+            <a class="mega__all" href="/areas/">
+              <span>Explore all 50+ North West London &amp; Greater London coverage areas</span>
+              <svg class="arrow" width="16" height="16"><use href="#i-arrow"/></svg>
+            </a>
+          </div>
         </li>
-        <li>
-          <a href="/areas/" class="block py-2 text-base font-semibold text-navy dark:text-pearl hover:text-royal mobile-link">Areas We Cover</a>
+
+        <!-- 3. About Us Dropdown with Pricing, How It Works, Reviews & FAQs -->
+        <li class="nav__item">
+          <button class="nav__link" aria-expanded="false" aria-haspopup="true">About Us <svg><use href="#i-chevron"/></svg></button>
+          <div class="mega mega--about">
+            <a class="mega__link" href="/about-us/"><span class="icon-tile"><svg><use href="#i-users"/></svg></span><span><strong>About Pearl Removals</strong><span>Our Cricklewood base &amp; family team</span></span></a>
+            <a class="mega__link" href="/prices/"><span class="icon-tile"><svg><use href="#i-pound"/></svg></span><span><strong>Pricing Guide</strong><span>Transparent fixed rates &amp; no hidden fees</span></span></a>
+            <a class="mega__link" href="/how-it-works/"><span class="icon-tile"><svg><use href="#i-clipboard"/></svg></span><span><strong>How It Works</strong><span>4-step stress-free moving day guide</span></span></a>
+            <a class="mega__link" href="/reviews/"><span class="icon-tile"><svg><use href="#i-star"/></svg></span><span><strong>Customer Reviews</strong><span>4.9★ rating from 380+ verified moves</span></span></a>
+            <a class="mega__link" href="/faqs/"><span class="icon-tile"><svg><use href="#i-chat"/></svg></span><span><strong>FAQs</strong><span>Permits, packing, completion delays</span></span></a>
+            <a class="mega__link" href="/get-a-quote/"><span class="icon-tile"><svg><use href="#i-clipboard"/></svg></span><span><strong>Get a Free Quote</strong><span>Multi-step tailored estimate &amp; survey</span></span></a>
+            <a class="mega__all" href="/contact-us/">
+              <span>Need help planning your move? Contact our team</span>
+              <svg class="arrow" width="16" height="16"><use href="#i-arrow"/></svg>
+            </a>
+          </div>
         </li>
-        <li>
-          <a href="/prices/" class="block py-2 text-base font-semibold text-navy dark:text-pearl hover:text-royal mobile-link">Pricing</a>
-        </li>
-        <li>
-          <a href="/reviews/" class="block py-2 text-base font-semibold text-navy dark:text-pearl hover:text-royal mobile-link">Reviews</a>
-        </li>
-        <li>
-          <a href="/how-it-works/" class="block py-2 text-base font-semibold text-navy dark:text-pearl hover:text-royal mobile-link">How It Works</a>
-        </li>
-        <li>
-          <a href="/moving-cost-calculator/" class="block py-2 text-base font-semibold text-navy dark:text-pearl hover:text-royal mobile-link">Cost Calculator</a>
-        </li>
-        <li>
-          <a href="/contact-us/" class="block py-2 text-base font-semibold text-navy dark:text-pearl hover:text-royal mobile-link">Contact</a>
-        </li>
+
+        <!-- 4. Contact Quick Link -->
+        <li><a class="nav__link" href="/contact-us/">Contact</a></li>
       </ul>
+    </nav>
 
-      <div class="pt-4 border-t border-surface-200 dark:border-surface-700 flex flex-col gap-3">
-        <a
-          href={`tel:${siteConfig.phoneE164}`}
-          class="flex items-center justify-center gap-2 py-3 rounded-full bg-surface-100 dark:bg-white/10 text-navy dark:text-pearl font-bold text-sm"
-        >
-          <Icon name="phone" class="w-4 h-4 text-royal" />
-          Call {siteConfig.phone}
-        </a>
-        <a
-          href="/get-a-quote/"
-          class="flex items-center justify-center py-3 rounded-full bg-royal text-white font-bold text-sm tracking-wide shadow-md shadow-royal/20"
-        >
-          Get a Free Quote →
-        </a>
-      </div>
+    <div class="header__actions">
+      <a class="header__phone" href={`tel:${siteConfig.phoneE164}`} aria-label={`Call Pearl Removals free on ${siteConfig.phone}`}>
+        <span class="header__phone-icon">
+          <svg><use href="#i-phone"/></svg>
+          <span class="phone-pulse-dot" aria-hidden="true"></span>
+        </span>
+        <div class="header__phone-text">
+          <span class="header__phone-label"><span class="live-dot-sm"></span> Call us free</span>
+          <span class="header__phone-number">{siteConfig.phone}</span>
+        </div>
+      </a>
+      <a href="/get-a-quote/" class="btn btn--accent btn--sm">Free quote <svg class="arrow"><use href="#i-arrow"/></svg></a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span></button>
     </div>
   </div>
 </header>
 
-<script is:inline>
-  // Mobile Nav Toggle Logic with Focus Trap and Scroll Lock
-  (function() {
-    const toggleBtn = document.getElementById('mobile-nav-toggle');
-    const closeBtn = document.getElementById('mobile-nav-close');
-    const panel = document.getElementById('mobile-nav-panel');
-    const openIcon = document.getElementById('menu-icon-open');
-    const closeIcon = document.getElementById('menu-icon-close');
-    const links = document.querySelectorAll('.mobile-link');
-    const themeBtn = document.getElementById('theme-toggle');
+<!-- MOBILE DRAWER -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer__backdrop" data-close></div>
+  <div class="drawer__panel" role="dialog" aria-label="Menu">
+    <div class="drawer__top">
+      <Logo variant="drawer" size="sm" />
+      <button class="drawer__close" data-close aria-label="Close menu">
+        <svg><use href="#i-x"/></svg>
+      </button>
+    </div>
 
-    function toggleMenu(open) {
-      const isExpanded = open !== undefined ? open : toggleBtn.getAttribute('aria-expanded') === 'true';
-      const nextState = !isExpanded;
+    <!-- Quick Hub dispatch badge -->
+    <div class="drawer__badge-bar">
+      <div class="drawer__badge">
+        <span class="live-dot-sm"></span> Cricklewood Hub NW2 · 7am–9pm Daily
+      </div>
+    </div>
 
-      toggleBtn.setAttribute('aria-expanded', String(nextState));
-      panel.setAttribute('aria-hidden', String(!nextState));
+    <nav class="drawer__nav">
+      <!-- 1. Services Accordion -->
+      <details class="drawer__group">
+        <summary class="drawer__summary">
+          <span class="drawer__label">
+            <span class="drawer__icon-box"><svg><use href="#i-truck"/></svg></span>
+            <span>Services</span>
+          </span>
+          <span class="drawer__summary-right">
+            <span class="drawer__count">8 Types</span>
+            <svg class="drawer__chevron"><use href="#i-chevron"/></svg>
+          </span>
+        </summary>
+        <div class="drawer__sub">
+          <a href="/removals/house-removals/" class="drawer__sub-link">
+            <span>House Removals</span>
+            <span class="drawer__sub-tag">Popular</span>
+          </a>
+          <a href="/removals/flat-removals/" class="drawer__sub-link">Flat Removals</a>
+          <a href="/removals/office-removals/" class="drawer__sub-link">Office Moves</a>
+          <a href="/removals/packing-services/" class="drawer__sub-link">Packing Service</a>
+          <a href="/removals/storage/" class="drawer__sub-link">Secure Storage</a>
+          <a href="/removals/man-and-van/" class="drawer__sub-link">Man &amp; Van</a>
+          <a href="/removals/piano-removals/" class="drawer__sub-link">Piano Removals</a>
+          <a href="/removals/fine-art-and-antiques-removals/" class="drawer__sub-link">Fine Art &amp; Antiques</a>
+          <a href="/removals/" class="drawer__sub-link drawer__sub-link--all">
+            <span>Explore all services</span>
+            <svg class="arrow" width="14" height="14"><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+      </details>
 
-      if (nextState) {
-        panel.classList.remove('hidden');
-        openIcon.classList.add('hidden');
-        closeIcon.classList.remove('hidden');
-        document.body.style.overflow = 'hidden';
-      } else {
-        panel.classList.add('hidden');
-        openIcon.classList.remove('hidden');
-        closeIcon.classList.add('hidden');
-        document.body.style.overflow = '';
-      }
-    }
+      <!-- 2. Areas Accordion -->
+      <details class="drawer__group">
+        <summary class="drawer__summary">
+          <span class="drawer__label">
+            <span class="drawer__icon-box"><svg><use href="#i-pin"/></svg></span>
+            <span>Areas We Cover</span>
+          </span>
+          <span class="drawer__summary-right">
+            <span class="drawer__count">50+ Areas</span>
+            <svg class="drawer__chevron"><use href="#i-chevron"/></svg>
+          </span>
+        </summary>
+        <div class="drawer__sub">
+          <div class="drawer__areas-grid">
+            <a href="/areas/cricklewood/" class="drawer__area-pill drawer__area-pill--hub">
+              <span>Cricklewood</span>
+              <span class="tag">NW2 HQ</span>
+            </a>
+            <a href="/areas/hampstead/" class="drawer__area-pill">
+              <span>Hampstead</span>
+              <span class="tag">NW3</span>
+            </a>
+            <a href="/areas/belsize-park/" class="drawer__area-pill">
+              <span>Belsize Park</span>
+              <span class="tag">NW3</span>
+            </a>
+            <a href="/areas/west-hampstead/" class="drawer__area-pill">
+              <span>West Hampstead</span>
+              <span class="tag">NW6</span>
+            </a>
+            <a href="/areas/kilburn/" class="drawer__area-pill">
+              <span>Kilburn</span>
+              <span class="tag">NW6</span>
+            </a>
+            <a href="/areas/hendon/" class="drawer__area-pill">
+              <span>Hendon</span>
+              <span class="tag">NW4</span>
+            </a>
+            <a href="/areas/golders-green/" class="drawer__area-pill">
+              <span>Golders Green</span>
+              <span class="tag">NW11</span>
+            </a>
+            <a href="/areas/st-johns-wood/" class="drawer__area-pill">
+              <span>St John's Wood</span>
+              <span class="tag">NW8</span>
+            </a>
+            <a href="/areas/harrow/" class="drawer__area-pill">
+              <span>Harrow</span>
+              <span class="tag">HA1</span>
+            </a>
+            <a href="/areas/wembley/" class="drawer__area-pill">
+              <span>Wembley</span>
+              <span class="tag">HA9</span>
+            </a>
+            <a href="/areas/barnet/" class="drawer__area-pill">
+              <span>Barnet</span>
+              <span class="tag">EN5</span>
+            </a>
+            <a href="/areas/ealing/" class="drawer__area-pill">
+              <span>Ealing</span>
+              <span class="tag">W5</span>
+            </a>
+          </div>
+          <a href="/areas/" class="drawer__sub-link drawer__sub-link--all">
+            <span>Explore all 50+ coverage areas</span>
+            <svg class="arrow" width="14" height="14"><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+      </details>
 
-    if (toggleBtn && panel) {
-      toggleBtn.addEventListener('click', () => toggleMenu());
-      if (closeBtn) closeBtn.addEventListener('click', () => toggleMenu(false));
+      <!-- 3. Company & Information Accordion -->
+      <details class="drawer__group">
+        <summary class="drawer__summary">
+          <span class="drawer__label">
+            <span class="drawer__icon-box"><svg><use href="#i-shield"/></svg></span>
+            <span>About &amp; Info</span>
+          </span>
+          <span class="drawer__summary-right">
+            <svg class="drawer__chevron"><use href="#i-chevron"/></svg>
+          </span>
+        </summary>
+        <div class="drawer__sub">
+          <a href="/about-us/" class="drawer__sub-link">About Pearl Removals</a>
+          <a href="/prices/" class="drawer__sub-link">Pricing Guide</a>
+          <a href="/how-it-works/" class="drawer__sub-link">How It Works</a>
+          <a href="/reviews/" class="drawer__sub-link">
+            <span>Customer Reviews</span>
+            <span class="drawer__sub-tag drawer__sub-tag--gold">4.9 ★</span>
+          </a>
+          <a href="/faqs/" class="drawer__sub-link">Frequently Asked Questions</a>
+        </div>
+      </details>
 
-      // Close on link click
-      links.forEach(l => l.addEventListener('click', () => toggleMenu(false)));
+      <!-- 4. Contact Us Direct Link -->
+      <a href="/contact-us/" class="drawer__link-direct">
+        <span class="drawer__label">
+          <span class="drawer__icon-box"><svg><use href="#i-phone"/></svg></span>
+          <span>Contact Us</span>
+        </span>
+        <svg class="arrow" width="16" height="16"><use href="#i-arrow"/></svg>
+      </a>
+    </nav>
 
-      // Close on Escape key
-      window.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && toggleBtn.getAttribute('aria-expanded') === 'true') {
-          toggleMenu(false);
-          toggleBtn.focus();
-        }
-      });
-    }
-
-    // Theme Toggle Handler
-    if (themeBtn) {
-      themeBtn.addEventListener('click', () => {
-        const isDark = document.documentElement.classList.toggle('dark');
-        try {
-          localStorage.setItem('theme', isDark ? 'dark' : 'light');
-        } catch (_) {}
-      });
-    }
-  })();
-</script>
+    <!-- Bottom Actions -->
+    <div class="drawer__cta">
+      <a href="/get-a-quote/" class="btn btn--accent btn--block">
+        Get a Free Quote <svg class="arrow"><use href="#i-arrow"/></svg>
+      </a>
+      <a href={`tel:${siteConfig.phoneE164}`} class="btn btn--ghost btn--block drawer__call-btn">
+        <svg class="drawer__phone-icon"><use href="#i-phone"/></svg>
+        <span>Call {siteConfig.phone}</span>
+        <span class="drawer__call-live">7am–9pm</span>
+      </a>
+      <div class="drawer__trust-micro">
+        <span>⭐ 4.9/5 (380+ reviews)</span>
+        <span>•</span>
+        <span>£50k GIT Insured</span>
+      </div>
+    </div>
+  </div>
+</div>

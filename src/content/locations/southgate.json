@@ -1,0 +1,75 @@
+{
+  "name": "Southgate",
+  "slug": "southgate",
+  "region": "north-london",
+  "phase": 3,
+  "premium": false,
+  "boroughs": [
+    "Enfield"
+  ],
+  "postcodes": [
+    "N14",
+    "N21"
+  ],
+  "distanceMiles": 8,
+  "metaTitle": "House Removals Southgate N14 N21 | Pearl Removals",
+  "metaDescription": "Trusted house removals in Southgate N14, Winchmore Hill & Palmers Green. Family home moves & Enfield parking permits. Call 020 3151 8452 for a free quote.",
+  "intro": "Pearl Removals delivers comprehensive, fully insured residential removals across Southgate, Winchmore Hill, Palmers Green, Cockfosters, and postcodes N14 and N21. From attractive 1930s semi-detached family homes near Southgate Green and Oakwood Park to grand detached houses around Winchmore Hill Green and modern flats near Southgate tube station, our professional moving crews provide punctual, careful, and well-organized removals. Easily accessible via the A406 North Circular from our Cricklewood depot, our vehicles reach Southgate swiftly, delivering complete packing and transit solutions. Our team handles every aspect of your move with meticulous attention, from furniture dismantling and floor protection to coordinating parking suspensions, ensuring that your transition to your new home in Southgate is completely effortless, transparently quoted, and fully protected by £50,000 Goods in Transit insurance.",
+  "localKnowledge": "Southgate is characterized by generous green open spaces, including Grovelands Park and Trent Country Park. Moving properties near the circular modernist Southgate Underground station and along Chase Side requires coordination around local shopping traffic. Residential roads in Winchmore Hill and Oakwood offer spacious suburban drives, making access straightforward for large removal vehicles.",
+  "propertyTypes": "The housing stock in Southgate features classic 1930s mock-Tudor semi-detached homes, substantial four- to five-bedroom detached family properties with private driveways, Edwardian terraced houses, and low-rise residential apartments. Properties frequently feature spacious lofts, garages, and landscaped gardens.",
+  "parkingAndAccess": "The London Borough of Enfield enforces Controlled Parking Zones near railway stations and commercial high streets. In most residential roads, driveway access is excellent, though we arrange council bay suspensions where on-street loading is necessary to ensure clear space.",
+  "transportLinks": "Served by the Piccadilly line at Southgate, Oakwood, and Cockfosters stations (direct into King’s Cross and the West End), plus National Rail services from Winchmore Hill and Palmers Green.",
+  "travelInfo": "Direct route via the A406 North Circular Road connects Southgate to our Cricklewood operational headquarters in approximately 20 to 25 minutes.",
+  "nearbyAreas": [
+    {
+      "name": "Barnet",
+      "slug": "barnet"
+    },
+    {
+      "name": "Totteridge & Whetstone",
+      "slug": "totteridge-and-whetstone"
+    },
+    {
+      "name": "Finchley",
+      "slug": "finchley"
+    },
+    {
+      "name": "Muswell Hill",
+      "slug": "muswell-hill"
+    },
+    {
+      "name": "Crouch End",
+      "slug": "crouch-end"
+    }
+  ],
+  "servicesOffered": [
+    "House Removals Southgate",
+    "Winchmore Hill Family Moves",
+    "Packing Services N14",
+    "Piano Removals N21",
+    "Storage Solutions Southgate"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you arrange Enfield Council parking suspensions for Southgate moves?",
+      "answer": "Yes. Where on-street parking controls exist, we manage the entire suspension application process with Enfield Council on your behalf.",
+      "display": true
+    },
+    {
+      "question": "Can you move 4- and 5-bedroom houses in Winchmore Hill and Southgate?",
+      "answer": "Yes. We routinely manage large family home relocations, providing multiple vehicles, dedicated packing teams, and furniture assembly services.",
+      "display": true
+    },
+    {
+      "question": "Do you offer piano moving services in the N14 and N21 area?",
+      "answer": "Yes. Our trained piano technicians move upright and baby grand pianos with specialized skids, padded transit covers, and tail lifts.",
+      "display": true
+    },
+    {
+      "question": "How do you protect carpets and polished floors on moving day?",
+      "answer": "We lay heavy-duty protective carpet film and breathable floor runners across all walkways and staircases before loading commences.",
+      "display": true
+    }
+  ],
+  "status": "published"
+}

@@ -1,0 +1,75 @@
+{
+  "name": "Ealing",
+  "slug": "ealing",
+  "region": "west-london",
+  "phase": 3,
+  "premium": false,
+  "boroughs": [
+    "Ealing"
+  ],
+  "postcodes": [
+    "W5",
+    "W13"
+  ],
+  "distanceMiles": 7,
+  "metaTitle": "House Removals Ealing W5 W13 | Pearl Removals",
+  "metaDescription": "Trusted house removals in Ealing W5 & W13. Ealing Broadway, Pitshanger & Ealing Common family moves. Call 020 3151 8452 for a free quote.",
+  "intro": "Pearl Removals delivers comprehensive, fully insured house removals across suburban Ealing, covering postcodes W5 and W13. Known as the \"Queen of the Suburbs\", Ealing offers beautiful residential variety: from grand Edwardian family residences around Ealing Common and Hanger Hill to vibrant community homes in Pitshanger Village, contemporary town-centre apartments near Ealing Broadway, and period terraces in West Ealing. Based close by via the A406 North Circular from our Cricklewood depot, our vehicles reach Ealing within minutes, delivering professional, attentive moving care. Every relocation is executed with clear fixed pricing, tailored packing services, and experienced moving personnel who treat your belongings and property with utmost care, ensuring a seamless moving day for Ealing households of all sizes with comprehensive transit insurance included.",
+  "localKnowledge": "Ealing combines busy commercial high streets with tranquil, tree-lined residential avenues. Relocations near Ealing Broadway station and Uxbridge Road require careful route planning to avoid peak commercial traffic and bus lanes. In suburban quarters like Hanger Hill and Pitshanger, wide residential streets provide easier parking, though tree-lined avenues require drivers to watch for low-hanging branches.",
+  "propertyTypes": "Ealing boasts substantial Edwardian and Victorian semi-detached and detached family homes, Arts and Crafts properties, 1930s suburban houses, and contemporary apartment blocks with underground parking. Properties frequently feature deep gardens, spacious cellars, and expansive multi-level stairwells.",
+  "parkingAndAccess": "The London Borough of Ealing manages Controlled Parking Zones throughout W5 and W13. Reserving curbside space for your removal lorry outside terraced or semi-detached properties requires pre-booked parking suspensions. We manage the application process directly with Ealing council.",
+  "transportLinks": "Superb transport connectivity via the Elizabeth line at Ealing Broadway and West Ealing, Central and District line tube connections, and direct access to the A40 and A406.",
+  "travelInfo": "Direct route via the A406 North Circular connects Ealing to our Cricklewood headquarters in approximately 15 to 20 minutes.",
+  "nearbyAreas": [
+    {
+      "name": "Acton",
+      "slug": "acton"
+    },
+    {
+      "name": "Chiswick",
+      "slug": "chiswick"
+    },
+    {
+      "name": "Hammersmith",
+      "slug": "hammersmith"
+    },
+    {
+      "name": "Harrow",
+      "slug": "harrow"
+    },
+    {
+      "name": "Shepherd's Bush & White City",
+      "slug": "shepherds-bush-and-white-city"
+    }
+  ],
+  "servicesOffered": [
+    "House Removals Ealing",
+    "Ealing Common Removals W5",
+    "Pitshanger Home Moves W13",
+    "Packing Services Ealing",
+    "Storage Solutions Ealing"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you manage parking suspensions with Ealing Council?",
+      "answer": "Yes. We handle all paperwork directly with the London Borough of Ealing to reserve parking bays outside your home on moving day.",
+      "display": true
+    },
+    {
+      "question": "Can you move 4- and 5-bedroom family houses in Ealing?",
+      "answer": "Yes. We deploy large Luton or 7.5t vehicles and experienced multi-man crews, providing full packing services and furniture dismantling.",
+      "display": true
+    },
+    {
+      "question": "How quickly can your vehicles reach Ealing from your depot?",
+      "answer": "Operating via the A406 North Circular from our Cricklewood depot, our vans reach Ealing addresses in under 20 minutes.",
+      "display": true
+    },
+    {
+      "question": "Do you offer secure storage for moves in Ealing?",
+      "answer": "Yes. We offer secure, containerized storage facilities with 24/7 monitoring, ideal for delays between property completion dates.",
+      "display": true
+    }
+  ],
+  "status": "published"
+}

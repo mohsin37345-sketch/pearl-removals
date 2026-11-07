@@ -1,0 +1,41 @@
+{
+  "name": "Hammersmith Broadway",
+  "slug": "hammersmith-broadway",
+  "parent": "hammersmith",
+  "premium": false,
+  "status": "published",
+  "postcodes": [
+    "W6"
+  ],
+  "metaTitle": "Removals in Hammersmith Broadway, Hammersmith | Pearl Remova",
+  "metaDescription": "Professional removals in Hammersmith Broadway, Hammersmith (W6). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers prompt, efficient removals for residents and businesses around Hammersmith Broadway W6. As a major transport and commercial hub, this district contains contemporary high-rise apartment blocks, converted Victorian upper flats, and corporate offices. Our punctual moving teams ensure swift, organized relocations with minimum disruption. High-density urban corridors around the gyratory require tactical timing and close liaison with building reception teams. We secure off-peak loading windows and protect communal corridors, guaranteeing a swift, efficient move into your modern central Hammersmith flat.",
+  "whatMovingHereInvolves": "Hammersmith Broadway is a complex one-way traffic gyratory connecting the A4, King Street, and Shepherd’s Bush Road. Street loading directly on the Broadway is prohibited. Relocations in modern apartment buildings require access via dedicated rear service bays or basement loading docks. Our crews liaise with building concierges and manage service lift bookings.",
+  "landmarks": [
+    "Hammersmith Broadway Transport Hub",
+    "Lyric Theatre Hammersmith",
+    "King Street Shopping"
+  ],
+  "nearbyMicroAreas": [
+    "brook-green",
+    "ravenscourt-park",
+    "brackenbury-village"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you handle loading restrictions near Hammersmith Broadway?",
+      "answer": "We utilize designated commercial loading bays, rear mews access roads, or pre-arranged council dispensations.",
+      "display": true
+    },
+    {
+      "question": "Can you carry out office or apartment moves outside normal business hours?",
+      "answer": "Yes. We offer early morning, evening, and weekend moves to avoid traffic congestion and ensure building lift availability.",
+      "display": true
+    },
+    {
+      "question": "Do you supply reusable packing crates for office and apartment moves?",
+      "answer": "Yes. We deliver robust plastic lidded crates with security seals up to two weeks prior to moving day.",
+      "display": true
+    }
+  ]
+}

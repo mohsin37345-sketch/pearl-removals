@@ -1,0 +1,41 @@
+{
+  "name": "Belgravia",
+  "slug": "belgravia",
+  "parent": "knightsbridge-and-belgravia",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "SW1"
+  ],
+  "metaTitle": "Removals in Belgravia, Knightsbridge & Belgravia | Pearl Rem",
+  "metaDescription": "Professional removals in Belgravia, Knightsbridge & Belgravia (SW1). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers distinguished, white-glove residential removals throughout prestigious Belgravia in SW1. Renowned for its grand white stucco townhouses, private garden enclosures, and quiet cobblestone mews lanes, Belgravia represents prime London living. Our moving teams manage relocations with absolute discretion, courteous care, and complete protection. Stucco-fronted palatial terraces along Belgrave Square and Wilton Crescent feature grand entrance halls and marble floors. We install bespoke floor cladding and protective banister padding before lifting a single crate, preserving your property in pristine condition.",
+  "whatMovingHereInvolves": "Belgravia’s majestic Grade II* listed townhouses feature five to six storeys, grand cantilevered stone stairways, and ornate plaster mouldings. Moving here requires liaising with the Grosvenor Estate and Westminster Council. Our crews lay padded neoprene runners across delicate stone steps and install custom banister covers to ensure zero contact with period balustrades.",
+  "landmarks": [
+    "Chester Square",
+    "Wilton Crescent",
+    "Belgrave Square Embassies"
+  ],
+  "nearbyMicroAreas": [
+    "knightsbridge",
+    "eaton-square",
+    "sloane-street"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you protect cantilevered stone staircases in Belgravia townhouses?",
+      "answer": "We fit custom-padded neoprene stair runners, padded banister sleeves, and corner guards across all stone stairs.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange Westminster parking suspensions in Belgravia?",
+      "answer": "Yes. We apply directly to Westminster City Council to secure official bay suspensions outside your residence.",
+      "display": true
+    },
+    {
+      "question": "Can you move heavy antique furniture and grand pianos in SW1?",
+      "answer": "Yes. Our trained moving specialists use piano dollies, padded carrying harnesses, and external hoists where required.",
+      "display": true
+    }
+  ]
+}

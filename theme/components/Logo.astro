@@ -1,0 +1,81 @@
+---
+interface Props {
+  variant?: 'header' | 'footer' | 'drawer' | 'white' | 'dark';
+  size?: 'sm' | 'md' | 'lg';
+  showSubtitle?: boolean;
+  class?: string;
+  isLink?: boolean;
+}
+
+const {
+  variant = 'header',
+  size = 'md',
+  class: className = '',
+  isLink = true
+} = Astro.props;
+
+const isDark = variant === 'footer' || variant === 'white';
+const Tag = isLink ? 'a' : 'div';
+const linkProps = isLink ? { href: '/', 'aria-label': 'Pearl Removals Home' } : {};
+
+const dimensions = {
+  sm: { width: 175, height: 39 },
+  md: { width: 215, height: 48 },
+  lg: { width: 260, height: 58 }
+}[size] || { width: 215, height: 48 };
+
+const logoSrc = isDark ? '/images/logo-white.png' : '/images/logo.png';
+---
+
+<Tag
+  {...linkProps}
+  class={`logo brand-logo-wrap brand-logo--${variant} brand-logo--${size} ${className}`}
+>
+  <img
+    src={logoSrc}
+    alt="Pearl Removals North West London"
+    width={dimensions.width}
+    height={dimensions.height}
+    class="brand-logo-img"
+    loading="eager"
+    decoding="async"
+  />
+</Tag>
+
+<style>
+  .brand-logo-wrap {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    flex-shrink: 0;
+    line-height: 1;
+    transition: transform 0.2s cubic-bezier(0.2, 0.7, 0.2, 1), opacity 0.2s ease;
+  }
+
+  .brand-logo-wrap:hover {
+    transform: translateY(-1px);
+    opacity: 0.95;
+  }
+
+  .brand-logo-wrap:focus-visible {
+    outline: 2px solid var(--accent, #FF6A2B);
+    outline-offset: 4px;
+    border-radius: 6px;
+  }
+
+  .brand-logo-img {
+    display: block;
+    height: auto;
+    max-height: 48px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .brand-logo--sm .brand-logo-img {
+    max-height: 38px;
+  }
+
+  .brand-logo--lg .brand-logo-img {
+    max-height: 56px;
+  }
+</style>

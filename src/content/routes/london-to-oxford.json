@@ -1,0 +1,30 @@
+{
+  "from": "London (North West London NW2)",
+  "to": "Oxford",
+  "slug": "london-to-oxford",
+  "enabled": false,
+  "intro": "Moving from London to Oxford connects the capital with one of the world's premier academic and cultural centres. Whether you are relocating from Hampstead, Hendon, or Maida Vale to North Oxford, Summertown, Headington, Jericho, or Cowley, Pearl Removals delivers an attentive, dedicated long-distance moving service. Located in Cricklewood NW2, our depot connects directly with the A40 and M40 corridors, enabling smooth westbound journeys without inner-city delays.",
+  "body": "The 60-mile relocation from North West London to Oxford is a direct journey along the M40 motorway and A40 ring road. Moving into the \"City of Dreaming Spires\" involves navigating distinct historic zones, restricted university quads, bus gates, and tight residential conservation areas.\n\nOxford features a blend of grand Victorian and Edwardian family residences in North Oxford and Summertown, historic terraced cottages in Jericho, and leafy 1930s avenues in Headington. Central Oxford also enforces strict traffic filters and zero-emission zones. Pearl Removals plans route navigation carefully, adhering to city council access regulations and coordinating with college porters or residential building managers when moves involve university accommodation or listed apartments.\n\nOur dedicated vehicle policy ensures that your furniture, book collections, artwork, and personal belongings travel alone in a clean, fully equipped removal van. We provide comprehensive packing services, supplying sturdy double-walled book boxes specifically designed for academic and home libraries, preventing overload and ensuring systematic unpacking.\n\nAll moves include £50,000 Goods in Transit insurance and skilled furniture assembly. Our crew will position wardrobes, set up bedframes, and place every carton into its corresponding room in Oxford, leaving you free to explore the parks, colleges, and waterways of your new Oxfordshire home.",
+  "faqs": [
+    {
+      "question": "How long does the journey take from London to Oxford?",
+      "answer": "Driving transit between our Cricklewood depot and Oxford takes approximately 1.5 to 2 hours via the A40 and M40, allowing for efficient same-day loading and delivery.",
+      "display": true
+    },
+    {
+      "question": "How do you navigate Oxford’s traffic filters and zero-emission zones?",
+      "answer": "Our modern vehicles are fully compliant with Oxford City Council emissions standards, and our drivers plan approved access routes to avoid restricted bus gates and pedestrianised zones.",
+      "display": true
+    },
+    {
+      "question": "Can you handle extensive academic book collections and home libraries?",
+      "answer": "Yes. We supply specialized heavy-duty book cartons and pack them methodically to preserve shelving order, ensuring your library is transferred safely to Oxford.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange parking suspensions in Oxford residential streets?",
+      "answer": "Oxfordshire County Council administers parking dispensations. We provide the necessary vehicle registrations and dimensions to ensure your parking space is reserved outside your property.",
+      "display": true
+    }
+  ]
+}

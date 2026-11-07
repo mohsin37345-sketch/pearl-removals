@@ -1,0 +1,41 @@
+{
+  "name": "Russell Square",
+  "slug": "russell-square",
+  "parent": "fitzrovia-and-bloomsbury",
+  "premium": false,
+  "status": "published",
+  "postcodes": [
+    "WC1"
+  ],
+  "metaTitle": "Removals in Russell Square, Fitzrovia & Bloomsbury | Pearl R",
+  "metaDescription": "Professional removals in Russell Square, Fitzrovia & Bloomsbury (WC1). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides reliable, fully insured property removals surrounding grand Russell Square in Bloomsbury WC1. One of London’s largest public squares, Russell Square is framed by imposing Victorian hotels, university halls, and Georgian residential terraces. Our skilled moving teams deliver organized, punctual, and stress-free domestic moves. Grand Victorian hotels and sprawling mansion blocks surrounding the gardens demand coordinated freight lift bookings. We manage concierge requirements proactively, moving books, art, and furniture safely into your central London residence. Our professional movers take care of every physical detail so you can enjoy a calm, punctual arrival.",
+  "whatMovingHereInvolves": "Operating around Russell Square involves managing public transport traffic, tour buses, and university pedestrian flows. Parking removal lorries outside residential properties on Bedford Way or Southampton Row requires pre-arranged Camden Council bay suspensions. Inside buildings, our porters navigate multi-level stairwells and commercial elevators with protective padding.",
+  "landmarks": [
+    "Russell Square Gardens",
+    "Hotel Russell Kimpton",
+    "Russell Square Tube Station"
+  ],
+  "nearbyMicroAreas": [
+    "bloomsbury",
+    "fitzrovia",
+    "charlotte-street"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you arrange parking suspensions around Russell Square with Camden Council?",
+      "answer": "Yes. We manage the entire parking suspension application process with Camden Council to secure legal loading space.",
+      "display": true
+    },
+    {
+      "question": "How do you coordinate moves in mansion blocks with passenger lifts?",
+      "answer": "We communicate with building management in advance to confirm lift access times and install protective lift padding.",
+      "display": true
+    },
+    {
+      "question": "Do you provide packing boxes and wrapping materials in WC1?",
+      "answer": "Yes. We provide comprehensive packing kits including double-walled boxes, bubble wrap, packing tape, and wardrobe cartons.",
+      "display": true
+    }
+  ]
+}

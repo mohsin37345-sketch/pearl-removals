@@ -1,212 +1,98 @@
 ---
 import { siteConfig } from 'src/data/site';
-import navData from 'src/data/navigation.json';
-import socialData from 'src/data/social.json';
-import { getPublishedAreas } from 'theme/utils/published';
-import Icon from './Icon.astro';
-
-const publishedAreas = await getPublishedAreas();
-const currentYear = new Date().getFullYear();
-
-// Check if any socials exist
-const hasSocials = Object.values(socialData).some(Boolean);
+import Logo from './Logo.astro';
 ---
 
-<footer class="mt-auto bg-navy text-pearl/80 relative border-t border-white/10 overflow-hidden" aria-labelledby="footer-heading">
-  <h2 id="footer-heading" class="sr-only">Footer</h2>
-
-  <!-- Subtle pearl iridescent top glow -->
-  <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-royal-light/40 to-transparent"></div>
-
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 pb-12 border-b border-white/10">
-      
-      <!-- Brand & Company Overview (2 columns on LG) -->
-      <div class="lg:col-span-2 space-y-4">
-        <a href="/" class="flex items-center gap-2.5 text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-royal rounded-full pr-2">
-          <div class="relative w-8 h-8 rounded-full bg-gradient-to-tr from-royal to-royal-light flex items-center justify-center text-white">
-            <span class="absolute inset-0.5 rounded-full border border-white/40"></span>
-            <Icon name="home" class="w-4 h-4 text-white relative z-10" />
-          </div>
-          <span class="font-extrabold text-lg tracking-tight text-white">
-            PEARL <span class="text-royal-light font-semibold text-xs tracking-widest uppercase">REMOVALS</span>
-          </span>
-        </a>
-
-        <p class="text-sm text-pearl/70 max-w-sm leading-relaxed">
-          Premium house and flat removals based in Cricklewood, North West London. Fully insured, transparent pricing, and careful white-glove handling across London and the UK.
-        </p>
-
-        <!-- Insurance Badges -->
-        <div class="flex flex-wrap gap-2 pt-2">
-          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-white/5 border border-white/10 text-pearl/90">
-            <Icon name="shield-check" class="w-3.5 h-3.5 text-royal-light" />
-            GIT Cover: {siteConfig.insurance.goodsInTransit}
-          </span>
-          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-white/5 border border-white/10 text-pearl/90">
-            <Icon name="shield-check" class="w-3.5 h-3.5 text-royal-light" />
-            Public Liability: {siteConfig.insurance.publicLiability}
-          </span>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <Logo variant="footer" size="md" />
+        <p class="footer__about">Premium house and flat removals based at our Cricklewood NW2 hub. Fully insured, transparent fixed rates, and careful white-glove moves across London and nationwide.</p>
+        <div class="footer__socials">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg><use href="#i-tt"/></svg></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg><use href="#i-in"/></svg></a>
         </div>
-
-        <!-- Social Icons (Rendered only when non-empty) -->
-        {hasSocials && (
-          <div class="flex items-center gap-3 pt-3">
-            {socialData.facebook && (
-              <a href={socialData.facebook} target="_blank" rel="noopener noreferrer" aria-label="Pearl Removals on Facebook" class="w-8 h-8 rounded-full bg-white/5 hover:bg-royal transition-colors flex items-center justify-center text-pearl">
-                <span class="text-xs font-bold">f</span>
-              </a>
-            )}
-            {socialData.x && (
-              <a href={socialData.x} target="_blank" rel="noopener noreferrer" aria-label="Pearl Removals on X" class="w-8 h-8 rounded-full bg-white/5 hover:bg-royal transition-colors flex items-center justify-center text-pearl">
-                <span class="text-xs font-bold">𝕏</span>
-              </a>
-            )}
-            {socialData.linkedin && (
-              <a href={socialData.linkedin} target="_blank" rel="noopener noreferrer" aria-label="Pearl Removals on LinkedIn" class="w-8 h-8 rounded-full bg-white/5 hover:bg-royal transition-colors flex items-center justify-center text-pearl">
-                <span class="text-xs font-bold">in</span>
-              </a>
-            )}
-            {socialData.instagram && (
-              <a href={socialData.instagram} target="_blank" rel="noopener noreferrer" aria-label="Pearl Removals on Instagram" class="w-8 h-8 rounded-full bg-white/5 hover:bg-royal transition-colors flex items-center justify-center text-pearl">
-                <span class="text-xs font-bold">ig</span>
-              </a>
-            )}
-          </div>
-        )}
       </div>
 
-      <!-- Services Navigation -->
       <div>
-        <h3 class="text-xs font-bold uppercase tracking-wider text-royal-light mb-4">
-          Services
-        </h3>
-        <ul class="space-y-2 text-sm">
-          {navData.footer.services.map((item) => (
-            <li>
-              <a href={item.href} class="hover:text-white transition-colors">
-                {item.label}
-              </a>
-            </li>
-          ))}
+        <h5>Services</h5>
+        <ul class="footer__links">
+          <li><a href="/removals/house-removals/">House Removals</a></li>
+          <li><a href="/removals/flat-removals/">Flat Removals</a></li>
+          <li><a href="/removals/office-removals/">Office Moves</a></li>
+          <li><a href="/removals/packing-services/">Packing Service</a></li>
+          <li><a href="/removals/storage/">Secure Storage</a></li>
+          <li><a href="/removals/man-and-van/">Man &amp; Van</a></li>
+          <li><a href="/removals/piano-removals/">Piano Removals</a></li>
+          <li><a href="/removals/">All Services &rarr;</a></li>
         </ul>
       </div>
 
-      <!-- Areas We Cover Navigation -->
       <div>
-        <h3 class="text-xs font-bold uppercase tracking-wider text-royal-light mb-4">
-          Areas We Cover
-        </h3>
-        <ul class="space-y-2 text-sm">
-          {publishedAreas.length > 0 ? (
-            publishedAreas.slice(0, 6).map((area) => (
-              <li>
-                <a href={`/areas/${area.slug}/`} class="hover:text-white transition-colors flex items-center justify-between">
-                  <span>{area.name}</span>
-                  {area.premium && <span class="text-gold text-[10px]">★</span>}
-                </a>
-              </li>
-            ))
-          ) : (
-            <>
-              <li><a href="/areas/" class="hover:text-white transition-colors">North West London</a></li>
-              <li><a href="/areas/" class="hover:text-white transition-colors">Cricklewood NW2</a></li>
-              <li><a href="/areas/" class="hover:text-white transition-colors">Hampstead NW3</a></li>
-              <li><a href="/areas/" class="hover:text-white transition-colors">Kilburn NW6</a></li>
-              <li><a href="/areas/" class="hover:text-white transition-colors">Hendon NW4</a></li>
-            </>
-          )}
-          <li>
-            <a href="/areas/" class="text-royal-light font-semibold hover:underline inline-flex items-center gap-1 mt-1">
-              All Coverage Areas <Icon name="arrow-right" class="w-3 h-3" />
-            </a>
-          </li>
+        <h5>Coverage Areas</h5>
+        <ul class="footer__links">
+          <li><a href="/areas/cricklewood/">Cricklewood (Hub NW2)</a></li>
+          <li><a href="/areas/hampstead/">Hampstead (NW3)</a></li>
+          <li><a href="/areas/belsize-park/">Belsize Park (NW3)</a></li>
+          <li><a href="/areas/west-hampstead/">West Hampstead (NW6)</a></li>
+          <li><a href="/areas/kilburn/">Kilburn (NW6)</a></li>
+          <li><a href="/areas/hendon/">Hendon (NW4)</a></li>
+          <li><a href="/areas/golders-green/">Golders Green (NW11)</a></li>
+          <li><a href="/areas/harrow/">Harrow (HA1)</a></li>
+          <li><a href="/areas/wembley/">Wembley (HA9)</a></li>
+          <li><a href="/areas/">Explore All 50+ Areas &rarr;</a></li>
         </ul>
       </div>
 
-      <!-- Company & Legal -->
       <div>
-        <h3 class="text-xs font-bold uppercase tracking-wider text-royal-light mb-4">
-          Company & Legal
-        </h3>
-        <ul class="space-y-2 text-sm">
-          {navData.footer.company.slice(0, 4).map((item) => (
-            <li>
-              <a href={item.href} class="hover:text-white transition-colors">
-                {item.label}
-              </a>
-            </li>
-          ))}
-          {navData.footer.legal.map((item) => (
-            <li>
-              <a href={item.href} class="hover:text-white transition-colors text-xs text-pearl/60">
-                {item.label}
-              </a>
-            </li>
-          ))}
-          <li>
-            <!-- CMP Cookie Preferences Button -->
-            <button
-              type="button"
-              id="open-cookie-preferences"
-              class="text-xs text-pearl/60 hover:text-white transition-colors cursor-pointer text-left focus:outline-none focus-visible:ring-1 focus-visible:ring-royal"
-            >
-              Cookie Preferences
-            </button>
-          </li>
+        <h5>Company</h5>
+        <ul class="footer__links">
+          <li><a href="/about-us/">About us</a></li>
+          <li><a href="/how-it-works/">How it works</a></li>
+          <li><a href="/prices/">Pricing Guide</a></li>
+          <li><a href="/reviews/">Customer Reviews</a></li>
+          <li><a href="/faqs/">FAQs</a></li>
+          <li><a href="/blog/two-week-moving-checklist/">Moving Checklist</a></li>
+          <li><a href="/contact-us/">Contact Us</a></li>
+          <li><a href="/get-a-quote/">Get a Quote</a></li>
         </ul>
+      </div>
+
+      <div class="footer__news">
+        <h5>Get in touch</h5>
+        <div class="footer__contact">
+          <a href={`tel:${siteConfig.phoneE164}`}><svg><use href="#i-phone"/></svg><span><strong>{siteConfig.phone}</strong>Mon–Sun, 7am–9pm</span></a>
+          <a href={`mailto:${siteConfig.email}`}><svg><use href="#i-mail"/></svg><span><strong>{siteConfig.email}</strong>Fast reply within 1 hour</span></a>
+          <div><svg><use href="#i-pin"/></svg><span><strong>Cricklewood, London NW2</strong>Serving all London &amp; UK-wide</span></div>
+        </div>
+        <form class="newsletter" onsubmit="event.preventDefault(); this.querySelector('input').value=''; this.querySelector('button').textContent='Sent ✓';">
+          <input type="email" placeholder="Email for moving tips" aria-label="Email address" required />
+          <button class="btn btn--accent" type="submit">Join</button>
+        </form>
+        <div class="footer__badges">
+          <span><svg><use href="#i-shield"/></svg>£50k GIT Insured</span>
+          <span><svg><use href="#i-users"/></svg>DBS checked team</span>
+        </div>
       </div>
     </div>
+  </div>
 
-    <!-- NAP Block & Business Credentials -->
-    <div class="py-8 border-b border-white/10 text-xs text-pearl/60 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div>
-        <h4 class="font-semibold text-pearl mb-1">Trading Address (Base)</h4>
-        <address class="not-italic leading-relaxed">
-          {siteConfig.tradingAddress.formatted}
-        </address>
+  <div class="footer__wordmark" aria-hidden="true">PEARL</div>
+
+  <div class="footer__bottom">
+    <div class="container" style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap">
+      <span>© <span id="year">2026</span> {siteConfig.legalName} (Base: Cricklewood NW2). All rights reserved.</span>
+      <div class="footer__legal">
+        <a href="/privacy-policy/">Privacy</a>
+        <a href="/terms-and-conditions/">Terms</a>
+        <a href="/terms-of-business/">Terms of Business</a>
+        <a href="/complaints-procedure/">Complaints</a>
+        <a href="/sitemap/">Sitemap</a>
       </div>
-
-      <div>
-        <h4 class="font-semibold text-pearl mb-1">Registered Office</h4>
-        <address class="not-italic leading-relaxed">
-          {siteConfig.legalName}<br />
-          {siteConfig.registeredAddress.formatted}
-        </address>
-      </div>
-
-      <div>
-        <h4 class="font-semibold text-pearl mb-1">Contact & Hours</h4>
-        <p>Tel: <a href={`tel:${siteConfig.phoneE164}`} class="text-white hover:underline">{siteConfig.phone}</a></p>
-        <p>Email: <a href={`mailto:${siteConfig.email}`} class="text-white hover:underline">{siteConfig.email}</a></p>
-        <p>Hours: {siteConfig.openingHours}</p>
-      </div>
-
-      <div>
-        <h4 class="font-semibold text-pearl mb-1">Company Details</h4>
-        <p>Company No: {siteConfig.companyNumber}</p>
-        <p>VAT Reg: {siteConfig.vatNumber}</p>
-        <p>Base: Cricklewood, London NW2</p>
-      </div>
-    </div>
-
-    <!-- Copyright -->
-    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-pearl/50">
-      <p>© {currentYear} {siteConfig.businessName}. All rights reserved.</p>
-      <p>Single language edition (en-GB). Designed & engineered for North West London removals.</p>
     </div>
   </div>
 </footer>
-
-<script is:inline>
-  // Cookie Preferences opener
-  document.getElementById('open-cookie-preferences')?.addEventListener('click', () => {
-    if (typeof window.Cookiebot !== 'undefined') {
-      window.Cookiebot.renew();
-    } else if (typeof window.cookieyes !== 'undefined') {
-      window.cookieyes._ckyConsentModal();
-    } else {
-      alert('Cookie Preferences: Analytics cookies are managed according to Google Consent Mode v2 defaults.');
-    }
-  });
-</script>

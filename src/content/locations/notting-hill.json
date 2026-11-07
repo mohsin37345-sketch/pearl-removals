@@ -21,24 +21,28 @@
   "travelInfo": "Direct vehicular access via the A40 Westway connects Notting Hill directly to our NW2 transport depot in under 20 minutes, enabling rapid equipment dispatch.",
   "nearbyAreas": [
     {
-      "name": "Holland Park",
-      "slug": "holland-park"
+      "name": "Kensington",
+      "slug": "kensington"
+    },
+    {
+      "name": "Shepherd's Bush & White City",
+      "slug": "shepherds-bush-and-white-city"
     },
     {
       "name": "Bayswater",
       "slug": "bayswater"
     },
     {
-      "name": "Maida Vale",
-      "slug": "maida-vale"
-    },
-    {
-      "name": "Paddington",
-      "slug": "paddington"
+      "name": "Holland Park",
+      "slug": "holland-park"
     },
     {
       "name": "Kensal Green & North Kensington",
       "slug": "kensal-green-and-north-kensington"
+    },
+    {
+      "name": "Maida Vale",
+      "slug": "maida-vale"
     }
   ],
   "servicesOffered": [

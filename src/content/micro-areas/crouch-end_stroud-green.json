@@ -1,0 +1,41 @@
+{
+  "name": "Stroud Green",
+  "slug": "stroud-green",
+  "parent": "crouch-end",
+  "premium": false,
+  "status": "published",
+  "postcodes": [
+    "N4",
+    "N8"
+  ],
+  "metaTitle": "Removals in Stroud Green, Crouch End | Pearl Removals",
+  "metaDescription": "Professional removals in Stroud Green, Crouch End (N4, N8). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers comprehensive, fully insured house removals across Stroud Green in N4 and N8. Tucked between Crouch End, Finsbury Park, and the Parkland Walk nature reserve, Stroud Green features substantial three-storey Victorian terraced residences and garden flats. Our experienced moving crews provide structured, stress-free relocations with full packing and transit care. Vibrant residential turnings off Stroud Green Road feature leafy terraces and split-level maisonettes. Our hardworking staff carry boxes and furniture up steep internal stairs with balance and agility, helping you unpack quickly in your new home.",
+  "whatMovingHereInvolves": "Residential roads in Stroud Green, such as Mount View Road, Stapleton Hall Road, and Ferme Park Road, feature sloping terrain and tightly parked resident cars. Securing official parking suspensions with Haringey Council is essential to reserve curbside space. Inside multi-floor Victorian homes, our porters navigate long stairs with protective runners.",
+  "landmarks": [
+    "Parkland Walk Nature Reserve",
+    "Finsbury Park Border",
+    "Stroud Green Road Dining"
+  ],
+  "nearbyMicroAreas": [
+    "crouch-end-broadway",
+    "hornsey"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you arrange Haringey Council parking suspensions in Stroud Green?",
+      "answer": "Yes. We apply directly to Haringey Council to secure official bay suspensions for your moving date.",
+      "display": true
+    },
+    {
+      "question": "Can your team move large family homes on steep Stroud Green hills?",
+      "answer": "Yes. Our modern vehicles feature heavy-duty braking and tail lifts, and our crews are experienced with sloping access and long garden paths.",
+      "display": true
+    },
+    {
+      "question": "Do you offer full packing services the day before moving in Stroud Green?",
+      "answer": "Yes. Our packing team can arrive the day prior with double-walled boxes, bubble wrap, and wardrobe cartons to pack your entire house.",
+      "display": true
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Borehamwood",
+  "slug": "borehamwood",
+  "parent": "bushey-and-elstree",
+  "premium": false,
+  "status": "published",
+  "postcodes": [
+    "WD6"
+  ],
+  "metaTitle": "Removals in Borehamwood, Bushey & Elstree | Pearl Removals",
+  "metaDescription": "Professional removals in Borehamwood, Bushey & Elstree (WD6). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers comprehensive, fully insured removals across vibrant Borehamwood in WD6. Benefiting from 20-minute Thameslink trains into central London, Borehamwood features modern commuter apartment developments, traditional family terraces, and new-build housing estates. Our skilled moving teams provide organized, punctual, and affordable moving care. Vibrant commuter neighbourhoods and new-build developments near the studios require organized, energetic moving teams. We coordinate lift bookings and parking slots, ensuring your furniture, white goods, and boxed items are moved without delay. We ensure transparent communication and rapid service, helping you settle into your new home with zero hassle.",
+  "whatMovingHereInvolves": "Moving in Borehamwood involves modern residential developments with underground parking, concierge desks, and passenger lifts near the station, as well as suburban avenues off Shenley Road. Our crews coordinate with building concierges, book service elevators, and use wheeled furniture dolleys to transfer belongings smoothly.",
+  "landmarks": [
+    "BBC Elstree Centre",
+    "Elstree & Borehamwood Station",
+    "Shenley Road High Street"
+  ],
+  "nearbyMicroAreas": [
+    "bushey-heath",
+    "bushey",
+    "elstree"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you coordinate moves in modern apartment developments in Borehamwood?",
+      "answer": "We liaise directly with building concierges to reserve loading bays and service lifts, adhering to all development moving guidelines.",
+      "display": true
+    },
+    {
+      "question": "Can you move 3- and 4-bedroom family houses in Borehamwood?",
+      "answer": "Yes. We deploy large Luton or 7.5t vehicles and experienced multi-man crews, providing full packing services and furniture dismantling.",
+      "display": true
+    },
+    {
+      "question": "Do you supply durable moving boxes and bubble wrap in Borehamwood?",
+      "answer": "Yes. We supply double-walled boxes, bubble wrap, packing tape, and wardrobe cartons delivered in advance.",
+      "display": true
+    }
+  ]
+}

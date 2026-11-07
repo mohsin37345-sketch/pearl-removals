@@ -1,0 +1,42 @@
+{
+  "name": "Hadley Wood",
+  "slug": "hadley-wood",
+  "parent": "barnet",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "EN4"
+  ],
+  "metaTitle": "Removals in Hadley Wood, Barnet | Pearl Removals",
+  "metaDescription": "Professional removals in Hadley Wood, Barnet (EN4). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers premier, white-glove removals throughout prestigious Hadley Wood in Barnet EN4. Renowned as one of North London’s most affluent commuter addresses, Hadley Wood features palatial detached mansions along Camlet Way, Beech Hill, and Crescent West. Our experienced moving crews provide structured, confidential, and damage-free moving services for executive homes. Premier avenues like Camlet Way and Crescent East boast private acreage and custom-designed luxury residences. Our experienced teams treat fine oak tables, home cinema equipment, and delicate porcelain with meticulous attention, ensuring an effortless family relocation.",
+  "whatMovingHereInvolves": "Hadley Wood residences offer expansive square footage, private cinema rooms, indoor swimming pools, and manicured carriage drives. Relocating these properties requires comprehensive inventory coordination, specialist fine art crating, and white-glove furniture assembly. Our drivers are familiar with private road access rules and low tree canopy clearances.",
+  "landmarks": [
+    "Hadley Wood Golf Club",
+    "Camlet Way Mansions",
+    "Hadley Wood Rail Station"
+  ],
+  "nearbyMicroAreas": [
+    "high-barnet",
+    "arkley",
+    "monken-hadley",
+    "underhill"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you offer turnkey packing and unpacking services in Hadley Wood?",
+      "answer": "Yes. Our team can pack your entire home before moving day, transport your possessions, and unpack all contents directly into cupboards.",
+      "display": true
+    },
+    {
+      "question": "How do you safeguard luxury finishes like marble floors and hardwood stairs?",
+      "answer": "Our crew installs custom protective floor sheets, neoprene runner mats, and padded corner protectors throughout your property.",
+      "display": true
+    },
+    {
+      "question": "What insurance is included with Hadley Wood residential moves?",
+      "answer": "We provide £50,000 Goods in Transit insurance as standard, with options to extend cover for high-value art, antiques, and luxury furnishings.",
+      "display": true
+    }
+  ]
+}

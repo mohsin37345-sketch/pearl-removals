@@ -1,0 +1,42 @@
+{
+  "name": "King's Road",
+  "slug": "kings-road",
+  "parent": "chelsea",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "SW3",
+    "SW10"
+  ],
+  "metaTitle": "Removals in King's Road, Chelsea | Pearl Removals",
+  "metaDescription": "Professional removals in King's Road, Chelsea (SW3, SW10). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers premier, white-glove residential removals along iconic King’s Road and its charming side streets in Chelsea SW3 and SW10. From pastel-coloured Victorian cottages along Bywater Street and Jubilee Place to grand townhouses near Duke of York Square, our experienced moving crews provide punctual, courteous, and damage-free moving services. Bustling shopping traffic and narrow connecting streets like Old Church Street require well-planned parking bay suspensions. Our courteous moving teams maneuver bulky sofas through tight hallway turns, placing every box into its designated room with care.",
+  "whatMovingHereInvolves": "Moving along King’s Road requires managing high pedestrian volumes, commercial bus lanes, and narrow connecting residential turnings. Our logistics team secures official RBKC parking bay suspensions along side turnings to position removal vehicles safely. Inside period cottages, our porters navigate narrow staircases with padded covers and protective floor runners.",
+  "landmarks": [
+    "Duke of York Square",
+    "Saatchi Gallery",
+    "Chelsea Old Town Hall"
+  ],
+  "nearbyMicroAreas": [
+    "cheyne-walk",
+    "sloane-square",
+    "sloane-street"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you manage parking suspensions near King’s Road in Chelsea?",
+      "answer": "We apply directly to the Royal Borough of Kensington & Chelsea to reserve curbside bays on connecting residential side streets.",
+      "display": true
+    },
+    {
+      "question": "Can you move heavy furniture up narrow stairs in Victorian Chelsea cottages?",
+      "answer": "Yes. Our moving porters specialize in narrow staircase maneuvers, using protective quilted blankets and careful disassembly.",
+      "display": true
+    },
+    {
+      "question": "Do you offer full packing services the day before moving in Chelsea?",
+      "answer": "Yes. Our packing team can arrive the day prior with double-walled boxes, bubble wrap, and wardrobe cartons to pack your entire house.",
+      "display": true
+    }
+  ]
+}

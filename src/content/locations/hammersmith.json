@@ -1,0 +1,74 @@
+{
+  "name": "Hammersmith",
+  "slug": "hammersmith",
+  "region": "west-london",
+  "phase": 3,
+  "premium": false,
+  "boroughs": [
+    "Hammersmith & Fulham"
+  ],
+  "postcodes": [
+    "W6"
+  ],
+  "distanceMiles": 6.5,
+  "metaTitle": "House Removals Hammersmith W6 | Pearl Removals",
+  "metaDescription": "Reliable house removals in Hammersmith W6. Brook Green family homes, riverside flats & H&F parking suspensions. Call 020 3151 8452 for a free quote.",
+  "intro": "Pearl Removals delivers dependable, fully insured removals throughout Hammersmith and the W6 postcode district. From handsome Victorian family homes around Brook Green and Ravenscourt Park to riverside apartments along the Thames Embankment and modern flats near Hammersmith Broadway, our professional moving crews provide organized, stress-free relocations. With quick access via the West London road network from our Cricklewood base, our vehicles arrive punctually, equipped with quilted blankets, floor protection, and heavy-duty trolleys. Whether you are relocating a three-storey period townhouse or moving out of a riverside flat, our dedicated team takes care of every detail, from Hammersmith & Fulham parking suspensions to careful packing and furniture reassembly, ensuring complete peace of mind, transparent pricing, and punctual delivery on moving day.",
+  "localKnowledge": "Hammersmith is a major commercial and residential hub in West London. Relocating properties near King Street and Hammersmith Broadway requires careful coordination around busy pedestrian precincts, bus lanes, and one-way traffic systems. Near the river along Upper Mall and Lower Mall, narrow roadways and tidal conditions require experienced drivers familiar with riverbank restrictions.",
+  "propertyTypes": "Properties in Hammersmith include spacious four-storey Victorian terraced residences, elegant red-brick Edwardian mansion blocks, riverside luxury developments, and compact maisonette conversions. Homes often feature tight entrance hallways and stairs requiring protective coverings.",
+  "parkingAndAccess": "The London Borough of Hammersmith & Fulham enforces strict Controlled Parking Zones throughout W6. Reserving parking bays outside residential townhouses on roads such as Dalling Road or Glenthorne Road requires advance council suspensions. Our office handles all permit applications on your behalf.",
+  "transportLinks": "Major transport hub served by Hammersmith station (Piccadilly, District, Circle, and Hammersmith & City lines), alongside extensive bus routes and the A4 / M4 corridor.",
+  "travelInfo": "Vehicular access via the A402 and A40 connects Hammersmith directly to our Cricklewood dispatch base in approximately 20 to 25 minutes.",
+  "nearbyAreas": [
+    {
+      "name": "Shepherd's Bush & White City",
+      "slug": "shepherds-bush-and-white-city"
+    },
+    {
+      "name": "Chiswick",
+      "slug": "chiswick"
+    },
+    {
+      "name": "Kensington",
+      "slug": "kensington"
+    },
+    {
+      "name": "Chelsea",
+      "slug": "chelsea"
+    },
+    {
+      "name": "Acton",
+      "slug": "acton"
+    }
+  ],
+  "servicesOffered": [
+    "House Removals Hammersmith",
+    "Brook Green Removals W6",
+    "Flat Removals Hammersmith",
+    "Packing Services W6",
+    "Storage Solutions W6"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you arrange Hammersmith & Fulham parking suspensions?",
+      "answer": "Yes. We apply directly to the London Borough of Hammersmith & Fulham to secure official bay suspensions for your moving date.",
+      "display": true
+    },
+    {
+      "question": "How do you handle moves into riverside mansion blocks near the Thames?",
+      "answer": "We coordinate with building porters to confirm lift access times and install protective lift padding to ensure compliance with managing agent rules.",
+      "display": true
+    },
+    {
+      "question": "Can you help dismantle and rebuild flat-pack and solid timber beds?",
+      "answer": "Yes. Our moving crews carry full toolkits and provide furniture disassembly and reassembly as part of our house removal service.",
+      "display": true
+    },
+    {
+      "question": "Do you provide packing boxes and wrapping materials in Hammersmith?",
+      "answer": "Yes. We provide comprehensive packing kits including double-walled boxes, bubble wrap, packing tape, and wardrobe cartons.",
+      "display": true
+    }
+  ],
+  "status": "published"
+}

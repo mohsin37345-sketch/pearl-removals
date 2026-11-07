@@ -1,0 +1,41 @@
+{
+  "name": "Pinner Hill",
+  "slug": "pinner-hill",
+  "parent": "pinner",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "HA5"
+  ],
+  "metaTitle": "Removals in Pinner Hill, Pinner | Pearl Removals",
+  "metaDescription": "Professional removals in Pinner Hill, Pinner (HA5). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers premier, white-glove removals across exclusive Pinner Hill in HA5. Perched on high ground around Pinner Hill Golf Club, this private unadopted residential estate features substantial Arts and Crafts family mansions and luxury custom homes amidst mature woodland. Our specialist moving teams provide private, structured, and damage-free moving services. Gated hilltop residences surrounding the golf club feature sweeping private drives, secluded woodlands, and multi-tier floorplans. We bring spacious removal vehicles directly to your steps, ensuring delicate grand pianos, artwork, and outdoor sets are relocated securely.",
+  "whatMovingHereInvolves": "Pinner Hill features narrow, unadopted private roads with low tree canopies and steep gradients. Moving here involves verifying heavy vehicle clearance heights and coordinating with private road maintenance committees. Properties boast expansive carriage driveways where our crews lay protective rubber mats to prevent tyre scuffing on delicate gravel and stone.",
+  "landmarks": [
+    "Pinner Hill Golf Club",
+    "Pinner Hill Estate Private Roads",
+    "Historic Pinner Hill Farm"
+  ],
+  "nearbyMicroAreas": [
+    "pinner-village",
+    "hatch-end",
+    "eastcote"
+  ],
+  "localFaqs": [
+    {
+      "question": "Can your removal vans access private unadopted roads on Pinner Hill?",
+      "answer": "Yes. We inspect tree canopy clearance in advance and deploy appropriately sized vehicles to navigate private unadopted roads safely.",
+      "display": true
+    },
+    {
+      "question": "Do you manage moves for large multi-storey family mansions on Pinner Hill?",
+      "answer": "Yes. We routinely coordinate multi-vehicle moves for 5 to 7 bedroom homes, deploying dedicated loading supervisors and packing teams.",
+      "display": true
+    },
+    {
+      "question": "How do you safeguard stone and gravel driveways on Pinner Hill properties?",
+      "answer": "We lay heavy-duty ground protection mats across sensitive resin-bound gravel and block paving to protect your driveway surface.",
+      "display": true
+    }
+  ]
+}

@@ -21,6 +21,14 @@
   "travelInfo": "Direct vehicular access via the A1000 High Road and A406 North Circular allows our removal vans to reach Totteridge properties in approximately 20 minutes from our Cricklewood fleet base.",
   "nearbyAreas": [
     {
+      "name": "Barnet",
+      "slug": "barnet"
+    },
+    {
+      "name": "Southgate",
+      "slug": "southgate"
+    },
+    {
       "name": "Mill Hill",
       "slug": "mill-hill"
     },
@@ -29,12 +37,8 @@
       "slug": "finchley"
     },
     {
-      "name": "Muswell Hill",
-      "slug": "muswell-hill"
-    },
-    {
-      "name": "Edgware & Burnt Oak",
-      "slug": "edgware-and-burnt-oak"
+      "name": "North Finchley & Woodside Park",
+      "slug": "north-finchley-and-woodside-park"
     }
   ],
   "servicesOffered": [

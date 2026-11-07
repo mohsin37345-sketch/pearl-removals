@@ -21,6 +21,14 @@
   "travelInfo": "Direct vehicular access via the A406 North Circular and A109 connects Muswell Hill to our Cricklewood dispatch yard in just 15 to 20 minutes.",
   "nearbyAreas": [
     {
+      "name": "Crouch End",
+      "slug": "crouch-end"
+    },
+    {
+      "name": "Southgate",
+      "slug": "southgate"
+    },
+    {
       "name": "Highgate",
       "slug": "highgate"
     },
@@ -29,12 +37,8 @@
       "slug": "finchley"
     },
     {
-      "name": "Totteridge & Whetstone",
-      "slug": "totteridge-and-whetstone"
-    },
-    {
-      "name": "Hampstead Garden Suburb",
-      "slug": "hampstead-garden-suburb"
+      "name": "East Finchley",
+      "slug": "east-finchley"
     }
   ],
   "servicesOffered": [

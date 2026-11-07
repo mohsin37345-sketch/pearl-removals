@@ -1,0 +1,43 @@
+{
+  "name": "Cockfosters",
+  "slug": "cockfosters",
+  "parent": "southgate",
+  "premium": false,
+  "status": "published",
+  "postcodes": [
+    "EN4",
+    "N14"
+  ],
+  "metaTitle": "Removals in Cockfosters, Southgate | Pearl Removals",
+  "metaDescription": "Professional removals in Cockfosters, Southgate (EN4, N14). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides reliable, fully insured property removals throughout Cockfosters EN4 and N14. As the northern terminus of the Piccadilly line, Cockfosters blends suburban residential avenues with green belt country parkland. From substantial detached homes along Chalk Lane to modern commuter flats, our moving teams deliver punctual, professional moving care. Situated at the terminus of the Piccadilly line, large detached houses along Chalk Lane require structured, calm moving teams. We supply protective floor coverings for polished wood and deep pile carpets, ensuring zero mess during your relocation.",
+  "whatMovingHereInvolves": "Cockfosters Road is an active arterial route linking the North Circular to the M25. Residential roads feature leafy avenues and private driveways. Relocating homes near Trent Park requires experienced drivers familiar with rural verges. Our porters use heavy-duty floor runners and padded transit blankets to safeguard your home and possessions.",
+  "landmarks": [
+    "Cockfosters Station",
+    "Trent Country Park Equestrian Centre",
+    "Chalk Lane"
+  ],
+  "nearbyMicroAreas": [
+    "oakwood",
+    "southgate-green",
+    "winchmore-hill",
+    "palmers-green"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you arrange parking suspensions for Cockfosters moves?",
+      "answer": "Yes. Where on-street parking controls exist, we manage the entire suspension application process with Enfield Council.",
+      "display": true
+    },
+    {
+      "question": "Can you move heavy garden planters and patio furniture in Cockfosters?",
+      "answer": "Yes. We have specialized lifting gear, straps, and protective padding designed specifically for outdoor and patio furniture.",
+      "display": true
+    },
+    {
+      "question": "Do you offer secure storage for moves in Cockfosters?",
+      "answer": "Yes. We provide 24/7 monitored containerized storage facilities, perfect for transitional periods between property dates.",
+      "display": true
+    }
+  ]
+}

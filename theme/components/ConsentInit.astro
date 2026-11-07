@@ -18,18 +18,3 @@
   gtag('set', 'ads_data_redaction', true);
   gtag('set', 'url_passthrough', true);
 </script>
-
-<!-- Dark Mode Blocking Inline Script (prevents theme flash before paint) -->
-<script is:inline>
-  (function() {
-    try {
-      const stored = localStorage.getItem('theme');
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      if (stored === 'dark' || (!stored && prefersDark)) {
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-      }
-    } catch (_) {}
-  })();
-</script>

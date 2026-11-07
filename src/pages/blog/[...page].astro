@@ -2,7 +2,6 @@
 import type { GetStaticPaths } from 'astro';
 import { getCollection } from 'astro:content';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
-import Hero from 'theme/components/Hero.astro';
 import TrustStrip from 'theme/components/TrustStrip.astro';
 import Breadcrumbs from 'theme/components/Breadcrumbs.astro';
 import BlogGrid from 'theme/components/BlogGrid.astro';
@@ -60,12 +59,21 @@ const breadcrumbs = [
   noindex={isEmpty}
   breadcrumbs={breadcrumbs}
 >
-  <Hero
-    variant="blog"
-    title="London Moving Guides & Relocation Advice"
-    subtitle="Straight-talking practical advice from experienced London removals professionals on packing, council parking permits, chain delays, and property transitions."
-    eyebrow="REMOVALS INSIGHTS & ADVICE"
-  />
+  <section class="page-intro">
+    <div class="container">
+      <div class="page-intro__content">
+        <div class="page-intro__eyebrow">
+          <span class="eyebrow">REMOVALS INSIGHTS &amp; ADVICE</span>
+        </div>
+        <h1 class="page-intro__title">
+          Moving Guides &amp; <span class="mark">Relocation Advice<svg viewBox="0 0 200 20" preserveAspectRatio="none"><path d="M3 15 C 50 4, 140 2, 197 12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg></span>
+        </h1>
+        <p class="page-intro__lead">
+          Straight-talking practical advice from experienced London removals professionals on packing, council parking permits, chain delays, and property transitions.
+        </p>
+      </div>
+    </div>
+  </section>
 
   <TrustStrip />
 

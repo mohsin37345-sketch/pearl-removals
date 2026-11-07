@@ -1,0 +1,161 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from 'theme/layouts/BaseLayout.astro';
+import TrustStrip from 'theme/components/TrustStrip.astro';
+import FAQ from 'theme/components/FAQ.astro';
+import QuoteFormInline from 'theme/components/QuoteFormInline.astro';
+import { siteConfig } from 'src/data/site';
+
+export async function getStaticPaths() {
+  const routes = await getCollection('routes');
+  return routes.map((route) => ({
+    params: { route: route.data.slug },
+    props: { route }
+  }));
+}
+
+const { route } = Astro.props;
+const data = route.data;
+
+const title = `Removals ${data.from.split('(')[0].trim()} to ${data.to} | Pearl Removals`.slice(0, 60);
+const description = `Direct, dedicated nationwide removals from ${data.from} to ${data.to}. Exclusive sole-use vehicle, £50k GIT insurance & guaranteed delivery times.`.slice(0, 160);
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Removals', url: '/removals/' },
+  { name: 'Long-Distance Removals', url: '/removals/long-distance-removals/' },
+  { name: `${data.from.split('(')[0].trim()} to ${data.to}`, url: `/removals/long-distance-removals/${data.slug}/` }
+];
+
+const faqs = data.faqs.filter((f) => f.display !== false);
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  noindex={!data.enabled}
+  schemaType="service"
+  breadcrumbs={breadcrumbs}
+  faqs={faqs}
+  serviceData={{
+    title: `Removals from ${data.from} to ${data.to}`,
+    summary: data.intro,
+    icon: 'truck'
+  }}
+>
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-b from-navy-950 via-navy-900 to-navy-950 text-pearl-100 py-16 md:py-24 border-b border-navy-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <nav aria-label="Breadcrumb" class="mb-6">
+        <ol class="flex flex-wrap items-center gap-2 text-sm text-pearl-400">
+          {breadcrumbs.map((crumb, idx) => (
+            <li class="flex items-center gap-2">
+              {idx > 0 && <span class="text-navy-600">/</span>}
+              {idx === breadcrumbs.length - 1 ? (
+                <span class="text-gold-400 font-medium" aria-current="page">{crumb.name}</span>
+              ) : (
+                <a href={crumb.url} class="hover:text-pearl-200 transition-colors">{crumb.name}</a>
+              )}
+            </li>
+          ))}
+        </ol>
+      </nav>
+
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-400/10 border border-gold-400/20 text-gold-300 text-xs font-semibold tracking-wide uppercase mb-4">
+          Dedicated Nationwide Route
+        </div>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-pearl-50 mb-6">
+          Removals from {data.from} to {data.to}
+        </h1>
+        <p class="text-lg text-pearl-300 leading-relaxed mb-8">
+          {data.intro}
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a
+            href="#quote-section"
+            class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-gold-500 text-navy-950 font-semibold hover:bg-gold-400 transition-colors shadow-lg shadow-gold-500/10"
+          >
+            Get a Route Quote
+          </a>
+          <a
+            href={`tel:${siteConfig.phone.replace(/\s+/g, '')}`}
+            class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-navy-800 text-pearl-100 font-semibold hover:bg-navy-700 border border-navy-700 transition-colors"
+          >
+            Call {siteConfig.phone}
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Strip -->
+  <TrustStrip />
+
+  <!-- Main Content & Details -->
+  <section class="py-16 md:py-20 bg-pearl-50/50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="bg-white rounded-2xl p-8 sm:p-12 shadow-sm border border-pearl-200/80 mb-12">
+        <h2 class="text-2xl sm:text-3xl font-bold text-navy-950 mb-6">
+          Dedicated Door-to-Door Removals to {data.to}
+        </h2>
+        <div class="prose prose-navy max-w-none text-navy-800 leading-relaxed space-y-6">
+          {data.body.split('\n\n').map((paragraph) => (
+            <p>{paragraph}</p>
+          ))}
+        </div>
+      </div>
+
+      <!-- Why Choose Dedicated Transit Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <div class="bg-white p-6 rounded-xl border border-pearl-200/80 shadow-sm">
+          <div class="w-10 h-10 rounded-lg bg-gold-50 flex items-center justify-center text-gold-600 mb-4 font-bold text-lg">
+            1
+          </div>
+          <h3 class="text-lg font-bold text-navy-950 mb-2">Dedicated Vehicle</h3>
+          <p class="text-sm text-navy-700 leading-relaxed">
+            Your goods travel in an exclusive Luton or 7.5t vehicle. We never co-load or share space with other households.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-pearl-200/80 shadow-sm">
+          <div class="w-10 h-10 rounded-lg bg-gold-50 flex items-center justify-center text-gold-600 mb-4 font-bold text-lg">
+            2
+          </div>
+          <h3 class="text-lg font-bold text-navy-950 mb-2">£50k Insurance</h3>
+          <p class="text-sm text-navy-700 leading-relaxed">
+            Every route is covered by comprehensive Goods in Transit insurance, protecting your furniture from door to door.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-pearl-200/80 shadow-sm">
+          <div class="w-10 h-10 rounded-lg bg-gold-50 flex items-center justify-center text-gold-600 mb-4 font-bold text-lg">
+            3
+          </div>
+          <h3 class="text-lg font-bold text-navy-950 mb-2">Guaranteed Times</h3>
+          <p class="text-sm text-navy-700 leading-relaxed">
+            We agree scheduled loading and arrival timeframes, keeping you in direct GPS contact with your driver throughout.
+          </p>
+        </div>
+      </div>
+
+      <!-- Route FAQs -->
+      {faqs.length > 0 && (
+        <div class="mb-16">
+          <FAQ items={faqs} title={`Frequently Asked Questions: London to ${data.to}`} />
+        </div>
+      )}
+
+      <!-- Quote Form Section -->
+      <div id="quote-section" class="scroll-mt-12 bg-white rounded-2xl p-8 sm:p-12 shadow-sm border border-pearl-200/80">
+        <h2 class="text-2xl font-bold text-navy-950 mb-2 text-center">
+          Request a Quotation: London to {data.to}
+        </h2>
+        <p class="text-navy-600 text-center mb-8 max-w-xl mx-auto text-sm">
+          Tell us about your moving date and property sizes. We will provide a transparent, fixed-price written quotation.
+        </p>
+        <QuoteFormInline />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

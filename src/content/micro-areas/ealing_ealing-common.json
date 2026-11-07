@@ -1,0 +1,42 @@
+{
+  "name": "Ealing Common",
+  "slug": "ealing-common",
+  "parent": "ealing",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "W5"
+  ],
+  "metaTitle": "Removals in Ealing Common, Ealing | Pearl Removals",
+  "metaDescription": "Professional removals in Ealing Common, Ealing (W5). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides distinguished, fully insured residential removals across expansive Ealing Common in W5. Fronting vast open parkland with mature chestnut trees, this coveted neighbourhood features grand Victorian and Edwardian double-fronted family villas on roads like Warwick Road and Leopold Road. Our experienced moving crews deliver exceptional care and punctuality. Stately Victorian villas lining the common often have broad stone staircases and deep bay windows that facilitate furniture transit. We provide expert dismantling for oversize bedframes and modular sofas, ensuring unhurried, dependable moving across the W5 district.",
+  "whatMovingHereInvolves": "Substantial residences bordering Ealing Common boast wide frontages, deep carriage driveways, and expansive internal layouts. Properties frequently contain heavy antique furniture, grand pianos, and delicate period plasterwork. Our crews lay heavy-duty floor runners across polished wood and tile floors, utilizing multi-vehicle capacity for large family moves.",
+  "landmarks": [
+    "Ealing Common Park",
+    "Ealing Common Underground",
+    "Warwick Road Villas"
+  ],
+  "nearbyMicroAreas": [
+    "ealing-broadway",
+    "hanger-hill",
+    "pitshanger",
+    "west-ealing"
+  ],
+  "localFaqs": [
+    {
+      "question": "Can you handle grand piano removals in Ealing Common properties?",
+      "answer": "Yes. We use specialist piano dollies, heavy-duty quilted transit covers, and experienced piano moving porters.",
+      "display": true
+    },
+    {
+      "question": "Do you provide full packing services for large family houses near Ealing Common?",
+      "answer": "Yes. Our professional packing crew can pack your entire home using double-walled cartons and specialized glassware boxes.",
+      "display": true
+    },
+    {
+      "question": "How do you protect delicate driveways and lawns during Ealing Common moves?",
+      "answer": "We lay protective rubber mats across driveways to prevent tyre marks and scuffing from heavy removal vehicles.",
+      "display": true
+    }
+  ]
+}

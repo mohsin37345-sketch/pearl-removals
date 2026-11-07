@@ -1,0 +1,75 @@
+{
+  "name": "Pinner",
+  "slug": "pinner",
+  "region": "outer-north-west-london",
+  "phase": 3,
+  "premium": true,
+  "boroughs": [
+    "Harrow"
+  ],
+  "postcodes": [
+    "HA5"
+  ],
+  "distanceMiles": 8,
+  "metaTitle": "House Removals Pinner HA5 | Pearl Removals",
+  "metaDescription": "Trusted house removals in Pinner HA5. Pinner Village timber-framed homes, Pinner Hill estates & Harrow parking. Call 020 3151 8452 for a free quote.",
+  "intro": "Pearl Removals delivers premier, fully insured residential removals across picturesque Pinner and the HA5 postcode district. From historic timber-framed properties in Pinner Village conservation area and grand private mansions in exclusive Pinner Hill to spacious 1930s detached residences in Hatch End and Eastcote, our professional moving crews provide thoughtful, punctual, and damage-free moving services. Based just down the road at our Cricklewood dispatch headquarters, our vehicles reach Pinner quickly via the A404 and A4140, offering complete packing, transit, and unpacking solutions. We take genuine pride in treating your furnishings with the highest level of care, using heavy-duty blankets, bespoke floor runners, and tailored wardrobe cartons so your moving day in Pinner proceeds with calm efficiency and complete peace of mind.",
+  "localKnowledge": "Pinner retains the historic character of a Middlesex market village with its medieval church and high street. Moving properties near Pinner High Street and Bridge Street requires careful consideration of narrow carriageways and pedestrian crossings. Private estates such as Pinner Hill feature narrow, unadopted winding roads with low-hanging mature trees, requiring skilled vehicle maneuvering and careful clearance calculations.",
+  "propertyTypes": "The architectural character of Pinner includes 15th-century timber-framed cottages, handsome Arts and Crafts residences, substantial five-bedroom detached 1930s family homes with mature gardens, and modern luxury apartments. Houses frequently feature wide hallways, expansive lofts, and manicured gardens requiring careful outdoor furniture handling.",
+  "parkingAndAccess": "The London Borough of Harrow operates Controlled Parking Zones across Pinner centre and near railway stations. On private roads such as Pinner Hill, off-street driveway parking is plentiful, though protective driveway boards are deployed to protect high-end stone and block paving from heavy vehicle wheels.",
+  "transportLinks": "Served by Pinner station on the Metropolitan line (fast trains into Baker Street in 25 minutes), Hatch End station on the London Overground, and good road links toward the M25 and M1.",
+  "travelInfo": "Direct route via the A404 Watford Road connects Pinner to our Cricklewood logistics depot in approximately 25 minutes, facilitating smooth transit.",
+  "nearbyAreas": [
+    {
+      "name": "Harrow",
+      "slug": "harrow"
+    },
+    {
+      "name": "Northwood",
+      "slug": "northwood"
+    },
+    {
+      "name": "Stanmore",
+      "slug": "stanmore"
+    },
+    {
+      "name": "Bushey & Elstree",
+      "slug": "bushey-and-elstree"
+    },
+    {
+      "name": "Wembley",
+      "slug": "wembley"
+    }
+  ],
+  "servicesOffered": [
+    "House Removals Pinner",
+    "Pinner Hill Estate Moves",
+    "Packing Services HA5",
+    "Piano Removals Pinner",
+    "Storage Solutions Pinner"
+  ],
+  "localFaqs": [
+    {
+      "question": "Can your removal vans access private roads on Pinner Hill?",
+      "answer": "Yes. We inspect access routes for tree canopy clearance and deploy appropriately sized vehicles to navigate private unadopted roads safely.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange Harrow parking permits for moves near Pinner station?",
+      "answer": "Yes. We coordinate directly with the London Borough of Harrow to secure parking bay suspensions and dispensations for CPZ roads in HA5.",
+      "display": true
+    },
+    {
+      "question": "Do you provide full packing materials for Pinner family moves?",
+      "answer": "Yes. We supply double-walled cardboard boxes, bubble wrap, packing paper, and wardrobe boxes, or provide a complete pre-move packing service.",
+      "display": true
+    },
+    {
+      "question": "How do you protect timber-framed interiors in Pinner Village?",
+      "answer": "We fit padded door jamb protectors, specialized banister covers, and floor runners to safeguard historic oak beams and period plasterwork.",
+      "display": true
+    }
+  ],
+  "premiumAngle": "Pinner’s historic village residences, Arts and Crafts properties, and exclusive Pinner Hill estates require expert moving care. We provide custom timber crating, comprehensive transit insurance, and respectful, uniformed personnel.",
+  "status": "published"
+}

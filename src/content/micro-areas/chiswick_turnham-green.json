@@ -1,0 +1,42 @@
+{
+  "name": "Turnham Green",
+  "slug": "turnham-green",
+  "parent": "chiswick",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "W4"
+  ],
+  "metaTitle": "Removals in Turnham Green, Chiswick | Pearl Removals",
+  "metaDescription": "Professional removals in Turnham Green, Chiswick (W4). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides attentive, fully insured removals across the leafy Turnham Green quarter in Chiswick W4. Overlooking the open common land and historic Christ Church, this neighbourhood features charming Victorian terraced homes, handsome mansion apartments, and quiet residential turnings. Our skilled moving porters manage every relocation with courtesy and care. Proximity to the bustling green and church common demands careful vehicle placement and consideration for neighbouring residents. Our team coordinates parking dispensations efficiently, helping you unpack and assemble your home essentials before evening settles.",
+  "whatMovingHereInvolves": "Moving properties near Turnham Green involves managing traffic around Turnham Green Terrace and Heathfield Terrace. Parking removal vehicles outside Victorian terraced houses requires pre-arranged Hounslow Council bay suspensions. Inside properties, our porters navigate multi-level staircases and narrow entranceways with padded covers and protective floor runners.",
+  "landmarks": [
+    "Christ Church Turnham Green",
+    "Turnham Green Terrace Cafes",
+    "Town Hall Triangle"
+  ],
+  "nearbyMicroAreas": [
+    "chiswick-high-road",
+    "bedford-park",
+    "grove-park",
+    "strand-on-the-green"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you arrange parking suspensions near Turnham Green Terrace?",
+      "answer": "Yes. We submit official bay suspension applications directly to Hounslow Council to reserve dedicated kerbside loading space.",
+      "display": true
+    },
+    {
+      "question": "Can you move heavy furniture up narrow stairs in Turnham Green properties?",
+      "answer": "Yes. Our moving porters specialize in narrow staircase maneuvers, using protective quilted blankets and careful disassembly.",
+      "display": true
+    },
+    {
+      "question": "Do you offer packing services the day before moving near Turnham Green?",
+      "answer": "Yes. Our packing team can arrive the day prior with double-walled boxes, bubble wrap, and wardrobe cartons to pack your entire house.",
+      "display": true
+    }
+  ]
+}

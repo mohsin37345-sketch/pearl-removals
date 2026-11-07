@@ -165,3 +165,27 @@ Seed the following questions from personal Google accounts and answer promptly f
 
 ### Review Response: 1-Star Review (professional de-escalation)
 > "Dear [Customer Name], we take all feedback very seriously. We cannot locate a removal booking under this name in our system. Please contact our head office directly on 020 3151 8452 or via info@pearlremovals.co.uk with your job reference so we can investigate and address your concerns immediately."
+
+---
+
+## 9. Phase 3 Extended Service Areas & Google Posts Strategy
+
+### Phase 3 Service Area Expansion
+As the profile gains domain authority and review volume, update GBP service areas to include prime West London, Central London, North London, and Herts border districts:
+1. **Royal Borough of Kensington & Chelsea** (Kensington W8, Chelsea SW3/SW10)
+2. **City of Westminster Central** (Mayfair W1, Knightsbridge & Belgravia SW1/SW7, Fitzrovia W1)
+3. **London Borough of Hammersmith & Fulham** (Hammersmith W6, Shepherd's Bush W12)
+4. **London Borough of Hounslow** (Chiswick W4)
+5. **London Borough of Ealing** (Ealing W5/W13)
+6. **London Borough of Haringey & Enfield** (Crouch End N8, Southgate N14/N21)
+7. **London Borough of Barnet North** (High Barnet EN5, Hadley Wood EN4)
+8. **London Borough of Harrow & Hillingdon** (Pinner HA5, Northwood HA6)
+9. **Hertsmere District** (Bushey & Elstree WD23/WD6, Radlett WD7)
+
+### Weekly Google Posts (Phase 3 Rotation)
+- **Post 1 (Kensington & Chelsea):** "Moving into a period townhouse or mansion flat in Kensington or Chelsea? From parking bay suspensions along King's Road and Kensington Church Street to lift protection and delicate antique handling, Pearl Removals delivers white-glove moving care. Call 020 3151 8452 or book online: [UTM Link]"
+- **Post 2 (Mayfair & Belgravia):** "Discreet, high-security removals across Mayfair, Grosvenor Square, and Belgravia. Our liveried teams provide bespoke wooden crating for art, crystal chandeliers, and French-polished antiques with zero disruption."
+- **Post 3 (Chiswick & Hammersmith):** "Relocating near the river in Chiswick, Bedford Park, or Hammersmith? Our agile 3.5-tonne Luton vans navigate narrow residential streets and manage Hounslow & LBHF parking dispensations effortlessly."
+- **Post 4 (Outer NW London & Herts Borders):** "Spacious family house moves across Pinner Hill, Moor Park, Radlett, and Bushey Heath. Synchronized multi-van convoys, full packing the day prior, and seamless M1/M25 long-distance relocations."
+- **Post 5 (Office Removals Business Districts):** "Relocating your business or commercial studio in Paddington Basin, Brent Cross Town, Camden Lock, or Marylebone? We provide weekend office relocations, IT crate hire, and zero business downtime."
+

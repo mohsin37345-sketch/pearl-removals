@@ -1,0 +1,42 @@
+{
+  "name": "High Barnet",
+  "slug": "high-barnet",
+  "parent": "barnet",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "EN5"
+  ],
+  "metaTitle": "Removals in High Barnet, Barnet | Pearl Removals",
+  "metaDescription": "Professional removals in High Barnet, Barnet (EN5). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers comprehensive, fully insured house removals across historic High Barnet EN5. Occupying the high ridge of North London, High Barnet features traditional coaching high streets, handsome Victorian terraced villas, and spacious family homes near High Barnet Northern line station. Our experienced moving crews provide punctual, structured, and stress-free removals. The historic coaching hill along the A1000 features steep road inclines and busy market-town pavements. Our drivers stabilize vehicles with precision wheel chocks, while our porters carry furniture swiftly into Victorian villas and contemporary ridge-top apartments.",
+  "whatMovingHereInvolves": "High Barnet’s elevated terrain introduces steep gradients around Barnet Hill and Wood Street. Negotiating tight residential streets near Queen Elizabeth’s School requires skilled vehicle positioning. Our operations team arranges Barnet Council parking suspensions for town-centre moves, while our porters take extra care when carrying furniture up sloping garden pathways.",
+  "landmarks": [
+    "Barnet Church St John the Baptist",
+    "The Spires Shopping Centre",
+    "High Barnet Station"
+  ],
+  "nearbyMicroAreas": [
+    "arkley",
+    "hadley-wood",
+    "monken-hadley",
+    "underhill"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you arrange Barnet Council parking suspensions in High Barnet?",
+      "answer": "Yes. We manage the entire parking suspension application process with Barnet Council to secure legal loading space.",
+      "display": true
+    },
+    {
+      "question": "Can your vehicles navigate steep gradients around Barnet Hill?",
+      "answer": "Yes. Our modern vehicles feature heavy-duty braking and tail lifts, and our drivers are experienced with hilly access.",
+      "display": true
+    },
+    {
+      "question": "Do you provide full packing services the day before moving in EN5?",
+      "answer": "Yes. Our packing team can arrive the day prior with double-walled boxes, bubble wrap, and wardrobe cartons to pack your entire house.",
+      "display": true
+    }
+  ]
+}

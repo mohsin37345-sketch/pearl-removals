@@ -1,0 +1,114 @@
+---
+interface FeatureItem {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+interface Props {
+  eyebrow?: string;
+  title?: string;
+  description?: string;
+  photoUrl?: string;
+  photoAlt?: string;
+  badge1Number?: string;
+  badge1Label?: string;
+  badge2Title?: string;
+  badge2Subtitle?: string;
+  features?: FeatureItem[];
+  primaryCtaText?: string;
+  primaryCtaLink?: string;
+  secondaryCtaText?: string;
+  secondaryCtaLink?: string;
+}
+
+const defaultFeatures: FeatureItem[] = [
+  {
+    icon: "pound",
+    title: "Fixed, honest pricing",
+    description: "The price we quote is the price you pay."
+  },
+  {
+    icon: "shield",
+    title: "Fully insured",
+    description: "Goods-in-transit and public liability cover."
+  },
+  {
+    icon: "users",
+    title: "Trained, vetted crew",
+    description: "Uniformed, DBS-checked and respectful."
+  },
+  {
+    icon: "clock",
+    title: "7-day availability",
+    description: "Evenings, weekends & last-minute moves."
+  }
+];
+
+const {
+  eyebrow = "Why Pearl Removals",
+  title = "Your belongings, treated like our own.",
+  description = "We're a local, family-run team — not a call centre. The people who quote your move are the people who turn up on the day.",
+  photoUrl = "/images/furniture-packing-removals-london.webp",
+  photoAlt = "Pearl Removals professional furniture loading with protective wrapping and ratchet security straps",
+  badge1Number = "10+",
+  badge1Label = "years moving North West London families",
+  badge2Title = "Damage-free guarantee",
+  badge2Subtitle = "Or we make it right",
+  features = defaultFeatures,
+  primaryCtaText = "Get a free quote",
+  primaryCtaLink = "/get-a-quote/",
+  secondaryCtaText = "Read customer reviews",
+  secondaryCtaLink = "/reviews/"
+} = Astro.props;
+---
+
+<section class="section">
+  <div class="container split">
+    <div class="split__media reveal">
+      <div class="photo">
+        <img src={photoUrl} alt={photoAlt} width="740" height="1024" loading="lazy" />
+        <div class="photo__overlay-badge">
+          <span class="live-dot"></span>
+          <span>100% Strapped &amp; Blanket Protected</span>
+        </div>
+      </div>
+      <div class="split__badge2">
+        <span class="icon-tile" style="width:42px;height:42px;background:#e9f8f0;color:var(--mint)">
+          <svg style="width:20px;height:20px"><use href="#i-shield"/></svg>
+        </span>
+        <div><strong>{badge2Title}</strong><span>{badge2Subtitle}</span></div>
+      </div>
+      <div class="split__badge">
+        <b>{badge1Number}</b>
+        <span>{badge1Label}</span>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <span class="eyebrow">{eyebrow}</span>
+      <div class="section-head" style="margin-bottom:0">
+        <h2>{title}</h2>
+        <p>{description}</p>
+      </div>
+      <div class="features">
+        {features.map((feat) => (
+          <div class="feature">
+            <span class="icon-tile"><svg><use href={`#i-${feat.icon}`}/></svg></span>
+            <h4>{feat.title}</h4>
+            <p>{feat.description}</p>
+          </div>
+        ))}
+      </div>
+      <div class="split__ctas">
+        <a href={primaryCtaLink} class="btn btn--accent">
+          {primaryCtaText} <svg class="arrow"><use href="#i-arrow"/></svg>
+        </a>
+        <a href={secondaryCtaLink} class="btn btn--ghost">
+          {secondaryCtaText}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+

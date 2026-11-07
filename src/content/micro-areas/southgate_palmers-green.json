@@ -1,0 +1,42 @@
+{
+  "name": "Palmers Green",
+  "slug": "palmers-green",
+  "parent": "southgate",
+  "premium": false,
+  "status": "published",
+  "postcodes": [
+    "N13"
+  ],
+  "metaTitle": "Removals in Palmers Green, Southgate | Pearl Removals",
+  "metaDescription": "Professional removals in Palmers Green, Southgate (N13). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers dependable house removals across vibrant Palmers Green in N13. Known as \"Little Cyprus\" for its lively Mediterranean food culture along Green Lanes, Palmers Green features spacious Edwardian terraced family homes, Broomfield Park, and railway links into Moorgate. Our skilled moving teams deliver organized, punctual, and affordable moving care. Suburban avenues around Broomfield Park feature Edwardian terraced properties with tiled front pathways and high ceilings. Our team manages narrow staircase turns with practised ease, ensuring your furniture and delicate ornaments remain safe.",
+  "whatMovingHereInvolves": "Moving in Palmers Green requires navigating busy Green Lanes commercial traffic and residential turnings such as Fox Lane and Aldermans Hill. Parking removal lorries outside Edwardian terraced homes requires pre-booked council bay suspensions. Our porters navigate period hallways and multi-floor stairways with protective floor runners.",
+  "landmarks": [
+    "Broomfield Park",
+    "Green Lanes High Street",
+    "Palmers Green Station"
+  ],
+  "nearbyMicroAreas": [
+    "southgate-green",
+    "winchmore-hill",
+    "oakwood",
+    "cockfosters"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you arrange Enfield Council parking suspensions in Palmers Green?",
+      "answer": "Yes. We submit official parking bay suspension requests to Enfield Council to secure legal loading space outside your home.",
+      "display": true
+    },
+    {
+      "question": "Can your team move large family homes on the Fox Lane conservation area?",
+      "answer": "Yes. We routinely manage 3 to 5 bedroom family relocations, providing multiple vehicles and full packing teams.",
+      "display": true
+    },
+    {
+      "question": "Do you supply durable moving boxes and bubble wrap in Palmers Green?",
+      "answer": "Yes. We supply double-walled boxes, bubble wrap, packing tape, and wardrobe cartons delivered in advance.",
+      "display": true
+    }
+  ]
+}

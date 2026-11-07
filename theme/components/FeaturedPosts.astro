@@ -1,6 +1,5 @@
 ---
 import { siteConfig } from 'src/data/site';
-import Icon from './Icon.astro';
 import BlogCard from './BlogCard.astro';
 
 interface Props {
@@ -10,24 +9,21 @@ interface Props {
 const { posts = [] } = Astro.props;
 ---
 
-<section class="py-12 lg:py-16" aria-labelledby="featured-posts-heading">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+<section class="section section--white" id="blog" aria-labelledby="featured-posts-heading">
+  <div class="container">
+    <div class="section-head section-head--split reveal">
       <div>
-        <span class="text-xs font-bold uppercase tracking-widest text-royal block mb-1">Knowledge & Moving Tips</span>
-        <h2 id="featured-posts-heading" class="text-3xl sm:text-4xl font-black text-navy dark:text-pearl tracking-tight">
-          North West London Moving Advice
-        </h2>
+        <span class="eyebrow">Knowledge &amp; Moving Tips</span>
+        <h2 id="featured-posts-heading">North West London Moving Advice</h2>
+        <p>Essential guides on council parking suspensions, completion day schedules, and packing advice.</p>
       </div>
-
-      <a href="/blog/" class="text-xs font-bold text-royal hover:underline inline-flex items-center gap-1">
-        <span>View all articles</span>
-        <Icon name="arrow-right" class="w-3.5 h-3.5" />
+      <a href="/blog/" class="btn btn--ghost">
+        View all articles <svg class="arrow"><use href="#i-arrow"/></svg>
       </a>
     </div>
 
     {posts && posts.length > 0 ? (
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
         {posts.slice(0, 3).map((post) => (
           <BlogCard
             title={post.data.title}
@@ -40,30 +36,19 @@ const { posts = [] } = Astro.props;
         ))}
       </div>
     ) : (
-      <div class="glass-panel p-8 sm:p-12 rounded-3xl border border-white/60 dark:border-white/10 text-center max-w-2xl mx-auto">
-        <div class="w-12 h-12 rounded-2xl bg-royal/10 text-royal flex items-center justify-center mx-auto mb-4">
-          <Icon name="book-open" class="w-6 h-6" />
-        </div>
-        <h3 class="text-lg font-bold text-navy dark:text-pearl mb-2">
-          Expert Guides in Preparation
+      <div style="background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-xl); padding: clamp(32px, 6vw, 48px); text-align: center; max-width: 640px; margin: 0 auto; box-shadow: var(--shadow-sm);">
+        <span class="icon-tile" style="width: 52px; height: 52px; border-radius: 14px; background: var(--accent-soft); color: var(--accent); margin: 0 auto 16px;">
+          <svg style="width: 24px; height: 24px;"><use href="#i-home"/></svg>
+        </span>
+        <h3 style="font-size: 20px; font-weight: 700; color: var(--ink); margin-bottom: 8px;">
+          Expert Moving Guides
         </h3>
-        <p class="text-sm text-surface-600 dark:text-surface-400 mb-6 leading-relaxed">
-          Our moving guides are on the way. In the meantime, call us on <strong class="text-navy dark:text-pearl">{siteConfig.phone}</strong> for straight-talking advice, or request an instant quotation.
+        <p style="font-size: 14.5px; color: var(--muted); margin-bottom: 24px; line-height: 1.6;">
+          Browse our expert articles for tips on moving home across Camden, Barnet, Brent, and Westminster.
         </p>
-        <div class="flex flex-wrap items-center justify-center gap-3">
-          <a
-            href="/get-a-quote/"
-            class="px-6 py-2.5 rounded-full bg-royal text-white text-xs font-bold hover:bg-royal-hover transition-colors"
-          >
-            Get a Free Quote &rarr;
-          </a>
-          <a
-            href={`tel:${siteConfig.phoneE164}`}
-            class="px-5 py-2.5 rounded-full glass-pill text-xs font-bold text-navy dark:text-pearl hover:bg-white/80 transition-colors"
-          >
-            Call {siteConfig.phone}
-          </a>
-        </div>
+        <a href="/blog/" class="btn btn--accent btn--sm">
+          Visit Moving Blog <svg class="arrow"><use href="#i-arrow"/></svg>
+        </a>
       </div>
     )}
   </div>

@@ -1,0 +1,42 @@
+{
+  "name": "Knightsbridge",
+  "slug": "knightsbridge",
+  "parent": "knightsbridge-and-belgravia",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "SW1",
+    "SW7"
+  ],
+  "metaTitle": "Removals in Knightsbridge, Knightsbridge & Belgravia | Pearl",
+  "metaDescription": "Professional removals in Knightsbridge, Knightsbridge & Belgravia (SW1, SW7). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides peerless, white-glove removals across glamorous Knightsbridge in SW1 and SW7. Bordering Hyde Park and world-famous retail destinations like Harrods and Harvey Nichols, Knightsbridge contains magnificent Victorian townhouses and lateral luxury apartments. Our specialized moving personnel deliver exceptional care, confidentiality, and precision. International residences near Brompton Road and Harrods require disciplined timing around red routes and heavy footfall. Our logistics managers organize timed council permits, deploying experienced movers who treat high-value personal collections with unparalleled care. Our experienced supervisory personnel ensure continuous communication and flawless care throughout moving day.",
+  "whatMovingHereInvolves": "Operating in Knightsbridge requires managing high traffic density along Brompton Road and Knightsbridge red routes. Residential relocations along Brompton Square, Montpelier Square, and Trevor Square require pre-booked parking bay suspensions through Westminster or Kensington & Chelsea councils. Our crews protect communal entrance halls, elevators, and historic hardwood floors.",
+  "landmarks": [
+    "Harrods",
+    "Hyde Park Barracks",
+    "Brompton Square"
+  ],
+  "nearbyMicroAreas": [
+    "belgravia",
+    "eaton-square",
+    "sloane-street"
+  ],
+  "localFaqs": [
+    {
+      "question": "Which council handles parking suspensions in Knightsbridge?",
+      "answer": "Knightsbridge straddles Westminster and Kensington & Chelsea. We determine the exact borough border and manage all permits.",
+      "display": true
+    },
+    {
+      "question": "Can you handle delicate bronze sculptures and large canvas paintings?",
+      "answer": "Yes. Our specialized art team builds bespoke wooden cases and uses temperature-controlled transit vehicles.",
+      "display": true
+    },
+    {
+      "question": "How do you navigate narrow mews streets off Brompton Road?",
+      "answer": "We deploy our agile 3.5-tonne Luton vehicles with tail lifts to maneuver safely through historic mews entrances.",
+      "display": true
+    }
+  ]
+}

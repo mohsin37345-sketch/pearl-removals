@@ -1,0 +1,42 @@
+{
+  "name": "West Ealing",
+  "slug": "west-ealing",
+  "parent": "ealing",
+  "premium": false,
+  "status": "published",
+  "postcodes": [
+    "W13"
+  ],
+  "metaTitle": "Removals in West Ealing, Ealing | Pearl Removals",
+  "metaDescription": "Professional removals in West Ealing, Ealing (W13). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides reliable, fully insured property removals across West Ealing W13. Benefiting from fast Elizabeth line connections, West Ealing features Victorian terraced family homes along Drayton Green, contemporary apartments near the station, and leafy residential avenues. Our experienced moving crews provide punctual, structured moving care. Victorian terraced streets surrounding West Ealing station feature resident-controlled parking zones that benefit from pre-booked bay suspensions. Our polite, hard-working porters manage steep internal staircases with confidence, placing each marked carton into the correct bedroom.",
+  "whatMovingHereInvolves": "Relocating in West Ealing requires coordinating around commercial traffic along Uxbridge Road and busy residential parking. Terraced streets around Drayton Green Road and Alexandria Road require council parking suspensions to ensure our Luton vans can park directly outside your front gate. Our porters use heavy-duty floor runners to protect period entranceways.",
+  "landmarks": [
+    "West Ealing Elizabeth Line Station",
+    "Dean Gardens",
+    "Drayton Green"
+  ],
+  "nearbyMicroAreas": [
+    "ealing-broadway",
+    "pitshanger",
+    "ealing-common",
+    "hanger-hill"
+  ],
+  "localFaqs": [
+    {
+      "question": "Do you manage parking suspensions with Ealing Council in W13?",
+      "answer": "Yes. We handle all paperwork directly with Ealing Council to reserve kerbside parking bays outside your property.",
+      "display": true
+    },
+    {
+      "question": "Can you move 3- and 4-bedroom Victorian terraced homes in West Ealing?",
+      "answer": "Yes. We provide comprehensive family house removals, deploying multi-man crews, Luton vehicles, and full packing services.",
+      "display": true
+    },
+    {
+      "question": "Do you supply durable moving boxes and bubble wrap in West Ealing?",
+      "answer": "Yes. We supply double-walled boxes, bubble wrap, packing tape, and wardrobe cartons delivered in advance.",
+      "display": true
+    }
+  ]
+}

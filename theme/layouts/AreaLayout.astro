@@ -72,11 +72,12 @@ const serviceLinks = [
   <!-- Area Hero Section -->
   <Hero
     variant="area"
-    title={`House Removals in ${area.name}`}
+    title={`Removals in ${area.name}`}
     highlightText={area.name}
     subtitle={`Professional, insured residential removals and man & van services across ${area.postcodes.join(', ')}.`}
     eyebrow={`LOCAL LONDON REMOVALS • ~${area.distanceMiles} MILES FROM OUR CRICKLEWOOD BASE`}
     badges={[...area.postcodes, ...area.boroughs.map(b => `London Borough of ${b}`)]}
+    defaultFromPostcode={area.postcodes[0] || 'NW2'}
   />
 
   <TrustStrip />
@@ -84,51 +85,51 @@ const serviceLinks = [
   <Breadcrumbs items={breadcrumbs} />
 
   <!-- Main Area Content Container -->
-  <article class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
+  <article class="container" style="padding-block: 40px; display: flex; flex-direction: column; gap: 40px;">
     
     <!-- Intro & Local Knowledge -->
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-      <div class="lg:col-span-8 space-y-6 text-sm sm:text-base leading-relaxed text-surface-700 dark:text-surface-300">
+      <div class="lg:col-span-8 space-y-6 text-sm sm:text-base leading-relaxed" style="color: var(--text);">
         
         <!-- Area Intro -->
-        <div class="glass-panel p-6 sm:p-8 rounded-3xl">
-          <h2 class="text-xl sm:text-2xl font-black text-navy dark:text-pearl mb-3">
+        <div style="background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-xl); padding: clamp(24px, 4vw, 36px); box-shadow: var(--shadow-sm);">
+          <h2 style="font-size: clamp(22px, 3vw, 28px); margin-bottom: 14px; color: var(--ink);">
             Trusted Removals in {area.name} ({area.postcodes.join(', ')})
           </h2>
-          <p class="leading-relaxed">
+          <p style="color: var(--muted); line-height: 1.65; margin: 0;">
             {area.intro}
           </p>
         </div>
 
         <!-- Local Knowledge Section -->
-        <div class="space-y-4">
-          <h3 class="text-lg font-bold text-navy dark:text-pearl flex items-center gap-2">
-            <Icon name="map-pin" class="w-5 h-5 text-royal" />
-            <span>Local Access & Geography in {area.name}</span>
+        <div style="background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-xl); padding: clamp(24px, 4vw, 36px); box-shadow: var(--shadow-sm);">
+          <h3 style="font-size: 20px; font-weight: 700; color: var(--ink); margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+            <svg style="width: 20px; height: 20px; color: var(--accent);"><use href="#i-pin"/></svg>
+            <span>Local Access &amp; Geography in {area.name}</span>
           </h3>
-          <p class="leading-relaxed">
+          <p style="color: var(--muted); line-height: 1.65; margin: 0;">
             {area.localKnowledge}
           </p>
         </div>
 
         <!-- Property Types & Access / CPZ notes -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-          <div class="glass-pill p-5 rounded-2xl">
-            <h4 class="font-bold text-sm text-navy dark:text-pearl mb-2 flex items-center gap-1.5">
-              <Icon name="building" class="w-4 h-4 text-royal" />
+          <div style="background: var(--pearl); border: 1px solid var(--line); border-radius: var(--r-md); padding: 20px;">
+            <h4 style="font-size: 16px; font-weight: 700; color: var(--ink); margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
+              <svg style="width: 18px; height: 18px; color: var(--accent);"><use href="#i-home"/></svg>
               <span>Property Architecture</span>
             </h4>
-            <p class="text-xs text-surface-600 dark:text-surface-400 leading-relaxed">
+            <p style="font-size: 14px; color: var(--muted); line-height: 1.6; margin: 0;">
               {area.propertyTypes}
             </p>
           </div>
 
-          <div class="glass-pill p-5 rounded-2xl">
-            <h4 class="font-bold text-sm text-navy dark:text-pearl mb-2 flex items-center gap-1.5">
-              <Icon name="truck" class="w-4 h-4 text-royal" />
-              <span>Parking & CPZ Regulations</span>
+          <div style="background: var(--pearl); border: 1px solid var(--line); border-radius: var(--r-md); padding: 20px;">
+            <h4 style="font-size: 16px; font-weight: 700; color: var(--ink); margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
+              <svg style="width: 18px; height: 18px; color: var(--accent);"><use href="#i-truck"/></svg>
+              <span>Parking &amp; CPZ Regulations</span>
             </h4>
-            <p class="text-xs text-surface-600 dark:text-surface-400 leading-relaxed">
+            <p style="font-size: 14px; color: var(--muted); line-height: 1.6; margin: 0;">
               {area.parkingAndAccess}
             </p>
           </div>
@@ -136,8 +137,8 @@ const serviceLinks = [
 
         <!-- Travel & Transport Info -->
         {area.travelInfo && (
-          <div class="text-xs text-surface-500 leading-relaxed pt-2">
-            <strong>Logistics & Connectivity:</strong> {area.travelInfo}
+          <div style="font-size: 14px; color: var(--muted); padding-top: 8px;">
+            <strong style="color: var(--ink);">Logistics &amp; Connectivity:</strong> {area.travelInfo}
           </div>
         )}
 
@@ -145,37 +146,37 @@ const serviceLinks = [
       </div>
 
       <!-- Sidebar -->
-      <aside class="lg:col-span-4 space-y-6">
-        <div class="glass-panel p-6 rounded-3xl sticky top-28 border border-white/60 dark:border-white/10 space-y-4">
-          <h3 class="text-sm font-bold uppercase tracking-wider text-navy dark:text-pearl">
+      <aside class="lg:col-span-4">
+        <div style="background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-xl); padding: 24px; position: sticky; top: calc(var(--header-h) + 24px); box-shadow: var(--shadow-sm);">
+          <h3 style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 16px;">
             {area.name} Quick Facts
           </h3>
 
-          <ul class="space-y-2 text-xs text-surface-600 dark:text-surface-300">
-            <li class="flex justify-between py-1 border-b border-surface-200/50 dark:border-white/5">
-              <span>Postcode Districts:</span>
-              <strong class="text-navy dark:text-pearl">{area.postcodes.join(', ')}</strong>
+          <ul style="display: grid; gap: 10px; font-size: 14px; margin-bottom: 20px;">
+            <li style="display: flex; justify-content: space-between; padding-bottom: 8px; border-bottom: 1px solid var(--line);">
+              <span style="color: var(--muted);">Postcode Districts:</span>
+              <strong style="color: var(--ink);">{area.postcodes.join(', ')}</strong>
             </li>
-            <li class="flex justify-between py-1 border-b border-surface-200/50 dark:border-white/5">
-              <span>Local Authority:</span>
-              <strong class="text-navy dark:text-pearl">{area.boroughs.join(' / ')}</strong>
+            <li style="display: flex; justify-content: space-between; padding-bottom: 8px; border-bottom: 1px solid var(--line);">
+              <span style="color: var(--muted);">Local Authority:</span>
+              <strong style="color: var(--ink);">{area.boroughs.join(' / ')}</strong>
             </li>
-            <li class="flex justify-between py-1 border-b border-surface-200/50 dark:border-white/5">
-              <span>Distance to NW2 Base:</span>
-              <strong class="text-navy dark:text-pearl">~{area.distanceMiles} miles</strong>
+            <li style="display: flex; justify-content: space-between; padding-bottom: 8px; border-bottom: 1px solid var(--line);">
+              <span style="color: var(--muted);">Distance to Base:</span>
+              <strong style="color: var(--ink);">~{area.distanceMiles} miles</strong>
             </li>
-            <li class="flex justify-between py-1 border-b border-surface-200/50 dark:border-white/5">
-              <span>Standard Insurance:</span>
-              <strong class="text-navy dark:text-pearl">£50k GIT / £5M PL</strong>
+            <li style="display: flex; justify-content: space-between; padding-bottom: 8px; border-bottom: 1px solid var(--line);">
+              <span style="color: var(--muted);">Insurance:</span>
+              <strong style="color: var(--ink);">£50k GIT / £5M PL</strong>
             </li>
           </ul>
 
-          <div class="pt-2">
+          <div>
             <a
               href="/get-a-quote/"
-              class="w-full py-3 px-4 rounded-full bg-royal text-white text-center font-bold text-xs block hover:bg-royal-hover transition-colors shadow-md shadow-royal/20"
+              class="btn btn--accent btn--block btn--sm"
             >
-              Get a Quote for {area.name} →
+              Get a Quote for {area.name} <svg class="arrow"><use href="#i-arrow"/></svg>
             </a>
           </div>
         </div>
@@ -212,7 +213,10 @@ const serviceLinks = [
     )}
 
     <!-- CTA Band -->
-    <CTABand areaName={area.name} />
+    <CTABand
+      title={`Moving to or from ${area.name}?`}
+      description="Book your North West London house move with Pearl Removals. Free, transparent quotes in 60 seconds."
+    />
 
     <!-- Inline Form -->
     <QuoteFormSection

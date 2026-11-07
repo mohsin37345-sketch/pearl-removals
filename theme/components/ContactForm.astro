@@ -1,20 +1,19 @@
 ---
 import { siteConfig } from 'src/data/site';
-import Icon from './Icon.astro';
 
 const accessKey = import.meta.env.WEB3FORMS_ACCESS_KEY || 'YOUR_ACCESS_KEY_HERE';
 ---
 
-<div class="glass-panel p-6 sm:p-8 rounded-3xl shadow-xl max-w-xl mx-auto w-full border border-white/80 dark:border-white/10">
-  <form id="contact-form" class="space-y-4" novalidate>
+<div style="background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-xl); padding: clamp(24px, 4vw, 40px); box-shadow: var(--shadow-md); max-width: 600px; margin-inline: auto;">
+  <form id="contact-form" novalidate style="display: flex; flex-direction: column; gap: 16px;">
     <input type="hidden" name="access_key" value={accessKey} />
     <input type="hidden" name="subject" value="Contact Enquiry - Pearl Removals Website" />
     <input type="hidden" name="from_name" value="Pearl Removals Website Contact" />
     <!-- Honeypot -->
-    <input type="checkbox" name="botcheck" class="hidden" style="display:none;" />
+    <input type="checkbox" name="botcheck" class="visually-hidden" style="display:none;" />
 
     <div>
-      <label for="contact-name" class="block text-xs font-bold uppercase tracking-wider text-navy dark:text-pearl mb-1.5">
+      <label for="contact-name" style="display: block; font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 6px;">
         Your Name *
       </label>
       <input
@@ -23,12 +22,12 @@ const accessKey = import.meta.env.WEB3FORMS_ACCESS_KEY || 'YOUR_ACCESS_KEY_HERE'
         name="name"
         placeholder="e.g. John Smith"
         required
-        class="w-full px-4 py-3 rounded-2xl bg-white/70 dark:bg-white/10 border border-surface-200 dark:border-white/10 text-sm text-navy dark:text-pearl placeholder-surface-400 focus:outline-none focus:ring-2 focus:ring-royal"
+        style="width: 100%; height: 50px; padding: 0 16px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--surface); font-size: 15px;"
       />
     </div>
 
     <div>
-      <label for="contact-email" class="block text-xs font-bold uppercase tracking-wider text-navy dark:text-pearl mb-1.5">
+      <label for="contact-email" style="display: block; font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 6px;">
         Email Address *
       </label>
       <input
@@ -37,13 +36,26 @@ const accessKey = import.meta.env.WEB3FORMS_ACCESS_KEY || 'YOUR_ACCESS_KEY_HERE'
         name="email"
         placeholder="e.g. john@example.co.uk"
         required
-        class="w-full px-4 py-3 rounded-2xl bg-white/70 dark:bg-white/10 border border-surface-200 dark:border-white/10 text-sm text-navy dark:text-pearl placeholder-surface-400 focus:outline-none focus:ring-2 focus:ring-royal"
+        style="width: 100%; height: 50px; padding: 0 16px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--surface); font-size: 15px;"
       />
     </div>
 
     <div>
-      <label for="contact-message" class="block text-xs font-bold uppercase tracking-wider text-navy dark:text-pearl mb-1.5">
-        Your Message / Details *
+      <label for="contact-phone" style="display: block; font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 6px;">
+        Phone Number
+      </label>
+      <input
+        type="tel"
+        id="contact-phone"
+        name="phone"
+        placeholder="e.g. 020 3151 8452"
+        style="width: 100%; height: 50px; padding: 0 16px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--surface); font-size: 15px;"
+      />
+    </div>
+
+    <div>
+      <label for="contact-message" style="display: block; font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 6px;">
+        Your Message / Move Details *
       </label>
       <textarea
         id="contact-message"
@@ -51,36 +63,32 @@ const accessKey = import.meta.env.WEB3FORMS_ACCESS_KEY || 'YOUR_ACCESS_KEY_HERE'
         rows="4"
         placeholder="Tell us about your move, addresses, dates, or specific questions..."
         required
-        class="w-full px-4 py-3 rounded-2xl bg-white/70 dark:bg-white/10 border border-surface-200 dark:border-white/10 text-sm text-navy dark:text-pearl placeholder-surface-400 focus:outline-none focus:ring-2 focus:ring-royal resize-y"
+        style="width: 100%; padding: 14px 16px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--surface); font-size: 15px; font-family: inherit; resize: vertical;"
       ></textarea>
     </div>
 
     <!-- Status message feedback area -->
-    <div id="contact-status" class="hidden p-3 rounded-xl text-xs font-semibold" role="alert"></div>
+    <div id="contact-status" style="display: none; padding: 12px 16px; border-radius: 10px; font-size: 14px; font-weight: 500;" role="alert"></div>
 
     <button
       type="submit"
       id="contact-submit-btn"
-      class="w-full py-3.5 px-6 rounded-full bg-royal hover:bg-royal-hover text-white font-bold text-sm tracking-wide shadow-md shadow-royal/20 transition-all flex items-center justify-center gap-2 active:scale-[0.99] disabled:opacity-50 disabled:cursor-not-allowed"
+      class="btn btn--accent btn--block"
     >
       <span>Send Message</span>
-      <Icon name="arrow-right" class="w-4 h-4" />
+      <svg class="arrow"><use href="#i-arrow"/></svg>
     </button>
   </form>
 
-  <!-- Fallback direct mailto link per spec -->
-  <div class="mt-6 pt-4 border-t border-surface-200 dark:border-white/10 text-center">
-    <p class="text-xs text-surface-500">
-      Prefer direct email? Reach our desk directly at: 
-      <a href={`mailto:${siteConfig.email}`} class="text-royal font-bold hover:underline block sm:inline mt-0.5 sm:mt-0">
-        {siteConfig.email}
-      </a>
-    </p>
+  <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--line); text-align: center; font-size: 14px; color: var(--muted);">
+    Prefer direct email? Reach our team directly at: 
+    <a href={`mailto:${siteConfig.email}`} style="color: var(--accent); font-weight: 600; margin-left: 4px;">
+      {siteConfig.email}
+    </a>
   </div>
 </div>
 
 <script is:inline>
-  // Contact Form Async Handler with 4 distinct states
   (function() {
     const form = document.getElementById('contact-form');
     const statusBox = document.getElementById('contact-status');
@@ -96,10 +104,11 @@ const accessKey = import.meta.env.WEB3FORMS_ACCESS_KEY || 'YOUR_ACCESS_KEY_HERE'
         return;
       }
 
-      // State 1: Sending
       submitBtn.disabled = true;
       submitBtn.innerText = 'Sending enquiry, please wait...';
-      statusBox.className = 'p-3 rounded-xl text-xs font-semibold bg-blue-50 text-blue-800 dark:bg-blue-900/30 dark:text-blue-200 block';
+      statusBox.style.display = 'block';
+      statusBox.style.background = 'var(--accent-soft)';
+      statusBox.style.color = 'var(--accent-dark)';
       statusBox.textContent = 'Sending enquiry, please wait...';
 
       const formData = new FormData(form);
@@ -118,25 +127,25 @@ const accessKey = import.meta.env.WEB3FORMS_ACCESS_KEY || 'YOUR_ACCESS_KEY_HERE'
         const result = await response.json();
 
         if (response.status === 200 && result.success) {
-          // State 2: Success
-          statusBox.className = 'p-3 rounded-xl text-xs font-semibold bg-emerald-50 text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-200 block';
-          statusBox.textContent = 'Thank you! Your enquiry has been received. Redirecting to confirmation page...';
+          statusBox.style.background = '#e9f8f0';
+          statusBox.style.color = 'var(--mint)';
+          statusBox.textContent = 'Thank you! Your enquiry has been received. Redirecting...';
           setTimeout(() => {
             window.location.href = '/thank-you/';
           }, 1200);
         } else {
-          // State 3: API Error
           submitBtn.disabled = false;
           submitBtn.innerText = 'Send Message';
-          statusBox.className = 'p-3 rounded-xl text-xs font-semibold bg-rose-50 text-rose-800 dark:bg-rose-900/30 dark:text-rose-200 block';
-          statusBox.textContent = result.message || 'Sorry, there was an issue submitting your form. Please email us directly at info@pearlremovals.co.uk.';
+          statusBox.style.background = '#ffebee';
+          statusBox.style.color = '#c62828';
+          statusBox.textContent = result.message || 'Sorry, there was an issue submitting your form. Please email us directly.';
         }
       } catch (err) {
-        // State 4: Network Error
         submitBtn.disabled = false;
         submitBtn.innerText = 'Send Message';
-        statusBox.className = 'p-3 rounded-xl text-xs font-semibold bg-amber-50 text-amber-800 dark:bg-amber-900/30 dark:text-amber-200 block';
-        statusBox.textContent = 'Network connection error. Please call us directly or message us on WhatsApp.';
+        statusBox.style.background = '#fff8e1';
+        statusBox.style.color = '#f57f17';
+        statusBox.textContent = 'Network connection error. Please call us directly or email us.';
       }
     });
   })();

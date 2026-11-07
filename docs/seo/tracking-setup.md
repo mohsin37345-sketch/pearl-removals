@@ -112,18 +112,21 @@ To avoid corrupting citation consistency and ensure the primary canonical teleph
 - Overall Conversion Rate: [X.X]%
 
 ### Performance by Phase
-- Phase 1 Core (Cricklewood, Kilburn, Hendon): [X] leads ([X]% of total)
-- Phase 1 Premium (Hampstead, Belsize Park, St John's Wood, Maida Vale): [X] leads ([X]% of total)
+- Phase 1 Core & Premium (NW2, NW3, NW4, NW6, NW7, NW8, NW11, W9): [X] leads ([X]%)
+- Phase 2 Expansion (W11, W14, W2, W3, W1, NW1, NW5, N6, N10, N20, HA7, HA8, HA1, HA0): [X] leads ([X]%)
+- Phase 3 Wider Reach (W8, W4, W6, W12, W5, W1/WC1, SW1/SW7, SW3/SW10, N8, EN5, N14, HA5, HA6, WD23, WD7): [X] leads ([X]%)
+- Long-Distance Routes (Manchester, Birmingham, Bristol, etc.): [X] leads ([X]%)
 
-### Top 5 Performing Areas
-1. Hampstead (NW3): [X] leads
-2. Cricklewood (NW2): [X] leads
-3. St John's Wood (NW8): [X] leads
-4. Hendon (NW4): [X] leads
-5. Maida Vale (W9): [X] leads
+### Top Performing Locations Across All 57 Areas
+1. Kensington (W8) & Mayfair (W1): [X] leads
+2. Hampstead (NW3) & Belsize Park: [X] leads
+3. Cricklewood (NW2) & Hendon (NW4): [X] leads
+4. Chiswick (W4) & Ealing (W5): [X] leads
+5. Barnet (EN5), Pinner (HA5) & Radlett (WD7): [X] leads
 
-### Top 3 Service Requests
-1. House Removals (Full 3–4 Bed Homes)
-2. Flat & Mansion Block Removals
-3. Specialist Piano / Fine Art Removals
+### Top Service Demand Segments
+1. House Removals (Executive & Family Homes)
+2. Office & Commercial Relocations (Paddington, Brent Cross, Camden)
+3. White-Glove, Fine Art & Piano Removals
+4. Long-Distance Dedicated Moves (UK Intercity)
 ```

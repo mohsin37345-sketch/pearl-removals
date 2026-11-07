@@ -21,20 +21,28 @@
   "travelInfo": "Direct vehicular access via the A40 Western Avenue and A406 North Circular allows our removal vans to reach Acton properties in just 15 to 20 minutes from our Cricklewood yard.",
   "nearbyAreas": [
     {
-      "name": "Holland Park",
-      "slug": "holland-park"
+      "name": "Ealing",
+      "slug": "ealing"
     },
     {
-      "name": "Notting Hill",
-      "slug": "notting-hill"
+      "name": "Chiswick",
+      "slug": "chiswick"
+    },
+    {
+      "name": "Shepherd's Bush & White City",
+      "slug": "shepherds-bush-and-white-city"
+    },
+    {
+      "name": "Hammersmith",
+      "slug": "hammersmith"
     },
     {
       "name": "Wembley",
       "slug": "wembley"
     },
     {
-      "name": "Harlesden & Willesden",
-      "slug": "harlesden-and-willesden"
+      "name": "Kensal Green & North Kensington",
+      "slug": "kensal-green-and-north-kensington"
     }
   ],
   "servicesOffered": [

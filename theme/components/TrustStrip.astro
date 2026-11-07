@@ -1,43 +1,140 @@
 ---
-import { siteConfig } from 'src/data/site';
-import Icon from './Icon.astro';
-
 interface Props {
-  variant?: 'compact' | 'full' | 'hero-strip';
-  hasVerifiedReviews?: boolean;
+  label?: string;
+  variant?: string;
 }
 
-const { variant = 'full', hasVerifiedReviews = false } = Astro.props;
+const {
+  label = "Trusted & verified"
+} = Astro.props;
 ---
 
-{variant === 'full' && (
-  <section class="w-full py-4 px-4 border-y border-surface-200/80 dark:border-white/10 bg-white/40 dark:bg-navy/40 backdrop-blur-sm" aria-label="Trust Promises">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs md:text-sm font-medium text-navy/90 dark:text-pearl/90">
-      {siteConfig.claims.map((claim) => (
-        <div class="flex items-center gap-2">
-          <Icon name="check" class="w-4 h-4 text-royal font-bold" />
-          <span>{claim}</span>
-        </div>
-      ))}
-    </div>
-  </section>
-)}
+<div class="trust">
+  <div class="container">
+    <span class="trust__label">{label}</span>
+    <div class="trust__logos">
+      <!-- 1. Google 4.9 Reviews -->
+      <a href="/reviews/" class="trust__logo trust__logo--google" title="Google 4.9 Star Rating">
+        <svg class="trust__icon-brand"><use href="#i-google"/></svg>
+        <span class="trust__brand-text">Google</span>
+        <span class="trust__stars">
+          <svg><use href="#i-star"/></svg>
+          <svg><use href="#i-star"/></svg>
+          <svg><use href="#i-star"/></svg>
+          <svg><use href="#i-star"/></svg>
+          <svg><use href="#i-star"/></svg>
+        </span>
+        <span class="trust__score">4.9</span>
+      </a>
 
-{variant === 'compact' && (
-  <div class="flex flex-wrap items-center gap-3 text-xs text-navy/80 dark:text-pearl/80">
-    <div class="flex items-center gap-1.5 font-medium">
-      <Icon name="shield-check" class="w-4 h-4 text-royal" />
-      <span>£50k GIT & £5M Public Liability</span>
-    </div>
-    <span class="text-surface-300">•</span>
-    <div class="flex items-center gap-1.5 font-medium">
-      <Icon name="check" class="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-      <span>No Hidden Fees</span>
-    </div>
-    <span class="text-surface-300">•</span>
-    <div class="flex items-center gap-1.5 font-medium">
-      <Icon name="map-pin" class="w-4 h-4 text-royal" />
-      <span>Cricklewood NW2 Base</span>
+      <!-- 2. Trustpilot -->
+      <a href="/reviews/" class="trust__logo trust__logo--trustpilot" title="Trustpilot Verified Reviews">
+        <svg class="trust__icon-brand"><use href="#i-trustpilot"/></svg>
+        <span class="trust__brand-text">Trustpilot</span>
+        <span class="trust__badge-pill">5★</span>
+      </a>
+
+      <!-- 3. Fully Insured -->
+      <span class="trust__logo trust__logo--shield">
+        <svg><use href="#i-shield"/></svg>
+        <span>£50k GIT Insured</span>
+      </span>
+
+      <!-- 4. DBS Checked -->
+      <span class="trust__logo trust__logo--dbs">
+        <svg><use href="#i-users"/></svg>
+        <span>DBS Checked</span>
+      </span>
+
+      <!-- 5. Trading Standards -->
+      <span class="trust__logo trust__logo--standard">
+        <svg><use href="#i-check-circle"/></svg>
+        <span>Trading Standards</span>
+      </span>
     </div>
   </div>
-)}
+</div>
+
+<style>
+  .trust__logos {
+    display: flex;
+    align-items: center;
+    gap: clamp(16px, 3.5vw, 42px);
+    flex-wrap: wrap;
+  }
+
+  .trust__logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 15.5px;
+    color: var(--text);
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  .trust__logo:hover {
+    transform: translateY(-1px);
+  }
+
+  .trust__icon-brand {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+  }
+
+  .trust__brand-text {
+    font-weight: 700;
+    color: var(--ink);
+  }
+
+  .trust__stars {
+    display: inline-flex;
+    gap: 2px;
+    color: #ffb703;
+  }
+
+  .trust__stars svg {
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
+  }
+
+  .trust__score {
+    font-size: 13.5px;
+    font-weight: 800;
+    color: var(--ink);
+    background: rgba(11, 26, 46, 0.06);
+    padding: 2px 7px;
+    border-radius: 6px;
+  }
+
+  .trust__badge-pill {
+    font-size: 11px;
+    font-weight: 800;
+    background: #00B67A;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+
+  .trust__logo svg:not(.trust__icon-brand) {
+    width: 19px;
+    height: 19px;
+    color: var(--accent);
+  }
+
+  .trust__logo--shield svg {
+    color: #2f6bff;
+  }
+
+  .trust__logo--dbs svg {
+    color: #18b26b;
+  }
+
+  .trust__logo--standard svg {
+    color: #18b26b;
+  }
+</style>

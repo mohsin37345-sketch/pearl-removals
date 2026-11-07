@@ -1,0 +1,41 @@
+{
+  "name": "Grosvenor Square",
+  "slug": "grosvenor-square",
+  "parent": "mayfair",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "W1"
+  ],
+  "metaTitle": "Removals in Grosvenor Square, Mayfair | Pearl Removals",
+  "metaDescription": "Professional removals in Grosvenor Square, Mayfair (W1). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides elite, white-glove residential removals overlooking landmark Grosvenor Square in Mayfair W1. Flanked by ambassadorial residences, grand neoclassical apartment buildings, and ultra-prime developments, this world-famous garden square demands the highest standards of discretion, security vetting, and meticulous moving planning. Diplomatic premises and opulent neoclassical apartments around the square require pristine security arrangements and immaculate site manners. Our white-glove specialists use museum-grade protective packaging, ensuring antique credenzas, gilt-framed paintings, and crystal ware arrive in showroom condition. Our uniformed porters guarantee complete confidentiality and seamless transit across this international landmark address.",
+  "whatMovingHereInvolves": "Grosvenor Square features high security and diplomatic presence. Moving properties here requires liaising with building concierges, securing Westminster City Council parking bay suspensions well in advance, and booking dedicated service lifts. Our specialist fine art team uses bespoke timber crating and padded blankets to safeguard priceless art and designer furnishings.",
+  "landmarks": [
+    "Grosvenor Square Gardens",
+    "Former US Embassy Building",
+    "The Chancery Rosewood"
+  ],
+  "nearbyMicroAreas": [
+    "berkeley-square",
+    "mount-street",
+    "park-lane"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you coordinate moves in luxury apartment blocks around Grosvenor Square?",
+      "answer": "We communicate with building concierges to reserve service elevators, supply RAMS documentation, and install lift padding.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange Westminster parking suspensions on Grosvenor Square?",
+      "answer": "Yes. We manage the entire ten-day advance application process with Westminster City Council on your behalf.",
+      "display": true
+    },
+    {
+      "question": "Can you handle delicate marble tables and crystal chandeliers?",
+      "answer": "Yes. We build custom museum-grade wooden packing cases and transport high-value items under comprehensive transit insurance.",
+      "display": true
+    }
+  ]
+}

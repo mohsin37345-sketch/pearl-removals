@@ -1,11 +1,9 @@
 ---
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
-import Hero from 'theme/components/Hero.astro';
 import TrustStrip from 'theme/components/TrustStrip.astro';
 import Breadcrumbs from 'theme/components/Breadcrumbs.astro';
 import CTABand from 'theme/components/CTABand.astro';
 import StatsPanel from 'theme/components/StatsPanel.astro';
-import Icon from 'theme/components/Icon.astro';
 
 const breadcrumbs = [
   { name: 'About Us', url: '/about-us/' }
@@ -19,98 +17,112 @@ const breadcrumbs = [
   schemaType="about"
   breadcrumbs={breadcrumbs}
 >
-  <Hero
-    variant="simple"
-    title="About Pearl Removals"
-    subtitle="A trusted North West London house removals team dedicated to careful, punctual, and transparent moving services."
-    eyebrow="OUR HERITAGE & PROMISE"
-    badges={["Cricklewood NW2 Base", "Fully Insured", "Local London Movers"]}
-  />
+  <section class="page-intro">
+    <div class="container">
+      <div class="page-intro__content">
+        <div class="page-intro__eyebrow">
+          <span class="eyebrow">OUR HERITAGE &amp; PROMISE</span>
+        </div>
+        <h1 class="page-intro__title">
+          About <span class="mark">Pearl Removals<svg viewBox="0 0 200 20" preserveAspectRatio="none"><path d="M3 15 C 50 4, 140 2, 197 12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg></span>
+        </h1>
+        <p class="page-intro__lead">
+          A trusted North West London house removals team dedicated to careful, punctual, and transparent moving services across London.
+        </p>
+        <div class="page-intro__badges">
+          <span class="pill"><span class="pill__dot"><svg><use href="#i-pin"/></svg></span>Cricklewood NW2 Base</span>
+          <span class="pill"><span class="pill__dot"><svg><use href="#i-shield"/></svg></span>£50k GIT Fully Insured</span>
+          <span class="pill"><span class="pill__dot"><svg><use href="#i-users"/></svg></span>Family-Run London Movers</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <TrustStrip />
 
   <Breadcrumbs items={breadcrumbs} />
 
-  <article class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+  <article class="container" style="padding-block: 40px; display: flex; flex-direction: column; gap: 40px;">
     
     <!-- Company Story & Base -->
-    <div class="glass-panel p-6 sm:p-10 rounded-3xl space-y-6 text-sm sm:text-base leading-relaxed text-surface-700 dark:text-surface-300">
-      <div class="flex items-center gap-2 text-royal font-bold text-xs uppercase tracking-widest">
-        <Icon name="home" class="w-4 h-4" />
-        <span>Rooted in Cricklewood NW2</span>
-      </div>
+    <div style="background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-xl); padding: clamp(28px, 5vw, 44px); box-shadow: var(--shadow-sm);">
+      <span class="eyebrow" style="margin-bottom: 8px;">Rooted in Cricklewood NW2</span>
 
-      <h2 class="text-2xl sm:text-3xl font-black text-navy dark:text-pearl tracking-tight">
+      <h2 style="font-size: clamp(22px, 3.2vw, 32px); font-weight: 700; color: var(--ink); margin-bottom: 16px;">
         Careful Moving Driven by Experience and Local Knowledge
       </h2>
 
-      <p>
-        Pearl Removals was founded on a simple principle: moving home should be an exciting milestone, not an ordeal of broken promises, damaged furniture, and surprise fees. Based in Cricklewood, North West London, we have built our reputation street by street, delivering attentive, white-glove relocations across Camden, Brent, Barnet, Westminster, and throughout the capital.
+      <p style="color: var(--muted); font-size: 16px; line-height: 1.7; margin-bottom: 16px;">
+        Pearl Removals was founded on a simple principle: moving home should be an exciting milestone, not an ordeal of broken promises, damaged furniture, and surprise fees. Based in Cricklewood, North West London, we have built our reputation street by street, delivering attentive relocations across Camden, Brent, Barnet, Westminster, and throughout the capital.
       </p>
 
-      <p>
-        Moving in London presents unique obstacles. Narrow Victorian terraced hallways in Kilburn, restricted parking on red routes along the A5, strict lift-booking slots in Maida Vale mansion blocks, and steep communal staircases in West Hampstead all demand practical foresight. Our crews know the local borough parking suspension rules, arrive on time with the appropriate permits in hand, and take personal pride in safeguarding your home.
+      <p style="color: var(--muted); font-size: 16px; line-height: 1.7; margin: 0;">
+        Moving in London presents unique obstacles. Narrow Victorian terraced hallways in Kilburn, restricted parking on red routes along the A5, strict lift-booking slots in Maida Vale mansion blocks, and steep communal staircases in West Hampstead all demand practical foresight. Our crews know the local borough parking suspension rules, arrive on time with the appropriate equipment, and take personal pride in safeguarding your home.
       </p>
     </div>
 
     <!-- Core Values Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="glass-panel p-6 rounded-3xl">
-        <div class="w-10 h-10 rounded-2xl bg-royal/10 text-royal flex items-center justify-center mb-4">
-          <Icon name="shield-check" class="w-5 h-5" />
-        </div>
-        <h3 class="font-bold text-base text-navy dark:text-pearl mb-2">
-          Genuine Protection
-        </h3>
-        <p class="text-xs sm:text-sm text-surface-600 dark:text-surface-400 leading-relaxed">
-          Every move is protected by comprehensive £50,000 Goods in Transit insurance and £5,000,000 Public Liability cover, with quilted blankets and sofa covers standard.
-        </p>
+    <div class="features" style="margin-top: 0;">
+      <div class="feature">
+        <span class="icon-tile"><svg><use href="#i-shield"/></svg></span>
+        <h4>Total Insurance Protection</h4>
+        <p>Comprehensive £50,000 Goods in Transit cover and £5,000,000 Public Liability on every single move.</p>
       </div>
 
-      <div class="glass-panel p-6 rounded-3xl">
-        <div class="w-10 h-10 rounded-2xl bg-royal/10 text-royal flex items-center justify-center mb-4">
-          <Icon name="receipt" class="w-5 h-5" />
-        </div>
-        <h3 class="font-bold text-base text-navy dark:text-pearl mb-2">
-          Transparent Pricing
-        </h3>
-        <p class="text-xs sm:text-sm text-surface-600 dark:text-surface-400 leading-relaxed">
-          No vague hourly meters that tick away in London traffic. We conduct thorough pre-move surveys and issue clear written fixed-price quotations.
-        </p>
+      <div class="feature">
+        <span class="icon-tile"><svg><use href="#i-pound"/></svg></span>
+        <h4>Honest Fixed Pricing</h4>
+        <p>No unexpected key-waiting fees or hidden stair surcharges on move day. The quote we provide is the fixed amount you pay.</p>
       </div>
 
-      <div class="glass-panel p-6 rounded-3xl">
-        <div class="w-10 h-10 rounded-2xl bg-royal/10 text-royal flex items-center justify-center mb-4">
-          <Icon name="users" class="w-5 h-5" />
-        </div>
-        <h3 class="font-bold text-base text-navy dark:text-pearl mb-2">
-          Trained, Respectful Crews
-        </h3>
-        <p class="text-xs sm:text-sm text-surface-600 dark:text-surface-400 leading-relaxed">
-          Our moving staff are courteous, punctual professionals who treat your family and belongings with the consideration and patience they deserve.
-        </p>
+      <div class="feature">
+        <span class="icon-tile"><svg><use href="#i-users"/></svg></span>
+        <h4>Dedicated In-House Movers</h4>
+        <p>Polite, uniformed, respectful professionals who treat your treasured possessions as if they were their own.</p>
+      </div>
+
+      <div class="feature">
+        <span class="icon-tile"><svg><use href="#i-clock"/></svg></span>
+        <h4>7-Day Flexibility</h4>
+        <p>Weekend and evening relocations scheduled to fit your family timeline and property completion schedule.</p>
       </div>
     </div>
 
     <!-- Fleet & Equipment -->
-    <div class="glass-panel p-6 sm:p-10 rounded-3xl space-y-4 text-sm sm:text-base leading-relaxed text-surface-700 dark:text-surface-300">
-      <h3 class="text-xl sm:text-2xl font-black text-navy dark:text-pearl tracking-tight">
-        Our Fleet & Specialist Equipment
+    <div style="background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-xl); padding: clamp(28px, 5vw, 44px); box-shadow: var(--shadow-sm);">
+      <span class="eyebrow" style="margin-bottom: 8px;">Vehicles &amp; Equipment</span>
+      <h3 style="font-size: clamp(22px, 3.2vw, 30px); font-weight: 700; color: var(--ink); margin-bottom: 16px;">
+        Our Fleet &amp; Specialist Moving Equipment
       </h3>
-      <p>
-        Our fleet consists of modern, clean 3.5-tonne Luton box vans equipped with hydraulic tail lifts, carpet protection runners, heavy-duty appliance sack trucks, piano skids, and ratchet tie-down rails. Because London streets are frequently congested, our vehicle sizing allows us to access restricted residential roads and mews where larger articulated lorries cannot navigate.
+      <p style="color: var(--muted); font-size: 15.5px; line-height: 1.7; margin-bottom: 24px;">
+        Our fleet consists of modern, clean 3.5-tonne Luton box vans equipped with hydraulic tail lifts, carpet protection runners, heavy-duty appliance sack trucks, piano skids, and ratchet tie-down rails. Because London streets are frequently congested, our vehicle sizing allows us to access restricted residential roads, tight mews, and CPZ bays where larger articulated lorries cannot navigate.
       </p>
-      <p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 24px;">
+        <div class="photo" style="height: 240px; border-radius: 16px;">
+          <img src="/images/secure-storage-removals-fleet-london.webp" alt="Pearl Removals vehicle fleet at Cricklewood depot" loading="lazy" />
+          <div class="photo__overlay-badge">
+            <span class="live-dot"></span>
+            <span>Cricklewood Fleet Depot · NW2</span>
+          </div>
+        </div>
+        <div class="photo" style="height: 240px; border-radius: 16px;">
+          <img src="/images/furniture-packing-removals-london.webp" alt="Pearl Removals professional protective strapping and furniture blankets" loading="lazy" />
+          <div class="photo__overlay-badge">
+            <span class="live-dot"></span>
+            <span>100% Strapped &amp; Protected</span>
+          </div>
+        </div>
+      </div>
+
+      <p style="color: var(--muted); font-size: 15.5px; line-height: 1.7; margin: 0;">
         For substantial 4 and 5-bedroom residences, we deploy multiple synchronized vehicles or 7.5-tonne vehicles, ensuring full loading can be completed swiftly on exchange and completion day without holding up the property transaction chain.
       </p>
     </div>
 
-    <!-- Standards & Trust Promises -->
     <StatsPanel />
 
-    <CTABand
-      title="Meet the Pearl Removals Team"
-      subtitle="Call our Cricklewood dispatch office today to discuss your upcoming move or schedule a free video survey."
-    />
+    <CTABand />
+
   </article>
 </BaseLayout>

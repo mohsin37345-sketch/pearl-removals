@@ -64,6 +64,12 @@ VAT Number: Available upon request
 26. **London Chamber of Commerce and Industry (LCCI):** Member listing.
 27. **Best of London Business Directory:** Regional trade portal.
 28. **North West London Enquirer Business Index:** Local community business listing.
+29. **Kensington & Chelsea Chamber of Commerce:** Business directory for W8, SW3, SW7, and SW10.
+30. **Hammersmith & Fulham Chamber of Commerce:** Local business network for W6 and W12.
+31. **Hounslow Chamber of Commerce:** Covering Chiswick W4 commercial and trade sectors.
+32. **Ealing Chamber of Commerce:** West London trade network covering W5 and W13.
+33. **Barnet Chamber of Commerce:** Serving North London businesses in EN5, EN4, N14, and N21.
+34. **Watford & West Herts Chamber of Commerce:** Covering Bushey, Elstree, and Radlett trade corridors.
 
 ---
 

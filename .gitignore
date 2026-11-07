@@ -32,3 +32,9 @@ ehthumbs.db
 .idea/
 *.sublime-project
 *.sublime-workspace
+
+# Temporary screenshot files
+desktop.png
+mobile.png
+template-desktop.png
+template-mobile.png

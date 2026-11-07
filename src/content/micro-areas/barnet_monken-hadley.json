@@ -1,0 +1,42 @@
+{
+  "name": "Monken Hadley",
+  "slug": "monken-hadley",
+  "parent": "barnet",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "EN5"
+  ],
+  "metaTitle": "Removals in Monken Hadley, Barnet | Pearl Removals",
+  "metaDescription": "Professional removals in Monken Hadley, Barnet (EN5). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals provides bespoke residential removals across historic Monken Hadley in Barnet EN5. Centred on its picturesque Georgian village green and historic St Mary the Virgin Church, this conservation enclave features Grade II listed manor houses and period cottages. Our skilled moving teams manage heritage relocations with utmost respect and protective care. The charming conservation area around Hadley Green and St Marys Church requires gentle handling on rural lanes. We protect mature garden lawns and period entranceways, delivering your family possessions with patience, courtesy, and complete care.",
+  "whatMovingHereInvolves": "Properties in Monken Hadley feature centuries-old timber frames, delicate lime plasterwork, and narrow country lanes connecting to Hadley Common. Moving here requires experienced drivers who can navigate rural verges safely without disturbing historic brick walls. Our porters use padded banister jackets and floor runners to protect heritage woodwork.",
+  "landmarks": [
+    "Monken Hadley Church",
+    "Hadley Common",
+    "Battle of Barnet Monument"
+  ],
+  "nearbyMicroAreas": [
+    "high-barnet",
+    "hadley-wood",
+    "arkley",
+    "underhill"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you protect historic Grade II listed interiors in Monken Hadley?",
+      "answer": "We fit padded door jamb protectors, specialized banister covers, and floor runners to safeguard historic oak beams and period plasterwork.",
+      "display": true
+    },
+    {
+      "question": "Can your removal vans access narrow lanes around Monken Hadley common?",
+      "answer": "Yes. We deploy our agile 3.5-tonne Luton vans equipped with tail lifts to avoid obstructing narrow rural carriageways.",
+      "display": true
+    },
+    {
+      "question": "Do you transport fine art and antique collections in Monken Hadley?",
+      "answer": "Yes. Our specialist team crafts bespoke timber crates, uses acid-free wrapping materials, and transports delicate artworks safely.",
+      "display": true
+    }
+  ]
+}

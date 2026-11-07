@@ -1,0 +1,42 @@
+{
+  "name": "Sloane Street",
+  "slug": "sloane-street",
+  "parent": "knightsbridge-and-belgravia",
+  "premium": true,
+  "status": "published",
+  "postcodes": [
+    "SW1",
+    "SW7"
+  ],
+  "metaTitle": "Removals in Sloane Street, Knightsbridge & Belgravia | Pearl",
+  "metaDescription": "Professional removals in Sloane Street, Knightsbridge & Belgravia (SW1, SW7). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers bespoke, white-glove removals along fashionable Sloane Street in SW1. Connecting Knightsbridge to Sloane Square, this prestigious boulevard features world-famous luxury designer boutiques alongside exclusive lateral apartments overlooking Cadogan Place Gardens. Our experienced teams deliver discreet, punctual, and attentive moving services. Luxury boutiques and residential apartments along this high-fashion boulevard require prompt, low-profile loading routines. We reserve curbside spaces through Westminster or RBKC, moving designer wardrobes and bespoke home fittings without interrupting local commerce. We place high priority on punctual arrival and unhurried packing for discerning retail and residential clients.",
+  "whatMovingHereInvolves": "Sloane Street is an active commercial and residential avenue with heavy pedestrian footfall and luxury shopping traffic. Relocations must be coordinated via pre-arranged parking bay suspensions on connecting residential avenues like Cadogan Place, Pont Street, or Hans Crescent. Inside residential blocks, our teams coordinate elevator bookings with building concierges.",
+  "landmarks": [
+    "Cadogan Place Gardens",
+    "Sloane Street Boutiques",
+    "Holy Trinity Church"
+  ],
+  "nearbyMicroAreas": [
+    "knightsbridge",
+    "belgravia",
+    "eaton-square"
+  ],
+  "localFaqs": [
+    {
+      "question": "How do you coordinate loading along fashionable Sloane Street?",
+      "answer": "We reserve parking bays on connecting residential squares and side roads, arranging early morning loading windows.",
+      "display": true
+    },
+    {
+      "question": "Do you provide hanging wardrobe boxes for luxury fashion collections?",
+      "answer": "Yes. We supply heavy-duty wardrobe cartons with metal hanging bars, transferring garments directly from your closets.",
+      "display": true
+    },
+    {
+      "question": "Do you arrange RBKC or Westminster parking suspensions for Sloane Street?",
+      "answer": "Yes. We determine the exact borough jurisdiction and handle all necessary council suspension paperwork.",
+      "display": true
+    }
+  ]
+}

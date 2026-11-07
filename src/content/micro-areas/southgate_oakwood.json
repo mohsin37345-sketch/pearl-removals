@@ -1,0 +1,42 @@
+{
+  "name": "Oakwood",
+  "slug": "oakwood",
+  "parent": "southgate",
+  "premium": false,
+  "status": "published",
+  "postcodes": [
+    "N14"
+  ],
+  "metaTitle": "Removals in Oakwood, Southgate | Pearl Removals",
+  "metaDescription": "Professional removals in Oakwood, Southgate (N14). House & flat moves, packing & storage from our NW2 depot. Call 020 3151 8452.",
+  "intro": "Pearl Removals delivers comprehensive, fully insured house removals across leafy Oakwood in N14. Famous for its modernist Charles Holden tube station and bordering expansive Trent Country Park, Oakwood offers spacious 1930s semi-detached and detached family homes. Our experienced moving crews provide organized, stress-free relocations with full packing and transit care. Broad suburban crescents near Oakwood park offer excellent curbside parking for large 3.5-tonne Luton vans. We handle heavy timber dressers, garden play equipment, and home gym weights with specialized lifting gear, making moving day straightforward.",
+  "whatMovingHereInvolves": "Residential streets in Oakwood, such as Bramley Road and Prince George Avenue, offer generous road widths and private driveways, making vehicle positioning straightforward. Properties frequently contain large family furniture items, garden equipment, and bicycles. Our crews handle loading systematically, securing goods with commercial transit straps.",
+  "landmarks": [
+    "Oakwood Underground Station",
+    "Trent Country Park Border",
+    "Oakwood Park"
+  ],
+  "nearbyMicroAreas": [
+    "southgate-green",
+    "cockfosters",
+    "winchmore-hill",
+    "palmers-green"
+  ],
+  "localFaqs": [
+    {
+      "question": "Can you move 3- and 4-bedroom family houses in Oakwood?",
+      "answer": "Yes. We deploy large Luton or 7.5t vehicles and experienced multi-man crews, providing full packing services and furniture dismantling.",
+      "display": true
+    },
+    {
+      "question": "Do you provide wardrobe cartons and mattress bags for Oakwood moves?",
+      "answer": "Yes. We supply heavy-duty wardrobe cartons, mattress covers, and quilted sofa covers as part of every domestic move.",
+      "display": true
+    },
+    {
+      "question": "How quickly can your vehicles reach Oakwood from your depot?",
+      "answer": "Via the A406 North Circular from our Cricklewood depot, our vans reach Oakwood addresses in approximately 20 minutes.",
+      "display": true
+    }
+  ]
+}

@@ -937,7 +937,7 @@
       <p class="mb-sm text-mid">Or quickly add from our list of popular items below:</p>
       <div class="furniture-categories-grid">${catsHtml}</div>
       <div class="furniture-summary" id="furnitureSummaryApp" style="display:none;">
-         <h4 class="furniture-summary__title">Your Items (<span id="furnitureTotalCount">0</span>)</h4>
+         <h4 class="furniture-summary__title"><span class="furniture-summary__title-text">Your Items (<span id="furnitureTotalCount">0</span>)</span></h4>
          <div class="furniture-summary__list" id="furnitureSummaryListApp"></div>
       </div>
     `;
@@ -1117,7 +1117,7 @@
       <p class="mb-sm text-mid">Or quickly add from our list of popular items below:</p>
       <div class="furniture-categories-grid">${catsHtml}</div>
       <div class="furniture-summary" id="officeSummaryApp" style="display:none;">
-         <h4 class="furniture-summary__title">Your Items (<span id="officeTotalCount">0</span>)</h4>
+         <h4 class="furniture-summary__title"><span class="furniture-summary__title-text">Your Items (<span id="officeTotalCount">0</span>)</span></h4>
          <div class="furniture-summary__list" id="officeSummaryListApp"></div>
       </div>
     `;
@@ -1312,7 +1312,7 @@
       <p class="mb-sm text-mid">Or quickly add from our list of popular items below:</p>
       <div class="furniture-categories-grid">${catsHtml}</div>
       <div class="furniture-summary" id="packingSummaryApp" style="display:none;">
-         <h4 class="furniture-summary__title">Your Items (<span id="packingTotalCount">0</span>)</h4>
+         <h4 class="furniture-summary__title"><span class="furniture-summary__title-text">Your Items (<span id="packingTotalCount">0</span>)</span></h4>
          <div class="furniture-summary__list" id="packingSummaryListApp"></div>
       </div>
     `;
@@ -1507,7 +1507,7 @@
       <p class="mb-sm text-mid">Or quickly add from our list of popular items below:</p>
       <div class="furniture-categories-grid">${catsHtml}</div>
       <div class="furniture-summary" id="equipSummaryApp" style="display:none;">
-         <h4 class="furniture-summary__title">Your Items (<span id="equipTotalCount">0</span>)</h4>
+         <h4 class="furniture-summary__title"><span class="furniture-summary__title-text">Your Items (<span id="equipTotalCount">0</span>)</span></h4>
          <div class="furniture-summary__list" id="equipSummaryListApp"></div>
       </div>
     `;
@@ -1702,7 +1702,7 @@
       <p class="mb-sm text-mid">Or quickly add from our list of popular items below:</p>
       <div class="furniture-categories-grid">${catsHtml}</div>
       <div class="furniture-summary" id="storageSummaryApp" style="display:none;">
-         <h4 class="furniture-summary__title">Your Items (<span id="storageTotalCount">0</span>)</h4>
+         <h4 class="furniture-summary__title"><span class="furniture-summary__title-text">Your Items (<span id="storageTotalCount">0</span>)</span></h4>
          <div class="furniture-summary__list" id="storageSummaryListApp"></div>
       </div>
     `;
@@ -1897,7 +1897,7 @@
       <p class="mb-sm text-mid">Or quickly add from our list of popular items below:</p>
       <div class="furniture-categories-grid">${catsHtml}</div>
       <div class="furniture-summary" id="clearSummaryApp" style="display:none;">
-         <h4 class="furniture-summary__title">Your Items (<span id="clearTotalCount">0</span>)</h4>
+         <h4 class="furniture-summary__title"><span class="furniture-summary__title-text">Your Items (<span id="clearTotalCount">0</span>)</span></h4>
          <div class="furniture-summary__list" id="clearSummaryListApp"></div>
       </div>
     `;
@@ -2092,7 +2092,7 @@
       <p class="mb-sm text-mid">Or quickly add from our list of common commercial items below:</p>
       <div class="furniture-categories-grid">${catsHtml}</div>
       <div class="furniture-summary" id="commSummaryApp" style="display:none;">
-         <h4 class="furniture-summary__title">Your Items (<span id="commTotalCount">0</span>)</h4>
+         <h4 class="furniture-summary__title"><span class="furniture-summary__title-text">Your Items (<span id="commTotalCount">0</span>)</span></h4>
          <div class="furniture-summary__list" id="commSummaryListApp"></div>
       </div>
     `;

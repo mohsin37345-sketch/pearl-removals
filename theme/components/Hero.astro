@@ -7,7 +7,7 @@ interface Props {
   lead?: string;
   subtitle?: string;
   eyebrow?: string;
-  badges?: Array<string | { text: string; icon?: string; liveDot?: boolean }>;
+  badges?: Array<string | { text: string; icon?: string; liveDot?: boolean; desktopOnly?: boolean }>;
   photoUrl?: string;
   photoAlt?: string;
   showQuoteForm?: boolean;
@@ -63,22 +63,21 @@ const accessKey = import.meta.env.WEB3FORMS_ACCESS_KEY || 'YOUR_ACCESS_KEY_HERE'
       <div class="hero__badges">
         {badges && badges.length > 0 ? (
           badges.map((b) => {
-            if (typeof b === 'string') {
-              return (
-                <span class="pill">
-                  <span class="pill__dot"><svg><use href="#i-pin"/></svg></span>
-                  {b}
-                </span>
-              );
-            }
+            const isObj = typeof b === 'object';
+            const text = isObj ? b.text : b;
+            const isDesktopOnly =
+              (isObj && b.desktopOnly) ||
+              text.includes('GIT Cover') ||
+              text.includes('CPZ Support');
+
             return (
-              <span class="pill">
-                {b.liveDot ? (
+              <span class={`pill ${isDesktopOnly ? 'pill--desktop-only' : ''}`}>
+                {isObj && b.liveDot ? (
                   <span class="live-dot" style="margin-left:6px"></span>
                 ) : (
-                  <span class="pill__dot"><svg><use href={`#i-${b.icon || 'pin'}`}/></svg></span>
+                  <span class="pill__dot"><svg><use href={`#i-${(isObj && b.icon) || 'pin'}`}/></svg></span>
                 )}
-                {b.text}
+                {text}
               </span>
             );
           })
